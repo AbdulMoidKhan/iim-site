@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 66" fill="none">
+  <!-- American Cancer Society Sword / Staff Mark -->
+  <g transform="translate(6, 6)">
+    <!-- Sword blade -->
+    <path d="M18 2L20 4L20 46L18 52L16 46L16 4Z" fill="#D81E27" />
+    <!-- Crossguard -->
+    <path d="M8 14L28 14L26 18L10 18Z" fill="#D81E27" />
+    <!-- Pommel -->
+    <circle cx="18" cy="2" r="3" fill="#D81E27" />
+    <!-- Snake coiling around sword -->
+    <path d="M22 18C28 22 28 28 22 31C14 35 14 41 22 45" stroke="#003A70" stroke-width="3" stroke-linecap="round" fill="none" />
+  </g>
+  <!-- Text: American Cancer Society -->
+  <text x="48" y="30" font-family="'Libre Baskerville', Georgia, serif" font-size="20" font-weight="700" fill="#003A70" letter-spacing="-0.01em">American</text>
+  <text x="48" y="52" font-family="'Libre Baskerville', Georgia, serif" font-size="20" font-weight="700" fill="#003A70" letter-spacing="-0.01em">Cancer Society<tspan font-family="Arial" font-size="12" dy="-8">®</tspan></text>
+</svg>

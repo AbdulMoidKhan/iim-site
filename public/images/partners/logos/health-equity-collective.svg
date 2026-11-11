@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <!-- Minimalist stylized mark / decorative brackets -->
+  <text x="150" y="24" text-anchor="middle" font-family="'Libre Baskerville', Georgia, serif" font-size="9" font-style="italic" font-weight="400" fill="#203746" letter-spacing="0.1em">THE</text>
+  <text x="150" y="44" text-anchor="middle" font-family="'Libre Baskerville', Georgia, serif" font-size="17" font-weight="700" fill="#1b303e" letter-spacing="0.04em">HEALTH EQUITY</text>
+  <text x="150" y="58" text-anchor="middle" font-family="'Libre Baskerville', Georgia, serif" font-size="12" font-weight="700" fill="#1b303e" letter-spacing="0.15em">COLLECTIVE</text>
+  <line x1="60" y1="64" x2="240" y2="64" stroke="#800000" stroke-width="1.2" opacity="0.6" />
+  <text x="150" y="73" text-anchor="middle" font-family="'DM Sans', Arial, sans-serif" font-size="6.5" font-weight="700" fill="#667788" letter-spacing="0.09em">ADVANCING EQUITABLE HEALTH FOR ALL</text>
+</svg>
+

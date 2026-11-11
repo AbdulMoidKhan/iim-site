@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" fill="none">
+  <!-- Cancer Research UK Dot Cluster Mark (Forming 'C' Ribbon) -->
+  <g transform="translate(15, 8)">
+    <!-- Outer ring of vibrant dots -->
+    <circle cx="48" cy="12" r="5.5" fill="#E4007D" />
+    <circle cx="62" cy="18" r="6" fill="#872986" />
+    <circle cx="72" cy="30" r="5.5" fill="#001E62" />
+    <circle cx="75" cy="45" r="6" fill="#2853A3" />
+    <circle cx="70" cy="59" r="5" fill="#00A9E0" />
+    <circle cx="60" cy="69" r="6" fill="#E4007D" />
+    <circle cx="45" cy="74" r="5.5" fill="#872986" />
+    <circle cx="30" cy="71" r="6" fill="#001E62" />
+    <circle cx="18" cy="61" r="5" fill="#2853A3" />
+    <circle cx="11" cy="48" r="5.5" fill="#E4007D" />
+    <circle cx="12" cy="33" r="6" fill="#872986" />
+    <circle cx="21" cy="20" r="5.5" fill="#00A9E0" />
+    <circle cx="34" cy="13" r="6" fill="#E4007D" />
+    
+    <!-- Mid-layer scatter dots -->
+    <circle cx="38" cy="22" r="4" fill="#001E62" />
+    <circle cx="53" cy="25" r="4.5" fill="#E4007D" />
+    <circle cx="63" cy="40" r="4" fill="#872986" />
+    <circle cx="58" cy="52" r="4.5" fill="#00A9E0" />
+    <circle cx="45" cy="63" r="4" fill="#E4007D" />
+    <circle cx="32" cy="60" r="4.5" fill="#001E62" />
+    <circle cx="24" cy="48" r="4" fill="#872986" />
+    <circle cx="25" cy="35" r="4.5" fill="#2853A3" />
+    
+    <!-- Inner accent dots -->
+    <circle cx="35" cy="34" r="3.5" fill="#E4007D" />
+    <circle cx="48" cy="36" r="3.5" fill="#00A9E0" />
+    <circle cx="46" cy="49" r="3.5" fill="#872986" />
+    <circle cx="36" cy="47" r="3.5" fill="#001E62" />
+  </g>
+
+  <!-- Typography -->
+  <text x="110" y="32" font-family="'DM Sans', 'Arial Black', sans-serif" font-size="20" font-weight="900" fill="#1E1A34" letter-spacing="0.04em">CANCER</text>
+  <text x="110" y="52" font-family="'DM Sans', 'Arial Black', sans-serif" font-size="20" font-weight="900" fill="#1E1A34" letter-spacing="0.04em">RESEARCH</text>
+  <text x="110" y="72" font-family="'DM Sans', 'Arial Black', sans-serif" font-size="20" font-weight="900" fill="#1E1A34" letter-spacing="0.04em">UK</text>
+</svg>
+

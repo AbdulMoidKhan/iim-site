@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" fill="none">
+  <!-- Geometric Islamic Medallion (Rosette / 8-fold star) -->
+  <g transform="translate(15, 12)">
+    <circle cx="28" cy="28" r="26" stroke="#1d428a" stroke-width="2" fill="#f0f4fa" />
+    <circle cx="28" cy="28" r="21" stroke="#1d428a" stroke-width="1.2" stroke-dasharray="2,2" fill="none" />
+    <!-- 8-pointed star geometry -->
+    <path d="M28 10L33 22L45 22L36 30L39 42L28 35L17 42L20 30L11 22L23 22Z" stroke="#1d428a" stroke-width="1.5" fill="#1d428a" fill-opacity="0.15" />
+    <!-- Inner geometric pattern -->
+    <circle cx="28" cy="28" r="7" fill="#1d428a" />
+    <circle cx="28" cy="28" r="3.5" fill="#ffffff" />
+  </g>
+  <!-- Text: BAYAN -->
+  <text x="82" y="47" font-family="'DM Sans', 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="900" fill="#1d428a" letter-spacing="0.12em">BAYAN</text>
+  <text x="84" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="7" font-weight="700" fill="#637c9f" letter-spacing="0.18em">ISLAMIC GRADUATE SCHOOL</text>
+</svg>
+

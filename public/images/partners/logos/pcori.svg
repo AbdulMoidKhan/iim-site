@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315 68" fill="none">
+  <!-- PCORI Swoosh Ribbon Mark -->
+  <g transform="translate(6, 6)">
+    <path d="M22 6C16 14 14 26 19 36C21 40 24 44 28 47C26 39 27 30 32 23C35 18 39 14 44 11C36 7 28 5 22 6Z" fill="#78BE20" />
+    <path d="M44 11C40 18 38 27 41 36C43 42 47 47 52 50C48 43 48 34 52 27C55 22 59 18 64 16C57 12 50 10 44 11Z" fill="#00A3E0" />
+    <path d="M30 48C24 49 18 48 13 44C19 46 26 45 31 41C36 37 38 31 38 25C34 32 32 40 30 48Z" fill="#EAAA00" />
+    <path d="M42 50C36 53 29 54 22 53C29 53 36 50 40 45C44 40 45 33 44 27C42 35 42 43 42 50Z" fill="#652D90" />
+  </g>
+  <!-- Text: pcori -->
+  <text x="76" y="41" font-family="'DM Sans', 'Segoe UI', Arial, sans-serif" font-size="36" font-weight="800" fill="#203746" letter-spacing="-0.03em">pcori</text>
+  <!-- Dot / Accent -->
+  <circle cx="164" cy="35" r="4.5" fill="#00A3E0" />
+  <!-- Subtitle -->
+  <text x="77" y="58" font-family="'DM Sans', Arial, sans-serif" font-size="7" font-weight="700" fill="#5c768d" letter-spacing="0.02em">PATIENT-CENTERED OUTCOMES RESEARCH INSTITUTE</text>
+</svg>

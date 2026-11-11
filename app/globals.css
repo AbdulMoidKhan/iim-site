@@ -31013,3 +31013,4213 @@ a[class*="cta" i] {
 img {
   border-radius: 6px !important;
 }
+
+
+/* ==========================================================================
+   27. M-HEaRT (MOSQUE-BASED HEALTH EDUCATION & RESEARCH TOOLS) PAGE
+   Pixel-accurate screenshot-to-code implementation with institutional refinement
+   ========================================================================== */
+
+.mheart-page {
+  background-color: #fcfaf7;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   A. HERO HEADER & BREADCRUMB
+   -------------------------------------------------------------------------- */
+.mheart-hero {
+  background-color: #faf7f2;
+  position: relative;
+  padding: 44px 0 38px;
+  border-bottom: 1px solid #ebd9c2;
+  background-image: radial-gradient(circle at 88% 28%, rgba(221, 180, 122, 0.12) 0%, transparent 60%);
+}
+
+.mheart-breadcrumbWrap {
+  margin-bottom: 14px;
+}
+
+.mheart-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #6c7886;
+}
+
+.mheart-breadcrumbItem a.mheart-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mheart-breadcrumbItem a.mheart-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+.mheart-breadcrumbSeparator {
+  margin: 0 8px;
+  color: #a89d90;
+  font-size: 10px;
+}
+
+.mheart-breadcrumbItem.active {
+  color: #800000;
+}
+
+.mheart-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  max-width: 980px;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   B. MAIN SECTION & TWO-COLUMN LAYOUT
+   -------------------------------------------------------------------------- */
+.mheart-mainSection {
+  padding: 48px 0 56px;
+}
+
+.mheart-contentBlock {
+  margin-bottom: 44px;
+}
+
+.mheart-contentBlock:last-child {
+  margin-bottom: 0;
+}
+
+.mheart-sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.mheart-accentBar {
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  background-color: #800000;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.mheart-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.mheart-paragraph {
+  font-size: 15px;
+  line-height: 1.74;
+  color: #3e4b5a;
+  margin-bottom: 16px;
+}
+
+.mheart-textCrimson {
+  color: #800000;
+  font-weight: 600;
+}
+
+.mheart-subLead {
+  font-size: 15.5px;
+  color: #10243a;
+  margin: 22px 0 16px;
+}
+
+/* --------------------------------------------------------------------------
+   C. FEATURE CARDS (Centering Health Equity)
+   -------------------------------------------------------------------------- */
+.mheart-featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.mheart-featureCard {
+  background-color: #fdfbf7;
+  border: 1px solid #ebd9c2;
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
+
+.mheart-featureCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(16, 36, 58, 0.06);
+  border-color: #d8c2aa;
+}
+
+.mheart-featureIconWrap {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(128, 0, 0, 0.08);
+  border-radius: 8px;
+  color: #800000;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.mheart-featureCard:hover .mheart-featureIconWrap {
+  transform: scale(1.06);
+  background-color: rgba(128, 0, 0, 0.12);
+}
+
+.mheart-featureText p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e2b3a;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   D. CHECKLIST (Program Significance)
+   -------------------------------------------------------------------------- */
+.mheart-featuresLead {
+  font-size: 15px;
+  color: #10243a;
+  margin: 20px 0 12px;
+}
+
+.mheart-checkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.mheart-checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #3b4756;
+}
+
+.mheart-checkIcon {
+  color: #800000;
+  font-size: 13px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mheart-checkText {
+  flex-grow: 1;
+}
+
+/* --------------------------------------------------------------------------
+   E. SIDEBAR COLUMN & CARDS
+   -------------------------------------------------------------------------- */
+.mheart-sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Sidebar Card 1: Crimson Call to Action */
+.mheart-ctaCard {
+  background: linear-gradient(135deg, #7a0000 0%, #600000 100%);
+  border-radius: 10px;
+  padding: 26px 22px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(122, 0, 0, 0.22);
+}
+
+.mheart-ctaTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+.mheart-ctaButton {
+  background-color: #ffffff;
+  color: #7a0000 !important;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.2s ease,
+              color 0.2s ease !important;
+}
+
+.mheart-ctaButton:hover {
+  background-color: #ffffff !important;
+  color: #550000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
+}
+
+.mheart-ctaButton:hover * {
+  color: #550000 !important;
+}
+
+/* Sidebar Card 2: Learning Institute Details */
+.mheart-detailsCard {
+  background-color: #ffffff;
+  border: 1.5px solid #d8bcc3;
+  border-radius: 10px;
+  padding: 24px 22px;
+  box-shadow: 0 4px 16px rgba(128, 0, 0, 0.04);
+}
+
+.mheart-detailsTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 14px;
+}
+
+.mheart-detailsDivider {
+  height: 1px;
+  background-color: #edd9dc;
+  margin-bottom: 16px;
+}
+
+.mheart-detailRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #3b4756;
+}
+
+.mheart-detailRow:last-child {
+  margin-bottom: 0;
+}
+
+.mheart-detailIconWrap {
+  color: #800000;
+  font-size: 15px;
+  width: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.mheart-detailContent strong {
+  color: #10243a;
+}
+
+/* Sidebar Card 3: Goals and Core Activities */
+.mheart-goalsCard {
+  background-color: #fbf8f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 24px 22px;
+}
+
+.mheart-sidebarCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 6px;
+}
+
+.mheart-goalsSubtext {
+  font-size: 12.5px;
+  color: #5d6d7e;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.mheart-goalsList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mheart-goalRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mheart-goalIconWrap {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(128, 0, 0, 0.08);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #800000;
+  font-size: 13.5px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.mheart-goalText {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2e3a47;
+  flex-grow: 1;
+}
+
+/* Sidebar Card 4: Related Projects & Resources */
+.mheart-relatedCard {
+  background-color: #fbf8f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 24px 22px;
+}
+
+.mheart-relatedSection {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ebd9c2;
+}
+
+.mheart-relatedSubtext {
+  font-size: 12px;
+  color: #5d6d7e;
+  margin-bottom: 8px;
+}
+
+.mheart-subheading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 8px;
+}
+
+.mheart-bulletList {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mheart-bulletList li {
+  font-size: 12.5px;
+  line-height: 1.48;
+  color: #2c3846;
+}
+
+.mheart-nestedList {
+  list-style-type: circle;
+  padding-left: 16px;
+  margin: 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mheart-sublistTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4b5866;
+}
+
+.mheart-textLink {
+  color: #283644;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mheart-textLink:hover {
+  color: #800000 !important;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   F. PARTNER ORGANIZATION (PCORI & ACS)
+   -------------------------------------------------------------------------- */
+.mheart-funderSection {
+  padding: 44px 0 36px;
+  background-color: #ffffff;
+  border-top: 1px solid #ebd9c2;
+  border-bottom: 1px solid #ebd9c2;
+}
+
+.mheart-funderHeader {
+  margin-bottom: 28px;
+}
+
+.mheart-funderTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 auto 8px;
+}
+
+.mheart-centerLine {
+  width: 48px;
+  height: 2.5px;
+  background-color: #800000;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.mheart-funderLogosWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.mheart-funderLogoCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.mheart-funderLogo {
+  max-height: 82px;
+  max-width: 310px;
+  width: auto;
+  object-fit: contain;
+  filter: contrast(102%);
+  transition: transform 0.25s ease;
+}
+
+.mheart-funderLogo:hover {
+  transform: scale(1.04);
+}
+
+.mheart-funderDivider {
+  width: 1.5px;
+  height: 72px;
+  background-color: #d8cbbb;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   G. PARTNER ORGANIZATIONS PANEL (UMMA, BAYAN, HEALTH EQUITY COLLECTIVE)
+   -------------------------------------------------------------------------- */
+.mheart-partnersContainerSection {
+  padding: 56px 0 40px;
+}
+
+.mheart-partnersCardPanel {
+  background-color: #faf6ee;
+  border: 1px solid #eadecf;
+  border-radius: 12px;
+  padding: 36px 32px;
+}
+
+.mheart-partnerTile {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 28px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 180px;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+}
+
+.mheart-partnerTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.09);
+  border-color: #c9b09a;
+}
+
+.mheart-partnerLogoWrap {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mheart-partnerLogo {
+  max-height: 52px;
+  max-width: 82%;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.mheart-partnerTile:hover .mheart-partnerLogo {
+  transform: scale(1.05);
+}
+
+.mheart-partnerBadge {
+  background-color: #fbf8f2;
+  border: 1px solid #e8dec8;
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #32404e;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.01em;
+  margin-top: 14px;
+}
+
+/* --------------------------------------------------------------------------
+   H. MEET THE PROJECT TEAM
+   -------------------------------------------------------------------------- */
+.mheart-teamSection {
+  padding: 20px 0 54px;
+}
+
+.mheart-teamTile {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.05);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mheart-teamTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.1);
+  border-color: #c9b09a;
+}
+
+.mheart-teamPhotoWrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f3ece1;
+  overflow: hidden;
+  position: relative;
+}
+
+.mheart-teamPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.35s ease;
+}
+
+.mheart-teamTile:hover .mheart-teamPhoto {
+  transform: scale(1.04);
+}
+
+.mheart-teamContent {
+  padding: 14px 12px 16px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mheart-teamMemberName {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.mheart-teamCredentials {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #2b3a4a;
+  margin-bottom: 0;
+  letter-spacing: 0.03em;
+}
+
+.mheart-teamMemberRole {
+  font-size: 11.5px;
+  color: #5c6b7c;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   I. GALLERY GRID (9-Photo Interactive Showcase)
+   -------------------------------------------------------------------------- */
+.mheart-gallerySection {
+  padding: 10px 0 68px;
+}
+
+.mheart-galleryTile {
+  background-color: #ede5d8;
+  border: 1px solid #ebd9c2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(16, 36, 58, 0.05);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+  aspect-ratio: 16 / 10;
+  display: block;
+}
+
+.mheart-galleryTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.12);
+  border-color: #c9b09a;
+}
+
+.mheart-galleryImgWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ede5d8;
+}
+
+.mheart-galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.mheart-galleryTile:hover .mheart-galleryImg {
+  transform: scale(1.05);
+}
+
+.mheart-galleryOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(16, 36, 58, 0.38);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mheart-galleryTile:hover .mheart-galleryOverlay {
+  opacity: 1;
+}
+
+.mheart-galleryOverlayIcon {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  color: #800000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(0.85);
+  transition: transform 0.25s ease;
+}
+
+.mheart-galleryTile:hover .mheart-galleryOverlayIcon {
+  transform: scale(1);
+}
+
+.mheart-galleryCaption {
+  padding: 12px 14px 14px;
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+
+.mheart-galleryItemTitle {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 3px;
+}
+
+.mheart-galleryItemText {
+  font-size: 11.5px;
+  color: #5a697a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   J. FINAL DEEP GREEN COLLABORATION BANNER
+   -------------------------------------------------------------------------- */
+.mheart-finalCtaSection {
+  background-color: #0a3d31;
+  color: #ffffff;
+  padding: 64px 0 68px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mheart-finalCtaInner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.mheart-finalCtaTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.mheart-finalCtaDesc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+
+.mheart-finalCtaActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.mheart-btnCtaSolid {
+  background-color: #800000;
+  border: 1px solid #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border-radius: var(--hero-btn-radius, 6px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.2s ease,
+              border-color 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.mheart-btnCtaSolid:hover {
+  background-color: #600000 !important;
+  border-color: #600000 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(128, 0, 0, 0.35);
+}
+
+.mheart-btnCtaSolid:hover * {
+  color: #ffffff !important;
+}
+
+.mheart-btnCtaOutline {
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border-radius: var(--hero-btn-radius, 6px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.2s ease,
+              border-color 0.2s ease,
+              color 0.2s ease !important;
+  cursor: pointer;
+}
+
+.mheart-btnCtaOutline:hover {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #800000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.mheart-btnCtaOutline:hover * {
+  color: #800000 !important;
+}
+
+/* --------------------------------------------------------------------------
+   K. RESPONSIVE DESIGN BREAKPOINTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .mheart-heroTitle {
+    font-size: 28px;
+  }
+
+  .mheart-mainSection {
+    padding: 36px 0 44px;
+  }
+
+  .mheart-sidebarWrapper {
+    margin-top: 16px;
+  }
+
+  .mheart-funderLogosWrap {
+    gap: 32px;
+  }
+
+  .mheart-partnersCardPanel {
+    padding: 28px 20px;
+  }
+
+  .mheart-finalCtaTitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mheart-hero {
+    padding: 32px 0 28px;
+  }
+
+  .mheart-heroTitle {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .mheart-sectionHeading {
+    font-size: 19px;
+  }
+
+  .mheart-featureCard {
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .mheart-featureIconWrap {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .mheart-funderLogosWrap {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .mheart-funderLogo {
+    max-height: 70px;
+    max-width: 260px;
+  }
+
+  .mheart-funderDivider {
+    width: 80px;
+    height: 1px;
+  }
+
+  .mheart-finalCtaActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mheart-btnCtaSolid,
+  .mheart-btnCtaOutline {
+    width: 100%;
+  }
+}
+
+
+/* ==========================================================================
+   28. I AM PCN (PALLIATIVE & HOSPICE CARE NEEDS) PAGE
+   Pixel-accurate screenshot-to-code implementation with institutional refinement
+   ========================================================================== */
+
+.iampcn-page {
+  background-color: #fdfbf7;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   A. HERO HEADER & BREADCRUMB
+   -------------------------------------------------------------------------- */
+.iampcn-hero {
+  background-color: #faf5ee;
+  position: relative;
+  padding: 48px 0 40px;
+  border-bottom: 1px solid #ebd9c2;
+  background-image: radial-gradient(circle at 92% 35%, rgba(221, 180, 122, 0.16) 0%, transparent 60%);
+}
+
+.iampcn-diamondAccent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  max-width: 120px;
+}
+
+.iampcn-diamondLine {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #c9b19e;
+}
+
+.iampcn-diamondShape {
+  color: #800000;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.iampcn-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  max-width: 960px;
+  margin: 0 0 18px;
+}
+
+.iampcn-breadcrumbWrap {
+  margin-top: 6px;
+}
+
+.iampcn-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #6c7886;
+}
+
+.iampcn-breadcrumbItem a.iampcn-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.iampcn-breadcrumbItem a.iampcn-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+.iampcn-breadcrumbSeparator {
+  margin: 0 8px;
+  color: #a89d90;
+  font-size: 10px;
+}
+
+.iampcn-breadcrumbItem.active {
+  color: #800000;
+}
+
+/* --------------------------------------------------------------------------
+   B. MAIN SECTION & TWO-COLUMN LAYOUT
+   -------------------------------------------------------------------------- */
+.iampcn-mainSection {
+  padding: 48px 0 54px;
+}
+
+.iampcn-contentBlock {
+  margin-bottom: 34px;
+}
+
+.iampcn-contentBlock:last-child {
+  margin-bottom: 0;
+}
+
+.iampcn-sectionHeader {
+  margin-bottom: 16px;
+}
+
+.iampcn-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.iampcn-sectionHeadingDark {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.iampcn-headerUnderline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 60px;
+  margin-bottom: 16px;
+}
+
+.iampcn-diamondLineShort {
+  flex-grow: 1;
+  height: 1.5px;
+  background-color: #800000;
+}
+
+.iampcn-diamondShapeSmall {
+  color: #800000;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.iampcn-sectionDivider {
+  height: 1px;
+  background-color: #ebd9c2;
+  margin: 28px 0 0;
+}
+
+.iampcn-paragraph {
+  font-size: 14.5px;
+  line-height: 1.74;
+  color: #3e4b5a;
+  margin-bottom: 14px;
+}
+
+.iampcn-paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   C. BULLET LIST (What Makes I AM PCN Unique)
+   -------------------------------------------------------------------------- */
+.iampcn-bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iampcn-bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #2b3846;
+}
+
+.iampcn-bulletMarker {
+  color: #800000;
+  font-size: 8px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   D. GUIDEBOOK / PUBLICATION COVERS
+   -------------------------------------------------------------------------- */
+.iampcn-booksGrid {
+  margin-top: 20px;
+}
+
+.iampcn-bookCard {
+  background: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iampcn-bookCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.1);
+  border-color: #d1b89d;
+}
+
+.iampcn-bookImgWrap {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f7f3ee;
+}
+
+.iampcn-bookImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* --------------------------------------------------------------------------
+   E. SIDEBAR WRAPPER & NUMBERED BADGE CARDS
+   -------------------------------------------------------------------------- */
+.iampcn-sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.iampcn-sidebarCard {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 22px 20px;
+  box-shadow: 0 4px 16px rgba(16, 36, 58, 0.04);
+}
+
+.iampcn-sidebarCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.iampcn-badgeList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.iampcn-badgeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.iampcn-badgeNum {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #52606d;
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.iampcn-badgeText {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #3b4756;
+  flex-grow: 1;
+}
+
+/* --------------------------------------------------------------------------
+   F. SIDEBAR NAVIGATION PILLS
+   -------------------------------------------------------------------------- */
+.iampcn-navPillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.iampcn-navPillItem {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(16, 36, 58, 0.03);
+}
+
+.iampcn-navPillTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: -0.005em;
+  transition: color 0.22s ease;
+}
+
+.iampcn-navPillArrow {
+  font-size: 13px;
+  color: #800000;
+  font-weight: 700;
+  transition: transform 0.22s ease, color 0.22s ease;
+}
+
+.iampcn-navPillItem:hover {
+  background-color: #800000;
+  border-color: #800000;
+  transform: translateX(3px);
+  box-shadow: 0 6px 16px rgba(128, 0, 0, 0.22);
+}
+
+.iampcn-navPillItem:hover .iampcn-navPillTitle,
+.iampcn-navPillItem:hover .iampcn-navPillArrow {
+  color: #ffffff !important;
+}
+
+.iampcn-navPillItem:hover .iampcn-navPillArrow {
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   G. GET INVOLVED SIDEBAR CARD
+   -------------------------------------------------------------------------- */
+.iampcn-getInvolvedCard {
+  background: linear-gradient(180deg, #fdf9f5 0%, #faefe5 100%);
+  border: 1px solid #ecd5bd;
+}
+
+.iampcn-getInvolvedCard .iampcn-sidebarCardTitle {
+  color: #10243a;
+  margin-bottom: 8px;
+}
+
+.iampcn-getInvolvedDesc {
+  font-size: 13.5px;
+  color: #4b5866;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.iampcn-btnGetInvolved {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #800000;
+  color: #ffffff !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #800000;
+}
+
+.iampcn-btnGetInvolved:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   H. PROJECT DISSEMINATION SECTION
+   -------------------------------------------------------------------------- */
+.iampcn-disseminationSection {
+  padding: 38px 0 46px;
+  background-color: #fdfbf7;
+}
+
+.iampcn-disseminationCard {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  padding: 30px 32px;
+  box-shadow: 0 8px 24px rgba(16, 36, 58, 0.04);
+}
+
+.iampcn-posterWrap {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(16, 36, 58, 0.1);
+  border: 1px solid #ebd9c2;
+}
+
+.iampcn-posterImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.iampcn-disseminationDivider {
+  width: 1px;
+  height: 200px;
+  background-color: #ebd9c2;
+}
+
+.iampcn-disseminationContent {
+  padding-left: 10px;
+}
+
+.iampcn-disseminationTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #800000;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.iampcn-disseminationLocation {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b3846;
+  margin: 0 0 6px;
+}
+
+.iampcn-disseminationDate {
+  font-size: 14px;
+  color: #6c7886;
+  margin: 0 0 20px;
+}
+
+.iampcn-btnMeetTeam {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  background-color: #ffffff;
+  color: #800000 !important;
+  border: 1.5px solid #800000;
+  border-radius: 25px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.iampcn-btnMeetTeam:hover {
+  background-color: #800000;
+  color: #ffffff !important;
+  border-color: #800000;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   I. MEET THE PROJECT TEAM SECTION
+   -------------------------------------------------------------------------- */
+.iampcn-teamSection {
+  padding: 40px 0 46px;
+  background-color: #fdfbf7;
+}
+
+.iampcn-teamTile {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+}
+
+.iampcn-teamTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(16, 36, 58, 0.08);
+  border-color: #d8c2aa;
+}
+
+.iampcn-teamPhotoWrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f0e9df;
+  margin-bottom: 12px;
+}
+
+.iampcn-teamPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.iampcn-teamContent {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.iampcn-teamMemberName {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #10243a;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   J. SUPPORTED BY SECTION (Cancer Research UK)
+   -------------------------------------------------------------------------- */
+.iampcn-funderSection {
+  padding: 36px 0 44px;
+  text-align: center;
+  background-color: #fdfbf7;
+}
+
+.iampcn-funderHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+
+.iampcn-funderLogoWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iampcn-funderLogo {
+  max-height: 52px;
+  max-width: 240px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.iampcn-funderLogo:hover {
+  transform: scale(1.04);
+}
+
+/* --------------------------------------------------------------------------
+   K. CRIMSON CALLOUT BANNER
+   -------------------------------------------------------------------------- */
+.iampcn-bannerSection {
+  padding: 20px 0 50px;
+}
+
+.iampcn-bannerCard {
+  background: linear-gradient(135deg, #7a0000 0%, #600000 100%);
+  position: relative;
+  border-radius: 14px;
+  padding: 42px 48px;
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(122, 0, 0, 0.25);
+}
+
+.iampcn-bannerCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.iampcn-bannerTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.28;
+  margin: 0;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.iampcn-bannerDivider {
+  width: 1px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+.iampcn-bannerDesc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f7e6e6;
+  margin: 0 0 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.iampcn-bannerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  background-color: #ffffff;
+  color: #7a0000 !important;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.iampcn-bannerBtn:hover {
+  background-color: #faecec;
+  color: #550000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   L. NEWSLETTER SUBSCRIPTION SECTION
+   -------------------------------------------------------------------------- */
+.iampcn-newsletterSection {
+  padding: 10px 0 70px;
+}
+
+.iampcn-newsletterCard {
+  max-width: 660px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  padding: 34px 38px;
+  box-shadow: 0 10px 30px rgba(16, 36, 58, 0.05);
+}
+
+.iampcn-newsletterTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  text-align: center;
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
+}
+
+.iampcn-newsletterForm .form-control.iampcn-formInput {
+  background-color: #ffffff;
+  border: 1px solid #dcd4c7;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px 14px;
+  color: #10243a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iampcn-newsletterForm .form-control.iampcn-formInput:focus {
+  border-color: #800000;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.12);
+  outline: none;
+}
+
+.iampcn-newsletterForm .form-control.iampcn-formInput::placeholder {
+  color: #9aa5b1;
+  font-size: 13.5px;
+}
+
+.iampcn-formTextarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.iampcn-btnSubmit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 32px;
+  background-color: #800000;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.25);
+}
+
+.iampcn-btnSubmit:hover {
+  background-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   M. RESPONSIVE ADJUSTMENTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .iampcn-heroTitle {
+    font-size: 28px;
+  }
+
+  .iampcn-bannerCard {
+    padding: 32px 28px;
+  }
+
+  .iampcn-bannerTitle {
+    font-size: 23px;
+  }
+
+  .iampcn-bannerDivider {
+    display: none;
+  }
+
+  .iampcn-disseminationDivider {
+    display: none;
+  }
+
+  .iampcn-disseminationContent {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .iampcn-sidebarWrapper {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .iampcn-hero {
+    padding: 34px 0 28px;
+  }
+
+  .iampcn-heroTitle {
+    font-size: 23px;
+    line-height: 1.32;
+  }
+
+  .iampcn-sectionHeading {
+    font-size: 18.5px;
+  }
+
+  .iampcn-disseminationCard {
+    padding: 22px 18px;
+  }
+
+  .iampcn-newsletterCard {
+    padding: 26px 20px;
+  }
+
+  .iampcn-btnSubmit,
+  .iampcn-btnMeetTeam,
+  .iampcn-bannerBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* ==========================================================================
+   29. EMPART STUDY PAGE
+   Scoped strictly under .empart-page — Route: /empart-study
+   ========================================================================== */
+
+.empart-page {
+  background-color: #ffffff;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   A. HERO SECTION & MOSQUE ARCH
+   -------------------------------------------------------------------------- */
+.empart-page .empart-hero {
+  background-color: #faf7f2;
+  position: relative;
+  padding: 40px 0 0;
+  border-bottom: 1px solid #eadfd1;
+  overflow: hidden;
+}
+
+.empart-page .empart-heroBgCircles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.empart-page .empart-heroCircleOuter {
+  position: absolute;
+  right: 2%;
+  top: -120px;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  border: 1px solid rgba(205, 185, 160, 0.35);
+  background: radial-gradient(
+    circle,
+    rgba(235, 220, 200, 0.25) 0%,
+    rgba(250, 247, 242, 0) 70%
+  );
+}
+
+.empart-page .empart-heroCircleInner {
+  position: absolute;
+  right: 8%;
+  top: -45px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 174, 148, 0.38);
+}
+
+.empart-page .empart-heroContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.empart-page .empart-heroTextCol {
+  padding-bottom: 52px;
+  align-self: center;
+}
+
+.empart-page .empart-breadcrumbWrap {
+  margin-bottom: 12px;
+}
+
+.empart-page .empart-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #6c7886;
+}
+
+.empart-page .empart-breadcrumbItem a.empart-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.empart-page .empart-breadcrumbItem a.empart-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+.empart-page .empart-breadcrumbSeparator {
+  margin: 0 8px;
+  color: #a89d90;
+  font-size: 11px;
+}
+
+.empart-page .empart-breadcrumbItem.active {
+  color: #800000;
+}
+
+.empart-page .empart-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(28px, 3.2vw, 38px);
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.empart-page .empart-heroUnderline {
+  width: 52px;
+  height: 3px;
+  background-color: #800000;
+  border-radius: 2px;
+  margin-top: 14px;
+}
+
+.empart-page .empart-heroArchCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.empart-page .empart-heroArchWrap {
+  display: inline-block;
+  max-width: 265px;
+  width: 100%;
+  border-radius: 140px 140px 0 0;
+  overflow: hidden;
+  box-shadow: 0 -4px 26px rgba(16, 36, 58, 0.12);
+  border: 2px solid #e5d5bf;
+  border-bottom: none;
+  background-color: #f7f3ed;
+  margin-bottom: -1px;
+}
+
+.empart-page .empart-heroArchImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   B. INTRODUCTION SECTION & BURGUNDY CTA
+   -------------------------------------------------------------------------- */
+.empart-page .empart-introSection {
+  padding: 46px 0 32px;
+}
+
+.empart-page .empart-introInner {
+  max-width: 980px;
+}
+
+.empart-page .empart-sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.empart-page .empart-accentBar {
+  display: inline-block;
+  width: 3.5px;
+  height: 24px;
+  background-color: #800000;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.empart-page .empart-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.empart-page .empart-paragraph {
+  font-size: 14.5px;
+  line-height: 1.72;
+  color: #3e4b5a;
+  margin-bottom: 15px;
+}
+
+.empart-page .empart-paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.empart-page .empart-introCtaWrap {
+  margin-top: 22px;
+}
+
+.empart-page .empart-btnBurgundyFull {
+  background-color: #800000;
+  color: #ffffff !important;
+  border: 1px solid #800000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  line-height: 1.4;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+}
+
+.empart-page .empart-btnBurgundyFull:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.empart-page .empart-noticeLinkWrap {
+  margin-top: 12px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #6c7886;
+  overflow-wrap: anywhere;
+}
+
+.empart-page .empart-noticeLabel {
+  font-weight: 700;
+  color: #800000;
+}
+
+.empart-page .empart-noticeUrl {
+  color: #800000;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.empart-page .empart-noticeUrl:hover {
+  color: #5a0000;
+}
+
+/* --------------------------------------------------------------------------
+   C. WHAT / HOW / WHY EDUCATIONAL CARDS
+   -------------------------------------------------------------------------- */
+.empart-page .empart-cardsSection {
+  padding: 12px 0 48px;
+}
+
+.empart-page .empart-eduCard {
+  background-color: #fcfaf7;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
+
+.empart-page .empart-eduCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.1);
+  border-color: #d8c2aa;
+}
+
+.empart-page .empart-eduCardHeader {
+  background: linear-gradient(180deg, #860609 0%, #6d0000 100%);
+  color: #ffffff;
+  padding: 16px 20px 28px;
+  position: relative;
+  text-align: center;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  box-shadow: 0 2px 6px rgba(104, 0, 0, 0.08);
+}
+
+.empart-page .empart-questionIconWrap {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #800000;
+  border: 1.5px solid #800000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(16, 36, 58, 0.14);
+  z-index: 2;
+}
+
+.empart-page .empart-eduCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.empart-page .empart-eduCardBody {
+  padding: 32px 24px 28px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.empart-page .empart-eduCardText {
+  font-size: 13.8px;
+  line-height: 1.66;
+  color: #3e4b5a;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   D. SPLIT SECTIONS (Project Benefits & How To Get Involved)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-benefitsSection,
+.empart-page .empart-involvedSection {
+  padding: 34px 0 42px;
+}
+
+.empart-page .empart-splitImgWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebd9c2;
+  box-shadow: 0 8px 24px rgba(16, 36, 58, 0.08);
+  background-color: #f7f3ed;
+  aspect-ratio: 4 / 3;
+  max-width: 580px;
+  margin: 0 auto;
+  transition: transform 0.24s ease;
+}
+
+@media (min-width: 992px) {
+  .empart-page .empart-benefitsSection .empart-splitImgWrap {
+    margin-left: 0;
+  }
+
+  .empart-page .empart-involvedSection .empart-splitImgWrap {
+    margin-right: 0;
+  }
+}
+
+.empart-page .empart-splitImgWrap:hover {
+  transform: translateY(-2px);
+}
+
+.empart-page .empart-splitImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.empart-page .empart-btnBurgundy {
+  background-color: #800000;
+  color: #ffffff !important;
+  border: 1px solid #800000;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+}
+
+.empart-page .empart-btnBurgundy:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.28);
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   E. CORE TEAM (Overlapping White Name Label Pill inside Portrait Card)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-coreTeamSection {
+  padding: 44px 0 36px;
+  background-color: #fdfbf7;
+  border-top: 1px solid #f2ebe1;
+}
+
+.empart-page .empart-centeredHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 8px;
+  letter-spacing: 0.015em;
+}
+
+.empart-page .empart-centeredDivider {
+  width: 44px;
+  height: 2.5px;
+  background-color: #800000;
+  margin: 0 auto 24px;
+  border-radius: 2px;
+}
+
+.empart-page .empart-coreTeamGridWrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.empart-page .empart-coreTeamCard {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e6d7c4;
+  background-color: #f5efe7;
+  aspect-ratio: 1 / 1.04;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.08);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.empart-page .empart-coreTeamCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(16, 36, 58, 0.14);
+}
+
+.empart-page .empart-coreTeamPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 14%;
+  display: block;
+}
+
+.empart-page .empart-coreTeamLabel {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(4px);
+  padding: 9px 10px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(16, 36, 58, 0.14);
+  border: 1px solid rgba(235, 217, 194, 0.7);
+}
+
+.empart-page .empart-memberName {
+  font-size: 13px;
+  font-weight: 700;
+  color: #10243a;
+  display: block;
+  line-height: 1.3;
+}
+
+/* --------------------------------------------------------------------------
+   F. MEET THE EMPART TEAM (Circular Portraits)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-circlesSection {
+  padding: 36px 0 44px;
+  background-color: #fdfbf7;
+  border-bottom: 1px solid #f2ebe1;
+}
+
+.empart-page .empart-circlesRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.empart-page .empart-circleItem {
+  flex-shrink: 0;
+}
+
+.empart-page .empart-circleImgWrap {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2.5px solid #ebd9c2;
+  box-shadow: 0 4px 12px rgba(16, 36, 58, 0.08);
+  background-color: #f7f3ed;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.empart-page .empart-circleImgWrap:hover {
+  transform: scale(1.08);
+  border-color: #800000;
+  box-shadow: 0 6px 16px rgba(128, 0, 0, 0.2);
+}
+
+.empart-page .empart-circleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.empart-page .empart-paginationDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.empart-page .empart-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d4c8b8;
+  transition: all 0.2s ease;
+}
+
+.empart-page .empart-dot.active {
+  background-color: #800000;
+  width: 18px;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   G. VIDEOS SECTION (2x2 Grid — Razor-Sharp YouTube Card Overlay)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-videosSection {
+  padding: 46px 0 44px;
+}
+
+.empart-page .empart-videosGridWrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.empart-page .empart-videoCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e6d7c4;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.08);
+  background-color: #11161c;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.empart-page .empart-videoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(16, 36, 58, 0.16);
+}
+
+.empart-page .empart-videoThumbWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #1a212b;
+}
+
+.empart-page .empart-videoThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.32s ease;
+}
+
+.empart-page .empart-videoThumbWrap.is-portraitStage {
+  background: linear-gradient(125deg, #2c333c 0%, #151a21 100%);
+}
+
+.empart-page .empart-videoThumbWrap.is-portraitStage .empart-videoThumb {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  -webkit-mask-image: linear-gradient(to right, #000000 58%, transparent 100%);
+  mask-image: linear-gradient(to right, #000000 58%, transparent 100%);
+  filter: contrast(1.02) brightness(0.95);
+}
+
+.empart-page .empart-videoSlideCaption {
+  position: absolute;
+  right: 14px;
+  top: 46%;
+  transform: translateY(-50%);
+  width: 35%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1;
+}
+
+.empart-page .empart-videoSlideEyebrow {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #f3c6b6;
+  text-transform: uppercase;
+}
+
+.empart-page .empart-videoSlideHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 12px;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.empart-page .empart-videoCard:hover .empart-videoThumb {
+  transform: scale(1.04);
+}
+
+.empart-page .empart-videoTopBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px 28px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.35) 60%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.empart-page .empart-videoChannelAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+}
+
+.empart-page .empart-videoTitleText {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+
+.empart-page .empart-videoPlayBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0.92;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+.empart-page .empart-videoCard:hover .empart-videoPlayBtn {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+.empart-page .empart-videoWatchBadge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(18, 18, 18, 0.85);
+  color: #ffffff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.empart-page .empart-ytSmallIcon {
+  color: #ff2222;
+  font-size: 13px;
+}
+
+/* --------------------------------------------------------------------------
+   H. DOWNLOADABLE MATERIALS (Interactive Burgundy Card Slider)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-downloadsSection {
+  padding: 40px 0 46px;
+}
+
+.empart-page .empart-downloadsSlider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.empart-page .empart-downloadsViewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 8px 4px 14px;
+}
+
+.empart-page .empart-downloadsTrack {
+  display: flex;
+  gap: 22px;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.empart-page .empart-downloadsTrack.is-instant {
+  transition: none;
+}
+
+.empart-page .empart-dlSlideItem {
+  flex: 0 0 calc((100% - 66px) / 4);
+  min-width: 0;
+}
+
+.empart-page .empart-dlArrowBtn {
+  position: absolute;
+  top: calc(50% - 14px);
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ebd9c2;
+  background-color: #ffffff;
+  color: #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 36, 58, 0.1);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+}
+
+.empart-page .empart-dlArrowBtn:hover,
+.empart-page .empart-dlArrowBtn:focus-visible {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+  outline: none;
+}
+
+.empart-page .empart-dlArrowPrev {
+  left: 0;
+}
+
+.empart-page .empart-dlArrowNext {
+  right: 0;
+}
+
+.empart-page .empart-dotBtn {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .empart-page .empart-dlSlideItem {
+    flex: 0 0 calc((100% - 22px) / 2);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .empart-page .empart-downloadsSlider {
+    padding: 0 40px;
+  }
+
+  .empart-page .empart-dlSlideItem {
+    flex: 0 0 100%;
+  }
+
+  .empart-page .empart-dlArrowBtn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.empart-page .empart-downloadCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.16);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.empart-page .empart-downloadCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(128, 0, 0, 0.28);
+}
+
+.empart-page .empart-downloadCardInner {
+  background: linear-gradient(155deg, #8b0000 0%, #640000 100%);
+  padding: 20px 14px 18px;
+  min-height: 152px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.empart-page .empart-downloadLogoPill {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  max-width: 142px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.empart-page .empart-downloadLogo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.empart-page .empart-downloadOrg {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.empart-page .empart-downloadSub {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.3;
+}
+
+/* --------------------------------------------------------------------------
+   I. PROJECT PARTNERS
+   -------------------------------------------------------------------------- */
+.empart-page .empart-partnersSection {
+  padding: 36px 0 56px;
+}
+
+.empart-page .empart-partnersRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.empart-page .empart-partnerItem {
+  background: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 18px 34px;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 240px;
+  min-height: 96px;
+}
+
+.empart-page .empart-partnerItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 36, 58, 0.08);
+}
+
+.empart-page .empart-partnerLogo {
+  max-height: 76px;
+  max-width: 230px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --------------------------------------------------------------------------
+   J. FULL-BLEED GREEN CTA BANNER
+   -------------------------------------------------------------------------- */
+.empart-page .empart-finalCtaSection {
+  background: linear-gradient(135deg, #093c2c 0%, #042118 100%);
+  position: relative;
+  padding: 58px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.empart-page .empart-finalCtaSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.empart-page .empart-finalCtaContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.empart-page .empart-finalCtaContent {
+  max-width: 720px;
+  text-align: left;
+}
+
+.empart-page .empart-finalCtaEyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b7decb;
+  margin-bottom: 12px;
+}
+
+.empart-page .empart-finalCtaHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+
+.empart-page .empart-finalCtaDesc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #d6e8de;
+  margin: 0 0 26px;
+}
+
+.empart-page .empart-finalCtaActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.empart-page .empart-btnCtaSolid {
+  background-color: #800000;
+  color: #ffffff !important;
+  border: 1.5px solid #800000;
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+}
+
+.empart-page .empart-btnCtaSolid:hover {
+  background-color: #a00000;
+  border-color: #a00000;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.empart-page .empart-btnCtaOutline {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.empart-page .empart-btnCtaOutline:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   K. RESPONSIVE ADJUSTMENTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .empart-page .empart-hero {
+    padding: 34px 0 28px;
+  }
+
+  .empart-page .empart-heroTextCol {
+    padding-bottom: 18px;
+  }
+
+  .empart-page .empart-heroTitle {
+    font-size: 28px;
+  }
+
+  .empart-page .empart-heroArchCol {
+    justify-content: center;
+  }
+
+  .empart-page .empart-heroArchWrap {
+    max-width: 190px;
+    border-radius: 110px 110px 10px 10px;
+    border-bottom: 2px solid #e5d5bf;
+    margin-bottom: 0;
+  }
+
+  .empart-page .empart-eduCardBody {
+    padding: 30px 18px 24px;
+  }
+
+  .empart-page .empart-eduCardText {
+    font-size: 13px;
+    line-height: 1.62;
+  }
+
+  .empart-page .empart-finalCtaHeading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .empart-page .empart-heroTitle {
+    font-size: 24px;
+    line-height: 1.28;
+  }
+
+  .empart-page .empart-introSection {
+    padding: 34px 0 24px;
+  }
+
+  .empart-page .empart-sectionHeading {
+    font-size: 18.5px;
+  }
+
+  .empart-page .empart-btnBurgundyFull {
+    font-size: 13px;
+    padding: 11px 16px;
+    text-align: center;
+  }
+
+  .empart-page .empart-eduCardBody {
+    padding: 30px 22px 24px;
+  }
+
+  .empart-page .empart-eduCardText {
+    font-size: 13.8px;
+    line-height: 1.66;
+  }
+
+  .empart-page .empart-circlesRow {
+    gap: 12px;
+  }
+
+  .empart-page .empart-circleImgWrap {
+    width: 60px;
+    height: 60px;
+  }
+
+  .empart-page .empart-partnersRow {
+    gap: 16px;
+  }
+
+  .empart-page .empart-partnerItem {
+    width: 100%;
+  }
+
+  .empart-page .empart-downloadCardInner {
+    min-height: 124px;
+    padding: 16px 14px;
+  }
+
+  .empart-page .empart-videoSlideHeading {
+    font-size: 11.5px;
+  }
+
+  .empart-page .empart-finalCtaSection {
+    padding: 42px 0;
+  }
+
+  .empart-page .empart-finalCtaContent {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .empart-page .empart-finalCtaActions {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .empart-page .empart-btnCtaSolid,
+  .empart-page .empart-btnCtaOutline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* ==========================================================================
+   30. E-MARCH PAGE
+   Engaging Muslim Americans for Research on Community Health (E-MARCH)
+   All selectors scoped cleanly under .emarch-page — Route: /e-march
+   ========================================================================== */
+
+.emarch-page {
+  background-color: #ffffff;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.emarch-page a:focus-visible,
+.emarch-page button:focus-visible {
+  outline: 2.5px solid #800000;
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   A. HERO SECTION & ISLAMIC POINTED ARCH
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-hero {
+  background-color: #faf7f2;
+  position: relative;
+  padding: 42px 0 0;
+  border-bottom: 1px solid #eadfd1;
+  overflow: hidden;
+}
+
+.emarch-page .emarch-heroBgCircles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.emarch-page .emarch-heroCircleOuter {
+  position: absolute;
+  right: 4%;
+  top: -110px;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  border: 1px solid rgba(205, 185, 160, 0.36);
+  background: radial-gradient(
+    circle,
+    rgba(235, 220, 200, 0.25) 0%,
+    rgba(250, 247, 242, 0) 72%
+  );
+}
+
+.emarch-page .emarch-heroCircleInner {
+  position: absolute;
+  right: 10%;
+  top: -40px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 174, 148, 0.35);
+}
+
+.emarch-page .emarch-heroContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.emarch-page .emarch-heroTextCol {
+  padding-bottom: 48px;
+  align-self: center;
+}
+
+.emarch-page .emarch-breadcrumbWrap {
+  margin-bottom: 12px;
+}
+
+.emarch-page .emarch-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #6c7886;
+}
+
+.emarch-page .emarch-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.emarch-page .emarch-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+.emarch-page .emarch-breadcrumbSeparator {
+  margin: 0 7px;
+  color: #a89d90;
+  font-size: 11px;
+}
+
+.emarch-page .emarch-breadcrumbItem.active {
+  color: #800000;
+}
+
+.emarch-page .emarch-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  margin: 0;
+  max-width: 720px;
+}
+
+.emarch-page .emarch-heroUnderline {
+  width: 54px;
+  height: 3px;
+  background-color: #800000;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+
+.emarch-page .emarch-heroArchCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.emarch-page .emarch-heroArchWrap {
+  max-width: 310px;
+  width: 100%;
+  margin-bottom: -1px;
+  clip-path: polygon(
+    50% 0%,
+    64% 6%,
+    78% 17%,
+    89% 31%,
+    97% 47%,
+    100% 62%,
+    100% 100%,
+    0% 100%,
+    0% 62%,
+    3% 47%,
+    11% 31%,
+    22% 17%,
+    36% 6%
+  );
+  filter: drop-shadow(0 -4px 18px rgba(16, 36, 58, 0.1));
+}
+
+.emarch-page .emarch-heroArchImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   B. SHARED SECTION TYPOGRAPHY & DIVIDERS
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.emarch-page .emarch-accentBar {
+  display: inline-block;
+  width: 3.5px;
+  height: 24px;
+  background-color: #800000;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.emarch-page .emarch-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+}
+
+.emarch-page .emarch-subHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 12px;
+  line-height: 1.38;
+}
+
+.emarch-page .emarch-paragraph {
+  font-size: 14.5px;
+  line-height: 1.72;
+  color: #3e4b5a;
+  margin-bottom: 14px;
+}
+
+.emarch-page .emarch-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.emarch-page .emarch-blockDivider {
+  height: 1px;
+  background-color: #efe6da;
+  margin: 34px 0;
+}
+
+.emarch-page .emarch-inlineLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #800000;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.emarch-page .emarch-inlineLink:hover {
+  color: #5a0000;
+  gap: 10px;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   C. MAIN TWO-COLUMN EDITORIAL + PROJECT ACTIVITIES SIDEBAR
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-mainTwoCol {
+  padding: 46px 0 42px;
+}
+
+.emarch-page .emarch-awardBannerWrap {
+  margin-top: 20px;
+}
+
+.emarch-page .emarch-awardBannerBtn {
+  background-color: #800000;
+  color: #ffffff;
+  border: 1px solid #800000;
+  padding: 13px 20px;
+  border-radius: 6px;
+  font-size: 13.2px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 100%;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+  transition: background-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.emarch-page .emarch-awardBannerBtn:hover {
+  background-color: #5e0000;
+  border-color: #5e0000;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.28);
+}
+
+/* Right Sidebar Card */
+.emarch-page .emarch-sidebarCard {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 24px 22px;
+  box-shadow: 0 4px 16px rgba(16, 36, 58, 0.04);
+}
+
+.emarch-page .emarch-sidebarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eadfd1;
+}
+
+.emarch-page .emarch-activitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.emarch-page .emarch-activityRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.emarch-page .emarch-activityBadge {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  box-shadow: 0 2px 6px rgba(128, 0, 0, 0.22);
+}
+
+.emarch-page .emarch-activityText {
+  font-size: 13.5px;
+  line-height: 1.56;
+  color: #3e4b5a;
+}
+
+/* Circular PCOR Toolkit Diagram */
+.emarch-page .emarch-toolkitFigure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emarch-page .emarch-toolkitSvg {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+
+.emarch-page .emarch-toolkitCaption {
+  margin-top: 10px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.emarch-page .emarch-toolkitCaptionTitle {
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #1f5c96;
+}
+
+.emarch-page .emarch-toolkitCaptionSub {
+  font-size: 11px;
+  color: #5b6977;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   D. E-MARCH GOALS (3-Stage Process Flow + Empowerment Card)
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-goalsSection {
+  padding: 20px 0 46px;
+  border-top: 1px solid #f2ebe1;
+}
+
+.emarch-page .emarch-goalsPanel {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.emarch-page .emarch-goalsSubheading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 18px;
+  line-height: 1.38;
+}
+
+.emarch-page .emarch-processFlow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.emarch-page .emarch-stageCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.emarch-page .emarch-stageArrowWrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.emarch-page .emarch-stageArrow {
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  min-height: 54px;
+  padding: 8px 14px 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 0% 100%, 10px 50%);
+}
+
+.emarch-page .emarch-stageCol:first-child .emarch-stageArrow {
+  padding-left: 10px;
+  clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 0% 100%);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.emarch-page .emarch-stage--green .emarch-stageArrow {
+  background-color: #128c41;
+}
+
+.emarch-page .emarch-stage--burgundy .emarch-stageArrow {
+  background-color: #8b0000;
+}
+
+.emarch-page .emarch-stage--navy .emarch-stageArrow {
+  background-color: #102c5c;
+}
+
+.emarch-page .emarch-stageCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 11px;
+  flex-grow: 1;
+}
+
+.emarch-page .emarch-stage--green .emarch-stageCard {
+  border: 1.5px solid #8bd4a8;
+}
+
+.emarch-page .emarch-stage--burgundy .emarch-stageCard {
+  border: 1.5px solid #dfa2a2;
+}
+
+.emarch-page .emarch-stage--navy .emarch-stageCard {
+  border: 1.5px solid #9cb3d6;
+}
+
+.emarch-page .emarch-stageText {
+  font-size: 12.2px;
+  line-height: 1.55;
+  color: #3e4b5a;
+  margin: 0;
+}
+
+.emarch-page .emarch-goalsLead {
+  font-size: 14px;
+  font-weight: 600;
+  color: #10243a;
+  margin: 0 0 12px;
+  line-height: 1.55;
+}
+
+.emarch-page .emarch-checkList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.emarch-page .emarch-checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13.5px;
+  line-height: 1.52;
+  color: #3e4b5a;
+}
+
+.emarch-page .emarch-checkIcon {
+  color: #800000;
+  margin-top: 2px;
+  display: inline-flex;
+}
+
+.emarch-page .emarch-goalsClosing {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #4a5766;
+  margin: auto 0 0;
+  padding-top: 12px;
+  border-top: 1px solid #eadfd1;
+}
+
+/* --------------------------------------------------------------------------
+   E. VIDEO & PROJECT UPDATES
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-videoUpdatesSection {
+  padding: 36px 0 42px;
+}
+
+.emarch-page .emarch-videoCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ebd9c2;
+  box-shadow: 0 8px 24px rgba(16, 36, 58, 0.1);
+  background-color: #20090c;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.emarch-page .emarch-videoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(16, 36, 58, 0.16);
+}
+
+.emarch-page .emarch-videoThumbWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.emarch-page .emarch-videoThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.32s ease;
+}
+
+.emarch-page .emarch-videoCard:hover .emarch-videoThumb {
+  transform: scale(1.03);
+}
+
+.emarch-page .emarch-videoCrimsonTint {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(102, 0, 12, 0.62) 0%, rgba(18, 12, 16, 0.56) 100%);
+  pointer-events: none;
+}
+
+.emarch-page .emarch-videoTopBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px 28px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.emarch-page .emarch-videoAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+}
+
+.emarch-page .emarch-videoTopTitle {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+
+.emarch-page .emarch-videoPlayBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0.94;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+}
+
+.emarch-page .emarch-videoCard:hover .empart-videoPlayBtn,
+.emarch-page .emarch-videoCard:hover .emarch-videoPlayBtn {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+.emarch-page .emarch-videoWatchBadge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(15, 15, 15, 0.86);
+  color: #ffffff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.emarch-page .emarch-updatesCard {
+  padding-top: 2px;
+}
+
+.emarch-page .emarch-updatesTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 12px;
+  line-height: 1.38;
+}
+
+.emarch-page .emarch-updatesActionWrap {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #f0e6d8;
+}
+
+/* --------------------------------------------------------------------------
+   F. RESEARCH RESOURCES
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-resourcesSection {
+  padding: 20px 0 46px;
+}
+
+.emarch-page .emarch-resourceCard {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+}
+
+.emarch-page .emarch-resourceCard--compact {
+  flex: 1 1 0;
+  justify-content: center;
+}
+
+.emarch-page .emarch-resourceStack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.emarch-page .emarch-resourceHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.emarch-page .emarch-resourceIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+  background-color: rgba(128, 0, 0, 0.08);
+  border: 1px solid rgba(128, 0, 0, 0.18);
+  color: #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.emarch-page .emarch-resourceTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+}
+
+.emarch-page .emarch-resourceLinks {
+  padding-left: 18px;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.emarch-page .emarch-resourceLink {
+  font-size: 13.2px;
+  font-weight: 600;
+  line-height: 1.48;
+  color: #800000;
+  text-decoration: none;
+}
+
+.emarch-page .emarch-resourceLink:hover {
+  text-decoration: underline;
+  color: #5a0000;
+}
+
+.emarch-page .emarch-resourceDesc {
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: #3e4b5a;
+  margin: 0 0 14px;
+}
+
+.emarch-page .emarch-resourceHighlightLink {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #800000;
+  text-decoration: none;
+}
+
+.emarch-page .emarch-resourceHighlightLink:hover {
+  color: #5a0000;
+  text-decoration: underline;
+}
+
+.emarch-page .emarch-resourceNote,
+.emarch-page .emarch-resourceMissingNote {
+  font-size: 11.8px;
+  line-height: 1.45;
+  color: #6c7886;
+  margin: auto 0 10px;
+}
+
+.emarch-page .emarch-btnSlate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  align-self: flex-start;
+  background-color: #64717e;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.emarch-page .emarch-btnSlate:hover {
+  background-color: #800000;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   G. PROJECT OUTPUTS (Text + 2-5-5-2 Collage + Caption)
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-outputsSection {
+  padding: 36px 0 42px;
+  border-top: 1px solid #f2ebe1;
+}
+
+.emarch-page .emarch-collageWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.emarch-page .emarch-collageRow {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.emarch-page .emarch-collageTile {
+  width: 62px;
+  height: 62px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ebd9c2;
+  background-color: #f7f3ed;
+  box-shadow: 0 2px 6px rgba(16, 36, 58, 0.08);
+  flex-shrink: 0;
+}
+
+.emarch-page .emarch-collageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
+.emarch-page .emarch-outputsCaption {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.58;
+  color: #800000;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   H. GALLERY GRID & LIGHTBOX
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-gallerySection {
+  padding: 20px 0 58px;
+}
+
+.emarch-page .emarch-galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.emarch-page .emarch-galleryTile {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f7f3ed;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.06);
+  cursor: pointer;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.emarch-page .emarch-galleryTile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(16, 36, 58, 0.14);
+}
+
+.emarch-page .emarch-galleryImgWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.emarch-page .emarch-galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.32s ease;
+}
+
+.emarch-page .emarch-galleryTile:hover .emarch-galleryImg {
+  transform: scale(1.04);
+}
+
+.emarch-page .emarch-galleryZoomBadge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(16, 36, 58, 0.78);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.emarch-page .emarch-galleryTile:hover .emarch-galleryZoomBadge,
+.emarch-page .emarch-galleryTile:focus-visible .emarch-galleryZoomBadge {
+  opacity: 1;
+}
+
+.emarch-page .emarch-galleryMoreWrap {
+  margin-top: 22px;
+}
+
+.emarch-page .emarch-btnViewMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #64717e;
+  color: #ffffff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.emarch-page .emarch-btnViewMore:hover {
+  background-color: #800000;
+  transform: translateY(-1px);
+}
+
+/* Gallery Lightbox */
+.emarch-page .emarch-lightboxBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background-color: rgba(10, 18, 28, 0.86);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.emarch-page .emarch-lightboxDialog {
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 880px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.emarch-page .emarch-lightboxClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(16, 36, 58, 0.82);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.emarch-page .emarch-lightboxClose:hover {
+  background-color: #800000;
+}
+
+.emarch-page .emarch-lightboxImgFrame {
+  background-color: #10161d;
+  display: flex;
+  justify-content: center;
+}
+
+.emarch-page .emarch-lightboxImg {
+  width: 100%;
+  max-height: 70vh;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.emarch-page .emarch-lightboxFooter {
+  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #ebd9c2;
+}
+
+.emarch-page .emarch-lightboxCaption {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #10243a;
+}
+
+.emarch-page .emarch-lightboxNav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emarch-page .emarch-lightboxNavBtn {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  color: #10243a;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.emarch-page .emarch-lightboxNavBtn:hover {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+}
+
+.emarch-page .emarch-lightboxCounter {
+  font-size: 12px;
+  color: #6c7886;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   I. FINAL FULL-WIDTH DEEP GREEN CTA BANNER
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-finalCtaSection {
+  background: linear-gradient(135deg, #093c2c 0%, #042118 100%);
+  position: relative;
+  padding: 58px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.emarch-page .emarch-finalCtaSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.emarch-page .emarch-finalCtaContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.emarch-page .emarch-finalCtaContent {
+  max-width: 720px;
+  text-align: left;
+}
+
+.emarch-page .emarch-finalCtaEyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b7decb;
+  margin-bottom: 12px;
+}
+
+.emarch-page .emarch-finalCtaHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+
+.emarch-page .emarch-finalCtaDesc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #d6e8de;
+  margin: 0 0 26px;
+}
+
+.emarch-page .emarch-finalCtaActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.emarch-page .emarch-btnCtaSolid {
+  background-color: #800000;
+  color: #ffffff;
+  border: 1.5px solid #800000;
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.emarch-page .emarch-btnCtaSolid:hover {
+  background-color: #a00000;
+  border-color: #a00000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.emarch-page .emarch-btnCtaOutline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.emarch-page .emarch-btnCtaOutline:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   J. RESPONSIVE BREAKPOINTS (1199px, 991px, 767px, 575px, 375px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .emarch-page .emarch-collageTile {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .emarch-page .emarch-hero {
+    padding: 34px 0 28px;
+  }
+
+  .emarch-page .emarch-heroTextCol {
+    padding-bottom: 22px;
+  }
+
+  .emarch-page .emarch-heroArchCol {
+    justify-content: center;
+  }
+
+  .emarch-page .emarch-heroArchWrap {
+    max-width: 240px;
+    margin-bottom: 0;
+  }
+
+  .emarch-page .emarch-mainTwoCol {
+    padding: 36px 0 34px;
+  }
+
+  .emarch-page .emarch-outputsCaption {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .emarch-page .emarch-galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .emarch-page .emarch-finalCtaHeading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .emarch-page .emarch-heroTitle {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .emarch-page .emarch-sectionHeading {
+    font-size: 19px;
+  }
+
+  .emarch-page .emarch-awardBannerBtn {
+    font-size: 12.8px;
+    padding: 12px 16px;
+  }
+
+  .emarch-page .emarch-processFlow {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .emarch-page .emarch-stageArrow,
+  .emarch-page .emarch-stageCol:first-child .emarch-stageArrow {
+    clip-path: none;
+    border-radius: 6px 6px 0 0;
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+
+  .emarch-page .emarch-stageArrowWrap {
+    margin-bottom: 0;
+  }
+
+  .emarch-page .emarch-stageCard {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+  }
+
+  .emarch-page .emarch-finalCtaSection {
+    padding: 42px 0;
+  }
+
+  .emarch-page .emarch-finalCtaContent {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .emarch-page .emarch-finalCtaActions {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .emarch-page .emarch-btnCtaSolid,
+  .emarch-page .emarch-btnCtaOutline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .emarch-page .emarch-heroTitle {
+    font-size: 22px;
+  }
+
+  .emarch-page .emarch-toolkitSvg {
+    max-width: 274px;
+  }
+
+  .emarch-page .emarch-collageTile {
+    width: 50px;
+    height: 50px;
+  }
+
+  .emarch-page .emarch-galleryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .emarch-page .emarch-videoTopTitle {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .emarch-page .emarch-collageRow {
+    gap: 4px;
+  }
+
+  .emarch-page .emarch-collageWrap {
+    gap: 4px;
+  }
+
+  .emarch-page .emarch-collageTile {
+    width: 47px;
+    height: 47px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emarch-page *,
+  .emarch-page *::before,
+  .emarch-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
