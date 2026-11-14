@@ -1,0 +1,444 @@
+/* Route-scoped styles for curriculum. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   EDUCATIONAL CURRICULUM
+   ========================================================================== */
+.curriculum-page {
+  background: #fff;
+  color: #39444d;
+  overflow-x: clip;
+}
+.curriculum-page .cu-hero-notes {
+  display: contents;
+}
+.curriculum-page .cu-hero-quote {
+  position: absolute;
+  right: 18px;
+  bottom: 36px;
+  z-index: 2;
+  width: 230px;
+  background: #464d54;
+  color: #fff;
+  padding: 18px 18px 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+.curriculum-page .cu-hero-quote p {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #fff;
+}
+.curriculum-page .cu-glance,
+.curriculum-page .cu-tracks,
+.curriculum-page .cu-modules,
+.curriculum-page .cu-formats,
+.curriculum-page .cu-who,
+.curriculum-page .cu-resources,
+.curriculum-page .cu-impact {
+  padding: 64px 0;
+}
+.curriculum-page .cu-tracks,
+.curriculum-page .cu-formats,
+.curriculum-page .cu-resources {
+  background: #faf8f4;
+}
+.curriculum-page .cu-eyebrow {
+  margin: 0 0 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #800000;
+}
+.curriculum-page h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 34px;
+  line-height: 1.22;
+  color: #172331;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+}
+.curriculum-page .cu-intro p,
+.curriculum-page .cu-card p,
+.curriculum-page .cu-glance article p,
+.curriculum-page .cu-format-list p,
+.curriculum-page .cu-stat-list p {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #5c6770;
+}
+.curriculum-page .cu-intro p {
+  max-width: 460px;
+}
+.curriculum-page .cu-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #f6eee8;
+  color: #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.curriculum-page .cu-glance-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) repeat(4, 1fr);
+  gap: 28px 22px;
+  align-items: center;
+}
+.curriculum-page .cu-glance article {
+  padding-left: 18px;
+  border-left: 1px solid #eee6dc;
+}
+.curriculum-page .cu-glance h3,
+.curriculum-page .cu-format-list h3,
+.curriculum-page .cu-who-list h3,
+.curriculum-page .cu-card h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: #172331;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+.curriculum-page .cu-glance h3,
+.curriculum-page .cu-format-list h3 {
+  font-size: 16px;
+}
+.curriculum-page .cu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+.curriculum-page .cu-head h2,
+.curriculum-page .cu-formats h2,
+.curriculum-page .cu-who h2,
+.curriculum-page .cu-impact h2 {
+  margin-bottom: 0;
+}
+.curriculum-page .cu-link {
+  display: inline-flex;
+  align-items: center;
+  color: #800000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.curriculum-page .cu-link:hover {
+  color: #5c0000;
+}
+.curriculum-page .cu-track-grid,
+.curriculum-page .cu-module-grid,
+.curriculum-page .cu-resources-grid {
+  align-items: start;
+}
+.curriculum-page .cu-track-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.curriculum-page .cu-module-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+.curriculum-page .cu-card img {
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+}
+.curriculum-page .cu-module-grid .cu-card img {
+  height: 118px;
+}
+.curriculum-page .cu-card h3 {
+  font-size: 16px;
+  line-height: 1.3;
+}
+.curriculum-page .cu-module-grid h3 {
+  font-size: 14.5px;
+  min-height: 56px;
+}
+.curriculum-page .cu-card p {
+  margin-bottom: 12px;
+  min-height: 66px;
+}
+.curriculum-page .cu-module-grid p {
+  font-size: 13px;
+  min-height: 84px;
+}
+.curriculum-page .cu-formats-grid,
+.curriculum-page .cu-who-grid,
+.curriculum-page .cu-impact-grid {
+  display: grid;
+  align-items: center;
+  gap: 28px 24px;
+}
+.curriculum-page .cu-formats-grid {
+  grid-template-columns: minmax(300px, 380px) 1fr;
+}
+.curriculum-page .cu-format-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.curriculum-page .cu-format-list article,
+.curriculum-page .cu-who-list article,
+.curriculum-page .cu-stat-list article {
+  padding: 0 14px;
+  border-left: 1px solid #eee6dc;
+}
+.curriculum-page .cu-format-list article:first-child,
+.curriculum-page .cu-who-list article:first-child,
+.curriculum-page .cu-stat-list article:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.curriculum-page .cu-format-list p {
+  font-size: 13px;
+}
+.curriculum-page .cu-who-grid {
+  grid-template-columns: minmax(320px, 430px) 1fr;
+}
+.curriculum-page .cu-who-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.curriculum-page .cu-who-list article {
+  text-align: center;
+  padding: 0 8px;
+}
+.curriculum-page .cu-who-list h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0;
+  margin: 0;
+}
+.curriculum-page .cu-resources-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 400px) repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+.curriculum-page .cu-resources .cu-card p,
+.curriculum-page .cu-track-grid .cu-card p {
+  min-height: 66px;
+}
+.curriculum-page .cu-impact-grid {
+  grid-template-columns: minmax(320px, 520px) 1fr;
+}
+.curriculum-page .cu-stat-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.curriculum-page .cu-stat-list strong {
+  display: block;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 40px;
+  line-height: 1;
+  color: #800000;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.curriculum-page .cu-stat-list p {
+  font-size: 13.5px;
+  max-width: 160px;
+}
+.curriculum-page .cu-cta {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  background: #40474e;
+}
+.curriculum-page .cu-cta-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% center;
+}
+.curriculum-page .cu-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(64, 71, 78, 0.08) 0%, rgba(64, 71, 78, 0.45) 36%, rgba(64, 71, 78, 0.92) 58%, #40474e 100%);
+}
+.curriculum-page .cu-cta-inner {
+  position: relative;
+  z-index: 1;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.curriculum-page .cu-cta-copy {
+  width: min(520px, 48%);
+  padding: 40px 0;
+  color: #fff;
+}
+.curriculum-page .cu-cta h2,
+.curriculum-page .cu-cta p {
+  color: #fff;
+}
+.curriculum-page .cu-cta p {
+  max-width: 460px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+.curriculum-page .cu-eyebrow-gold {
+  color: #e7c98a;
+}
+.curriculum-page .cu-btn-light {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff !important;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 1px;
+  text-decoration: none;
+}
+.curriculum-page .cu-btn-light:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+@media (max-width: 1399px){.curriculum-page .cu-module-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+.curriculum-page .cu-module-grid h3,
+  .curriculum-page .cu-module-grid p {
+    min-height: 0;
+  }}
+@media (max-width: 1199px){.curriculum-page .cu-hero-notes {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+  }
+.curriculum-page .cu-hero-quote {
+    position: static;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 0 28px;
+  }
+.curriculum-page .cu-glance-grid,
+  .curriculum-page .cu-formats-grid,
+  .curriculum-page .cu-who-grid,
+  .curriculum-page .cu-resources-grid,
+  .curriculum-page .cu-impact-grid {
+    grid-template-columns: 1fr;
+  }
+.curriculum-page .cu-glance-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+.curriculum-page .cu-glance-grid .cu-intro {
+    grid-column: 1 / -1;
+  }
+.curriculum-page .cu-track-grid,
+  .curriculum-page .cu-resources-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+.curriculum-page .cu-resources-grid .cu-intro {
+    grid-column: 1 / -1;
+  }
+.curriculum-page .cu-format-list,
+  .curriculum-page .cu-who-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 0;
+  }
+.curriculum-page .cu-format-list article,
+  .curriculum-page .cu-who-list article,
+  .curriculum-page .cu-stat-list article {
+    border-left: 0;
+    padding: 0;
+  }
+.curriculum-page .cu-stat-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+.curriculum-page .cu-cta-copy {
+    width: min(520px, 100%);
+  }}
+@media (max-width: 767px){.curriculum-page .cu-glance,
+  .curriculum-page .cu-tracks,
+  .curriculum-page .cu-modules,
+  .curriculum-page .cu-formats,
+  .curriculum-page .cu-who,
+  .curriculum-page .cu-resources,
+  .curriculum-page .cu-impact {
+    padding: 28px 0;
+  }
+.curriculum-page h2 {
+    font-size: 28px;
+  }
+.curriculum-page .cu-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+.curriculum-page .cu-glance-grid,
+  .curriculum-page .cu-track-grid,
+  .curriculum-page .cu-module-grid,
+  .curriculum-page .cu-format-list,
+  .curriculum-page .cu-resources-grid {
+    grid-template-columns: 1fr;
+  }
+.curriculum-page .cu-glance article {
+    border-left: 0;
+    padding-left: 0;
+  }
+.curriculum-page .cu-who-list {
+    grid-template-columns: 1fr;
+    gap: 16px 0;
+  }
+.curriculum-page .cu-stat-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 12px;
+  }
+.curriculum-page .cu-card p,
+  .curriculum-page .cu-module-grid p,
+  .curriculum-page .cu-card h3,
+  .curriculum-page .cu-module-grid h3 {
+    min-height: 0;
+  }
+.curriculum-page .cu-card img,
+  .curriculum-page .cu-module-grid .cu-card img {
+    height: 180px;
+  }
+.curriculum-page .cu-cta {
+    min-height: 0;
+  }
+.curriculum-page .cu-cta-img {
+    position: relative;
+    height: 180px;
+  }
+.curriculum-page .cu-cta::after {
+    background: linear-gradient(180deg, rgba(64, 71, 78, 0.15) 0%, #40474e 42%);
+  }
+.curriculum-page .cu-cta-inner {
+    min-height: 0;
+    margin-top: -48px;
+  }
+.curriculum-page .cu-cta-copy {
+    width: 100%;
+    padding: 8px 0 28px;
+  }}

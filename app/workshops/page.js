@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 
@@ -15,23 +16,23 @@ const WHY = [
 ];
 
 const TOPICS = [
-  ["Islamic Bioethics", "Explore foundational and contemporary bioethical questions from an Islamic perspective.", "/images/our-mission/vision-mosque.jpg", "/research"],
-  ["End-of-Life Care Ethics", "Discuss ethical, spiritual, and practical considerations in end-of-life and palliative care.", "/images/research/project-palliative.jpg", "/research"],
-  ["Organ Donation Ethics", "Examine Islamic perspectives on organ donation, transplantation, and related ethical issues.", "/images/workshops/topic-organ.jpg", "/research"],
-  ["Mammography Screening", "Address religious, cultural, and practical considerations for breast cancer screening among Muslim women.", "/images/research/project-mammography.jpg", "/research"],
-  ["Muslim Health Research", "Understand key findings, methods, and community perspectives in Muslim health research.", "/images/workshops/topic-research.jpg", "/research"],
-  ["Muslim Patients’ Religious & Spiritual Needs", "Learn how to support the religious and spiritual needs of Muslim patients in clinical settings.", "/images/workshops/topic-spiritual.jpg", "/research"],
-  ["Mosque-Based Health Education", "Explore strategies for community health education and engagement in mosque settings.", "/images/research/project-mheart.jpg", "/research"],
-  ["Muslim Physicians and the Healthcare Workforce", "Discuss challenges, opportunities, and support for Muslim physicians and healthcare professionals.", "/images/research/education.jpg", "/research"],
+  ["Islamic Bioethics", "Explore foundational and contemporary bioethical questions from an Islamic perspective.", "/images/our-mission/vision-mosque.webp", "/research"],
+  ["End-of-Life Care Ethics", "Discuss ethical, spiritual, and practical considerations in end-of-life and palliative care.", "/images/research/project-palliative.webp", "/research"],
+  ["Organ Donation Ethics", "Examine Islamic perspectives on organ donation, transplantation, and related ethical issues.", "/images/workshops/topic-organ.webp", "/research"],
+  ["Mammography Screening", "Address religious, cultural, and practical considerations for breast cancer screening among Muslim women.", "/images/research/project-mammography.webp", "/research"],
+  ["Muslim Health Research", "Understand key findings, methods, and community perspectives in Muslim health research.", "/images/workshops/topic-research.webp", "/research"],
+  ["Muslim Patients’ Religious & Spiritual Needs", "Learn how to support the religious and spiritual needs of Muslim patients in clinical settings.", "/images/workshops/topic-spiritual.webp", "/research"],
+  ["Mosque-Based Health Education", "Explore strategies for community health education and engagement in mosque settings.", "/images/research/project-mheart.webp", "/research"],
+  ["Muslim Physicians and the Healthcare Workforce", "Discuss challenges, opportunities, and support for Muslim physicians and healthcare professionals.", "/images/research/education.webp", "/research"],
 ];
 
 const PROJECTS = [
-  ["Investigating American Muslim Palliative & Hospice Care Needs (I AM PCN)", "In-depth exploration of palliative and hospice care needs of American Muslims.", "/images/research/project-palliative.jpg", "/palliative-care-needs"],
-  ["Mosque-Based Health Education and Research Tools (M-HEaRT)", "Developing faith-aligned health education tools for mosques and communities.", "/images/research/project-mheart.jpg", "/mosque-health-education"],
-  ["Muslim American Healthcare & Spiritual Needs (MAHSN)", "Exploring the healthcare and spiritual needs of Muslim Americans.", "/images/research/project-mahsn.jpg", "/mahsn-pro"],
-  ["Fostering Connections Between Science and Theology for Medical Track Students", "Building bridges between scientific knowledge and Islamic theology.", "/images/research/project-empart.jpg", "/fostering-connections"],
-  ["Religiously-Tailored Mammography Intervention for American Muslims", "Culturally and religiously tailored approaches to breast cancer screening.", "/images/research/project-mammography.jpg", "/mammography"],
-  ["American Muslim Cultural Challenges with U.S. Healthcare", "Cultural and religious challenges faced by American Muslims in healthcare settings.", "/images/research/project-equity.jpg", "/advancing-equity"],
+  ["Investigating American Muslim Palliative & Hospice Care Needs (I AM PCN)", "In-depth exploration of palliative and hospice care needs of American Muslims.", "/images/research/project-palliative.webp", "/palliative-care-needs"],
+  ["Mosque-Based Health Education and Research Tools (M-HEaRT)", "Developing faith-aligned health education tools for mosques and communities.", "/images/research/project-mheart.webp", "/mosque-health-education"],
+  ["Muslim American Healthcare & Spiritual Needs (MAHSN)", "Exploring the healthcare and spiritual needs of Muslim Americans.", "/images/research/project-mahsn.webp", "/mahsn-pro"],
+  ["Fostering Connections Between Science and Theology for Medical Track Students", "Building bridges between scientific knowledge and Islamic theology.", "/images/research/project-empart.webp", "/fostering-connections"],
+  ["Religiously-Tailored Mammography Intervention for American Muslims", "Culturally and religiously tailored approaches to breast cancer screening.", "/images/research/project-mammography.webp", "/mammography"],
+  ["American Muslim Cultural Challenges with U.S. Healthcare", "Cultural and religious challenges faced by American Muslims in healthcare settings.", "/images/research/project-equity.webp", "/advancing-equity"],
 ];
 
 const LENGTHS = [
@@ -57,10 +58,10 @@ const AUDIENCES = [
 ];
 
 const PAPERS = [
-  ["Hospice care in the American Muslim community", "/images/research/resource-eol.jpg", "/resources"],
-  ["Religious identity-based discrimination in the physician workforce", "/images/research/project-equity.jpg", "/resources"],
-  ["Muslim patients’ religious and spiritual needs", "/images/research/project-mahsn.jpg", "/resources"],
-  ["Organ donation and Islamic ethics", "/images/workshops/topic-organ.jpg", "/resources"],
+  ["Hospice care in the American Muslim community", "/images/research/resource-eol.webp", "/resources"],
+  ["Religious identity-based discrimination in the physician workforce", "/images/research/project-equity.webp", "/resources"],
+  ["Muslim patients’ religious and spiritual needs", "/images/research/project-mahsn.webp", "/resources"],
+  ["Organ donation and Islamic ethics", "/images/workshops/topic-organ.webp", "/resources"],
 ];
 
 const STEPS = [
@@ -75,8 +76,8 @@ export default function WorkshopsPage() {
     <div className="workshops-page">
       <header className="hero-seamless hero-workshops-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/workshops/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/workshops/hero.webp")}
             alt="Muslim educator in a beige hijab leading a workshop, with a presentation screen and audience"
             className="hero-bg-img"
             loading="eager"
@@ -154,7 +155,7 @@ export default function WorkshopsPage() {
           <div className="ws-topic-grid">
             {TOPICS.map(([title, text, image, href]) => (
               <article className="ws-topic" key={title}>
-                <img src={asset(image)} alt="" />
+                <img loading="lazy" decoding="async" src={asset(image)} alt="" />
                 <div>
                   <h3>{title}</h3>
                   <p>{text}</p>
@@ -186,7 +187,7 @@ export default function WorkshopsPage() {
             <div className="ws-project-row">
               {PROJECTS.map(([title, text, image, href]) => (
                 <article className="ws-project" key={title}>
-                  <img src={asset(image)} alt="" />
+                  <img loading="lazy" decoding="async" src={asset(image)} alt="" />
                   <h3>{title}</h3>
                   <p>{text}</p>
                   <Link href={href || "/research"}>
@@ -266,7 +267,7 @@ export default function WorkshopsPage() {
             <div className="ws-paper-row">
               {PAPERS.map(([title, image, href]) => (
                 <article className="ws-paper" key={title}>
-                  <img src={asset(image)} alt="" />
+                  <img loading="lazy" decoding="async" src={asset(image)} alt="" />
                   <h3>{title}</h3>
                   <Link href={href}>
                     READ PUBLICATION <i className="fa-solid fa-arrow-right" />
@@ -311,8 +312,8 @@ export default function WorkshopsPage() {
       <section className="ws-final container-fluid p-0">
         <div className="row g-0">
           <div className="col-lg-6">
-            <img
-              src={asset("/images/workshops/cta.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/workshops/cta.webp")}
               alt="Workshop facilitator seen from behind, addressing a seated audience"
             />
           </div>

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import TeamAmbassadors from "./TeamAmbassadors";
@@ -13,30 +14,30 @@ const operations = [
   {
     name: "Sarah Ahmed",
     role: "Director of Strategic Partnerships",
-    img: asset("/images/our-team/sarah.jpg"),
+    img: asset("/images/our-team/sarah.webp"),
     text: "Supports partnerships that expand II&M’s reach across healthcare, academic, and community settings.",
   },
   {
     name: "Nabeel Palla",
     role: "Operations / Technology & Growth Support",
-    img: asset("/images/our-team/nabeel.jpg"),
+    img: asset("/images/our-team/nabeel.webp"),
     text: "Helps strengthen II&M’s operational systems, technology, and growth infrastructure.",
   },
   {
     name: "Hiba Bawa",
     role: "Project Manager",
-    img: asset("/images/our-team/hiba.jpg"),
+    img: asset("/images/our-team/hiba.webp"),
     text: "Coordinates programs and projects that advance II&M’s research, education, and engagement goals.",
   },
 ];
 
 const advisors = [
-  { name: "Aasim I. Padela, MD, MSc, FACEP", detail: "Advisor", img: asset("/images/our-team/padela-portrait.jpg") },
-  { name: "Faisal Qazi, DO", detail: "Advisor", img: asset("/images/our-team/advisor-faisal-portrait.jpg") },
-  { name: "Najam Fasiuddin, DO", detail: "Advisor", img: asset("/images/our-team/advisor-najam-portrait.png") },
-  { name: "Fatema Mirza", detail: "Advisor", img: asset("/images/our-team/fatema-portrait.jpg") },
-  { name: "Imam Ayman Soliman", detail: "Advisor", img: asset("/images/our-team/advisor-ayman-portrait.jpg") },
-  { name: "Dr. Nasir Malim, DO, MPH", detail: "Advisor", img: asset("/images/our-team/advisor-nasir-portrait.jpg") },
+  { name: "Aasim I. Padela, MD, MSc, FACEP", detail: "Advisor", img: asset("/images/our-team/padela-portrait.webp") },
+  { name: "Faisal Qazi, DO", detail: "Advisor", img: asset("/images/our-team/advisor-faisal-portrait.webp") },
+  { name: "Najam Fasiuddin, DO", detail: "Advisor", img: asset("/images/our-team/advisor-najam-portrait.webp") },
+  { name: "Fatema Mirza", detail: "Advisor", img: asset("/images/our-team/fatema-portrait.webp") },
+  { name: "Imam Ayman Soliman", detail: "Advisor", img: asset("/images/our-team/advisor-ayman-portrait.webp") },
+  { name: "Dr. Nasir Malim, DO, MPH", detail: "Advisor", img: asset("/images/our-team/advisor-nasir-portrait.webp") },
 ];
 
 const advances = [
@@ -51,8 +52,8 @@ export default function TeamPage() {
     <div className="team-page">
       <header className="hero-seamless hero-team-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/our-team/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/our-team/hero.webp")}
             alt="Healthcare professionals collaborating"
             className="hero-bg-img"
             loading="eager"
@@ -102,7 +103,7 @@ export default function TeamPage() {
           <div className="tm-leadership-grid">
             <article className="tm-lead-card">
               <div className="tm-lead-media">
-                <img src={asset("/images/our-team/padela-portrait.jpg")} alt="Aasim I. Padela, MD, MSc, FACEP" />
+                <img loading="lazy" decoding="async" src={asset("/images/our-team/padela-portrait.webp")} alt="Aasim I. Padela, MD, MSc, FACEP" />
               </div>
               <div className="tm-lead-body">
                 <h3>Aasim I. Padela, MD, MSc, FACEP</h3>
@@ -126,7 +127,7 @@ export default function TeamPage() {
 
             <article className="tm-lead-card">
               <div className="tm-lead-media">
-                <img src={asset("/images/our-team/fatema-portrait.jpg")} alt="Fatema Mirza" />
+                <img loading="lazy" decoding="async" src={asset("/images/our-team/fatema-portrait.webp")} alt="Fatema Mirza" />
               </div>
               <div className="tm-lead-body">
                 <h3>Fatema Mirza</h3>
@@ -155,7 +156,7 @@ export default function TeamPage() {
             {operations.map((person) => (
               <article className="tm-ops-card" key={person.name}>
                 <div className="tm-ops-media">
-                  <img src={person.img} alt={person.name} />
+                  <img loading="lazy" decoding="async" src={person.img} alt={person.name} />
                 </div>
                 <div className="tm-ops-body">
                   <h3>{person.name}</h3>
@@ -174,8 +175,8 @@ export default function TeamPage() {
           <div className="tm-research-grid">
             <article className="tm-research-feature">
               <div className="tm-research-feature-media">
-                <img
-                  src={asset("/images/our-team/research-feature.jpg")}
+                <img loading="lazy" decoding="async" 
+                  src={asset("/images/our-team/research-feature.webp")}
                   alt="Islamic architecture and scholarly books"
                 />
               </div>
@@ -209,7 +210,7 @@ export default function TeamPage() {
           <div className="tm-advisors-grid">
             {advisors.map((person) => (
               <article className="tm-advisor-card" key={person.name}>
-                <img src={person.img} alt={person.name} />
+                <img loading="lazy" decoding="async" src={person.img} alt={person.name} />
                 <h3>{person.name}</h3>
                 <p>{person.detail}</p>
               </article>
@@ -265,8 +266,8 @@ export default function TeamPage() {
             </div>
           </div>
           <div className="tm-cta-media">
-            <img
-              src={asset("/images/our-team/cta-mosque.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/our-team/cta-mosque.webp")}
               alt="Mosque architecture viewed through an Islamic archway"
             />
           </div>

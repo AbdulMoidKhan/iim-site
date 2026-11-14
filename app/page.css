@@ -1,0 +1,550 @@
+/* Route-scoped styles for home. Split out of globals.css for faster first load. */
+.eyebrow-line {
+  display: inline-block;
+  width: 42px;
+  height: 2px;
+  background-color: #800000;
+}
+.btn-white-pill {
+  background-color: #ffffff;
+  color: #800000 !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.btn-white-pill:hover {
+  background-color: #fdf5f7;
+  color: #800000 !important;
+  transform: translateY(-2px);
+}
+/* OUR EXPERTISE SECTION EXACT REPLICA */
+.section-our-expertise {
+  padding: 70px 0 75px;
+  background-color: #faf8f4;
+  border-bottom: 1px solid #eee7dd;
+}
+.expertise-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.p-20 {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
+@media (max-width: 991px){.p-20 {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }}
+.expertise-card-img {
+  width: 100%;
+  aspect-ratio: 120 / 85;
+  object-fit: cover;
+  display: block;
+  border-radius: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.expertise-card-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 14px 0 8px;
+  line-height: 1.3;
+}
+.expertise-card-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #5c6773;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+.card-maroon-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #800000 !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.card-maroon-link:hover {
+  color: #800000 !important;
+  transform: translateX(4px);
+}
+/* FEATURED LEARNING SECTION */
+.section-featured-learning {
+  padding: 72px 0 68px;
+  background-color: #fcfbfa;
+}
+.learning-content-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.section-featured-learning .learning-head {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 8px;
+  text-align: center;
+}
+.learning-main-heading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(30px, 3.4vw, 42px);
+  color: #10243a;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+.learning-subhead {
+  font-size: 14.5px;
+  color: #5c6773;
+  margin-bottom: 28px;
+}
+.learning-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-featured-learning .learning-card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+.learning-card-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #10243a;
+  margin: 14px 0 8px;
+}
+.learning-card-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #5c6773;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+.all-courses-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #800000 !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 28px;
+}
+.all-courses-link:hover {
+  text-decoration: underline;
+  transform: translateX(4px);
+}
+/* THE RESEARCH BEHIND THE EDUCATION SECTION */
+.section-research-education {
+  padding: 78px 0;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.research-heading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(30px, 3.4vw, 42px);
+  color: #10243a;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+.research-desc {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #4b5764;
+  max-width: 420px;
+  margin-bottom: 26px;
+}
+.research-watermark-wrap {
+  position: relative;
+}
+.research-bg-watermark {
+  position: absolute;
+  top: -36px;
+  right: -10px;
+  width: 280px;
+  height: 280px;
+  background-image: var(--iim-pattern);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 0;
+}
+.process-step-card {
+  background-color: #f3eadc;
+  border: 1px solid #e4d4c0;
+  padding: 30px 22px 28px;
+  min-height: 176px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.step-number {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #800000;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.step-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 8px;
+}
+.step-desc {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #5c6773;
+  margin: 0;
+}
+/* PODCAST STRIP */
+.section-podcast-strip {
+  background-color: #800000;
+  padding: 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+.podcast-copy-wrap {
+  padding: 42px 48px 42px 56px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.podcast-brand-col {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.podcast-mic-icon {
+  width: 156px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+.podcast-subtag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #deb87b;
+}
+.podcast-main-name {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 6px 0;
+}
+.podcast-categories {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: #f1d4b6;
+}
+.podcast-center-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.podcast-center-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #f6dce2;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+.podcast-photo-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 240px;
+}
+.podcast-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+  display: block;
+}
+/* EMERALD GREEN CTA SECTION */
+.section-emerald-cta {
+  background: linear-gradient(135deg, #3c434a 0%, #485056 50%, #565e66 100%);
+  padding: 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+.cta-arch-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 460px;
+  overflow: hidden;
+}
+.cta-arch-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+.cta-emerald-content {
+  padding: 72px 56px 72px 64px;
+  max-width: 720px;
+}
+@media (max-width: 767px){.process-step-card {
+    margin-bottom: 12px;
+  }
+.podcast-main-name {
+    font-size: 22px;
+  }}
+/* ==========================================================================
+   4-COLUMN VALUE STRIP & OUR STORY EXACT REPLICA
+   ========================================================================== */
+.strip-four-values-exact {
+  background-color: #ffffff;
+  border-top: 1px solid #eadecf;
+  border-bottom: 1px solid #eadecf;
+  padding: 34px 0 32px;
+}
+.four-values-col {
+  border-right: 1px solid #eadecf;
+}
+.four-values-col:last-child {
+  border-right: none;
+}
+.value-exact-item {
+  text-align: center;
+  padding: 8px 16px;
+}
+.value-exact-icon {
+  font-size: 26px;
+  color: #800000;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.value-exact-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.value-exact-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #4b5563;
+  max-width: 190px;
+  margin: 0 auto;
+}
+.story-exact-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #800000;
+  padding: 22px 28px;
+  max-width: 320px;
+}
+.story-exact-quote {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0;
+}
+.story-exact-eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.story-exact-eyebrow-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #800000;
+}
+.story-exact-eyebrow-bar {
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  background-color: #800000;
+  margin-left: 14px;
+}
+.story-exact-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(32px, 3.5vw, 42px);
+  line-height: 1.18;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.story-exact-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #465260;
+  margin-bottom: 18px;
+}
+.btn-story-mission {
+  background-color: #ffffff;
+  border: 1px solid #b78a94;
+  color: #800000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 24px;
+  border-radius: var(--hero-btn-radius, 6px);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-top: 10px;
+}
+.btn-story-mission:hover {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(128, 0, 0, 0.28);
+}
+.btn-story-mission:hover * {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+@media (max-width: 991px){.four-values-col {
+    border-right: none;
+    border-bottom: 1px solid #eadecf;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+.four-values-col:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }}
+/* ==========================================================================
+   FULLWIDTH OUR STORY & VALUE STRIP
+   ========================================================================== */
+.fullwidth-strip {
+  width: 100%;
+}
+.fullwidth-strip .value-exact-item {
+  padding: 12px 20px;
+}
+.section-our-story-fullwidth {
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-bottom: 1px solid #eee7dd;
+}
+.story-fullwidth-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  overflow: hidden;
+}
+.story-fullwidth-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  object-fit: cover;
+  display: block;
+}
+.story-fullwidth-content-wrap {
+  padding: 65px 50px 65px 55px;
+  max-width: 640px;
+}
+@media (min-width: 1400px){.story-fullwidth-content-wrap {
+    padding-left: 80px;
+  }}
+@media (max-width: 991px){.story-fullwidth-image-wrap {
+    min-height: 340px;
+  }
+.story-fullwidth-photo {
+    min-height: 340px;
+  }
+.story-fullwidth-content-wrap {
+    padding: 40px 24px;
+    max-width: 100%;
+  }}
+@media (max-width: 991px){.podcast-photo-wrap,
+  .podcast-photo {
+    min-height: 240px;
+  }
+.story-fullwidth-image-wrap,
+  .story-fullwidth-photo {
+    min-height: 300px;
+  }}
+@media (max-width: 767px){.four-values-col {
+    border-right: none !important;
+    border-bottom: 1px solid #eadecf;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+.four-values-col:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+.value-exact-text {
+    max-width: none;
+  }
+.story-fullwidth-content-wrap {
+    padding: 32px 16px 40px;
+  }
+.story-fullwidth-image-wrap,
+  .story-fullwidth-photo {
+    min-height: 240px;
+  }
+.learning-content-wrap,
+  .podcast-copy-wrap,
+  .cta-emerald-content {
+    padding: 32px 16px 40px;
+  }
+.cta-arch-wrap,
+  .cta-arch-img {
+    min-height: 220px;
+  }}

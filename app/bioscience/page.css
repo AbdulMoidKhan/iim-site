@@ -1,0 +1,436 @@
+/* Route-scoped styles for bioscience. Split out of globals.css for faster first load. */
+.bio-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #800000;
+  margin: 0 0 14px;
+}
+.bio-eyebrow-gold {
+  color: #deb87b;
+}
+.bio-hero-lead,
+.bio-body,
+.bio-section-lead {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #3b4756;
+}
+.bio-path {
+  position: relative;
+  margin-top: 12px;
+}
+.bio-text-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #800000 !important;
+  text-decoration: none;
+}
+.bio-text-link:hover {
+  text-decoration: underline;
+}
+.bio-cta {
+  background: #3c434a;
+  color: #fff;
+  padding: 56px 0 52px;
+  text-align: center;
+}
+.bio-cta-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(26px, 3.2vw, 38px);
+  line-height: 1.18;
+  color: #fff;
+  margin: 0 0 12px;
+}
+.bio-cta-lead {
+  max-width: 520px;
+  margin: 0 auto 20px;
+  color: #d5d8db;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.bio-page .bio-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #800000;
+  margin: 0 0 8px;
+}
+.bio-eyebrow-gold { color: #deb87b !important; }
+.bio-page .bio-h2 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.18;
+  color: #20252B;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.bio-h2-white { color: #fff !important; }
+.bio-lead,
+.bio-body,
+.bio-aside {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #39414A;
+  max-width: 720px;
+  margin: 0 0 22px;
+}
+.bio-aside { max-width: none; margin: 0; font-size: 12.5px; }
+.bio-sec { padding: 48px 0; background: #fff; }
+.bio-sec-cream { background: #F9F7F3; }
+.bio-btn-maroon,
+.bio-btn-outline,
+.bio-btn-outline-light,
+.bio-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 11px 16px;
+  text-decoration: none;
+  border-radius: 1px;
+  transition: 0.2s ease;
+}
+.bio-btn-maroon {
+  background: #800000;
+  color: #fff !important;
+  border: 1px solid #800000;
+}
+.bio-btn-maroon:hover { background: #800000; }
+.bio-btn-outline-light {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+.bio-btn-ghost {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+.bio-text-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #800000 !important;
+  text-decoration: none;
+}
+.hero-bio-seamless .bio-hero-feats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+.hero-bio-mark {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  z-index: 2;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: rgba(74, 81, 88, 0.9);
+  color: #deb87b;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.25;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.hero-bio-quote {
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  z-index: 2;
+  width: 248px;
+  background: #4a5158;
+  padding: 20px 22px;
+}
+.hero-bio-quote p {
+  margin: 0;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+.bio-feat {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.3;
+  color: #20252B;
+  font-weight: 600;
+  max-width: 160px;
+}
+.bio-feat-icon,
+.bio-set-icon,
+.bio-card-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 1.5px solid #800000;
+  border-radius: 50%;
+  color: #800000;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  background: #fff;
+}
+/* CARDS */
+.bio-card {
+  border: 1px solid #E8E4DF;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+.bio-card-img {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+  display: block;
+}
+.bio-card-icon {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  right: 0;
+  display: block;
+  text-align: center;
+  line-height: 34px;
+}
+.bio-card-body { padding: 28px 16px 18px; }
+.bio-card-body h3,
+.bio-set h3,
+.bio-path-item h3,
+.bio-res h3 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  color: #20252B;
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+.bio-card-body p,
+.bio-set p,
+.bio-path-item p,
+.bio-res p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #39414A;
+  margin: 0;
+}
+.bio-set { padding: 8px 6px; }
+.bio-set-icon { width: 46px; height: 46px; flex-basis: 46px; font-size: 16px; margin: 0 auto 10px; }
+/* PATHWAY */
+.bio-path {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+.bio-path-item {
+  flex: 1;
+  border: 1px solid #E8E4DF;
+  background: #fff;
+  padding: 18px 14px 16px;
+  text-align: center;
+  position: relative;
+}
+.bio-path-num {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #800000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.bio-path-arrow {
+  display: flex;
+  align-items: center;
+  color: #800000;
+  font-size: 12px;
+  flex: 0 0 auto;
+}
+/* TOPICS */
+.bio-topics {
+  background: #4a5158;
+  padding: 44px 0 40px;
+}
+.bio-topic-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.bio-topic-card {
+  background: #3a4148;
+  overflow: hidden;
+  position: relative;
+}
+.bio-topic-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+.bio-topic-num {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #800000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.bio-topic-card h3 {
+  background: #fff;
+  margin: 0;
+  padding: 10px 8px 12px;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #20252B;
+  min-height: 62px;
+}
+/* RESOURCES */
+.bio-res img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #E8E4DF;
+}
+/* STUDENT GRID */
+.bio-tall-photo {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+.bio-stack-photo {
+  width: 100%;
+  height: 182px;
+  object-fit: cover;
+  display: block;
+}
+/* EDITORIAL */
+.bio-ed { display: flex; gap: 16px; align-items: flex-start; }
+.bio-ed-copy { flex: 1; }
+.bio-ed-img {
+  width: 42%;
+  max-width: 220px;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+/* CTA */
+.bio-cta {
+  background: #4a5158;
+  background-image: var(--iim-pattern);
+  background-repeat: no-repeat;
+  background-position: right -40px center;
+  background-size: 280px;
+  padding: 52px 0;
+  color: #fff;
+}
+.bio-cta-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(24px, 3vw, 36px);
+  color: #fff;
+  margin: 0 0 12px;
+}
+.bio-cta-lead {
+  max-width: 560px;
+  margin: 0 auto 20px;
+  color: #d5d8db;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.bio-cta-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+/* TEAM */
+.bio-team {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+}
+.bio-member { margin: 0; text-align: center; flex: 1; max-width: 110px; }
+.bio-member img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 8px;
+}
+.bio-member strong {
+  display: block;
+  font-size: 11px;
+  color: #20252B;
+  font-family: 'DM Sans', sans-serif;
+}
+.bio-member span {
+  display: block;
+  font-size: 10px;
+  color: #5c6773;
+}
+@media (max-width: 1199px){.bio-topic-row { grid-template-columns: repeat(4, 1fr); }}
+@media (max-width: 991px){.hero-bio-mark { display: none; }
+.hero-bio-quote {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+.bio-tall-photo { min-height: 240px; height: 240px; }
+.bio-stack-photo { height: 180px; }
+.bio-path { flex-wrap: wrap; }
+.bio-path-item { flex: 1 1 42%; }
+.bio-path-arrow { display: none; }
+.bio-ed { flex-direction: column; }
+.bio-ed-img { width: 100%; max-width: none; }
+.bio-team { flex-wrap: wrap; justify-content: flex-start; }
+.bio-topic-row { grid-template-columns: repeat(2, 1fr); }}
+@media (max-width: 575px){.bio-topic-row { grid-template-columns: 1fr; }
+.bio-hero-feats { flex-direction: column; }}
+@media (max-width: 991px){/* Bio */
+  .bio-path-item {
+    flex: 1 1 100%;
+  }}
+@media (max-width: 767px){/* Bio */
+  .bio-topic-row {
+    grid-template-columns: 1fr;
+  }
+.bio-hero-img,
+  .bio-split-photo,
+  .bio-tall-photo {
+    height: 220px;
+    min-height: 220px;
+  }}

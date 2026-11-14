@@ -7,13 +7,13 @@ const RESEARCH = [
   {
     name: "Laila Azam, PhD, MBA",
     role: "Research Scientist",
-    img: asset("/images/our-team/laila.jpg"),
+    img: asset("/images/our-team/laila.webp"),
     text: "Contributes research that informs education, practice, and policy at the intersection of Islam and medicine.",
   },
   {
     name: "Raudah Yunus",
     role: "Researcher / Public Health Scholar",
-    img: asset("/images/our-team/raudah.jpg"),
+    img: asset("/images/our-team/raudah.webp"),
     text: "Advances community-engaged inquiry to strengthen culturally responsive healthcare and public health.",
   },
 ];
@@ -126,7 +126,7 @@ export default function TeamResearch() {
                 aria-hidden={copy === 1 ? "true" : undefined}
               >
                 <div className="tm-research-media">
-                  <img src={person.img} alt={copy === 0 ? person.name : ""} />
+                  <img loading="eager" fetchPriority="high" decoding="async" src={person.img} alt={copy === 0 ? person.name : ""} />
                 </div>
                 <div className="tm-research-body">
                   <h3>{person.name}</h3>

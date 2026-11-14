@@ -6,27 +6,27 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 const AMBASSADORS = [
   {
     name: "Mufti Mohammed Zubair Butt",
-    img: asset("/images/our-team/amb-zubair-butt.jpg"),
+    img: asset("/images/our-team/amb-zubair-butt.webp"),
     note: "Ambassador & Community of Support",
   },
   {
     name: "Ermin Sinanovic",
-    img: asset("/images/our-team/amb-ermin.jpg"),
+    img: asset("/images/our-team/amb-ermin.webp"),
     note: "Ambassador & Community of Support",
   },
   {
     name: "Hatem al-Haj",
-    img: asset("/images/our-team/amb-hatem.jpg"),
+    img: asset("/images/our-team/amb-hatem.webp"),
     note: "Ambassador & Community of Support",
   },
   {
     name: "Yasir Qadhi",
-    img: asset("/images/our-team/amb-yasir.jpg"),
+    img: asset("/images/our-team/amb-yasir.webp"),
     note: "Ambassador & Community of Support",
   },
   {
     name: "Ingrid Mattson",
-    img: asset("/images/our-team/amb-ingrid.jpg"),
+    img: asset("/images/our-team/amb-ingrid.webp"),
     note: "Ambassador & Community of Support",
   },
 ];
@@ -141,7 +141,7 @@ export default function TeamAmbassadors() {
                   key={`${person.name}-${copy}`}
                   aria-hidden={copy === 1 ? "true" : undefined}
                 >
-                  <img src={person.img} alt={copy === 0 ? person.name : ""} className="tm-ambassador-photo" />
+                  <img loading="eager" fetchPriority="high" decoding="async" src={person.img} alt={copy === 0 ? person.name : ""} className="tm-ambassador-photo" />
                   <div className="tm-ambassador-body">
                     <p className="tm-ambassador-note">{person.note}</p>
                     <h3>{person.name}</h3>

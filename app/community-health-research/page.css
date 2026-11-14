@@ -1,0 +1,1106 @@
+/* Route-scoped styles for community-health-research. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   30. E-MARCH PAGE
+   Engaging Muslim Americans for Research on Community Health (E-MARCH)
+   All selectors scoped cleanly under .emarch-page — Route: /e-march
+   ========================================================================== */
+
+.emarch-page {
+  background-color: #ffffff;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+.emarch-page a:focus-visible,
+.emarch-page button:focus-visible {
+  outline: 2.5px solid #800000;
+  outline-offset: 2px;
+}
+/* --------------------------------------------------------------------------
+   A. HERO SECTION & ISLAMIC POINTED ARCH
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-hero {
+  background-color: #faf7f2;
+  position: relative;
+  padding: 42px 0 0;
+  border-bottom: 1px solid #eadfd1;
+  overflow: hidden;
+}
+.emarch-page .emarch-heroBgCircles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.emarch-page .emarch-heroCircleOuter {
+  position: absolute;
+  right: 4%;
+  top: -110px;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  border: 1px solid rgba(205, 185, 160, 0.36);
+  background: radial-gradient(
+    circle,
+    rgba(235, 220, 200, 0.25) 0%,
+    rgba(250, 247, 242, 0) 72%
+  );
+}
+.emarch-page .emarch-heroCircleInner {
+  position: absolute;
+  right: 10%;
+  top: -40px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 174, 148, 0.35);
+}
+.emarch-page .emarch-heroContainer {
+  position: relative;
+  z-index: 2;
+}
+.emarch-page .emarch-heroTextCol {
+  padding-bottom: 48px;
+  align-self: center;
+}
+.emarch-page .emarch-breadcrumbWrap {
+  margin-bottom: 12px;
+}
+.emarch-page .emarch-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #6c7886;
+}
+.emarch-page .emarch-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.emarch-page .emarch-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+.emarch-page .emarch-breadcrumbSeparator {
+  margin: 0 7px;
+  color: #a89d90;
+  font-size: 11px;
+}
+.emarch-page .emarch-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  margin: 0;
+  max-width: 720px;
+}
+.emarch-page .emarch-heroUnderline {
+  width: 54px;
+  height: 3px;
+  background-color: #800000;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+.emarch-page .emarch-heroArchCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.emarch-page .emarch-heroArchWrap {
+  max-width: 310px;
+  width: 100%;
+  margin-bottom: -1px;
+  clip-path: polygon(
+    50% 0%,
+    64% 6%,
+    78% 17%,
+    89% 31%,
+    97% 47%,
+    100% 62%,
+    100% 100%,
+    0% 100%,
+    0% 62%,
+    3% 47%,
+    11% 31%,
+    22% 17%,
+    36% 6%
+  );
+  filter: drop-shadow(0 -4px 18px rgba(16, 36, 58, 0.1));
+}
+.emarch-page .emarch-heroArchImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* --------------------------------------------------------------------------
+   B. SHARED SECTION TYPOGRAPHY & DIVIDERS
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.emarch-page .emarch-accentBar {
+  display: inline-block;
+  width: 3.5px;
+  height: 24px;
+  background-color: #800000;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.emarch-page .emarch-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+}
+.emarch-page .emarch-subHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 12px;
+  line-height: 1.38;
+}
+.emarch-page .emarch-paragraph {
+  font-size: 14.5px;
+  line-height: 1.72;
+  color: #3e4b5a;
+  margin-bottom: 14px;
+}
+.emarch-page .emarch-paragraph:last-child {
+  margin-bottom: 0;
+}
+.emarch-page .emarch-blockDivider {
+  height: 1px;
+  background-color: #efe6da;
+  margin: 34px 0;
+}
+.emarch-page .emarch-inlineLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #800000;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+.emarch-page .emarch-inlineLink:hover {
+  color: #5a0000;
+  gap: 10px;
+  text-decoration: underline;
+}
+/* --------------------------------------------------------------------------
+   C. MAIN TWO-COLUMN EDITORIAL + PROJECT ACTIVITIES SIDEBAR
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-mainTwoCol {
+  padding: 46px 0 42px;
+}
+.emarch-page .emarch-awardBannerWrap {
+  margin-top: 20px;
+}
+.emarch-page .emarch-awardBannerBtn {
+  background-color: #800000;
+  color: #ffffff;
+  border: 1px solid #800000;
+  padding: 13px 20px;
+  border-radius: 6px;
+  font-size: 13.2px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 100%;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+  transition: background-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+.emarch-page .emarch-awardBannerBtn:hover {
+  background-color: #5e0000;
+  border-color: #5e0000;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.28);
+}
+/* Right Sidebar Card */
+.emarch-page .emarch-sidebarCard {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 24px 22px;
+  box-shadow: 0 4px 16px rgba(16, 36, 58, 0.04);
+}
+.emarch-page .emarch-sidebarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eadfd1;
+}
+.emarch-page .emarch-activitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.emarch-page .emarch-activityRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.emarch-page .emarch-activityBadge {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  box-shadow: 0 2px 6px rgba(128, 0, 0, 0.22);
+}
+.emarch-page .emarch-activityText {
+  font-size: 13.5px;
+  line-height: 1.56;
+  color: #3e4b5a;
+}
+/* Circular PCOR Toolkit Diagram */
+.emarch-page .emarch-toolkitFigure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emarch-page .emarch-toolkitSvg {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+}
+.emarch-page .emarch-toolkitCaption {
+  margin-top: 10px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.emarch-page .emarch-toolkitCaptionTitle {
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #1f5c96;
+}
+.emarch-page .emarch-toolkitCaptionSub {
+  font-size: 11px;
+  color: #5b6977;
+  font-style: italic;
+}
+/* --------------------------------------------------------------------------
+   D. E-MARCH GOALS (3-Stage Process Flow + Empowerment Card)
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-goalsSection {
+  padding: 20px 0 46px;
+  border-top: 1px solid #f2ebe1;
+}
+.emarch-page .emarch-goalsPanel {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.emarch-page .emarch-goalsSubheading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 18px;
+  line-height: 1.38;
+}
+.emarch-page .emarch-processFlow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  flex-grow: 1;
+}
+.emarch-page .emarch-stageCol {
+  display: flex;
+  flex-direction: column;
+}
+.emarch-page .emarch-stageArrowWrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+.emarch-page .emarch-stageArrow {
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  min-height: 54px;
+  padding: 8px 14px 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 0% 100%, 10px 50%);
+}
+.emarch-page .emarch-stageCol:first-child .emarch-stageArrow {
+  padding-left: 10px;
+  clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 0% 100%);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.emarch-page .emarch-stage--green .emarch-stageArrow {
+  background-color: #128c41;
+}
+.emarch-page .emarch-stage--burgundy .emarch-stageArrow {
+  background-color: #8b0000;
+}
+.emarch-page .emarch-stage--navy .emarch-stageArrow {
+  background-color: #102c5c;
+}
+.emarch-page .emarch-stageCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 11px;
+  flex-grow: 1;
+}
+.emarch-page .emarch-stage--green .emarch-stageCard {
+  border: 1.5px solid #8bd4a8;
+}
+.emarch-page .emarch-stage--burgundy .emarch-stageCard {
+  border: 1.5px solid #dfa2a2;
+}
+.emarch-page .emarch-stage--navy .emarch-stageCard {
+  border: 1.5px solid #9cb3d6;
+}
+.emarch-page .emarch-stageText {
+  font-size: 12.2px;
+  line-height: 1.55;
+  color: #3e4b5a;
+  margin: 0;
+}
+.emarch-page .emarch-goalsLead {
+  font-size: 14px;
+  font-weight: 600;
+  color: #10243a;
+  margin: 0 0 12px;
+  line-height: 1.55;
+}
+.emarch-page .emarch-checkList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.emarch-page .emarch-checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13.5px;
+  line-height: 1.52;
+  color: #3e4b5a;
+}
+.emarch-page .emarch-checkIcon {
+  color: #800000;
+  margin-top: 2px;
+  display: inline-flex;
+}
+.emarch-page .emarch-goalsClosing {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #4a5766;
+  margin: auto 0 0;
+  padding-top: 12px;
+  border-top: 1px solid #eadfd1;
+}
+/* --------------------------------------------------------------------------
+   E. VIDEO & PROJECT UPDATES
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-videoUpdatesSection {
+  padding: 36px 0 42px;
+}
+.emarch-page .emarch-videoCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ebd9c2;
+  box-shadow: 0 8px 24px rgba(16, 36, 58, 0.1);
+  background-color: #20090c;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.emarch-page .emarch-videoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(16, 36, 58, 0.16);
+}
+.emarch-page .emarch-videoThumbWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.emarch-page .emarch-videoThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.32s ease;
+}
+.emarch-page .emarch-videoCard:hover .emarch-videoThumb {
+  transform: scale(1.03);
+}
+.emarch-page .emarch-videoCrimsonTint {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(102, 0, 12, 0.62) 0%, rgba(18, 12, 16, 0.56) 100%);
+  pointer-events: none;
+}
+.emarch-page .emarch-videoTopBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px 28px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+.emarch-page .emarch-videoAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+}
+.emarch-page .emarch-videoTopTitle {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+.emarch-page .emarch-videoPlayBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0.94;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+}
+.emarch-page .emarch-videoWatchBadge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(15, 15, 15, 0.86);
+  color: #ffffff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+.emarch-page .emarch-updatesCard {
+  padding-top: 2px;
+}
+.emarch-page .emarch-updatesTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 12px;
+  line-height: 1.38;
+}
+.emarch-page .emarch-updatesActionWrap {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #f0e6d8;
+}
+/* --------------------------------------------------------------------------
+   F. RESEARCH RESOURCES
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-resourcesSection {
+  padding: 20px 0 46px;
+}
+.emarch-page .emarch-resourceCard {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+}
+.emarch-page .emarch-resourceCard--compact {
+  flex: 1 1 0;
+  justify-content: center;
+}
+.emarch-page .emarch-resourceStack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.emarch-page .emarch-resourceHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.emarch-page .emarch-resourceIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+  background-color: rgba(128, 0, 0, 0.08);
+  border: 1px solid rgba(128, 0, 0, 0.18);
+  color: #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.emarch-page .emarch-resourceTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+}
+.emarch-page .emarch-resourceLinks {
+  padding-left: 18px;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.emarch-page .emarch-resourceLink {
+  font-size: 13.2px;
+  font-weight: 600;
+  line-height: 1.48;
+  color: #800000;
+  text-decoration: none;
+}
+.emarch-page .emarch-resourceLink:hover {
+  text-decoration: underline;
+  color: #5a0000;
+}
+.emarch-page .emarch-resourceDesc {
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: #3e4b5a;
+  margin: 0 0 14px;
+}
+.emarch-page .emarch-resourceHighlightLink {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #800000;
+  text-decoration: none;
+}
+.emarch-page .emarch-resourceHighlightLink:hover {
+  color: #5a0000;
+  text-decoration: underline;
+}
+.emarch-page .emarch-resourceNote,
+.emarch-page .emarch-resourceMissingNote {
+  font-size: 11.8px;
+  line-height: 1.45;
+  color: #6c7886;
+  margin: auto 0 10px;
+}
+.emarch-page .emarch-btnSlate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  align-self: flex-start;
+  background-color: #64717e;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.emarch-page .emarch-btnSlate:hover {
+  background-color: #800000;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+/* --------------------------------------------------------------------------
+   G. PROJECT OUTPUTS (Text + 2-5-5-2 Collage + Caption)
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-outputsSection {
+  padding: 36px 0 42px;
+  border-top: 1px solid #f2ebe1;
+}
+.emarch-page .emarch-collageWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.emarch-page .emarch-collageRow {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.emarch-page .emarch-collageTile {
+  width: 62px;
+  height: 62px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ebd9c2;
+  background-color: #f7f3ed;
+  box-shadow: 0 2px 6px rgba(16, 36, 58, 0.08);
+  flex-shrink: 0;
+}
+.emarch-page .emarch-collageImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+.emarch-page .emarch-outputsCaption {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.58;
+  color: #800000;
+  margin: 0;
+}
+/* --------------------------------------------------------------------------
+   H. GALLERY GRID & LIGHTBOX
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-gallerySection {
+  padding: 20px 0 58px;
+}
+.emarch-page .emarch-galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.emarch-page .emarch-galleryTile {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f7f3ed;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.06);
+  cursor: pointer;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.emarch-page .emarch-galleryTile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(16, 36, 58, 0.14);
+}
+.emarch-page .emarch-galleryImgWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.emarch-page .emarch-galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.32s ease;
+}
+.emarch-page .emarch-galleryTile:hover .emarch-galleryImg {
+  transform: scale(1.04);
+}
+.emarch-page .emarch-galleryZoomBadge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(16, 36, 58, 0.78);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.emarch-page .emarch-galleryTile:hover .emarch-galleryZoomBadge,
+.emarch-page .emarch-galleryTile:focus-visible .emarch-galleryZoomBadge {
+  opacity: 1;
+}
+.emarch-page .emarch-galleryMoreWrap {
+  margin-top: 22px;
+}
+.emarch-page .emarch-btnViewMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #64717e;
+  color: #ffffff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.emarch-page .emarch-btnViewMore:hover {
+  background-color: #800000;
+  transform: translateY(-1px);
+}
+/* Gallery Lightbox */
+.emarch-page .emarch-lightboxBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background-color: rgba(10, 18, 28, 0.86);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.emarch-page .emarch-lightboxDialog {
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 880px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+.emarch-page .emarch-lightboxClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(16, 36, 58, 0.82);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.emarch-page .emarch-lightboxClose:hover {
+  background-color: #800000;
+}
+.emarch-page .emarch-lightboxImgFrame {
+  background-color: #10161d;
+  display: flex;
+  justify-content: center;
+}
+.emarch-page .emarch-lightboxImg {
+  width: 100%;
+  max-height: 70vh;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.emarch-page .emarch-lightboxFooter {
+  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #ebd9c2;
+}
+.emarch-page .emarch-lightboxCaption {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #10243a;
+}
+.emarch-page .emarch-lightboxNav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.emarch-page .emarch-lightboxNavBtn {
+  background-color: #faf7f2;
+  border: 1px solid #ebd9c2;
+  color: #10243a;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.emarch-page .emarch-lightboxNavBtn:hover {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+}
+.emarch-page .emarch-lightboxCounter {
+  font-size: 12px;
+  color: #6c7886;
+  font-weight: 600;
+}
+/* --------------------------------------------------------------------------
+   I. FINAL FULL-WIDTH DEEP GREEN CTA BANNER
+   -------------------------------------------------------------------------- */
+.emarch-page .emarch-finalCtaSection {
+  background: linear-gradient(135deg, #093c2c 0%, #042118 100%);
+  position: relative;
+  padding: 58px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+.emarch-page .emarch-finalCtaSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+.emarch-page .emarch-finalCtaContainer {
+  position: relative;
+  z-index: 1;
+}
+.emarch-page .emarch-finalCtaContent {
+  max-width: 720px;
+  text-align: left;
+}
+.emarch-page .emarch-finalCtaEyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b7decb;
+  margin-bottom: 12px;
+}
+.emarch-page .emarch-finalCtaHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+.emarch-page .emarch-finalCtaDesc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #d6e8de;
+  margin: 0 0 26px;
+}
+.emarch-page .emarch-finalCtaActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.emarch-page .emarch-btnCtaSolid {
+  background-color: #800000;
+  color: #ffffff;
+  border: 1.5px solid #800000;
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+.emarch-page .emarch-btnCtaSolid:hover {
+  background-color: #a00000;
+  border-color: #a00000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.emarch-page .emarch-btnCtaOutline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+.emarch-page .emarch-btnCtaOutline:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+@media (max-width: 991.98px){.emarch-page .emarch-hero {
+    padding: 34px 0 28px;
+  }
+.emarch-page .emarch-heroTextCol {
+    padding-bottom: 22px;
+  }
+.emarch-page .emarch-heroArchCol {
+    justify-content: center;
+  }
+.emarch-page .emarch-heroArchWrap {
+    max-width: 240px;
+    margin-bottom: 0;
+  }
+.emarch-page .emarch-mainTwoCol {
+    padding: 36px 0 34px;
+  }
+.emarch-page .emarch-outputsCaption {
+    text-align: center;
+    margin-top: 8px;
+  }
+.emarch-page .emarch-galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+.emarch-page .emarch-finalCtaHeading {
+    font-size: 25px;
+  }}
+@media (max-width: 767.98px){.emarch-page .emarch-heroTitle {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+.emarch-page .emarch-sectionHeading {
+    font-size: 19px;
+  }
+.emarch-page .emarch-awardBannerBtn {
+    font-size: 12.8px;
+    padding: 12px 16px;
+  }
+.emarch-page .emarch-processFlow {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+.emarch-page .emarch-stageArrow,
+  .emarch-page .emarch-stageCol:first-child .emarch-stageArrow {
+    clip-path: none;
+    border-radius: 6px 6px 0 0;
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+.emarch-page .emarch-stageArrowWrap {
+    margin-bottom: 0;
+  }
+.emarch-page .emarch-stageCard {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+  }
+.emarch-page .emarch-finalCtaSection {
+    padding: 42px 0;
+  }
+.emarch-page .emarch-finalCtaContent {
+    text-align: center;
+    margin: 0 auto;
+  }
+.emarch-page .emarch-finalCtaActions {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+.emarch-page .emarch-btnCtaSolid,
+  .emarch-page .emarch-btnCtaOutline {
+    width: 100%;
+    justify-content: center;
+  }}
+@media (max-width: 575.98px){.emarch-page .emarch-heroTitle {
+    font-size: 22px;
+  }
+.emarch-page .emarch-toolkitSvg {
+    max-width: 274px;
+  }
+.emarch-page .emarch-collageTile {
+    width: 50px;
+    height: 50px;
+  }
+.emarch-page .emarch-galleryGrid {
+    grid-template-columns: 1fr;
+  }
+.emarch-page .emarch-videoTopTitle {
+    font-size: 11.5px;
+  }}
+@media (max-width: 374.98px){.emarch-page .emarch-collageRow {
+    gap: 4px;
+  }
+.emarch-page .emarch-collageWrap {
+    gap: 4px;
+  }
+.emarch-page .emarch-collageTile {
+    width: 47px;
+    height: 47px;
+  }}
+@media (prefers-reduced-motion: reduce){.emarch-page *,
+  .emarch-page *::before,
+  .emarch-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }}

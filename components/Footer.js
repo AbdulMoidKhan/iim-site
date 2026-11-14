@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="row g-4">
           <div className="col-lg-4 iim-footer-col">
             <Link className="iim-footer-brand" href="/">
-              <img
-                src={asset("/images/logo.png")}
+              <img loading="eager" fetchPriority="high" decoding="async" 
+                src={asset("/images/logo.webp")}
                 alt="Initiative on Islam and Medicine"
                 className="site-logo site-logo--footer"
               />
@@ -18,10 +18,10 @@ export default function Footer() {
               Knowledge that empowers care. For a more informed, equitable, and compassionate healthcare future.
             </p>
             <div className="iim-footer-social">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in" /></a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i className="fa-brands fa-youtube" /></a>
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X"><i className="fa-brands fa-x-twitter" /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram" /></a>
+              <a href="https://www.linkedin.com/company/initiative-on-islam-and-medicine/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in" /></a>
+              <a href="https://www.youtube.com/@MedicineandIslam" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i className="fa-brands fa-youtube" /></a>
+              <a href="https://x.com/initiative4im" target="_blank" rel="noopener noreferrer" aria-label="X"><i className="fa-brands fa-x-twitter" /></a>
+              <a href="https://www.instagram.com/initiativeonislamandmedicine/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram" /></a>
             </div>
           </div>
           <div className="col-6 col-lg-2 iim-footer-col">
@@ -70,3 +70,4 @@ export default function Footer() {
     </footer>
   );
 }
+

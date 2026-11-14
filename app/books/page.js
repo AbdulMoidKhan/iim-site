@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import BooksReviews from "./BooksReviews";
@@ -8,11 +9,11 @@ export const metadata = {
 };
 
 const works = [
-  [asset("/images/work-islam-biomedicine.png"), "Islam and Biomedicine", "Explores the dynamic relationship between Islamic thought and modern biomedicine."],
-  [asset("/images/work-maqasid.png"), "Maqasid al-Shariah and Biomedicine", "Bridging moral, ethical, and policy discourses."],
-  [asset("/images/work-medicine-shariah.png"), "Medicine and Shariah", "A dialogue in Islamic bioethics."],
-  [asset("/images/work-organ-donation.png"), "Organ Donation in Islam", "The interplay of jurisprudence, ethics, and society."],
-  [asset("/images/work-covid.png"), "Islam, Muslims, and COVID-19", "The intersection of ethics, health, and social life in the diaspora."],
+  [asset("/images/work-islam-biomedicine.webp"), "Islam and Biomedicine", "Explores the dynamic relationship between Islamic thought and modern biomedicine."],
+  [asset("/images/work-maqasid.webp"), "Maqasid al-Shariah and Biomedicine", "Bridging moral, ethical, and policy discourses."],
+  [asset("/images/work-medicine-shariah.webp"), "Medicine and Shariah", "A dialogue in Islamic bioethics."],
+  [asset("/images/work-organ-donation.webp"), "Organ Donation in Islam", "The interplay of jurisprudence, ethics, and society."],
+  [asset("/images/work-covid.webp"), "Islam, Muslims, and COVID-19", "The intersection of ethics, health, and social life in the diaspora."],
 ];
 
 const reasons = [
@@ -27,7 +28,7 @@ export default function BooksPage() {
     <div className="books-page">
       <header className="hero-seamless hero-books-seamless">
         <div className="hero-bg-wrapper">
-          <img src={asset("/images/books-banner-wide.jpg")} alt="Medicine and Shariah, Organ Donation in Islam, Maqasid al-Shariah and Biomedicine, and Bridging Bioscience and Islam" className="hero-bg-img" loading="eager" />
+          <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/books-banner-wide.webp")} alt="Medicine and Shariah, Organ Donation in Islam, Maqasid al-Shariah and Biomedicine, and Bridging Bioscience and Islam" className="hero-bg-img" loading="eager" />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />
         </div>
@@ -63,7 +64,7 @@ export default function BooksPage() {
         <div className="container">
           <div className="row align-items-center g-4 g-lg-5">
             <div className="col-lg-6">
-              <img src={asset("/images/book-bridging-cover.jpg")} alt="Bridging Bioscience and Islam book cover" className="books-featured-cover" />
+              <img loading="lazy" decoding="async" src={asset("/images/book-bridging-cover.webp")} alt="Bridging Bioscience and Islam book cover" className="books-featured-cover" />
             </div>
             <div className="col-lg-6">
               <p className="books-eyebrow">FEATURED BOOK</p>
@@ -96,7 +97,7 @@ export default function BooksPage() {
           <div className="books-grid">
             {works.map(([src, title, text]) => (
               <article className="books-work" key={title}>
-                <img src={src} alt={title} className="books-work-cover" />
+                <img loading="lazy" decoding="async" src={src} alt={title} className="books-work-cover" />
                 <h3>{title}</h3>
                 <p>{text}</p>
                 <Link href="/resources" className="books-text-link">LEARN MORE</Link>
@@ -115,7 +116,7 @@ export default function BooksPage() {
           </p>
           <div className="books-modules-grid">
             <article className="books-mod books-mod-split">
-              <img src={asset("/images/mod-bioscience.png")} alt="Exploring Bioscience and Islam curriculum cover" className="books-mod-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/mod-bioscience.webp")} alt="Exploring Bioscience and Islam curriculum cover" className="books-mod-img" />
               <div className="books-mod-body">
                 <h3>Exploring Bioscience and Islam</h3>
                 <p>A Curriculum on Fundamental Questions about the Human Being.</p>
@@ -123,7 +124,7 @@ export default function BooksPage() {
               </div>
             </article>
             <article className="books-mod books-mod-split">
-              <img src={asset("/images/mod-organ-guide.png")} alt="An Organ Donation Decisional Guide for Muslim Americans" className="books-mod-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/mod-organ-guide.webp")} alt="An Organ Donation Decisional Guide for Muslim Americans" className="books-mod-img" />
               <div className="books-mod-body">
                 <h3>An Organ Donation Decisional Guide for Muslim Americans</h3>
                 <p>An educational tool to support informed discussion among Muslim communities.</p>
@@ -163,7 +164,7 @@ export default function BooksPage() {
       <section className="books-cta">
         <div className="row g-0 align-items-stretch">
           <div className="col-lg-5 p-0 books-cta-media">
-            <img src={asset("/images/books-cta-hq.jpg")} alt="Medicine and Shariah, Maqasid al-Shariah and Biomedicine, and Bridging Bioscience and Islam" className="books-cta-img" />
+            <img loading="lazy" decoding="async" src={asset("/images/books-cta-hq.webp")} alt="Medicine and Shariah, Maqasid al-Shariah and Biomedicine, and Bridging Bioscience and Islam" className="books-cta-img" />
           </div>
           <div className="col-lg-7 books-cta-panel">
             <div className="books-cta-copy">

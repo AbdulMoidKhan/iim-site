@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import MammographyNav from "./MammographyNav";
@@ -228,7 +229,7 @@ const MEDIA_HIGHLIGHTS = [
   {
     outlet: "Additional coverage",
     headline: "Access all original media highlights",
-    href: "https://www.islamandmedicine.org/",
+    href: "https://medicineandislam.org/",
   },
 ];
 
@@ -236,12 +237,12 @@ const DISSEMINATION_ITEMS = [
   {
     title: "Dissemination Products",
     desc: "Open the project's existing materials",
-    href: "https://www.islamandmedicine.org/",
+    href: "https://medicineandislam.org/",
   },
   {
     title: "Toolkits",
     desc: "Marked as coming soon on the source page",
-    href: "https://www.islamandmedicine.org/",
+    href: "https://medicineandislam.org/",
   },
 ];
 
@@ -270,8 +271,8 @@ export default function MammographyPage() {
       {/* 01 HERO SECTION */}
       <header className="mm-hero">
         <div className="mm-heroBgWrapper">
-          <img
-            src={asset("/images/research/mammography-hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/research/mammography-hero.webp")}
             alt="Female healthcare provider and patient hands resting in consultation"
             className="mm-heroBgImg"
             loading="eager"
@@ -366,9 +367,9 @@ export default function MammographyPage() {
                   </div>
                   <div className="col-md-5">
                     <div className="mm-mediaWrapper">
-                      <img
+                      <img loading="lazy" decoding="async" 
                         src={asset(
-                          "/images/research/muslim-physicians-overview.jpg"
+                          "/images/research/muslim-physicians-overview.webp"
                         )}
                         alt="Physician in white coat with stethoscope holding a smartphone"
                         className="mm-editorialImg"
@@ -927,8 +928,8 @@ export default function MammographyPage() {
       {/* 04 BOTTOM CALL TO ACTION BANNER */}
       <section className="mm-bottomCta">
         <div className="mm-bottomCtaBg">
-          <img
-            src={asset("/images/our-impact/cta-mosque.jpg")}
+          <img loading="lazy" decoding="async" 
+            src={asset("/images/our-impact/cta-mosque.webp")}
             alt="Mosque dome and minarets against twilight sky"
             className="mm-bottomCtaImg"
             loading="lazy"

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 
@@ -25,37 +26,37 @@ const findings = [
 
 const projects = [
   {
-    img: asset("/images/research/project-mahsn.jpg"),
+    img: asset("/images/research/project-mahsn.webp"),
     title: "Muslim American Healthcare & Spiritual Needs (MAHSN)",
     text: "A national survey examining the healthcare experiences, spiritual needs, and cultural considerations of Muslim patients in the United States.",
     href: "/mahsn-pro",
   },
   {
-    img: asset("/images/research/project-mheart.jpg"),
+    img: asset("/images/research/project-mheart.webp"),
     title: "Mosque-Based Health Education and Research Tools (M-HEaRT)",
     text: "Development and testing of replicable tools and workshops to assess and address health needs within mosque communities, working with imams and community leaders.",
     href: "/mosque-health-education",
   },
   {
-    img: asset("/images/research/project-palliative.jpg"),
+    img: asset("/images/research/project-palliative.webp"),
     title: "Investigating American Muslim Palliative & Hospice Care Needs (I AM PCN)",
     text: "Exploring the needs of Muslim patients and families in end-of-life care, with practical resources and replication guides for healthcare teams.",
     href: "/palliative-care-needs",
   },
   {
-    img: asset("/images/research/project-equity.jpg"),
+    img: asset("/images/research/project-equity.webp"),
     title: "Advancing Equity for Muslim Physicians",
     text: "Examining experiences of discrimination, accommodation, and professional well-being among Muslim physicians and healthcare trainees to inform supportive workplace policies and interventions.",
     href: "/advancing-equity",
   },
   {
-    img: asset("/images/research/project-mammography.jpg"),
+    img: asset("/images/research/project-mammography.webp"),
     title: "Religiously Tailored Mammography Intervention",
     text: "A community-designed educational intervention to increase breast cancer screening among Muslim women, with culturally and religiously tailored materials.",
     href: "/mammography",
   },
   {
-    img: asset("/images/research/project-empart.jpg"),
+    img: asset("/images/research/project-empart.webp"),
     title: "EMPART Research: PCOR-Based Tools",
     text: "Equipping Muslim communities with patient-centered outcomes research frameworks and tools to address health disparities and foster clinical partnerships.",
     href: "/empart-research",
@@ -67,13 +68,13 @@ const projects = [
     href: "/community-health-research",
   },
   {
-    img: asset("/images/research/findings-mosque.jpg"),
+    img: asset("/images/research/findings-mosque.webp"),
     title: "Living Organ Donation in Islam",
     text: "Addressing Islamic bioethical considerations, religious perspectives, and community guidance surrounding living and deceased organ donation.",
     href: "/living-organ-donation",
   },
   {
-    img: asset("/images/work-islam-biomedicine.png"),
+    img: asset("/images/work-islam-biomedicine.webp"),
     title: "Muslim Physicians in U.S. Healthcare",
     text: "A national study exploring how Islamic identity, religious values, and workplace experiences shape the professional practice of American Muslim physicians.",
     href: "/muslim-physicians",
@@ -82,21 +83,21 @@ const projects = [
 
 const resources = [
   {
-    img: asset("/images/mod-organ-guide.png"),
+    img: asset("/images/mod-organ-guide.webp"),
     title: "End-of-Life Healthcare Guide",
     text: "Practical guidance for Muslim patients, families, and healthcare teams.",
     cta: "ACCESS RESOURCE",
     href: "/resources",
   },
   {
-    img: asset("/images/mod-bioscience.png"),
+    img: asset("/images/mod-bioscience.webp"),
     title: "Mosque-Based Workshop Guides",
     text: "Step-by-step guides to replicate health education programs in your community.",
     cta: "ACCESS RESOURCE",
     href: "/resources",
   },
   {
-    img: asset("/images/work-islam-biomedicine.png"),
+    img: asset("/images/work-islam-biomedicine.webp"),
     title: "Policy Reports & Publications",
     text: "Evidence, recommendations, and scholarly publications to inform practice and policy.",
     cta: "BROWSE PUBLICATIONS",
@@ -118,8 +119,8 @@ export default function ResearchPage() {
       {/* 01 HERO */}
       <header className="hero-seamless hero-research-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/research/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/research/hero.webp")}
             alt="Healthcare professionals collaborating on research and care"
             className="hero-bg-img"
             loading="eager"
@@ -194,7 +195,7 @@ export default function ResearchPage() {
             </div>
           </div>
           <div className="rs-findings-media">
-            <img src={asset("/images/research/findings-mosque.jpg")} alt="Mosque architecture" />
+            <img loading="lazy" decoding="async" src={asset("/images/research/findings-mosque.webp")} alt="Mosque architecture" />
           </div>
         </div>
       </section>
@@ -219,8 +220,8 @@ export default function ResearchPage() {
               </a>
             </div>
             <div className="rs-approach-media">
-              <img
-                src={asset("/images/research/approach.jpg")}
+              <img loading="lazy" decoding="async" 
+                src={asset("/images/research/approach.webp")}
                 alt="Community research discussion with Muslim participants"
               />
               <div className="rs-approach-quote">
@@ -256,7 +257,7 @@ export default function ResearchPage() {
                   className="rs-project-media"
                   style={{ display: "block" }}
                 >
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                 </Link>
                 <div className="rs-project-body">
                   <h3>
@@ -282,8 +283,8 @@ export default function ResearchPage() {
       <section className="rs-edu-banner container-fluid p-0">
         <div className="row g-0">
           <div className="col-lg-5 rs-edu-media">
-            <img
-              src={asset("/images/research/education.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/research/education.webp")}
               alt="Educator presenting research-informed learning"
             />
           </div>
@@ -324,7 +325,7 @@ export default function ResearchPage() {
               {resources.map((item) => (
                 <article className="rs-resource-card" key={item.title}>
                   <div className="rs-resource-media">
-                    <img src={item.img} alt={item.title} />
+                    <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                   </div>
                   <div className="rs-resource-body">
                     <h3>{item.title}</h3>
@@ -363,8 +364,8 @@ export default function ResearchPage() {
       <section className="rs-cta container-fluid p-0">
         <div className="row g-0">
           <div className="col-lg-6 rs-cta-media">
-            <img
-              src={asset("/images/research/cta-conference.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/research/cta-conference.webp")}
               alt="Conference audience collaborating on research and care"
             />
           </div>

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import Script from "next/script";
@@ -24,11 +25,11 @@ const partners = [
 ];
 
 const areas = [
-  [asset("/images/story-consultation.jpg"), "Islamic Bioethics", "Guidance on ethical decision-making in clinical care."],
-  [asset("/images/bio-faculty-talk.jpg"), "Cultural & Religious Competency", "Strategies for more inclusive, culturally responsive care."],
-  [asset("/images/expertise-consultation.jpg"), "Institutional Policy & Guidance", "Review and development of policies, protocols, and systems of care."],
-  [asset("/images/learning-lecture.jpg"), "Program Development & Training", "Custom educational programs for healthcare professionals."],
-  [asset("/images/audience-community.jpg"), "Community Engagement", "Building bridges between healthcare institutions and Muslim communities."],
+  [asset("/images/story-consultation.webp"), "Islamic Bioethics", "Guidance on ethical decision-making in clinical care."],
+  [asset("/images/bio-faculty-talk.webp"), "Cultural & Religious Competency", "Strategies for more inclusive, culturally responsive care."],
+  [asset("/images/expertise-consultation.webp"), "Institutional Policy & Guidance", "Review and development of policies, protocols, and systems of care."],
+  [asset("/images/learning-lecture.webp"), "Program Development & Training", "Custom educational programs for healthcare professionals."],
+  [asset("/images/audience-community.webp"), "Community Engagement", "Building bridges between healthcare institutions and Muslim communities."],
 ];
 
 const steps = [
@@ -70,7 +71,7 @@ export default function ConsultationPage() {
           </div>
         </div>
         <div className="consult-hero-media">
-          <img src={asset("/images/consult-hero-team.jpg")} alt="Healthcare professionals collaborating around a consultation table" />
+          <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/consult-hero-team.webp")} alt="Healthcare professionals collaborating around a consultation table" />
           <div className="consult-hero-quote">
             <p>Bridging perspectives. Building solutions.</p>
           </div>
@@ -95,7 +96,7 @@ export default function ConsultationPage() {
         <div className="container">
           <div className="row align-items-center g-4 g-lg-5">
             <div className="col-lg-6">
-              <img className="consult-approach-img" src={asset("/images/bio-hero-discussion.jpg")} alt="Academic and healthcare professionals discussing ethical questions" />
+              <img loading="lazy" decoding="async" className="consult-approach-img" src={asset("/images/bio-hero-discussion.webp")} alt="Academic and healthcare professionals discussing ethical questions" />
             </div>
             <div className="col-lg-6">
               <p className="consult-eyebrow">OUR APPROACH</p>
@@ -130,7 +131,7 @@ export default function ConsultationPage() {
           <div className="consult-areas-grid">
             {areas.map(([src, title, text]) => (
               <article className="consult-area" key={title}>
-                <img src={src} alt={title} />
+                <img loading="lazy" decoding="async" src={src} alt={title} />
                 <div>
                   <h3>{title}</h3>
                   <p>{text}</p>
@@ -166,7 +167,7 @@ export default function ConsultationPage() {
 
       <section className="consult-cta" id="request">
         <div className="consult-cta-media">
-          <img src={asset("/images/distinct-building.jpg")} alt="Academic medical institution" />
+          <img loading="lazy" decoding="async" src={asset("/images/distinct-building.webp")} alt="Academic medical institution" />
           <div className="consult-cta-quote">
             <p>Let&apos;s work together to create more inclusive, ethical, and compassionate care.</p>
             <span />
@@ -179,8 +180,8 @@ export default function ConsultationPage() {
             We welcome the opportunity to learn more about your needs and explore how II&amp;M can support your institution or organization.
           </p>
           <div className="consult-actions">
-            <a href="mailto:info@initiativeonislamandmedicine.org" className="consult-btn consult-btn-fill">SUBMIT A CONSULTATION REQUEST</a>
-            <a href="mailto:info@initiativeonislamandmedicine.org" className="consult-btn consult-btn-outline">OR EMAIL US</a>
+            <a href="mailto:contact@medicineandislam.org" className="consult-btn consult-btn-fill">SUBMIT A CONSULTATION REQUEST</a>
+            <a href="mailto:contact@medicineandislam.org" className="consult-btn consult-btn-outline">OR EMAIL US</a>
           </div>
         </div>
       </section>

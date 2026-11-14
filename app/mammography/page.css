@@ -1,0 +1,942 @@
+/* Route-scoped styles for mammography. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   RELIGIOUSLY-TAILORED MAMMOGRAPHY INTERVENTION
+   Scoped to .mammography-page — Route: /mammography
+   ========================================================================== */
+/* ==========================================================================
+   MAMMOGRAPHY PAGE — CSS MODULE
+   Religiously-Tailored Mammography Intervention for American Muslims
+   Pixel-accurate replication with responsive design
+   ========================================================================== */
+
+.mammography-page, .mm-pageWrapper {
+  background-color: #fcfaf7;
+  color: #293845;
+  font-family: 'DM Sans', Arial, sans-serif;
+  overflow-x: hidden;
+}
+/* 01 Hero Section */
+.mm-hero {
+  position: relative;
+  background-color: #fbf8f2;
+  border-bottom: 1px solid #ede6dc;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.mm-heroBgWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  pointer-events: none;
+  z-index: 1;
+}
+.mm-heroBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+.mm-heroGradientOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #fbf8f2 0%,
+    #fbf8f2 15%,
+    rgba(251, 248, 242, 0.95) 30%,
+    rgba(251, 248, 242, 0.45) 60%,
+    rgba(251, 248, 242, 0.05) 90%
+  );
+}
+.mm-heroContainer {
+  position: relative;
+  z-index: 2;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mm-heroEyebrow {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+  margin-bottom: 12px;
+}
+.mm-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(28px, 3.8vw, 46px);
+  line-height: 1.18;
+  color: #10243a;
+  margin-bottom: 16px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.mm-heroTitle em {
+  font-style: italic;
+  color: #800000;
+  font-weight: 400;
+}
+.mm-heroLead {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4a5766;
+  max-width: 520px;
+  margin-bottom: 22px;
+}
+.mm-heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.mm-btnMaroon {
+  background-color: #800000;
+  border: 1.5px solid #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.mm-btnMaroon:hover {
+  background-color: #660000;
+  border-color: #660000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.22);
+}
+.mm-btnOutline {
+  background-color: transparent;
+  border: 1.5px solid #800000;
+  color: #800000 !important;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.mm-btnOutline:hover {
+  background-color: #800000;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+.mm-heroTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mm-heroTag {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e5dcce;
+  border-radius: 20px;
+  font-size: 11.5px;
+  color: #637180;
+}
+.mm-heroQuotePanel {
+  background-color: #7a1a28;
+  color: #ffffff;
+  padding: 18px 24px;
+  max-width: 250px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+  margin-left: auto;
+  margin-top: 130px;
+}
+.mm-heroQuoteEyebrow {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ddb47a;
+  margin-bottom: 8px;
+}
+.mm-heroQuoteText {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0;
+  color: #ffffff;
+}
+/* 02 Sticky Section Navigation */
+.mm-stickySubnav {
+  position: sticky;
+  top: 83px;
+  z-index: 90;
+  background-color: #fbf8f2;
+  border-top: 1px solid #ede6dc;
+  border-bottom: 1px solid #ede6dc;
+  box-shadow: 0 2px 8px rgba(16, 36, 58, 0.04);
+}
+.mm-subnavWrapper {
+  position: relative;
+  overflow: hidden;
+}
+.mm-subnavList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.mm-subnavList::-webkit-scrollbar {
+  display: none;
+}
+.mm-subnavItem {
+  flex-shrink: 0;
+}
+.mm-subnavLink {
+  display: block;
+  padding: 12px 18px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #556272;
+  text-decoration: none;
+  border-bottom: 2.5px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.mm-subnavLink:hover {
+  color: #800000;
+}
+.mm-subnavLinkActive {
+  color: #800000 !important;
+  border-bottom-color: #800000 !important;
+}
+/* 03 Main Section & Layout */
+.mm-mainSection {
+  background-color: #fcfaf7;
+  padding: 44px 0 64px;
+}
+.mm-sectionBlock {
+  margin-bottom: 44px;
+  scroll-margin-top: 135px;
+}
+.mm-sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.mm-sectionHeadLeft {
+  flex-grow: 1;
+}
+.mm-sectionTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+.mm-accentBar {
+  width: 28px;
+  height: 2px;
+  background-color: #800000;
+  margin-bottom: 14px;
+}
+.mm-counterTag {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #800000;
+}
+.mm-text {
+  font-size: 14px;
+  line-height: 1.68;
+  color: #3b4756;
+  margin-bottom: 14px;
+}
+.mm-leadText {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #43505f;
+  margin-bottom: 16px;
+}
+/* Overview Section Media Badge */
+.mm-mediaWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.08);
+}
+.mm-editorialImg {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.mm-editorialImg:hover {
+  transform: scale(1.02);
+}
+.mm-mediaBadge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #800000;
+  color: #ffffff;
+  padding: 8px 14px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+/* Background Callout Stat Box */
+.mm-highlightStatBox {
+  background-color: #fbf5ee;
+  border: 1px solid #eddcca;
+  border-left: 4px solid #800000;
+  padding: 20px 24px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.mm-highlightStatNum {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 44px;
+  color: #800000;
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.mm-highlightStatText {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #3b4756;
+  margin: 0;
+}
+/* Factors Grid */
+.mm-subheading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 12px;
+}
+.mm-factorCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 16px 18px;
+  border-radius: 2px;
+  height: 100%;
+}
+.mm-factorHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.mm-factorNum {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800000;
+}
+.mm-factorTitle {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+}
+.mm-factorText {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #4a5766;
+  margin: 0;
+}
+/* 3-Pillar Cards (Religiously-Tailored Approach) */
+.mm-pillarCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 22px 18px;
+  border-radius: 2px;
+  text-align: center;
+  height: 100%;
+}
+.mm-circleBadge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800000;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+}
+.mm-pillarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+.mm-pillarText {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #556272;
+  margin: 0;
+}
+/* 4-Step Methodology Cards */
+.mm-stepCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 18px 14px;
+  border-radius: 2px;
+  text-align: center;
+  height: 100%;
+}
+.mm-stepTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mm-stepText {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #556272;
+  margin: 0;
+}
+/* Quote Callout Banner */
+.mm-quoteBanner {
+  background-color: #f9f5ed;
+  border-left: 4px solid #800000;
+  padding: 22px 28px;
+  margin: 32px 0 28px;
+  border-radius: 0 2px 2px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.mm-quoteMark {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 38px;
+  color: #800000;
+  line-height: 1;
+  font-style: italic;
+  flex-shrink: 0;
+}
+.mm-quoteBannerText {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16.5px;
+  font-style: italic;
+  color: #10243a;
+  line-height: 1.5;
+  margin: 0;
+}
+/* Key Outcomes Stat Cards */
+.mm-outcomesRow {
+  margin-bottom: 14px;
+}
+.mm-outcomeCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 22px 16px;
+  text-align: center;
+  border-radius: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+.mm-outcomeCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 36, 58, 0.06);
+}
+.mm-outcomeNum {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(34px, 3.5vw, 42px);
+  color: #800000;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  display: block;
+}
+.mm-outcomeLabel {
+  font-size: 12.5px;
+  line-height: 1.42;
+  color: #4e5a68;
+  margin: 0;
+}
+.mm-outcomesFootnote {
+  font-size: 12px;
+  font-style: italic;
+  color: #768391;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+/* Publications List */
+.mm-papersList {
+  margin-top: 6px;
+}
+.mm-paperItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eae2d4;
+}
+.mm-paperNum {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #800000;
+  flex-shrink: 0;
+  margin-top: 2px;
+  min-width: 24px;
+}
+.mm-paperContent {
+  flex-grow: 1;
+}
+.mm-paperTag {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+  margin-bottom: 4px;
+}
+.mm-paperTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mm-paperLink {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #800000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.mm-paperLink:hover {
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+/* Presentations & Posters */
+.mm-presentationList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mm-presentationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #3b4756;
+  margin-bottom: 12px;
+}
+.mm-presentationNum {
+  font-weight: 700;
+  color: #800000;
+  flex-shrink: 0;
+  min-width: 20px;
+}
+.mm-posterCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 16px 18px;
+  border-radius: 2px;
+  height: 100%;
+}
+.mm-posterHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.mm-posterNum {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800000;
+  flex-shrink: 0;
+}
+.mm-posterText {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #3b4756;
+  margin: 0;
+}
+/* Community Conferences & Media */
+.mm-conferenceCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 14px 18px;
+  border-radius: 2px;
+  height: 100%;
+}
+.mm-conferenceText {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #3b4756;
+  margin: 0;
+}
+.mm-mediaCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 16px 20px;
+  border-radius: 2px;
+  display: block;
+  text-decoration: none;
+  color: #10243a;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+.mm-mediaCard:hover {
+  background-color: #f0eae0;
+  border-color: #800000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.08);
+}
+.mm-mediaOutlet {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mm-mediaHeadline {
+  font-size: 12.5px;
+  color: #800000;
+  line-height: 1.45;
+  margin: 0;
+}
+/* Dissemination Products & Toolkits */
+.mm-toolkitCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 20px 22px;
+  border-radius: 2px;
+  height: 100%;
+}
+.mm-toolkitTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mm-toolkitDesc {
+  font-size: 13px;
+  color: #800000;
+  margin: 0;
+}
+/* Team Cards */
+.mm-teamCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 22px 20px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+.mm-teamBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mm-teamName {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.mm-teamRole {
+  font-size: 12px;
+  color: #556272;
+  margin: 0;
+}
+/* Sidebar Styles */
+.mm-sidebarColumn {
+  position: relative;
+}
+.mm-sidebarCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 20px 18px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+.mm-sidebarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.mm-objectivesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mm-objectiveItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.mm-objectiveItem:last-child {
+  margin-bottom: 0;
+}
+.mm-objectiveNum {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #800000;
+  font-size: 10px;
+  font-weight: 700;
+  color: #800000;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.mm-objectiveText {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #3b4756;
+  margin: 0;
+}
+.mm-bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #800000;
+  margin-right: 8px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.mm-glanceList {
+  margin: 0;
+}
+.mm-glanceItem {
+  margin-bottom: 10px;
+}
+.mm-glanceItem:last-child {
+  margin-bottom: 0;
+}
+.mm-glanceDt {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+.mm-glanceDd {
+  font-size: 12px;
+  color: #4e5a68;
+  margin: 0 0 0 13px;
+  line-height: 1.45;
+}
+.mm-sidebarStatItem {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ede5d7;
+}
+.mm-sidebarStatItem:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.mm-sidebarStatNum {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 26px;
+  color: #800000;
+  font-weight: 400;
+  display: block;
+  line-height: 1.1;
+  margin-bottom: 3px;
+}
+.mm-sidebarStatLabel {
+  font-size: 12px;
+  color: #4e5a68;
+  margin: 0;
+  line-height: 1.4;
+}
+.mm-exploreList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mm-exploreLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #ede5d7;
+  text-decoration: none;
+  color: #3b4756;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+.mm-exploreLink:hover {
+  color: #800000;
+  padding-left: 4px;
+}
+.mm-exploreList li:last-child .mm-exploreLink {
+  border-bottom: none;
+}
+.mm-cardBurgundy {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+}
+.mm-textLight {
+  color: #f7e6e8;
+}
+.mm-btnWhiteOutline {
+  background-color: transparent;
+  border: 1.5px solid #ffffff;
+  color: #ffffff !important;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.mm-btnWhiteOutline:hover {
+  background-color: #ffffff;
+  color: #800000 !important;
+}
+/* 04 Bottom Call to Action Banner */
+.mm-bottomCta {
+  position: relative;
+  overflow: hidden;
+  background-color: #0c1c22;
+  padding: 56px 0;
+  color: #ffffff;
+}
+.mm-bottomCtaBg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.mm-bottomCtaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  opacity: 0.35;
+}
+.mm-bottomCtaOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 28, 32, 0.94) 0%,
+    rgba(14, 38, 38, 0.88) 100%
+  );
+}
+.mm-bottomCtaContainer {
+  position: relative;
+  z-index: 2;
+}
+.mm-ctaEyebrow {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ddb47a;
+  margin-bottom: 10px;
+}
+.mm-ctaHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(24px, 3.2vw, 36px);
+  font-weight: 400;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.mm-ctaSubtext {
+  font-size: 14px;
+  line-height: 1.62;
+  color: #d0dedb;
+  max-width: 600px;
+  margin-bottom: 22px;
+}
+.mm-ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.mm-btnCta {
+  padding: 12px 24px;
+  font-size: 10.5px;
+}

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import PodcastGuests from "./PodcastGuests";
@@ -9,45 +10,45 @@ export const metadata = {
 };
 
 const EPISODES = [
-  ["01", "Science and Religion: How Can We Know Anything at All?", "Released April 15, 2024", "/images/podcast/ep-cosmos.jpg"],
-  ["02", "How Did We Come About? The Question of Human Origin", "Released May 6, 2024", "/images/bio-topic-genes.jpg"],
-  ["03", "What Does it Mean to be Human? Reflections on Neuroscience, Artificial Intelligence and the Soul", "Released June 3, 2024", "/images/podcast/ep-brain.jpg"],
-  ["04", "What is the Future of Humankind? Are we and should we be changing our bodies and brains?", "Released July 1, 2024", "/images/bio-topic-robot.jpg"],
-  ["05", "Are Our Lives Pre-determined? The Question of Free Will and Human Agency", "Released July 29, 2024", "/images/podcast/ep-horizon.jpg"],
-  ["06", "Are Humans Unique in the Universe? The Question of Extraterrestrial Intelligent Life", "Released August 26, 2024", "/images/bio-planet.jpg"],
+  ["01", "Science and Religion: How Can We Know Anything at All?", "Released April 15, 2024", "/images/podcast/ep-cosmos.webp"],
+  ["02", "How Did We Come About? The Question of Human Origin", "Released May 6, 2024", "/images/bio-topic-genes.webp"],
+  ["03", "What Does it Mean to be Human? Reflections on Neuroscience, Artificial Intelligence and the Soul", "Released June 3, 2024", "/images/podcast/ep-brain.webp"],
+  ["04", "What is the Future of Humankind? Are we and should we be changing our bodies and brains?", "Released July 1, 2024", "/images/bio-topic-robot.webp"],
+  ["05", "Are Our Lives Pre-determined? The Question of Free Will and Human Agency", "Released July 29, 2024", "/images/podcast/ep-horizon.webp"],
+  ["06", "Are Humans Unique in the Universe? The Question of Extraterrestrial Intelligent Life", "Released August 26, 2024", "/images/bio-planet.webp"],
 ];
 
 const GUESTS = [
-  ["Dr. Mohd Yusof Mohamad", "International Islamic University Malaysia", "/images/podcast/guest-mohamad.png"],
-  ["Dr. Omar Qureshi", "Yaqeen Institute", "/images/podcast/guest-qureshi.png"],
-  ["Dr. Macksood Aftab", "Michigan State University", "/images/podcast/guest-aftab.png"],
-  ["Dr. Shoaib Malik", "University of Edinburgh", "/images/podcast/guest-malik.png"],
-  ["Dr. Abdurezak Hashi", "International Islamic University Malaysia", "/images/podcast/guest-hashi.png"],
-  ["Usama Javed Mirza", "University of Cambridge", "/images/podcast/guest-mirza.png"],
-  ["Dr. Ahsan Arozullah", "Darul Qasim College", "/images/podcast/guest-ahsan.jpg"],
-  ["Shaykh Bilal Ali Ansari", "Darul Qasim College", "/images/podcast/guest-ansari.png"],
-  ["Dr. Raudah Yunus", "Medical College of Wisconsin", "/images/podcast/guest-yunus.png"],
-  ["Shaykh Hamza Karamali", "Basira Education", "/images/podcast/guest-karamali.png"],
-  ["Dr. Jennifer Wiseman", "Johns Hopkins University", "/images/podcast/guest-wiseman.png"],
+  ["Dr. Mohd Yusof Mohamad", "International Islamic University Malaysia", "/images/podcast/guest-mohamad.webp"],
+  ["Dr. Omar Qureshi", "Yaqeen Institute", "/images/podcast/guest-qureshi.webp"],
+  ["Dr. Macksood Aftab", "Michigan State University", "/images/podcast/guest-aftab.webp"],
+  ["Dr. Shoaib Malik", "University of Edinburgh", "/images/podcast/guest-malik.webp"],
+  ["Dr. Abdurezak Hashi", "International Islamic University Malaysia", "/images/podcast/guest-hashi.webp"],
+  ["Usama Javed Mirza", "University of Cambridge", "/images/podcast/guest-mirza.webp"],
+  ["Dr. Ahsan Arozullah", "Darul Qasim College", "/images/podcast/guest-ahsan.webp"],
+  ["Shaykh Bilal Ali Ansari", "Darul Qasim College", "/images/podcast/guest-ansari.webp"],
+  ["Dr. Raudah Yunus", "Medical College of Wisconsin", "/images/podcast/guest-yunus.webp"],
+  ["Shaykh Hamza Karamali", "Basira Education", "/images/podcast/guest-karamali.webp"],
+  ["Dr. Jennifer Wiseman", "Johns Hopkins University", "/images/podcast/guest-wiseman.webp"],
   ["Dr. Anke Bouzenita", "Sultan Qaboos University", ""],
-  ["Dr. Paul Davies", "Arizona State University", "/images/podcast/guest-davies.png"],
-  ["Dr. Jennifer Nagel", "University of Toronto", "/images/podcast/guest-nagel.png"],
-  ["Dr. Tara Shears", "University of Liverpool", "/images/podcast/guest-shears.jpg"],
-  ["Prof. Philip Donoghue", "University of Bristol", "/images/podcast/guest-donoghue.jpg"],
-  ["Prof. Rana Dajani", "Hashemite University", "/images/podcast/guest-dajani.jpg"],
-  ["Prof. Chris Stringer", "Natural History Museum, London", "/images/podcast/guest-stringer.jpg"],
+  ["Dr. Paul Davies", "Arizona State University", "/images/podcast/guest-davies.webp"],
+  ["Dr. Jennifer Nagel", "University of Toronto", "/images/podcast/guest-nagel.webp"],
+  ["Dr. Tara Shears", "University of Liverpool", "/images/podcast/guest-shears.webp"],
+  ["Prof. Philip Donoghue", "University of Bristol", "/images/podcast/guest-donoghue.webp"],
+  ["Prof. Rana Dajani", "Hashemite University", "/images/podcast/guest-dajani.webp"],
+  ["Prof. Chris Stringer", "Natural History Museum, London", "/images/podcast/guest-stringer.webp"],
   ["Prof. Agustín Fuentes", "Princeton University", "/images/podcast/guest-fuentes.jpg"],
   ["Prof. Megan Peters", "University of California, Irvine", "/images/podcast/guest-peters.webp"],
-  ["Prof. Peter Ulric Tse", "Dartmouth College", "/images/podcast/guest-tse.jpg"],
-  ["Prof. Philip Goff", "Durham University", "/images/podcast/guest-goff.jpg"],
-  ["Dr. James J. Hughes", "University of Massachusetts Boston", "/images/podcast/guest-hughes.jpg"],
+  ["Prof. Peter Ulric Tse", "Dartmouth College", "/images/podcast/guest-tse.webp"],
+  ["Prof. Philip Goff", "Durham University", "/images/podcast/guest-goff.webp"],
+  ["Dr. James J. Hughes", "University of Massachusetts Boston", "/images/podcast/guest-hughes.webp"],
   ["Dr. Anders Sandberg", "Oxford's Future of Humanity Institute", ""],
-  ["Prof. Gregg D. Caruso", "Fairfield University", "/images/podcast/guest-caruso.jpg"],
-  ["Prof. Emilie Caspar", "Ghent University", "/images/podcast/guest-caspar.jpg"],
-  ["Prof. Han Brunner", "Radboud University Medical Center", "/images/podcast/guest-brunner.jpg"],
-  ["Dr. Gwen Adshead", "Ravenswood House", "/images/podcast/guest-adshead.jpg"],
-  ["Prof. Sara Walker", "Arizona State University", "/images/podcast/guest-walker.jpg"],
-  ["Prof. Monica Grady", "The Open University", "/images/podcast/guest-grady.jpg"],
+  ["Prof. Gregg D. Caruso", "Fairfield University", "/images/podcast/guest-caruso.webp"],
+  ["Prof. Emilie Caspar", "Ghent University", "/images/podcast/guest-caspar.webp"],
+  ["Prof. Han Brunner", "Radboud University Medical Center", "/images/podcast/guest-brunner.webp"],
+  ["Dr. Gwen Adshead", "Ravenswood House", "/images/podcast/guest-adshead.webp"],
+  ["Prof. Sara Walker", "Arizona State University", "/images/podcast/guest-walker.webp"],
+  ["Prof. Monica Grady", "The Open University", "/images/podcast/guest-grady.webp"],
 ];
 
 const PLATFORMS = [
@@ -96,8 +97,8 @@ export default function PodcastPage() {
     <div className="podcast-page">
       <header className="hero-seamless hero-podcast-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/podcast-medic-mufti.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/podcast-medic-mufti.webp")}
             alt="Two scholars in conversation, one in a suit and glasses and one wearing a white cap"
             className="hero-bg-img"
             loading="eager"
@@ -125,8 +126,8 @@ export default function PodcastPage() {
           <div className="pod-hero-notes">
           <aside className="pod-award">
             <a href="https://americanwritingawards.com/podcast-of-the-year" target="_blank" rel="noopener noreferrer">
-              <img
-                src={asset("/images/podcast/podcast-of-the-year-2026.png")}
+              <img loading="lazy" decoding="async" 
+                src={asset("/images/podcast/podcast-of-the-year-2026.webp")}
                 alt="American Writing Awards Podcast of the Year 2026"
               />
             </a>
@@ -173,7 +174,7 @@ export default function PodcastPage() {
               <a href="#listen" className="btn-seamless-maroon">WATCH OUR INTRODUCTION <i className="fa-solid fa-arrow-right" /></a>
             </div>
             <figure className="pod-trailer">
-              <img src={asset("/images/podcast-medic-mufti.jpg")} alt="Scholars speaking across a podcast table" />
+              <img loading="lazy" decoding="async" src={asset("/images/podcast-medic-mufti.webp")} alt="Scholars speaking across a podcast table" />
               <a href="#listen" className="pod-play" aria-label="Introduction listing">
                 <i className="fa-solid fa-play" />
               </a>
@@ -193,7 +194,7 @@ export default function PodcastPage() {
 
       <section className="pod-from">
         <div className="pod-from-photo-wrap">
-          <img className="pod-from-photo" src={asset("/images/research/findings-mosque.jpg")} alt="Blue-domed mosque seen through ornate arches at sunset" />
+          <img loading="lazy" decoding="async" className="pod-from-photo" src={asset("/images/research/findings-mosque.webp")} alt="Blue-domed mosque seen through ornate arches at sunset" />
         </div>
         <div className="pod-from-main">
           <div className="pod-from-copy">
@@ -221,7 +222,7 @@ export default function PodcastPage() {
       <section className="pod-host">
         <div className="container">
           <div className="pod-host-grid">
-            <img src={asset("/images/our-team/padela-portrait.jpg")} alt="Dr. Aasim I. Padela" />
+            <img loading="lazy" decoding="async" src={asset("/images/our-team/padela-portrait.webp")} alt="Dr. Aasim I. Padela" />
             <div>
               <p className="pod-eyebrow">MEET THE HOST</p>
               <h2>Dr. Aasim Padela, MD, MSc, FACEP</h2>
@@ -235,9 +236,9 @@ export default function PodcastPage() {
               </div>
             </div>
             <div className="pod-books">
-              <img src={asset("/images/podcast/host-book-bridging.jpg")} alt="Bridging Bioscience and Islam" />
-              <img src={asset("/images/book-medicine-shariah.png")} alt="Medicine and Shariah" />
-              <img src={asset("/images/podcast/host-book-biomedicine.jpg")} alt="Islam and Biomedicine" />
+              <img loading="lazy" decoding="async" src={asset("/images/podcast/host-book-bridging.webp")} alt="Bridging Bioscience and Islam" />
+              <img loading="lazy" decoding="async" src={asset("/images/book-medicine-shariah.webp")} alt="Medicine and Shariah" />
+              <img loading="lazy" decoding="async" src={asset("/images/podcast/host-book-biomedicine.webp")} alt="Islam and Biomedicine" />
             </div>
           </div>
         </div>
@@ -254,7 +255,7 @@ export default function PodcastPage() {
               <Link href="/education" className="btn-seamless-maroon">EXPLORE THE EDUCATIONAL PROGRAM <i className="fa-solid fa-arrow-right" /></Link>
         </div>
             <figure>
-              <img src={asset("/images/podcast/edu-discussion.jpg")} alt="Students and clinicians talking together around a laptop" />
+              <img loading="lazy" decoding="async" src={asset("/images/podcast/edu-discussion.webp")} alt="Students and clinicians talking together around a laptop" />
               <figcaption>Equipping the next generation to navigate the big questions.</figcaption>
             </figure>
       </section>
@@ -267,7 +268,7 @@ export default function PodcastPage() {
           <div className="pod-episode-row">
             {EPISODES.map(([num, title, date, image]) => (
               <article key={num}>
-                <img src={asset(image)} alt="" />
+                <img loading="lazy" decoding="async" src={asset(image)} alt="" />
                 <p className="pod-ep-num">EPISODE {num}</p>
                 <h3>{title}</h3>
                 <p className="pod-date">{date}</p>
@@ -330,7 +331,7 @@ export default function PodcastPage() {
       </section>
 
       <section className="pod-final">
-        <img src={asset("/images/our-mission/cta-mosque.jpg")} alt="Mosque through an ornate arch" />
+        <img loading="lazy" decoding="async" src={asset("/images/our-mission/cta-mosque.webp")} alt="Mosque through an ornate arch" />
         <div className="pod-final-copy">
           <div>
             <p className="pod-eyebrow pod-eyebrow-gold">JOIN THE CONVERSATION</p>

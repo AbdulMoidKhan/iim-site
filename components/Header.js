@@ -21,6 +21,7 @@ const NAV = [
       ["Our Team", "/team"],
       ["Volunteer", "/volunteer"],
       ["Our Impact", "/impact"],
+      ["Partner With II&M", "/partner"],
       ["Contact", "/contact"],
     ],
   },
@@ -134,8 +135,8 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg sticky-top main-nav">
         <div className="container">
           <Link className="navbar-brand site-brand" href="/">
-            <img
-              src={asset("/images/logo.png")}
+            <img loading="eager" fetchPriority="high" decoding="async" 
+              src={asset("/images/logo.webp")}
               alt="Initiative on Islam and Medicine"
               className="site-logo site-logo--header"
             />
@@ -215,3 +216,5 @@ export default function Header() {
     </>
   );
 }
+
+

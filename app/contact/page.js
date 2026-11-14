@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
 import ContactForm from "./ContactForm";
@@ -25,11 +26,11 @@ const FAQS = [
 ];
 
 const SOCIAL = [
-  ["fa-brands fa-linkedin-in", "LinkedIn"],
-  ["fa-brands fa-youtube", "YouTube"],
-  ["fa-brands fa-x-twitter", "X"],
-  ["fa-brands fa-instagram", "Instagram"],
-  ["fa-brands fa-facebook-f", "Facebook"],
+  ["fa-brands fa-linkedin-in", "LinkedIn", "https://www.linkedin.com/company/initiative-on-islam-and-medicine/"],
+  ["fa-brands fa-youtube", "YouTube", "https://www.youtube.com/@MedicineandIslam"],
+  ["fa-brands fa-x-twitter", "X", "https://x.com/initiative4im"],
+  ["fa-brands fa-instagram", "Instagram", "https://www.instagram.com/initiativeonislamandmedicine/"],
+  ["fa-brands fa-facebook-f", "Facebook", "https://www.facebook.com/IIandM/"],
 ];
 
 export default function ContactPage() {
@@ -37,7 +38,7 @@ export default function ContactPage() {
     <div className="contact-page">
       <header className="hero-seamless hero-contact-seamless">
         <div className="hero-bg-wrapper">
-          <img src={asset("/images/contact/hero.jpg")} alt="Professionals in conversation in a warm Islamic architectural interior" className="hero-bg-img" />
+          <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/contact/hero.webp")} alt="Professionals in conversation in a warm Islamic architectural interior" className="hero-bg-img" />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />
         </div>
@@ -93,7 +94,7 @@ export default function ContactPage() {
             <ContactForm />
             <article className="ct-office">
               <div className="ct-office-photo">
-                <img src={asset("/images/contact/office.jpg")} alt="Design photograph of a beige institutional building with arched windows" />
+                <img loading="lazy" decoding="async" src={asset("/images/contact/office.webp")} alt="Design photograph of a beige institutional building with arched windows" />
               </div>
               <div className="ct-office-body">
                 <h2>Our Office</h2>
@@ -119,8 +120,8 @@ export default function ContactPage() {
               <div className="ct-social">
                 <h2>Other Ways to Connect</h2>
                 <div className="ct-social-row">
-                  {SOCIAL.map(([icon, label]) => (
-                    <a key={label} href={SITE} target="_blank" rel="noopener noreferrer" aria-label={`${label} is not published separately. Visit the II&M website.`}>
+                  {SOCIAL.map(([icon, label, url]) => (
+                    <a key={label} href={url} target="_blank" rel="noopener noreferrer" aria-label={`II&M on ${label}`}>
                       <i className={icon} aria-hidden="true" />
                     </a>
                   ))}
@@ -155,7 +156,7 @@ export default function ContactPage() {
 
       <section className="ct-cta container-fluid p-0">
         <div className="ct-cta-grid">
-          <img src={asset("/images/contact/cta.jpg")} alt="A woman in a burgundy hijab looks through an Islamic arch toward a mosque at sunset" />
+          <img loading="lazy" decoding="async" src={asset("/images/contact/cta.webp")} alt="A woman in a burgundy hijab looks through an Islamic arch toward a mosque at sunset" />
           <div className="ct-cta-copy">
             <p className="ct-eyebrow">PARTNER WITH US</p>
             <h2>Together for a More Compassionate, Equitable, and Inclusive Healthcare Future.</h2>

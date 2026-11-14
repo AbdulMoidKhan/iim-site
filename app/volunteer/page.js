@@ -1,3 +1,4 @@
+import "./page.css";
 import VolunteerPageClient from "./VolunteerPageClient";
 
 export const metadata = {

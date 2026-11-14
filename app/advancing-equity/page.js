@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
 import AdvancingEquityNav from "./AdvancingEquityNav";
@@ -395,22 +396,22 @@ const TEAM = [
 // 14. GALLERY (Authentic Academic Research Dialogues)
 const GALLERY_ITEMS = [
   {
-    img: "/images/research/cta-conference.jpg",
+    img: "/images/research/cta-conference.webp",
     title: "National Advisory Working Group",
     desc: "Multidisciplinary scholars and physician leaders deliberating on survey analysis and institutional recommendations.",
   },
   {
-    img: "/images/research/muslim-physicians-overview.jpg",
+    img: "/images/research/muslim-physicians-overview.webp",
     title: "Clinician Qualitative Interviews",
     desc: "Engaging practicing physicians and medical trainees in structured dialogues regarding workplace accommodation.",
   },
   {
-    img: "/images/research/approach.jpg",
+    img: "/images/research/approach.webp",
     title: "Workforce Dissemination Seminar",
     desc: "Presenting empirical findings to academic medicine educators, healthcare executives, and diversity deans.",
   },
   {
-    img: "/images/research/findings-mosque.jpg",
+    img: "/images/research/findings-mosque.webp",
     title: "Community Bioethics & Health Equity Panel",
     desc: "Dialogues bridging institutional healthcare leadership with broader community health priorities.",
   },
@@ -1005,7 +1006,7 @@ export default function AdvancingEquityPage() {
                   {GALLERY_ITEMS.map((item) => (
                     <div key={item.title} className="ae-galleryCard">
                       <div className="ae-galleryImgWrap">
-                        <img
+                        <img loading="eager" fetchPriority="high" decoding="async" 
                           src={asset(item.img)}
                           alt={item.title}
                           className="ae-galleryImg"

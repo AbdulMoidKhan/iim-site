@@ -41,7 +41,7 @@ export default function PodcastGuests({ guests }) {
         {loop.map((guest, index) => (
           <article className="pod-guest" key={`${guest.name}-${index}`} aria-hidden={index >= guests.length || undefined}>
             {guest.image ? (
-              <img src={guest.image} alt={index >= guests.length ? "" : guest.name} />
+              <img loading="eager" fetchPriority="high" decoding="async" src={guest.image} alt={index >= guests.length ? "" : guest.name} />
             ) : (
               <span className="pod-guest-initial" aria-hidden="true">{guest.initials}</span>
             )}

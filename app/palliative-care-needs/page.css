@@ -1,0 +1,662 @@
+/* Route-scoped styles for palliative-care-needs. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   28. I AM PCN (PALLIATIVE & HOSPICE CARE NEEDS) PAGE
+   Pixel-accurate screenshot-to-code implementation with institutional refinement
+   ========================================================================== */
+
+.iampcn-page {
+  background-color: #fdfbf7;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+/* --------------------------------------------------------------------------
+   A. HERO HEADER & BREADCRUMB
+   -------------------------------------------------------------------------- */
+.iampcn-hero {
+  background-color: #faf5ee;
+  position: relative;
+  padding: 48px 0 40px;
+  border-bottom: 1px solid #ebd9c2;
+  background-image: radial-gradient(circle at 92% 35%, rgba(221, 180, 122, 0.16) 0%, transparent 60%);
+}
+.iampcn-diamondAccent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  max-width: 120px;
+}
+.iampcn-diamondLine {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #c9b19e;
+}
+.iampcn-diamondShape {
+  color: #800000;
+  font-size: 11px;
+  line-height: 1;
+}
+.iampcn-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  max-width: 960px;
+  margin: 0 0 18px;
+}
+.iampcn-breadcrumbWrap {
+  margin-top: 6px;
+}
+.iampcn-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #6c7886;
+}
+.iampcn-breadcrumbItem a.iampcn-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.iampcn-breadcrumbItem a.iampcn-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+.iampcn-breadcrumbSeparator {
+  margin: 0 8px;
+  color: #a89d90;
+  font-size: 10px;
+}
+/* --------------------------------------------------------------------------
+   B. MAIN SECTION & TWO-COLUMN LAYOUT
+   -------------------------------------------------------------------------- */
+.iampcn-mainSection {
+  padding: 48px 0 54px;
+}
+.iampcn-contentBlock {
+  margin-bottom: 34px;
+}
+.iampcn-contentBlock:last-child {
+  margin-bottom: 0;
+}
+.iampcn-sectionHeader {
+  margin-bottom: 16px;
+}
+.iampcn-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+.iampcn-sectionHeadingDark {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+.iampcn-headerUnderline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 60px;
+  margin-bottom: 16px;
+}
+.iampcn-diamondLineShort {
+  flex-grow: 1;
+  height: 1.5px;
+  background-color: #800000;
+}
+.iampcn-diamondShapeSmall {
+  color: #800000;
+  font-size: 8px;
+  line-height: 1;
+}
+.iampcn-sectionDivider {
+  height: 1px;
+  background-color: #ebd9c2;
+  margin: 28px 0 0;
+}
+.iampcn-paragraph {
+  font-size: 14.5px;
+  line-height: 1.74;
+  color: #3e4b5a;
+  margin-bottom: 14px;
+}
+.iampcn-paragraph:last-of-type {
+  margin-bottom: 0;
+}
+/* --------------------------------------------------------------------------
+   C. BULLET LIST (What Makes I AM PCN Unique)
+   -------------------------------------------------------------------------- */
+.iampcn-bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.iampcn-bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #2b3846;
+}
+.iampcn-bulletMarker {
+  color: #800000;
+  font-size: 8px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+/* --------------------------------------------------------------------------
+   D. GUIDEBOOK / PUBLICATION COVERS
+   -------------------------------------------------------------------------- */
+.iampcn-booksGrid {
+  margin-top: 20px;
+}
+.iampcn-bookCard {
+  background: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iampcn-bookCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.1);
+  border-color: #d1b89d;
+}
+.iampcn-bookImgWrap {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f7f3ee;
+}
+.iampcn-bookImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+/* --------------------------------------------------------------------------
+   E. SIDEBAR WRAPPER & NUMBERED BADGE CARDS
+   -------------------------------------------------------------------------- */
+.iampcn-sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.iampcn-sidebarCard {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 22px 20px;
+  box-shadow: 0 4px 16px rgba(16, 36, 58, 0.04);
+}
+.iampcn-sidebarCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+.iampcn-badgeList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.iampcn-badgeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.iampcn-badgeNum {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #52606d;
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.iampcn-badgeText {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #3b4756;
+  flex-grow: 1;
+}
+/* --------------------------------------------------------------------------
+   F. SIDEBAR NAVIGATION PILLS
+   -------------------------------------------------------------------------- */
+.iampcn-navPillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.iampcn-navPillItem {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(16, 36, 58, 0.03);
+}
+.iampcn-navPillTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: -0.005em;
+  transition: color 0.22s ease;
+}
+.iampcn-navPillArrow {
+  font-size: 13px;
+  color: #800000;
+  font-weight: 700;
+  transition: transform 0.22s ease, color 0.22s ease;
+}
+.iampcn-navPillItem:hover {
+  background-color: #800000;
+  border-color: #800000;
+  transform: translateX(3px);
+  box-shadow: 0 6px 16px rgba(128, 0, 0, 0.22);
+}
+.iampcn-navPillItem:hover .iampcn-navPillTitle,
+.iampcn-navPillItem:hover .iampcn-navPillArrow {
+  color: #ffffff !important;
+}
+.iampcn-navPillItem:hover .iampcn-navPillArrow {
+  transform: translateX(4px);
+}
+/* --------------------------------------------------------------------------
+   G. GET INVOLVED SIDEBAR CARD
+   -------------------------------------------------------------------------- */
+.iampcn-getInvolvedCard {
+  background: linear-gradient(180deg, #fdf9f5 0%, #faefe5 100%);
+  border: 1px solid #ecd5bd;
+}
+.iampcn-getInvolvedCard .iampcn-sidebarCardTitle {
+  color: #10243a;
+  margin-bottom: 8px;
+}
+.iampcn-getInvolvedDesc {
+  font-size: 13.5px;
+  color: #4b5866;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+.iampcn-btnGetInvolved {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #800000;
+  color: #ffffff !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #800000;
+}
+.iampcn-btnGetInvolved:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+/* --------------------------------------------------------------------------
+   H. PROJECT DISSEMINATION SECTION
+   -------------------------------------------------------------------------- */
+.iampcn-disseminationSection {
+  padding: 38px 0 46px;
+  background-color: #fdfbf7;
+}
+.iampcn-disseminationCard {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  padding: 30px 32px;
+  box-shadow: 0 8px 24px rgba(16, 36, 58, 0.04);
+}
+.iampcn-posterWrap {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(16, 36, 58, 0.1);
+  border: 1px solid #ebd9c2;
+}
+.iampcn-posterImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.iampcn-disseminationDivider {
+  width: 1px;
+  height: 200px;
+  background-color: #ebd9c2;
+}
+.iampcn-disseminationContent {
+  padding-left: 10px;
+}
+.iampcn-disseminationTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #800000;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+.iampcn-disseminationLocation {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b3846;
+  margin: 0 0 6px;
+}
+.iampcn-disseminationDate {
+  font-size: 14px;
+  color: #6c7886;
+  margin: 0 0 20px;
+}
+.iampcn-btnMeetTeam {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  background-color: #ffffff;
+  color: #800000 !important;
+  border: 1.5px solid #800000;
+  border-radius: 25px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+.iampcn-btnMeetTeam:hover {
+  background-color: #800000;
+  color: #ffffff !important;
+  border-color: #800000;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+/* --------------------------------------------------------------------------
+   I. MEET THE PROJECT TEAM SECTION
+   -------------------------------------------------------------------------- */
+.iampcn-teamSection {
+  padding: 40px 0 46px;
+  background-color: #fdfbf7;
+}
+.iampcn-teamTile {
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+}
+.iampcn-teamTile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(16, 36, 58, 0.08);
+  border-color: #d8c2aa;
+}
+.iampcn-teamPhotoWrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f0e9df;
+  margin-bottom: 12px;
+}
+.iampcn-teamPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.iampcn-teamContent {
+  margin-top: auto;
+  padding-top: 4px;
+}
+.iampcn-teamMemberName {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #10243a;
+  margin: 0;
+  line-height: 1.35;
+}
+/* --------------------------------------------------------------------------
+   J. SUPPORTED BY SECTION (Cancer Research UK)
+   -------------------------------------------------------------------------- */
+.iampcn-funderSection {
+  padding: 36px 0 44px;
+  text-align: center;
+  background-color: #fdfbf7;
+}
+.iampcn-funderHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #800000;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+.iampcn-funderLogoWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iampcn-funderLogo {
+  max-height: 52px;
+  max-width: 240px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+.iampcn-funderLogo:hover {
+  transform: scale(1.04);
+}
+/* --------------------------------------------------------------------------
+   K. CRIMSON CALLOUT BANNER
+   -------------------------------------------------------------------------- */
+.iampcn-bannerSection {
+  padding: 20px 0 50px;
+}
+.iampcn-bannerCard {
+  background: linear-gradient(135deg, #7a0000 0%, #600000 100%);
+  position: relative;
+  border-radius: 14px;
+  padding: 42px 48px;
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(122, 0, 0, 0.25);
+}
+.iampcn-bannerCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.iampcn-bannerTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.28;
+  margin: 0;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+}
+.iampcn-bannerDivider {
+  width: 1px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.25);
+  position: relative;
+  z-index: 1;
+}
+.iampcn-bannerDesc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f7e6e6;
+  margin: 0 0 18px;
+  position: relative;
+  z-index: 1;
+}
+.iampcn-bannerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  background-color: #ffffff;
+  color: #7a0000 !important;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+.iampcn-bannerBtn:hover {
+  background-color: #faecec;
+  color: #550000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+/* --------------------------------------------------------------------------
+   L. NEWSLETTER SUBSCRIPTION SECTION
+   -------------------------------------------------------------------------- */
+.iampcn-newsletterSection {
+  padding: 10px 0 70px;
+}
+.iampcn-newsletterCard {
+  max-width: 660px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  padding: 34px 38px;
+  box-shadow: 0 10px 30px rgba(16, 36, 58, 0.05);
+}
+.iampcn-newsletterTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  text-align: center;
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
+}
+.iampcn-newsletterForm .form-control.iampcn-formInput {
+  background-color: #ffffff;
+  border: 1px solid #dcd4c7;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px 14px;
+  color: #10243a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.iampcn-newsletterForm .form-control.iampcn-formInput:focus {
+  border-color: #800000;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.12);
+  outline: none;
+}
+.iampcn-newsletterForm .form-control.iampcn-formInput::placeholder {
+  color: #9aa5b1;
+  font-size: 13.5px;
+}
+.iampcn-formTextarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.iampcn-btnSubmit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 32px;
+  background-color: #800000;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.25);
+}
+.iampcn-btnSubmit:hover {
+  background-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.35);
+  transform: translateY(-1px);
+}
+@media (max-width: 767px){.iampcn-hero {
+    padding: 34px 0 28px;
+  }
+.iampcn-heroTitle {
+    font-size: 23px;
+    line-height: 1.32;
+  }
+.iampcn-sectionHeading {
+    font-size: 18.5px;
+  }
+.iampcn-disseminationCard {
+    padding: 22px 18px;
+  }
+.iampcn-newsletterCard {
+    padding: 26px 20px;
+  }
+.iampcn-btnSubmit,
+  .iampcn-btnMeetTeam,
+  .iampcn-bannerBtn {
+    width: 100%;
+    justify-content: center;
+  }}

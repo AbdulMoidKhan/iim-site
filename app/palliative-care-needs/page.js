@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
 
@@ -76,19 +77,19 @@ const SIDEBAR_LINKS = [
 const TEAM_MEMBERS = [
   {
     name: "Sameeia Khalid",
-    image: "/images/i-am-pcn/hd_team-sameeia.png",
+    image: "/images/i-am-pcn/hd_team-sameeia.webp",
   },
   {
     name: "Dr. Ramy Sedan",
-    image: "/images/i-am-pcn/hd_team-ramy.png",
+    image: "/images/i-am-pcn/hd_team-ramy.webp",
   },
   {
     name: "Gwenn McClendon",
-    image: "/images/i-am-pcn/hd_team-gwenn.png",
+    image: "/images/i-am-pcn/hd_team-gwenn.webp",
   },
   {
     name: "Dr. Aasim I. Padela",
-    image: "/images/i-am-pcn/hd_team-padela.png",
+    image: "/images/i-am-pcn/hd_team-padela.webp",
   },
 ];
 
@@ -256,9 +257,9 @@ export default function IAmPcnPage() {
                     <div className="col-sm-6">
                       <div className="iampcn-bookCard">
                         <div className="iampcn-bookImgWrap">
-                          <img
+                          <img loading="eager" fetchPriority="high" decoding="async" 
                             src={asset(
-                              "/images/i-am-pcn/hd_book-palliative-perspectives.png"
+                              "/images/i-am-pcn/hd_book-palliative-perspectives.webp"
                             )}
                             alt="Islamic Perspectives on Palliative & End-of-Life Care"
                             className="iampcn-bookImg"
@@ -270,9 +271,9 @@ export default function IAmPcnPage() {
                     <div className="col-sm-6">
                       <div className="iampcn-bookCard">
                         <div className="iampcn-bookImgWrap">
-                          <img
+                          <img loading="lazy" decoding="async" 
                             src={asset(
-                              "/images/i-am-pcn/hd_book-end-of-life-decisions.png"
+                              "/images/i-am-pcn/hd_book-end-of-life-decisions.webp"
                             )}
                             alt="Islamic Bioethics of End-of-Life Healthcare Decisions: A Guide for Patients, Families and Healthcare Professionals"
                             className="iampcn-bookImg"
@@ -366,8 +367,8 @@ export default function IAmPcnPage() {
               {/* Left Poster Image */}
               <div className="col-md-5 col-lg-4 text-center">
                 <div className="iampcn-posterWrap">
-                  <img
-                    src={asset("/images/i-am-pcn/hd_dissemination-poster.png")}
+                  <img loading="lazy" decoding="async" 
+                    src={asset("/images/i-am-pcn/hd_dissemination-poster.webp")}
                     alt="Islamic Bioethics & End-of-Life Healthcare Decisions Workshop Poster"
                     className="iampcn-posterImg"
                     loading="lazy"
@@ -419,7 +420,7 @@ export default function IAmPcnPage() {
               <div key={idx} className="col-6 col-md-3">
                 <div className="iampcn-teamTile">
                   <div className="iampcn-teamPhotoWrap">
-                    <img
+                    <img loading="lazy" decoding="async" 
                       src={asset(member.image)}
                       alt={member.name}
                       className="iampcn-teamPhoto"
@@ -443,7 +444,7 @@ export default function IAmPcnPage() {
         <div className="container">
           <h2 className="iampcn-funderHeading">Supported by</h2>
           <div className="iampcn-funderLogoWrap">
-            <img
+            <img loading="lazy" decoding="async" 
               src={asset("/images/i-am-pcn/cancer-research-uk.svg")}
               alt="Cancer Research UK"
               className="iampcn-funderLogo"

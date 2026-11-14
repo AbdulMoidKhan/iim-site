@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -13,7 +14,7 @@ export default function BiosciencePage() {
     <>
     <header className="hero-seamless hero-bio-seamless">
       <div className="hero-bg-wrapper">
-        <img src={asset("/images/bio-hero-discussion.jpg")} alt="Educators in academic discussion" className="hero-bg-img" loading="eager" />
+        <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/bio-hero-discussion.webp")} alt="Educators in academic discussion" className="hero-bg-img" loading="eager" />
         <div className="hero-gradient-overlay" />
         <div className="hero-watermark-overlay" />
       </div>
@@ -79,7 +80,7 @@ A more compassionate future.          </p>
         <div className="row g-3">
           <div className="col-md-4">
             <article className="bio-card">
-              <img src={asset("/images/bio-way-students.jpg")} alt="Students studying" className="bio-card-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-way-students.webp")} alt="Students studying" className="bio-card-img" />
               <span className="bio-card-icon">
                 <i className="fa-solid fa-layer-group" />
               </span>
@@ -91,7 +92,7 @@ A more compassionate future.          </p>
           </div>
           <div className="col-md-4">
             <article className="bio-card">
-              <img src={asset("/images/bio-way-seminar.jpg")} alt="Dedicated seminar" className="bio-card-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-way-seminar.webp")} alt="Dedicated seminar" className="bio-card-img" />
               <span className="bio-card-icon">
                 <i className="fa-solid fa-users" />
               </span>
@@ -103,7 +104,7 @@ A more compassionate future.          </p>
           </div>
           <div className="col-md-4">
             <article className="bio-card">
-              <img src={asset("/images/bio-way-faculty.jpg")} alt="Faculty training" className="bio-card-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-way-faculty.webp")} alt="Faculty training" className="bio-card-img" />
               <span className="bio-card-icon">
                 <i className="fa-solid fa-user-group" />
               </span>
@@ -237,37 +238,37 @@ A more compassionate future.          </p>
         </div>
         <div className="bio-topic-row">
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-topic-book.jpg")} alt="Islam, science, and ways of knowing" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-topic-book.webp")} alt="Islam, science, and ways of knowing" />
             <span className="bio-topic-num">1</span>
             <h3>Islam, Science &amp; Ways of Knowing</h3>
           </article>
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-dna.jpg")} alt="Evolution and human origins" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-dna.webp")} alt="Evolution and human origins" />
             <span className="bio-topic-num">2</span>
             <h3>Evolution &amp; Human Origins</h3>
           </article>
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-hero-mind.jpg")} alt="Neuroscience, AI, and the soul" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-hero-mind.webp")} alt="Neuroscience, AI, and the soul" />
             <span className="bio-topic-num">3</span>
             <h3>Neuroscience, AI &amp; the Soul</h3>
           </article>
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-topic-robot.jpg")} alt="Human enhancement and transhumanism" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-topic-robot.webp")} alt="Human enhancement and transhumanism" />
             <span className="bio-topic-num">4</span>
             <h3>Human Enhancement &amp; Transhumanism</h3>
           </article>
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-topic-genes.jpg")} alt="Free will and genetic determinism" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-topic-genes.webp")} alt="Free will and genetic determinism" />
             <span className="bio-topic-num">5</span>
             <h3>Free Will &amp; Genetic Determinism</h3>
           </article>
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-planet.jpg")} alt="Life beyond Earth" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-planet.webp")} alt="Life beyond Earth" />
             <span className="bio-topic-num">6</span>
             <h3>Life Beyond Earth</h3>
           </article>
           <article className="bio-topic-card">
-            <img src={asset("/images/bio-topic-mosque.jpg")} alt="Synthesis, ethics, and reflection" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-topic-mosque.webp")} alt="Synthesis, ethics, and reflection" />
             <span className="bio-topic-num">7</span>
             <h3>Synthesis, Ethics &amp; Reflection</h3>
           </article>
@@ -281,28 +282,28 @@ A more compassionate future.          </p>
         <div className="row g-3">
           <div className="col-6 col-lg-3">
             <article className="bio-res">
-              <img src={asset("/images/bio-res-readings.jpg")} alt="Key readings textbook" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-res-readings.webp")} alt="Key readings textbook" />
               <h3>Key Readings</h3>
               <p>Bridging Bioscience and Islam and other foundational texts.</p>
             </article>
           </div>
           <div className="col-6 col-lg-3">
             <article className="bio-res">
-              <img src={asset("/images/bio-res-modules.jpg")} alt="Teaching modules" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-res-modules.webp")} alt="Teaching modules" />
               <h3>Teaching Modules</h3>
               <p>Structured materials for each of the seven topics.</p>
             </article>
           </div>
           <div className="col-6 col-lg-3">
             <article className="bio-res">
-              <img src={asset("/images/bio-res-companion.jpg")} alt="Teacher's Companion" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-res-companion.webp")} alt="Teacher's Companion" />
               <h3>Teacher's Companion</h3>
               <p>Guidance, discussion questions, and facilitation tips.</p>
             </article>
           </div>
           <div className="col-6 col-lg-3">
             <article className="bio-res">
-              <img src={asset("/images/bio-res-laptop.jpg")} alt="Additional resources" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-res-laptop.webp")} alt="Additional resources" />
               <h3>Additional Resources</h3>
               <p>Videos, case studies, and activities for classroom use.</p>
             </article>
@@ -320,11 +321,11 @@ A more compassionate future.          </p>
             <Link href="/education" className="bio-btn-maroon">VIEW PAST STUDENT SEMINARS</Link>
           </div>
           <div className="col-lg-4">
-            <img src={asset("/images/bio-student-main.jpg")} alt="Student in academic discussion" className="bio-tall-photo" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-student-main.webp")} alt="Student in academic discussion" className="bio-tall-photo" />
           </div>
           <div className="col-lg-4">
-            <img src={asset("/images/bio-student-group.jpg")} alt="Group discussion" className="bio-stack-photo mb-3" />
-            <img src={asset("/images/bio-student-study.jpg")} alt="Students collaborating" className="bio-stack-photo" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-student-group.webp")} alt="Group discussion" className="bio-stack-photo mb-3" />
+            <img loading="lazy" decoding="async" src={asset("/images/bio-student-study.webp")} alt="Students collaborating" className="bio-stack-photo" />
           </div>
         </div>
       </div>
@@ -342,7 +343,7 @@ A more compassionate future.          </p>
 VIEW PUBLICATIONS{' '}                  <i className="fa-solid fa-arrow-right ms-1" />
                 </Link>
               </div>
-              <img src={asset("/images/bio-journal.jpg")} alt="Academic research papers" className="bio-ed-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-journal.webp")} alt="Academic research papers" className="bio-ed-img" />
             </article>
           </div>
           <div className="col-lg-6">
@@ -355,7 +356,7 @@ VIEW PUBLICATIONS{' '}                  <i className="fa-solid fa-arrow-right ms
 VIEW ALL EVENTS{' '}                  <i className="fa-solid fa-arrow-right ms-1" />
                 </Link>
               </div>
-              <img src={asset("/images/bio-campus.jpg")} alt="University campus" className="bio-ed-img" />
+              <img loading="lazy" decoding="async" src={asset("/images/bio-campus.webp")} alt="University campus" className="bio-ed-img" />
             </article>
           </div>
         </div>
@@ -382,35 +383,35 @@ VIEW ALL EVENTS{' '}                  <i className="fa-solid fa-arrow-right ms-1
           <div className="col-lg-8">
             <div className="bio-team">
               <figure className="bio-member">
-                <img src={asset("/images/bio-team-1.jpg")} alt="Dr. Aasim I. Padela" />
+                <img loading="lazy" decoding="async" src={asset("/images/bio-team-1.webp")} alt="Dr. Aasim I. Padela" />
                 <figcaption>
                   <strong>Dr. Aasim I. Padela</strong>
                   <span>Founder, II&amp;M</span>
                 </figcaption>
               </figure>
               <figure className="bio-member">
-                <img src={asset("/images/bio-team-2.jpg")} alt="Dr. Shoaib Ahmed Malik" />
+                <img loading="lazy" decoding="async" src={asset("/images/bio-team-2.webp")} alt="Dr. Shoaib Ahmed Malik" />
                 <figcaption>
                   <strong>Dr. Shoaib A. Malik</strong>
                   <span>University of Edinburgh</span>
                 </figcaption>
               </figure>
               <figure className="bio-member">
-                <img src={asset("/images/bio-team-3.jpg")} alt="Faculty scholar" />
+                <img loading="lazy" decoding="async" src={asset("/images/bio-team-3.webp")} alt="Faculty scholar" />
                 <figcaption>
                   <strong>Faculty Scholar</strong>
                   <span>Curriculum &amp; Pedagogy</span>
                 </figcaption>
               </figure>
               <figure className="bio-member">
-                <img src={asset("/images/bio-team-4.jpg")} alt="Dr. Macksood Aftab" />
+                <img loading="lazy" decoding="async" src={asset("/images/bio-team-4.webp")} alt="Dr. Macksood Aftab" />
                 <figcaption>
                   <strong>Dr. Macksood Aftab</strong>
                   <span>Michigan State University</span>
                 </figcaption>
               </figure>
               <figure className="bio-member">
-                <img src={asset("/images/bio-team-5.jpg")} alt="Faculty scholar" />
+                <img loading="lazy" decoding="async" src={asset("/images/bio-team-5.webp")} alt="Faculty scholar" />
                 <figcaption>
                   <strong>Faculty Scholar</strong>
                   <span>Islamic Studies</span>

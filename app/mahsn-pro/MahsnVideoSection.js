@@ -8,7 +8,7 @@ const VIDEO_LIST = [
     id: "survey-video",
     title: "Muslim American Healthcare & Spiritual Needs Survey",
     label: "PROJECT VIDEO",
-    thumbnail: asset("/images/mahsn-pro/mahsn-video-survey.jpg"),
+    thumbnail: asset("/images/mahsn-pro/mahsn-video-survey.webp"),
     alt: "Doctor and clinical interaction scene",
     videoId: "JAwBx3WjAuA",
     subtitle:
@@ -18,7 +18,7 @@ const VIDEO_LIST = [
     id: "community-video",
     title: "I&M — Here for the Muslim Community",
     label: "COMMUNITY VIDEO",
-    thumbnail: asset("/images/mahsn-pro/mahsn-video-community.jpg"),
+    thumbnail: asset("/images/mahsn-pro/mahsn-video-community.webp"),
     alt: "Community members hands placed together in a circle",
     videoId: "mh_DaIA0E1Y",
     subtitle:
@@ -68,7 +68,7 @@ export default function MahsnVideoSection() {
               }}
             >
               <div className="mahsn-videoThumbWrap">
-                <img
+                <img loading="eager" fetchPriority="high" decoding="async" 
                   src={video.thumbnail}
                   alt={video.alt}
                   className="mahsn-videoThumb"

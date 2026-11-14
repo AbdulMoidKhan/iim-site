@@ -1,3 +1,4 @@
+import "./page.css";
 import DonatePageClient from "./DonatePageClient";
 
 export const metadata = {

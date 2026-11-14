@@ -195,8 +195,8 @@ export default function EmpartDownloadsSlider({ items }) {
                 >
                   <div className="empart-downloadCardInner">
                     <div className="empart-downloadLogoPill">
-                      <img
-                        src={asset("/images/logo.png")}
+                      <img loading="eager" fetchPriority="high" decoding="async" 
+                        src={asset("/images/logo.webp")}
                         alt=""
                         className="empart-downloadLogo"
                         loading="eager"

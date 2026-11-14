@@ -1,3 +1,4 @@
+import "./page.css";
 import Image from "next/image";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
@@ -75,64 +76,64 @@ const EMPOWERMENT_ISSUES = [
 // Authentic II&M team, faculty, & advisor portraits arranged in 2-5-5-2 diamond mosaic
 const OUTPUT_COLLAGE_ROWS = [
   [
-    { src: "/images/our-team/mheart-padela-hd.jpg", alt: "Dr. Aasim I. Padela" },
-    { src: "/images/our-team/mheart-fatema-hd.jpg", alt: "Fatema Mirza" },
+    { src: "/images/our-team/mheart-padela-hd.webp", alt: "Dr. Aasim I. Padela" },
+    { src: "/images/our-team/mheart-fatema-hd.webp", alt: "Fatema Mirza" },
   ],
   [
-    { src: "/images/our-team/mheart-ayman-hd.jpg", alt: "Imam Ayman Soliman" },
-    { src: "/images/our-team/amb-ingrid.jpg", alt: "Dr. Ingrid Mattson" },
-    { src: "/images/our-team/mheart-adel-hd.jpg", alt: "Adel Sirek" },
-    { src: "/images/our-team/hiba.jpg", alt: "II&M Research Contributor" },
-    { src: "/images/our-team/amb-hatem.jpg", alt: "II&M Advisory Scholar" },
+    { src: "/images/our-team/mheart-ayman-hd.webp", alt: "Imam Ayman Soliman" },
+    { src: "/images/our-team/amb-ingrid.webp", alt: "Dr. Ingrid Mattson" },
+    { src: "/images/our-team/mheart-adel-hd.webp", alt: "Adel Sirek" },
+    { src: "/images/our-team/hiba.webp", alt: "II&M Research Contributor" },
+    { src: "/images/our-team/amb-hatem.webp", alt: "II&M Advisory Scholar" },
   ],
   [
-    { src: "/images/our-team/laila.jpg", alt: "II&M Research Contributor" },
-    { src: "/images/our-team/nabeel.jpg", alt: "II&M Research Fellow" },
-    { src: "/images/our-team/amb-yasir.jpg", alt: "II&M Community Partner" },
-    { src: "/images/our-team/raudah.jpg", alt: "II&M Project Coordinator" },
-    { src: "/images/empart-study/hd_team-anna.png", alt: "Anna Khan" },
+    { src: "/images/our-team/laila.webp", alt: "II&M Research Contributor" },
+    { src: "/images/our-team/nabeel.webp", alt: "II&M Research Fellow" },
+    { src: "/images/our-team/amb-yasir.webp", alt: "II&M Community Partner" },
+    { src: "/images/our-team/raudah.webp", alt: "II&M Project Coordinator" },
+    { src: "/images/empart-study/hd_team-anna.webp", alt: "Anna Khan" },
   ],
   [
-    { src: "/images/our-team/amb-ermin.jpg", alt: "II&M Advisory Scholar" },
-    { src: "/images/our-team/sarah.jpg", alt: "II&M Research Fellow" },
+    { src: "/images/our-team/amb-ermin.webp", alt: "II&M Advisory Scholar" },
+    { src: "/images/our-team/sarah.webp", alt: "II&M Research Fellow" },
   ],
 ];
 
 const GALLERY_PHOTOS = [
   {
-    src: "/images/mheart-gallery/01_group_photo.png",
+    src: "/images/mheart-gallery/01_group_photo.webp",
     alt: "Community health cohort and project leadership group gathering",
   },
   {
-    src: "/images/mheart-gallery/02_group_discussion.png",
+    src: "/images/mheart-gallery/02_group_discussion.webp",
     alt: "Small-group collaborative workshop discussion table",
   },
   {
-    src: "/images/mheart-gallery/03_classroom_discussion.png",
+    src: "/images/mheart-gallery/03_classroom_discussion.webp",
     alt: "Educational breakout session with community participants",
   },
   {
-    src: "/images/mheart-gallery/04_screen_presentation.png",
+    src: "/images/mheart-gallery/04_screen_presentation.webp",
     alt: "Interactive project presentation on community-centered research methods",
   },
   {
-    src: "/images/mheart-gallery/05_speaker_presentation.png",
+    src: "/images/mheart-gallery/05_speaker_presentation.webp",
     alt: "Faculty speaker addressing healthcare and community partners",
   },
   {
-    src: "/images/mheart-gallery/06_lecture_hall.png",
+    src: "/images/mheart-gallery/06_lecture_hall.webp",
     alt: "Plenary hall convenings during research priority workshops",
   },
   {
-    src: "/images/mheart-gallery/07_audience_view.png",
+    src: "/images/mheart-gallery/07_audience_view.webp",
     alt: "Attendees engaging in community health training plenary",
   },
   {
-    src: "/images/mheart-gallery/08_sticky_notes.png",
+    src: "/images/mheart-gallery/08_sticky_notes.webp",
     alt: "Consensus-building priority mapping exercise",
   },
   {
-    src: "/images/mheart-gallery/09_presenter_at_screen.png",
+    src: "/images/mheart-gallery/09_presenter_at_screen.webp",
     alt: "Researcher leading discussion on mosque-based health engagement",
   },
 ];
@@ -235,7 +236,7 @@ export default function EmarchPage() {
             <div className="col-lg-4 emarch-heroArchCol">
               <div className="emarch-heroArchWrap">
                 <Image
-                  src={asset("/images/e-march/hero-mosque-arch.jpg")}
+                  src={asset("/images/e-march/hero-mosque-arch.webp")}
                   alt="Warm architectural view of mosque dome and minarets framed inside an Islamic arch"
                   width={740}
                   height={520}
@@ -553,7 +554,7 @@ export default function EmarchPage() {
               </div>
 
               <a
-                href="https://www.youtube.com/@InitiativeonIslamandMedicine"
+                href="https://www.youtube.com/@MedicineandIslam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="emarch-videoCard"
@@ -561,7 +562,7 @@ export default function EmarchPage() {
               >
                 <div className="emarch-videoThumbWrap">
                   <Image
-                    src={asset("/images/workshops/hero.jpg")}
+                    src={asset("/images/workshops/hero.webp")}
                     alt="Community research webinar presentation scene for E-MARCH"
                     width={1280}
                     height={720}

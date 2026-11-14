@@ -78,8 +78,8 @@ export default function VolunteerPageClient() {
           ==================================================================== */}
       <header className="hero-seamless hero-volunteer-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/volunteer/volunteer-hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/volunteer/volunteer-hero.webp")}
             alt="Muslim volunteers in burgundy II&M vests collaborating around a laptop"
             className="hero-bg-img"
             loading="eager"
@@ -168,8 +168,8 @@ export default function VolunteerPageClient() {
               {/* Left Column: Photograph */}
               <div className="col-lg-5 volunteer-apply-photo-col">
                 <div className="volunteer-apply-photo-wrap">
-                  <img
-                    src={asset("/images/volunteer/volunteer-community-event.jpg")}
+                  <img loading="lazy" decoding="async" 
+                    src={asset("/images/volunteer/volunteer-community-event.webp")}
                     alt="Smiling Muslim female volunteer in burgundy II&M vest handing an event tote bag to a visitor"
                     className="volunteer-apply-img"
                     loading="lazy"

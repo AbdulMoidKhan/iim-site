@@ -1,0 +1,753 @@
+/* Route-scoped styles for research. Split out of globals.css for faster first load. */
+/* 08. RESEARCH PAGES */
+/* ==========================================================================
+   RESEARCH & IMPACT PAGE
+   Scoped to .research-page - route: /research
+   ========================================================================== */
+
+.research-page {
+  --rs-burgundy: #800000;
+  --rs-green: #4a5158;
+  --rs-navy: #172331;
+  --rs-cream: #faf8f4;
+  --rs-gold: #dcc18b;
+  --rs-body: #39444d;
+  --rs-line: #e8e3dc;
+  background: #fff;
+  color: var(--rs-body);
+  overflow-x: clip;
+}
+.research-page section[id] {
+  scroll-margin-top: 92px;
+}
+.rs-eyebrow {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rs-burgundy);
+  margin: 0 0 10px;
+}
+.rs-eyebrow-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+.rs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 1px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.rs-btn-fill {
+  background: var(--rs-burgundy);
+  border: 1px solid var(--rs-burgundy);
+  color: #fff !important;
+}
+.rs-btn-fill:hover {
+  background: #800000;
+  border-color: #800000;
+  color: #fff !important;
+}
+.rs-btn-outline {
+  background: #fff;
+  border: 1px solid var(--rs-burgundy);
+  color: var(--rs-navy) !important;
+}
+.rs-btn-outline:hover {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(128, 0, 0, 0.28);
+}
+.rs-btn-outline:hover * {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+.rs-btn-light {
+  background: #fff;
+  border: 1px solid #fff;
+  color: var(--rs-burgundy) !important;
+}
+.rs-btn-light:hover {
+  background: #f7eef1;
+  color: #800000 !important;
+}
+.rs-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rs-burgundy);
+  text-decoration: none;
+}
+.rs-text-link:hover {
+  color: #800000;
+}
+/* 01 Hero */
+.research-page .hero-research-seamless {
+  background-color: var(--rs-cream);
+  border-bottom: 1px solid var(--rs-line);
+}
+.research-page .rs-hero-eyebrow {
+  color: var(--rs-burgundy);
+  font-weight: 800;
+}
+.research-page .rs-hero-quote {
+  right: 24px;
+  bottom: 28px;
+  background: var(--rs-green);
+  padding: 18px 22px;
+  max-width: 200px;
+  position: absolute;
+  z-index: 3;
+}
+/* 02 Principles */
+.rs-principles {
+  background: var(--rs-cream);
+  border-bottom: 1px solid var(--rs-line);
+  padding: 34px 0 32px;
+}
+.rs-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.rs-principle {
+  text-align: center;
+  padding: 8px 22px;
+  border-right: 1px solid var(--rs-line);
+}
+.rs-principle:last-child {
+  border-right: none;
+}
+.rs-principle-icon {
+  width: 54px;
+  height: 54px;
+  border: 1.5px solid var(--rs-burgundy);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: var(--rs-burgundy);
+  font-size: 18px;
+}
+.rs-principle h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 18px;
+  color: var(--rs-burgundy);
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.rs-principle p {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--rs-body);
+  max-width: 210px;
+  margin: 0 auto;
+}
+/* 03 Key Findings */
+.rs-findings {
+  background: var(--rs-green);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.rs-findings::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--iim-pattern);
+  background-size: 280px;
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.rs-findings-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.7fr);
+  min-height: 280px;
+}
+.rs-findings-copy {
+  padding: 40px 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rs-findings-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 8px;
+}
+.rs-stat {
+  padding: 8px 22px 0 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+  padding-right: 22px;
+  margin-right: 22px;
+}
+.rs-stat:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.rs-stat h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(40px, 4vw, 52px);
+  color: var(--rs-gold);
+  margin: 0 0 10px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.rs-stat p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  max-width: 28ch;
+}
+.rs-findings-media {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+}
+.rs-findings-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.rs-findings-media::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 72px;
+  background: linear-gradient(90deg, var(--rs-green) 0%, rgba(74, 81, 88, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+/* 04 Approach */
+.rs-approach {
+  background: #fff;
+  padding: 64px 0 68px;
+}
+.rs-approach-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 40px;
+  align-items: center;
+}
+.rs-approach-copy h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(28px, 2.8vw, 38px);
+  line-height: 1.25;
+  color: var(--rs-navy);
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+.rs-approach-copy p {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 48ch;
+  margin: 0 0 14px;
+}
+.rs-approach-copy .rs-btn {
+  margin-top: 10px;
+}
+.rs-approach-media {
+  position: relative;
+  overflow: hidden;
+}
+.rs-approach-media img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+.rs-approach-quote {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background: var(--rs-burgundy);
+  color: #fff;
+  padding: 16px 18px;
+  max-width: 220px;
+}
+.rs-approach-quote p {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  color: #fff;
+}
+/* 05 Projects */
+.rs-projects {
+  background: var(--rs-cream);
+  padding: 56px 0 64px;
+  border-top: 1px solid var(--rs-line);
+}
+.rs-projects-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.rs-projects-head .rs-eyebrow {
+  margin: 0;
+}
+.rs-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.rs-project-card {
+  background: #fff;
+  border: 1px solid var(--rs-line);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.rs-project-media {
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #eee;
+}
+.rs-project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rs-project-body {
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.rs-project-body h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.35;
+  color: var(--rs-burgundy);
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+.rs-project-body p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  flex: 1;
+}
+/* 06 Education banner */
+.rs-edu-banner {
+  background: var(--rs-green);
+  overflow: hidden;
+}
+.rs-edu-media {
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+.rs-edu-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rs-edu-copy {
+  position: relative;
+  color: #fff;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background: var(--rs-green);
+}
+.rs-edu-copy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--iim-pattern);
+  background-size: 280px;
+  background-repeat: repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.rs-edu-inner {
+  position: relative;
+  z-index: 1;
+  padding: 48px 48px 48px 56px;
+  max-width: 640px;
+}
+.rs-edu-inner h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(26px, 2.6vw, 36px);
+  line-height: 1.28;
+  color: #fff;
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+.rs-edu-inner p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 48ch;
+  margin: 0 0 24px;
+}
+/* 07 Resources */
+.rs-resources {
+  background: #fff;
+  padding: 64px 0 68px;
+}
+.rs-resources-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.7fr);
+  gap: 36px;
+  align-items: start;
+}
+.rs-resources-intro h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(28px, 2.8vw, 38px);
+  line-height: 1.25;
+  color: var(--rs-navy);
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+.rs-resources-intro p {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 36ch;
+  margin: 0 0 22px;
+}
+.rs-resources-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.rs-resource-card {
+  border: 1px solid var(--rs-line);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.rs-resource-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f3efe8;
+}
+.rs-resource-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rs-resource-body {
+  padding: 16px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.rs-resource-body h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--rs-burgundy);
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.rs-resource-body p {
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0 0 14px;
+  flex: 1;
+}
+/* 08 Process */
+.rs-process {
+  background: var(--rs-cream);
+  border-top: 1px solid var(--rs-line);
+  border-bottom: 1px solid var(--rs-line);
+  padding: 48px 0 52px;
+}
+.rs-process-eyebrow {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.rs-process-track {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  position: relative;
+}
+.rs-process-step {
+  text-align: center;
+  padding: 0 14px;
+  position: relative;
+}
+.rs-process-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--rs-burgundy);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  margin: 0 auto 14px;
+  position: relative;
+  z-index: 1;
+}
+.rs-process-arrow {
+  position: absolute;
+  top: 26px;
+  left: -12%;
+  width: 24%;
+  height: 0;
+  border-top: 2px dotted #c9c0b4;
+}
+.rs-process-arrow::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: -5px;
+  border: 5px solid transparent;
+  border-left-color: #c9c0b4;
+}
+.rs-process-step h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 15px;
+  color: var(--rs-navy);
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+.rs-process-step p {
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 16ch;
+  color: #5a6570;
+}
+/* 09 CTA ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ deep green panel */
+.rs-cta {
+  background: var(--rs-green);
+  overflow: hidden;
+}
+.rs-cta-media {
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+.rs-cta-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.rs-cta-copy {
+  position: relative;
+  color: #fff;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background: var(--rs-green);
+}
+.rs-cta-copy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--iim-pattern);
+  background-size: 320px;
+  background-repeat: repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+.rs-cta-inner {
+  position: relative;
+  z-index: 1;
+  padding: 48px 48px 48px 52px;
+  max-width: 560px;
+}
+.rs-cta-inner .rs-eyebrow {
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 12px;
+}
+.rs-cta-inner h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(26px, 2.6vw, 36px);
+  line-height: 1.28;
+  color: #fff;
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+.rs-cta-inner > p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 26px;
+  max-width: 46ch;
+}
+.rs-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.rs-cta-actions .rs-btn-light {
+  background: #fff;
+  border: 1px solid #fff;
+  color: var(--rs-burgundy) !important;
+}
+.rs-cta-actions .rs-btn-light:hover {
+  background: #f7eef1;
+  border-color: #f7eef1;
+  color: #800000 !important;
+}
+@media (max-width: 991px){.research-page .rs-hero-quote {
+    position: static !important;
+    margin: 8px 0 28px;
+    max-width: 220px;
+  }
+.rs-principles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 0;
+  }
+.rs-principle:nth-child(2) {
+    border-right: none;
+  }
+.rs-principle {
+    border-bottom: 1px solid var(--rs-line);
+    padding-bottom: 16px;
+  }
+.rs-principle:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+.rs-findings-inner {
+    grid-template-columns: 1fr;
+  }
+.rs-findings-media {
+    min-height: 220px;
+    order: -1;
+  }
+.rs-findings-media::before {
+    width: 100%;
+    height: 56px;
+    inset: auto 0 0 0;
+    background: linear-gradient(0deg, var(--rs-green) 0%, rgba(74, 81, 88, 0) 100%);
+  }
+.rs-approach-grid,
+  .rs-resources-grid {
+    grid-template-columns: 1fr;
+  }
+.rs-approach-media img {
+    height: 300px;
+  }
+.rs-projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+.rs-resources-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+.rs-process-track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+.rs-process-arrow {
+    display: none;
+  }
+.rs-edu-media,
+  .rs-cta-media {
+    min-height: 280px;
+  }
+.rs-edu-copy,
+  .rs-cta-copy {
+    min-height: 0;
+  }}
+@media (max-width: 767px){.rs-principles-grid,
+  .rs-findings-stats,
+  .rs-projects-grid,
+  .rs-resources-cards,
+  .rs-process-track {
+    grid-template-columns: 1fr;
+  }
+.rs-principle {
+    border-right: none;
+    border-bottom: 1px solid var(--rs-line);
+    padding: 16px 8px;
+  }
+.rs-principle:last-child {
+    border-bottom: none;
+  }
+.rs-stat {
+    border-right: none;
+    margin: 0 0 18px;
+    padding: 0 0 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+.rs-stat:last-child {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+  }
+.rs-projects-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.rs-approach,
+  .rs-projects,
+  .rs-resources,
+  .rs-process {
+    padding: 40px 0 44px;
+  }
+.rs-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+.rs-cta-actions a,
+  .rs-edu-inner .rs-btn,
+  .rs-resources-intro .rs-btn,
+  .rs-approach-copy .rs-btn {
+    width: 100%;
+  }
+.rs-approach-quote {
+    position: static;
+    max-width: none;
+    margin-top: 0;
+  }
+.rs-approach-media {
+    display: flex;
+    flex-direction: column;
+  }}
+@media (max-width: 575px){.rs-findings-copy,
+  .rs-edu-inner,
+  .rs-cta-inner {
+    padding: 28px 16px 32px;
+  }
+.rs-approach-media img {
+    height: 240px;
+  }}
+.rs-resource-media img {
+  object-fit: contain;
+  background: #f3efe8;
+}

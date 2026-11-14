@@ -1,0 +1,1327 @@
+/* Route-scoped styles for advancing-equity. Split out of globals.css for faster first load. */
+/* --------------------------------------------------------------------------
+   08. RESEARCH PAGES (CONSOLIDATED STANDALONE PROJECTS)
+   -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   ADVANCING EQUITY FOR MUSLIM PHYSICIANS IN THE HEALTHCARE WORKFORCE
+   Scoped to .advancing-equity-page — Route: /advancing-equity
+   ========================================================================== */
+/* ==========================================================================
+   ADVANCING EQUITY FOR MUSLIM PHYSICIANS IN THE HEALTHCARE WORKFORCE
+   Standalone Route: /advancing-equity
+   Pixel-Accurate Institutional Academic Design System
+   ========================================================================== */
+
+.advancing-equity-page, .ae-pageWrap {
+  background-color: #ffffff;
+  color: #2d3748;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: clip;
+  position: relative;
+}
+/* ==========================================================================
+   01 HERO SECTION — Academic Editorial Minimal Background
+   ========================================================================== */
+.ae-hero {
+  position: relative;
+  background-color: #faf7f2;
+  border-bottom: 1px solid #eae3d6;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 64px 0 68px;
+}
+/* Abstract Subtle Circular Watermark Forms matching screenshot */
+.ae-heroBgCircles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.ae-heroCircleOuter {
+  position: absolute;
+  right: -8%;
+  top: -22%;
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(215, 198, 175, 0.45);
+  background: radial-gradient(
+    circle,
+    rgba(245, 238, 227, 0.5) 0%,
+    rgba(250, 247, 242, 0.15) 60%,
+    rgba(250, 247, 242, 0) 80%
+  );
+}
+.ae-heroCircleInner {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(205, 185, 160, 0.5);
+  background: radial-gradient(
+    circle,
+    rgba(241, 231, 218, 0.45) 0%,
+    rgba(250, 247, 242, 0) 70%
+  );
+}
+.ae-heroCircleCore {
+  position: absolute;
+  right: 18%;
+  top: 20%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px dashed rgba(195, 172, 145, 0.35);
+  background: radial-gradient(
+    circle,
+    rgba(238, 225, 208, 0.4) 0%,
+    rgba(250, 247, 242, 0) 75%
+  );
+}
+.ae-heroContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.ae-heroEyebrowWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.ae-heroEyebrowLine {
+  width: 24px;
+  height: 1.5px;
+  background-color: #8c6e4e;
+  display: inline-block;
+}
+.ae-heroEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+  margin: 0;
+}
+.ae-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(32px, 4.2vw, 50px);
+  line-height: 1.15;
+  color: #10243a;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  max-width: 720px;
+}
+.ae-heroTitle em {
+  font-style: italic;
+  color: #800000;
+  font-weight: 400;
+}
+.ae-heroLead {
+  font-size: 15px;
+  line-height: 1.68;
+  color: #4a5766;
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+.ae-heroActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.ae-btnPrimary {
+  background-color: #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #800000;
+}
+.ae-btnPrimary:hover {
+  background-color: #660000;
+  border-color: #660000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.15);
+}
+.ae-btnOutline {
+  background-color: #ffffff;
+  color: #800000 !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #800000;
+}
+.ae-btnOutline:hover {
+  background-color: #faf0f2;
+  color: #660000 !important;
+  border-color: #660000;
+  transform: translateY(-1px);
+}
+/* ==========================================================================
+   02 STICKY SUB-NAVIGATION
+   ========================================================================== */
+.ae-stickySubnav {
+  position: sticky;
+  top: 83px;
+  z-index: 1020;
+  background-color: #ffffff;
+  border-top: 1px solid #eae3d6;
+  border-bottom: 1px solid #eae3d6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: top 0.2s ease;
+}
+.ae-subnavContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.ae-subnavContainer::-webkit-scrollbar {
+  display: none;
+}
+.ae-subnavList {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ae-subnavLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 0 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5c6773;
+  text-decoration: none;
+  border-bottom: 2.5px solid transparent;
+  transition: all 0.2s ease;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ae-subnavLink:hover {
+  color: #800000;
+}
+.ae-subnavLinkActive {
+  color: #800000 !important;
+  font-weight: 700;
+  border-bottom-color: #800000;
+}
+/* ==========================================================================
+   03 TWO-COLUMN MAIN CONTENT & SIDEBAR LAYOUT
+   ========================================================================== */
+.ae-mainLayoutSection {
+  padding: 56px 0 84px;
+  background-color: #ffffff;
+}
+.ae-layoutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 52px;
+  align-items: start;
+}
+.ae-mainColumn {
+  min-width: 0;
+}
+.ae-sidebarColumn {
+  min-width: 0;
+}
+.ae-sidebarStickyWrap {
+  position: sticky;
+  top: 154px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/* Section Header Typography */
+.ae-sectionBlock {
+  margin-bottom: 56px;
+  scroll-margin-top: 150px;
+}
+.ae-sectionEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #800000;
+  margin-bottom: 6px;
+}
+.ae-sectionTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(23px, 2.3vw, 29px);
+  line-height: 1.25;
+  color: #10243a;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+.ae-burgundyBar {
+  width: 32px;
+  height: 2px;
+  background-color: #800000;
+  margin-bottom: 18px;
+}
+.ae-sectionSubtext {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #55606d;
+  margin-bottom: 22px;
+}
+.ae-bodyParagraph {
+  font-size: 14.5px;
+  line-height: 1.72;
+  color: #4a5568;
+  margin-bottom: 16px;
+}
+.ae-bodyParagraph:last-child {
+  margin-bottom: 0;
+}
+/* ==========================================================================
+   04 SECTION 01: PROJECT OVERVIEW
+   ========================================================================== */
+.ae-overviewGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* ==========================================================================
+   05 SECTION 02: PROJECT OBJECTIVES (2x2 Grid)
+   ========================================================================== */
+.ae-objectivesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-objectiveCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-left: 3px solid #800000;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-objectiveNumber {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  color: #800000;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.ae-objectiveCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ae-objectiveCardText {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #55606d;
+  margin: 0;
+}
+/* ==========================================================================
+   06 SECTION 03: METHODOLOGY & STATISTIC STRIP
+   ========================================================================== */
+.ae-methodologyStatsStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+  padding: 22px 20px;
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+}
+.ae-methodStatCol {
+  text-align: center;
+  padding: 0 12px;
+  position: relative;
+}
+.ae-methodStatCol:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #eae3d6;
+}
+.ae-methodStatVal {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #800000;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.ae-methodStatLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4a5568;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+/* ==========================================================================
+   07 SECTION 04: SURVEY OF INTERVIEW PARTICIPANTS (2x2 Grid)
+   ========================================================================== */
+.ae-participantsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-participantCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-participantLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  color: #800000;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ae-participantHeadline {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.ae-participantDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #55606d;
+  margin: 0;
+}
+/* ==========================================================================
+   08 SECTION 05: KEY RESEARCH FINDINGS & CHARTS
+   ========================================================================== */
+.ae-findingsBarsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+.ae-findingBarItem {
+  background-color: #ffffff;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 16px 20px;
+}
+.ae-findingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+.ae-findingName {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #10243a;
+}
+.ae-findingPct {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #800000;
+  flex-shrink: 0;
+}
+.ae-progressTrack {
+  height: 7px;
+  background-color: #eee9e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.ae-progressBarFill {
+  height: 100%;
+  background-color: #800000;
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+.ae-findingContext {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+/* Research Insight Burgundy Panel */
+.ae-researchInsightPanel {
+  background-color: #800000;
+  color: #ffffff;
+  padding: 28px 32px;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.ae-insightEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #deb87b;
+  margin-bottom: 10px;
+}
+.ae-insightQuote {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16.5px;
+  line-height: 1.55;
+  color: #faf7f2;
+  font-style: italic;
+  margin: 0;
+}
+/* Additional Findings Cards */
+.ae-additionalFindingsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.ae-additionalFindingCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 18px 20px;
+  height: 100%;
+}
+.ae-additionalFindingTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 8px;
+}
+.ae-additionalFindingText {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #55606d;
+  margin: 0;
+}
+/* ==========================================================================
+   09 SECTION 06: RELIGIOUS ACCOMMODATION AT WORK (2x2 Grid)
+   ========================================================================== */
+.ae-accommodationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-accommodationCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-accommodationTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.ae-accommodationDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #55606d;
+  margin: 0;
+}
+/* ==========================================================================
+   10 SECTION 07: RECOMMENDATIONS FOR HEALTHCARE INSTITUTIONS (2x3 Grid)
+   ========================================================================== */
+.ae-recommendationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-recommendationCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-recommendationNum {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  color: #800000;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.ae-recommendationTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.ae-recommendationDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #55606d;
+  margin: 0;
+}
+/* ==========================================================================
+   11 SECTION 08: SUMMARY & IMPLICATIONS
+   ========================================================================== */
+.ae-summaryCallout {
+  background-color: #faf7f2;
+  border-left: 3px solid #800000;
+  border-top: 1px solid #eae3d6;
+  border-right: 1px solid #eae3d6;
+  border-bottom: 1px solid #eae3d6;
+  padding: 22px 26px;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+.ae-summaryCalloutTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 8px;
+}
+.ae-summaryCalloutText {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #4a5568;
+  margin: 0;
+}
+/* ==========================================================================
+   12 SECTION 09: POLICY REPORT (Burgundy Feature Panel)
+   ========================================================================== */
+.ae-policyReportPanel {
+  background-color: #800000;
+  color: #ffffff;
+  padding: 36px 36px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.ae-policyPanelEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #deb87b;
+  margin-bottom: 12px;
+}
+.ae-policyPanelTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 22px;
+  line-height: 1.3;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 14px;
+  max-width: 600px;
+}
+.ae-policyPanelDesc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 580px;
+  margin-bottom: 24px;
+}
+.ae-btnPolicyWhite {
+  background-color: #ffffff;
+  color: #800000 !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #ffffff;
+}
+.ae-btnPolicyWhite:hover {
+  background-color: #faf7f2;
+  color: #660000 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* ==========================================================================
+   13 SECTION 10: RESEARCH PUBLICATIONS (2-Column Cards)
+   ========================================================================== */
+.ae-publicationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-publicationCard {
+  background-color: #ffffff;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ae-publicationCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.05);
+}
+.ae-pubMeta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #8c6e4e;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ae-pubTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.4;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ae-pubAuthors {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #64748b;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+.ae-pubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #800000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.ae-pubLink:hover {
+  color: #660000;
+  text-decoration: underline;
+}
+/* ==========================================================================
+   14 SECTION 11: PRESENTATIONS & CONFERENCES (2-Column Cards)
+   ========================================================================== */
+.ae-presentationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-presentationCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-presEvent {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ae-presTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.35;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.ae-presDesc {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #55606d;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+.ae-presDate {
+  font-size: 11.5px;
+  color: #8c6e4e;
+  font-weight: 600;
+  margin: 0;
+}
+/* ==========================================================================
+   15 SECTION 12: MEDIA HIGHLIGHTS (Responsive Grid)
+   ========================================================================== */
+.ae-mediaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-mediaCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ae-mediaCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 36, 58, 0.04);
+}
+.ae-mediaOutlet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ae-mediaHeadline {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.35;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.ae-mediaSnippet {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #55606d;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+.ae-mediaAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: 0.04em;
+}
+/* ==========================================================================
+   16 SECTION 13: WORKSHOPS & EMPLOYEE RESOURCES (2-Column Cards)
+   ========================================================================== */
+.ae-workshopsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-workshopCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-workshopType {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ae-workshopTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.35;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.ae-workshopDesc {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #55606d;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+.ae-workshopLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #800000;
+  text-decoration: none;
+}
+.ae-workshopLink:hover {
+  text-decoration: underline;
+}
+/* ==========================================================================
+   17 SECTION 14: VIDEOS & DISSEMINATION PRODUCTS
+   ========================================================================== */
+.ae-videosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-videoCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-videoFrameWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #0c1b2a;
+  overflow: hidden;
+}
+.ae-videoIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.ae-videoContent {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.ae-videoCategory {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #800000;
+  margin-bottom: 6px;
+}
+.ae-videoTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+.ae-videoDesc {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #55606d;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+.ae-videoActionBtn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #800000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  transition: all 0.2s ease;
+}
+.ae-videoActionBtn:hover {
+  color: #660000;
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+/* ==========================================================================
+   18 SECTION 15: MEET THE PROJECT TEAM (Academic Directory)
+   ========================================================================== */
+.ae-teamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-teamCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-left: 3px solid #800000;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ae-teamName {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.ae-teamRole {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #800000;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+.ae-teamAffiliation {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #55606d;
+  margin: 0;
+}
+/* ==========================================================================
+   19 SECTION 16: GALLERY (Responsive Academic Gallery)
+   ========================================================================== */
+.ae-galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.ae-galleryCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.ae-galleryImgWrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #eae3d6;
+}
+.ae-galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.ae-galleryCard:hover .ae-galleryImg {
+  transform: scale(1.03);
+}
+.ae-galleryCaption {
+  padding: 14px 18px;
+  background-color: #faf7f2;
+  border-top: 1px solid #eae3d6;
+}
+.ae-galleryCaptionTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.ae-galleryCaptionText {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+/* ==========================================================================
+   20 RIGHT SIDEBAR
+   ========================================================================== */
+.ae-sidebarCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 24px 22px;
+}
+.ae-sidebarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 8px;
+}
+.ae-sidebarBar {
+  width: 24px;
+  height: 2px;
+  background-color: #800000;
+  margin-bottom: 16px;
+}
+.ae-glanceList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+.ae-glanceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ae-glanceLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+}
+.ae-glanceValue {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #10243a;
+  font-weight: 500;
+  margin: 0;
+}
+.ae-researchLinksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ae-researchLinkItem a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #10243a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.ae-researchLinkItem a:hover {
+  color: #800000;
+  transform: translateX(2px);
+}
+.ae-sidebarBullet {
+  width: 5px;
+  height: 5px;
+  background-color: #800000;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+/* Sidebar Solid Burgundy CTA Card */
+.ae-sidebarCardBurgundy {
+  background-color: #800000;
+  color: #ffffff;
+  border: 1px solid #800000;
+  border-radius: 2px;
+  padding: 26px 22px;
+}
+.ae-sidebarTitleWhite {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.ae-sidebarBarWhite {
+  width: 24px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 14px;
+}
+.ae-sidebarBurgundyText {
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 18px;
+}
+.ae-sidebarOutlineBtn {
+  background-color: transparent;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease;
+}
+.ae-sidebarOutlineBtn:hover {
+  background-color: #ffffff;
+  color: #800000 !important;
+  border-color: #ffffff;
+}
+/* ==========================================================================
+   21 FINAL DARK GREEN FULL-WIDTH CTA SECTION
+   ========================================================================== */
+.ae-finalCtaSection {
+  background-color: #003b35;
+  background-image:
+    radial-gradient(ellipse at 75% 25%, rgba(13, 85, 78, 0.45) 0%, rgba(0, 59, 53, 0) 65%),
+    var(--iim-pattern);
+  background-size: auto, 120px 120px;
+  background-repeat: no-repeat, repeat;
+  background-position: center, center;
+  color: #ffffff;
+  padding: 68px 0 72px;
+  position: relative;
+  overflow: hidden;
+}
+.ae-finalCtaInner {
+  max-width: 860px;
+}
+.ae-finalCtaEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #deb87b;
+  margin-bottom: 12px;
+}
+.ae-finalCtaTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+}
+.ae-finalCtaDesc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #d1dedc;
+  max-width: 720px;
+  margin-bottom: 26px;
+}
+.ae-finalCtaActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.ae-btnCtaPrimary {
+  background-color: #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #800000;
+  transition: all 0.2s ease;
+}
+.ae-btnCtaPrimary:hover {
+  background-color: #660000;
+  border-color: #660000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+.ae-btnCtaOutline {
+  background-color: transparent;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  transition: all 0.2s ease;
+}
+.ae-btnCtaOutline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}

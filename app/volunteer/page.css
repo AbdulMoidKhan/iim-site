@@ -1,0 +1,776 @@
+/* Route-scoped styles for volunteer. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   31. VOLUNTEER AT II&M PAGE
+   Scoped strictly under .volunteer-page
+   ========================================================================== */
+
+.volunteer-page {
+  background-color: #ffffff;
+  color: #34404a;
+  overflow-x: hidden;
+}
+/* --------------------------------------------------------------------------
+   1. HERO SECTION
+   -------------------------------------------------------------------------- */
+.volunteer-page .volunteer-hero {
+  position: relative;
+  background-color: #faf8f4;
+  overflow: hidden;
+  padding: 0;
+  border-bottom: 1px solid #f0e9e1;
+}
+.volunteer-page .volunteer-hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 48%;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+.volunteer-page .volunteer-hero-row {
+  position: relative;
+  z-index: 1;
+  min-height: 420px;
+}
+.volunteer-page .volunteer-hero-col-content {
+  padding: 56px 0;
+}
+.volunteer-page .volunteer-hero-content {
+  max-width: 520px;
+}
+.volunteer-page .volunteer-eyebrow {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #800000;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.volunteer-page .volunteer-hero-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(36px, 4.2vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #102337;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+}
+.volunteer-page .volunteer-hero-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16.5px;
+  line-height: 1.62;
+  color: #34404a;
+  margin-bottom: 28px;
+}
+.volunteer-page .volunteer-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.22s ease-in-out;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.22);
+}
+.volunteer-page .volunteer-btn-primary:hover,
+.volunteer-page .volunteer-btn-primary:focus {
+  background-color: #660000;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.3);
+}
+.volunteer-page .volunteer-hero-col-media {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-end;
+}
+.volunteer-page .volunteer-hero-media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.volunteer-page .volunteer-hero-fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  background: linear-gradient(to right, #faf8f4 0%, rgba(250, 248, 244, 0.5) 45%, rgba(250, 248, 244, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+.volunteer-page .volunteer-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+/* --------------------------------------------------------------------------
+   2. MAKE A MEANINGFUL CONTRIBUTION
+   -------------------------------------------------------------------------- */
+.volunteer-page .volunteer-contribution-section {
+  padding: 72px 0 36px;
+  background-color: #ffffff;
+}
+.volunteer-page .volunteer-contribution-row {
+  margin-bottom: 48px;
+}
+.volunteer-page .volunteer-contribution-heading-wrap {
+  border-left: 3px solid #800000;
+  padding-left: 22px;
+}
+.volunteer-page .volunteer-contribution-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(30px, 3.4vw, 42px);
+  font-weight: 700;
+  color: #102337;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.volunteer-page .volunteer-contribution-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.68;
+  color: #34404a;
+  margin: 0;
+}
+/* --------------------------------------------------------------------------
+   3. THREE BENEFIT CARDS
+   -------------------------------------------------------------------------- */
+.volunteer-page .volunteer-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.volunteer-page .volunteer-benefit-card {
+  background: #fbf8f4;
+  border: 1px solid #f0e9e1;
+  border-radius: 12px;
+  padding: 26px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.volunteer-page .volunteer-benefit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(16, 35, 55, 0.07);
+}
+.volunteer-page .volunteer-benefit-icon-badge {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  background: #f5ebe3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #800000;
+  font-size: 20px;
+}
+.volunteer-page .volunteer-benefit-body {
+  flex: 1;
+}
+.volunteer-page .volunteer-benefit-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #102337;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.volunteer-page .volunteer-benefit-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.52;
+  color: #4b5563;
+  margin: 0;
+}
+/* --------------------------------------------------------------------------
+   4. BECOME A VOLUNTEER — APPLICATION SECTION
+   -------------------------------------------------------------------------- */
+.volunteer-page .volunteer-apply-section {
+  padding: 30px 0 84px;
+  background-color: #ffffff;
+}
+.volunteer-page .volunteer-apply-card {
+  background: #faf6f2;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 44px rgba(16, 35, 55, 0.05);
+  border: 1px solid #ede5dc;
+}
+.volunteer-page .volunteer-apply-photo-col {
+  position: relative;
+  background-color: #faf6f2;
+}
+.volunteer-page .volunteer-apply-photo-wrap {
+  position: sticky;
+  top: 96px;
+  width: 100%;
+  height: min(720px, calc(100vh - 120px));
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 16px 0 0 16px;
+}
+.volunteer-page .volunteer-apply-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 14%;
+  display: block;
+}
+.volunteer-page .volunteer-apply-form-col {
+  position: relative;
+  background-color: #faf6f2;
+}
+.volunteer-page .volunteer-apply-form-inner {
+  position: relative;
+  padding: 48px 48px 40px;
+  z-index: 1;
+}
+.volunteer-page .volunteer-iframe-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.volunteer-page .volunteer-iframe-wrap iframe {
+  width: 100% !important;
+  min-height: 720px;
+  border: none !important;
+  display: block;
+}
+.volunteer-page .volunteer-field-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.volunteer-page .volunteer-placeholder-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14.5px;
+  color: #6b7280;
+  pointer-events: none;
+  margin: 0;
+  user-select: none;
+  z-index: 2;
+}
+.volunteer-page .volunteer-placeholder-textarea {
+  top: 14px;
+  transform: none;
+}
+.volunteer-page .volunteer-asterisk {
+  color: #800000;
+  font-weight: 700;
+  margin-left: 2px;
+}
+.volunteer-page .volunteer-form-watermark {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 260px;
+  height: 260px;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+.volunteer-page .volunteer-form-header {
+  margin-bottom: 24px;
+}
+.volunteer-page .volunteer-form-accent-bar {
+  width: 36px;
+  height: 3px;
+  background-color: #800000;
+  margin-bottom: 14px;
+}
+.volunteer-page .volunteer-form-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(26px, 2.8vw, 34px);
+  font-weight: 700;
+  color: #102337;
+  margin: 0;
+}
+.volunteer-page .volunteer-form {
+  position: relative;
+  z-index: 2;
+}
+.volunteer-page .volunteer-input,
+.volunteer-page .volunteer-textarea {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ded6cd;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14.5px;
+  color: #102337;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.volunteer-page .volunteer-input::placeholder,
+.volunteer-page .volunteer-textarea::placeholder {
+  color: #71717a;
+  font-size: 14px;
+}
+.volunteer-page .volunteer-input:focus,
+.volunteer-page .volunteer-textarea:focus {
+  border-color: #800000;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.12);
+  outline: none;
+}
+.volunteer-page .volunteer-textarea {
+  min-height: 128px;
+  resize: vertical;
+}
+.volunteer-page .volunteer-field-error {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #dc2626;
+  margin-top: 4px;
+}
+.volunteer-page .volunteer-error-alert {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+.volunteer-page .volunteer-btn-submit {
+  display: inline-flex;
+  align-items: center;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+}
+.volunteer-page .volunteer-btn-submit:hover:not(:disabled) {
+  background-color: #660000;
+  transform: translateY(-1px);
+}
+.volunteer-page .volunteer-btn-submit:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+.volunteer-page .volunteer-success-box {
+  background-color: #ffffff;
+  border: 1px solid #d1fae5;
+  border-left: 4px solid #059669;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.08);
+}
+.volunteer-page .volunteer-success-icon {
+  font-size: 28px;
+  color: #059669;
+  line-height: 1;
+}
+.volunteer-page .volunteer-success-heading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 6px;
+}
+.volunteer-page .volunteer-success-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #374151;
+  margin-bottom: 14px;
+}
+.volunteer-page .volunteer-btn-reset {
+  background: transparent;
+  border: 1px solid #10b981;
+  color: #059669;
+  padding: 7px 16px;
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.volunteer-page .volunteer-btn-reset:hover {
+  background-color: #059669;
+  color: #ffffff;
+}
+/* --------------------------------------------------------------------------
+   5. STAY CONNECTED — NEWSLETTER SECTION
+   -------------------------------------------------------------------------- */
+.volunteer-page .volunteer-newsletter-section {
+  background-color: #800000;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.volunteer-page .volunteer-newsletter-pattern {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  bottom: -30px;
+  width: 320px;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+.volunteer-page .volunteer-newsletter-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+.volunteer-page .volunteer-newsletter-left {
+  display: flex;
+  align-items: center;
+}
+.volunteer-page .volunteer-newsletter-icon {
+  font-size: 44px;
+  color: #ffffff;
+  line-height: 1;
+}
+.volunteer-page .volunteer-newsletter-divider {
+  width: 1px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.26);
+  margin: 0 28px;
+}
+.volunteer-page .volunteer-newsletter-center {
+  flex: 1;
+  max-width: 480px;
+}
+.volunteer-page .volunteer-newsletter-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(24px, 2.6vw, 30px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  line-height: 1.22;
+}
+.volunteer-page .volunteer-newsletter-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+.volunteer-page .volunteer-newsletter-right {
+  display: flex;
+  align-items: center;
+}
+.volunteer-page .volunteer-newsletter-field-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.volunteer-page .volunteer-newsletter-input {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #172331;
+  min-width: 270px;
+  transition: box-shadow 0.2s ease;
+}
+.volunteer-page .volunteer-newsletter-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.45);
+  outline: none;
+}
+.volunteer-page .volunteer-newsletter-btn {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.volunteer-page .volunteer-newsletter-btn:hover {
+  background-color: #ffffff;
+  color: #800000;
+  border-color: #ffffff;
+}
+.volunteer-page .volunteer-newsletter-error {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #fca5a5;
+  margin-top: 6px;
+}
+.volunteer-page .volunteer-newsletter-success {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991.98px){.volunteer-page .volunteer-hero {
+    padding: 36px 0 0;
+  }
+.volunteer-page .volunteer-hero-content {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+.volunteer-page .volunteer-hero-media-wrapper {
+    max-width: 100%;
+  }
+.volunteer-page .volunteer-hero-fade-overlay {
+    display: none;
+  }
+.volunteer-page .volunteer-hero-img {
+    max-height: 380px;
+    border-radius: 8px 8px 0 0;
+  }
+.volunteer-page .volunteer-contribution-row {
+    margin-bottom: 36px;
+  }
+.volunteer-page .volunteer-contribution-heading-wrap {
+    margin-bottom: 20px;
+  }
+.volunteer-page .volunteer-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+.volunteer-page .volunteer-apply-photo-wrap {
+    min-height: 340px;
+    max-height: 380px;
+  }
+.volunteer-page .volunteer-apply-img {
+    border-radius: 16px 16px 0 0;
+  }
+.volunteer-page .volunteer-newsletter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+.volunteer-page .volunteer-newsletter-left {
+    display: none;
+  }
+.volunteer-page .volunteer-newsletter-center {
+    max-width: 100%;
+  }
+.volunteer-page .volunteer-newsletter-right {
+    width: 100%;
+  }
+.volunteer-page .volunteer-newsletter-form {
+    width: 100%;
+  }
+.volunteer-page .volunteer-newsletter-field-group {
+    width: 100%;
+  }
+.volunteer-page .volunteer-newsletter-input {
+    flex: 1;
+    min-width: 0;
+  }}
+@media (max-width: 575.98px){.volunteer-page .volunteer-hero {
+    padding: 24px 0 0;
+  }
+.volunteer-page .volunteer-contribution-section {
+    padding: 44px 0 24px;
+  }
+.volunteer-page .volunteer-benefit-card {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+.volunteer-page .volunteer-benefit-icon-badge {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 17px;
+  }
+.volunteer-page .volunteer-benefit-title {
+    font-size: 17.5px;
+  }
+.volunteer-page .volunteer-apply-section {
+    padding: 16px 0 54px;
+  }
+.volunteer-page .volunteer-apply-form-inner {
+    padding: 28px 20px 24px;
+  }
+.volunteer-page .volunteer-btn-submit {
+    width: 100%;
+    justify-content: center;
+  }
+.volunteer-page .volunteer-newsletter-field-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+.volunteer-page .volunteer-newsletter-btn {
+    width: 100%;
+    text-align: center;
+  }}
+@media (prefers-reduced-motion: reduce){.volunteer-page *,
+  .volunteer-page *::before,
+  .volunteer-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }}
+/* --------------------------------------------------------------------------
+   HOMEPAGE-STYLE SEAMLESS HERO FOR VOLUNTEER PAGE
+   -------------------------------------------------------------------------- */
+.volunteer-page .hero-volunteer-seamless {
+  background: #faf8f4;
+  min-height: 520px;
+  border-bottom: 1px solid #e8e3dc;
+  position: relative;
+  overflow: hidden;
+}
+.volunteer-page .hero-volunteer-seamless .hero-watermark-left {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  width: 220px;
+  height: 220px;
+  background-image: var(--iim-pattern);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 1;
+}
+.volunteer-page .hero-volunteer-seamless .volunteer-hero-content-inner {
+  max-width: 520px;
+  position: relative;
+  z-index: 2;
+  padding: 64px 0;
+}
+.volunteer-page .volunteer-hero-eyebrow-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.volunteer-page .volunteer-hero-eyebrow-line {
+  display: inline-block;
+  width: 22px;
+  height: 1.5px;
+  background-color: #800000;
+}
+.volunteer-page .volunteer-hero-eyebrow-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #800000;
+  text-transform: uppercase;
+}
+.volunteer-page .volunteer-hero-main-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(38px, 4.2vw, 56px);
+  line-height: 1.15;
+  color: #10243a;
+  margin-bottom: 22px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+.volunteer-page .volunteer-hero-main-lead {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.68;
+  color: #3b4756;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+.volunteer-page .volunteer-hero-main-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.volunteer-page .btn-volunteer-primary {
+  display: inline-flex;
+  align-items: center;
+  background-color: #800000;
+  border: 1px solid #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.22s ease-in-out;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.22);
+}
+.volunteer-page .btn-volunteer-primary:hover,
+.volunteer-page .btn-volunteer-primary:focus {
+  background-color: #600000;
+  border-color: #600000;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -2px rgba(128, 0, 0, 0.32);
+}
+@media (max-width: 991px){.volunteer-page .hero-volunteer-seamless .hero-watermark-left {
+    display: none !important;
+  }
+.volunteer-page .hero-volunteer-seamless .volunteer-hero-content-inner {
+    padding: 32px 0 36px;
+    max-width: 100%;
+  }
+.volunteer-page .volunteer-apply-photo-wrap {
+    position: relative !important;
+    top: auto !important;
+    height: 380px !important;
+    min-height: auto !important;
+    border-radius: 16px 16px 0 0 !important;
+  }}

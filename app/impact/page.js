@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 
@@ -49,22 +50,22 @@ const examples = [
 
 const conferences = [
   {
-    img: asset("/images/our-impact/conf-1.jpg"),
+    img: asset("/images/our-impact/conf-1.webp"),
     title: "Dignity and Healthcare at End-of-Life: Abrahamic Faiths in a Bioethics Conversation",
     text: "A multidisciplinary dialogue on dignity, care, and faith traditions at the end of life.",
   },
   {
-    img: asset("/images/our-impact/conf-2.jpg"),
+    img: asset("/images/our-impact/conf-2.webp"),
     title: "Interfaces and Discourses: A Multidisciplinary Conference on Islamic Theology, Law, and Biomedicine",
     text: "Scholars and clinicians examining the intersections of theology, law, and biomedicine.",
   },
   {
-    img: asset("/images/our-impact/conf-3.jpg"),
+    img: asset("/images/our-impact/conf-3.webp"),
     title: "Multidisciplinary Symposium on Islam and Biomedicine",
     text: "Advancing research and conversation across medicine, ethics, and Islamic studies.",
   },
   {
-    img: asset("/images/our-impact/conf-4.jpg"),
+    img: asset("/images/our-impact/conf-4.webp"),
     title: "Religious Dimensions of Healthcare Delivery: A Multidisciplinary Workshop",
     text: "Practical workshop exploring faith, values, and healthcare delivery.",
   },
@@ -72,7 +73,7 @@ const conferences = [
 
 const discourse = [
   {
-    img: asset("/images/our-impact/disc-research.jpg"),
+    img: asset("/images/our-impact/disc-research.webp"),
     icon: "fa-file-lines",
     title: "Research Projects",
     text: "Evidence-informed inquiry that strengthens understanding of Islam, ethics, and healthcare.",
@@ -80,7 +81,7 @@ const discourse = [
     cta: "EXPLORE OUR RESEARCH",
   },
   {
-    img: asset("/images/our-impact/disc-pubs.jpg"),
+    img: asset("/images/our-impact/disc-pubs.webp"),
     icon: "fa-book",
     title: "Publications",
     text: "Books, articles, and resources that translate scholarship into practical guidance.",
@@ -88,7 +89,7 @@ const discourse = [
     cta: "VIEW PUBLICATIONS",
   },
   {
-    img: asset("/images/our-impact/disc-media.jpg"),
+    img: asset("/images/our-impact/disc-media.webp"),
     icon: "fa-comments",
     title: "Public Discourse",
     text: "Commentary and media engagement that elevate informed public conversations.",
@@ -99,22 +100,22 @@ const discourse = [
 
 const teaching = [
   {
-    img: asset("/images/our-impact/teach-1.jpg"),
+    img: asset("/images/our-impact/teach-1.webp"),
     title: "Constructing the Field of Islamic Bioethics",
     text: "Foundational teaching that maps the questions, methods, and stakes of the field.",
   },
   {
-    img: asset("/images/our-impact/teach-2.jpg"),
+    img: asset("/images/our-impact/teach-2.webp"),
     title: "A Mentored Introduction to Islam and Bioethics",
     text: "Guided learning for students and early-career professionals entering the conversation.",
   },
   {
-    img: asset("/images/our-impact/teach-3.jpg"),
+    img: asset("/images/our-impact/teach-3.webp"),
     title: "Islam, Medical Ethics, and Spiritual Care",
     text: "Education connecting clinical ethics with spiritual care and community contexts.",
   },
   {
-    img: asset("/images/our-impact/teach-4.jpg"),
+    img: asset("/images/our-impact/teach-4.webp"),
     title: "Introduction to the Field of Islamic Bioethics",
     text: "An accessible entry point for clinicians, educators, and community leaders.",
   },
@@ -144,8 +145,8 @@ export default function ImpactPage() {
     <div className="impact-page">
       <header className="hero-seamless hero-impact-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/our-impact/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/our-impact/hero.webp")}
             alt="Healthcare professionals collaborating around a laptop"
             className="hero-bg-img"
             loading="eager"
@@ -244,7 +245,7 @@ export default function ImpactPage() {
               </Link>
             </div>
             <div className="imp-national-map">
-              <img src={asset("/images/our-impact/us-map.svg")} alt="Map of II&M research and program locations across the United States" />
+              <img loading="lazy" decoding="async" src={asset("/images/our-impact/us-map.svg")} alt="Map of II&M research and program locations across the United States" />
             </div>
             <div className="imp-national-examples">
               <p className="imp-eyebrow">SELECTED EXAMPLES</p>
@@ -277,7 +278,7 @@ export default function ImpactPage() {
             {conferences.map((item) => (
               <article className="imp-media-card" key={item.title}>
                 <div className="imp-media-card-img">
-                  <img src={item.img} alt="" />
+                  <img loading="lazy" decoding="async" src={item.img} alt="" />
                 </div>
                 <div className="imp-media-card-body">
                   <h3>{item.title}</h3>
@@ -304,7 +305,7 @@ export default function ImpactPage() {
             {discourse.map((item) => (
               <article className="imp-discourse-card" key={item.title}>
                 <div className="imp-discourse-media">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                 </div>
                 <div className="imp-discourse-body">
                   <span className="imp-icon-circle imp-icon-circle--sm">
@@ -334,7 +335,7 @@ export default function ImpactPage() {
             {teaching.map((item) => (
               <article className="imp-course" key={item.title}>
                 <div className="imp-course-media">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                 </div>
                 <div className="imp-course-body">
                   <h3>{item.title}</h3>
@@ -362,7 +363,7 @@ export default function ImpactPage() {
           <div className="imp-partners-grid">
             {partners.map((partner) => (
               <article className="imp-partner" key={partner.name}>
-                <img src={partner.src} alt={partner.name} />
+                <img loading="lazy" decoding="async" src={partner.src} alt={partner.name} />
               </article>
             ))}
           </div>
@@ -418,8 +419,8 @@ export default function ImpactPage() {
             </div>
           </div>
           <div className="imp-cta-media">
-            <img
-              src={asset("/images/our-impact/cta-mosque.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/our-impact/cta-mosque.webp")}
               alt="Mosque viewed through ornate Islamic arches at sunset"
             />
           </div>

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import MahsnNav from "./MahsnNav";
@@ -131,8 +132,8 @@ export default function MahsnPage() {
       {/* 01 HERO SECTION */}
       <header className="mahsn-hero">
         <div className="mahsn-heroBgWrapper">
-          <img
-            src={asset("/images/mahsn-pro/mahsn-hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/mahsn-pro/mahsn-hero.webp")}
             alt="Medical professional in white coat holding smartphone"
             className="mahsn-heroBgImg"
             loading="eager"
@@ -229,8 +230,8 @@ export default function MahsnPage() {
                   </div>
                   <div className="col-md-5">
                     <div className="mahsn-mediaWrapper">
-                      <img
-                        src={asset("/images/mahsn-pro/mahsn-overview.jpg")}
+                      <img loading="lazy" decoding="async" 
+                        src={asset("/images/mahsn-pro/mahsn-overview.webp")}
                         alt="Clinician in white coat holding smartphone"
                         className="mahsn-editorialImg"
                         loading="lazy"
@@ -315,8 +316,8 @@ export default function MahsnPage() {
                   </div>
                   <div className="col-md-5">
                     <div className="mahsn-mediaWrapper">
-                      <img
-                        src={asset("/images/mahsn-pro/mahsn-brain.jpg")}
+                      <img loading="lazy" decoding="async" 
+                        src={asset("/images/mahsn-pro/mahsn-brain.webp")}
                         alt="Anatomical human brain model in medical laboratory"
                         className="mahsn-editorialImg"
                         loading="lazy"

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import MuslimPhysiciansNav from "./MuslimPhysiciansNav";
@@ -136,8 +137,8 @@ export default function MuslimPhysiciansPage() {
       {/* 01 HERO SECTION */}
       <header className="mp-hero">
         <div className="mp-hero-bg-wrapper">
-          <img
-            src={asset("/images/research/muslim-physicians-hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/research/muslim-physicians-hero.webp")}
             alt="American Muslim female physician in white coat and light hijab"
             className="mp-hero-bg-img"
             loading="eager"
@@ -215,8 +216,8 @@ export default function MuslimPhysiciansPage() {
                   </div>
                   <div className="col-md-5">
                     <div className="mp-media-wrapper">
-                      <img
-                        src={asset("/images/research/muslim-physicians-overview.jpg")}
+                      <img loading="lazy" decoding="async" 
+                        src={asset("/images/research/muslim-physicians-overview.webp")}
                         alt="Physician wearing a white coat and holding a smartphone"
                         className="mp-editorial-img"
                         loading="lazy"
@@ -298,8 +299,8 @@ export default function MuslimPhysiciansPage() {
                     </div>
                     <div className="col-md-5">
                       <div className="mp-media-wrapper">
-                        <img
-                          src={asset("/images/research/muslim-physicians-workforce.jpg")}
+                        <img loading="lazy" decoding="async" 
+                          src={asset("/images/research/muslim-physicians-workforce.webp")}
                           alt="Surgeons in scrubs operating in surgical theater"
                           className="mp-editorial-img"
                           loading="lazy"
@@ -477,7 +478,7 @@ export default function MuslimPhysiciansPage() {
                       University of Chicago
                     </p>
                     <a
-                      href="mailto:info@islamandmedicine.org?subject=Muslim%20Physicians%20Data%20Repository%20Access%20Request"
+                      href="mailto:contact@medicineandislam.org?subject=Muslim%20Physicians%20Data%20Repository%20Access%20Request"
                       className="mp-btn-maroon mp-btn-data"
                     >
                       ACCESS REPOSITORY{" "}
@@ -654,8 +655,8 @@ export default function MuslimPhysiciansPage() {
       {/* 03 BOTTOM CALL TO ACTION BANNER */}
       <section className="mp-bottom-cta">
         <div className="mp-bottom-cta-bg">
-          <img
-            src={asset("/images/our-impact/cta-mosque.jpg")}
+          <img loading="lazy" decoding="async" 
+            src={asset("/images/our-impact/cta-mosque.webp")}
             alt="Mosque dome and minarets against twilight sky"
             className="mp-bottom-cta-img"
             loading="lazy"

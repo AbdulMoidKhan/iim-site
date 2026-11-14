@@ -1,3 +1,4 @@
+import "./page.css";
 import ResourcesPageClient from "./ResourcesPageClient";
 
 export const metadata = {

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -17,19 +18,19 @@ const PILLARS = [
 ];
 
 const TRACKS = [
-  ["Healthcare Professionals", "Curriculum for physicians, nurses, allied health professionals, and healthcare teams.", "/images/curriculum/cu-track-professionals.jpg", "/education"],
-  ["Students & Trainees", "Courses for medical, nursing, and graduate students to build foundational and advanced knowledge.", "/images/curriculum/cu-track-students.jpg", "/courses"],
-  ["Community & Faith Leaders", "Educational programs for imams, religious leaders, and community members.", "/images/curriculum/cu-track-leaders.jpg", "/workshops"],
-  ["Institutions & Organizations", "Customized curriculum for hospitals, medical schools, universities, and community organizations.", "/images/our-mission/serve-institutions.jpg", "/consultation"],
+  ["Healthcare Professionals", "Curriculum for physicians, nurses, allied health professionals, and healthcare teams.", "/images/curriculum/cu-track-professionals.webp", "/education"],
+  ["Students & Trainees", "Courses for medical, nursing, and graduate students to build foundational and advanced knowledge.", "/images/curriculum/cu-track-students.webp", "/courses"],
+  ["Community & Faith Leaders", "Educational programs for imams, religious leaders, and community members.", "/images/curriculum/cu-track-leaders.webp", "/workshops"],
+  ["Institutions & Organizations", "Customized curriculum for hospitals, medical schools, universities, and community organizations.", "/images/our-mission/serve-institutions.webp", "/consultation"],
 ];
 
 const MODULES = [
-  ["Foundations of Islamic Bioethics", "Key principles and frameworks for contemporary healthcare challenges.", "/images/research/findings-mosque.jpg", "/bioscience"],
-  ["Medical Ethics in Practice", "Applying Islamic ethics to clinical decision-making and patient care.", "/images/curriculum/cu-mod-stethoscope.jpg", "/courses"],
-  ["End-of-Life Care and Palliative Ethics", "Ethical, spiritual, and practical considerations for serious illness and end-of-life care.", "/images/curriculum/cu-mod-hands.jpg", "/research"],
-  ["Research Ethics and Methodology", "Guidance for conducting research with integrity and cultural sensitivity.", "/images/curriculum/cu-mod-microscope.jpg", "/research"],
-  ["Health Equity and Social Justice", "Addressing disparities and promoting more equitable healthcare systems.", "/images/curriculum/cu-mod-equity.jpg", "/research"],
-  ["Reproductive and Family Health", "Ethical discussions on reproductive technologies, family planning, and women's health.", "/images/curriculum/cu-mod-family.jpg", "/courses"],
+  ["Foundations of Islamic Bioethics", "Key principles and frameworks for contemporary healthcare challenges.", "/images/research/findings-mosque.webp", "/bioscience"],
+  ["Medical Ethics in Practice", "Applying Islamic ethics to clinical decision-making and patient care.", "/images/curriculum/cu-mod-stethoscope.webp", "/courses"],
+  ["End-of-Life Care and Palliative Ethics", "Ethical, spiritual, and practical considerations for serious illness and end-of-life care.", "/images/curriculum/cu-mod-hands.webp", "/research"],
+  ["Research Ethics and Methodology", "Guidance for conducting research with integrity and cultural sensitivity.", "/images/curriculum/cu-mod-microscope.webp", "/research"],
+  ["Health Equity and Social Justice", "Addressing disparities and promoting more equitable healthcare systems.", "/images/curriculum/cu-mod-equity.webp", "/research"],
+  ["Reproductive and Family Health", "Ethical discussions on reproductive technologies, family planning, and women's health.", "/images/curriculum/cu-mod-family.webp", "/courses"],
 ];
 
 const FORMATS = [
@@ -50,10 +51,10 @@ const AUDIENCES = [
 ];
 
 const RESOURCES = [
-  ["Course Syllabi", "Ready-to-use syllabi for core and elective courses.", "ACCESS SYLLABI", "/images/curriculum/cu-res-syllabi.jpg", "/resources"],
-  ["Teaching Guides", "Discussion questions, case studies, and facilitation tips.", "ACCESS GUIDES", "/images/curriculum/cu-res-guides.jpg", "/resources"],
-  ["Presentation Materials", "Slides and resources for classroom and workshop use.", "ACCESS MATERIALS", "/images/curriculum/cu-res-slides.jpg", "/resources"],
-  ["Recommended Readings", "Key articles, books, and multimedia resources.", "VIEW READINGS", "/images/curriculum/cu-res-readings.jpg", "/resources"],
+  ["Course Syllabi", "Ready-to-use syllabi for core and elective courses.", "ACCESS SYLLABI", "/images/curriculum/cu-res-syllabi.webp", "/resources"],
+  ["Teaching Guides", "Discussion questions, case studies, and facilitation tips.", "ACCESS GUIDES", "/images/curriculum/cu-res-guides.webp", "/resources"],
+  ["Presentation Materials", "Slides and resources for classroom and workshop use.", "ACCESS MATERIALS", "/images/curriculum/cu-res-slides.webp", "/resources"],
+  ["Recommended Readings", "Key articles, books, and multimedia resources.", "VIEW READINGS", "/images/curriculum/cu-res-readings.webp", "/resources"],
 ];
 
 const STATS = [
@@ -77,8 +78,8 @@ export default function CurriculumPage() {
     <div className="curriculum-page">
       <header className="hero-seamless hero-curriculum-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/curriculum/cu-hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/curriculum/cu-hero.webp")}
             alt="A clinician and a physician in a beige hijab reviewing a laptop together"
             className="hero-bg-img"
             loading="eager"
@@ -152,7 +153,7 @@ export default function CurriculumPage() {
           <div className="cu-track-grid">
             {TRACKS.map(([title, text, image, href]) => (
               <article className="cu-card" key={title}>
-                <img src={asset(image)} alt="" />
+                <img loading="lazy" decoding="async" src={asset(image)} alt="" />
                 <h3>{title}</h3>
                 <p>{text}</p>
                 <ArrowLink href={href}>EXPLORE THIS TRACK</ArrowLink>
@@ -174,7 +175,7 @@ export default function CurriculumPage() {
           <div className="cu-module-grid">
             {MODULES.map(([title, text, image, href]) => (
               <article className="cu-card" key={title}>
-                <img src={asset(image)} alt="" />
+                <img loading="lazy" decoding="async" src={asset(image)} alt="" />
                 <h3>{title}</h3>
                 <p>{text}</p>
                 <ArrowLink href={href}>LEARN MORE</ArrowLink>
@@ -243,7 +244,7 @@ export default function CurriculumPage() {
           </div>
           {RESOURCES.map(([title, text, label, image, href]) => (
             <article className="cu-card" key={title}>
-              <img src={asset(image)} alt="" />
+              <img loading="lazy" decoding="async" src={asset(image)} alt="" />
               <h3>{title}</h3>
               <p>{text}</p>
               <ArrowLink href={href}>{label}</ArrowLink>
@@ -265,8 +266,8 @@ export default function CurriculumPage() {
       </section>
 
       <section className="cu-cta">
-        <img
-          src={asset("/images/research/education.jpg")}
+        <img loading="lazy" decoding="async" 
+          src={asset("/images/research/education.webp")}
           alt="An educator in a beige hijab speaking with a classroom of learners"
           className="cu-cta-img"
         />

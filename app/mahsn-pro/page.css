@@ -1,0 +1,1123 @@
+/* Route-scoped styles for mahsn-pro. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   MAHSN-PRO INITIATIVE
+   Scoped to .mahsn-pro-page — Route: /mahsn-pro
+   ========================================================================== */
+/* ==========================================================================
+   MAHSN PAGE — CSS MODULE
+   Muslim American Healthcare & Spiritual Needs
+   Pixel-accurate screenshot replication with award-winning responsiveness
+   ========================================================================== */
+
+.mahsn-pro-page, .mahsn-pageWrapper {
+  background-color: #fcfaf7;
+  color: #293845;
+  font-family: 'DM Sans', Arial, sans-serif;
+  overflow-x: hidden;
+}
+/* 01 Hero Section */
+.mahsn-hero {
+  position: relative;
+  background-color: #fbf8f2;
+  border-bottom: 1px solid #ede6dc;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.mahsn-heroBgWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  pointer-events: none;
+  z-index: 1;
+}
+.mahsn-heroBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+.mahsn-heroGradientOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #fbf8f2 0%,
+    #fbf8f2 15%,
+    rgba(251, 248, 242, 0.95) 30%,
+    rgba(251, 248, 242, 0.45) 60%,
+    rgba(251, 248, 242, 0.05) 90%
+  );
+}
+.mahsn-heroContainer {
+  position: relative;
+  z-index: 2;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mahsn-heroEyebrow {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+  margin-bottom: 12px;
+}
+.mahsn-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(28px, 3.8vw, 46px);
+  line-height: 1.18;
+  color: #10243a;
+  margin-bottom: 16px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.mahsn-heroTitle em {
+  font-style: italic;
+  color: #800000;
+  font-weight: 400;
+}
+.mahsn-heroLead {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4a5766;
+  max-width: 520px;
+  margin-bottom: 22px;
+}
+.mahsn-heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.mahsn-btnMaroon {
+  background-color: #800000;
+  border: 1.5px solid #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.mahsn-btnMaroon:hover {
+  background-color: #660000;
+  border-color: #660000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.22);
+}
+.mahsn-btnOutline {
+  background-color: transparent;
+  border: 1.5px solid #800000;
+  color: #800000 !important;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.mahsn-btnOutline:hover {
+  background-color: #800000;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+.mahsn-heroTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mahsn-heroTag {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e5dcce;
+  border-radius: 20px;
+  font-size: 11.5px;
+  color: #637180;
+}
+.mahsn-heroQuotePanel {
+  background-color: #7a1a28;
+  color: #ffffff;
+  padding: 18px 24px;
+  max-width: 250px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+  margin-left: auto;
+  margin-top: 130px;
+}
+.mahsn-heroQuoteEyebrow {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ddb47a;
+  margin-bottom: 8px;
+}
+.mahsn-heroQuoteText {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0;
+  color: #ffffff;
+}
+/* 02 Sticky Section Navigation */
+.mahsn-stickySubnav {
+  position: sticky;
+  top: 83px;
+  z-index: 90;
+  background-color: #fbf8f2;
+  border-top: 1px solid #ede6dc;
+  border-bottom: 1px solid #ede6dc;
+  box-shadow: 0 2px 8px rgba(16, 36, 58, 0.04);
+}
+.mahsn-subnavWrapper {
+  position: relative;
+  overflow: hidden;
+}
+.mahsn-subnavList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.mahsn-subnavList::-webkit-scrollbar {
+  display: none;
+}
+.mahsn-subnavItem {
+  flex-shrink: 0;
+}
+.mahsn-subnavLink {
+  display: block;
+  padding: 12px 18px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #556272;
+  text-decoration: none;
+  border-bottom: 2.5px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.mahsn-subnavLink:hover {
+  color: #800000;
+}
+.mahsn-subnavLinkActive {
+  color: #800000 !important;
+  border-bottom-color: #800000 !important;
+}
+/* 03 Main Section & Layout */
+.mahsn-mainSection {
+  background-color: #fcfaf7;
+  padding: 44px 0 64px;
+}
+.mahsn-sectionBlock {
+  margin-bottom: 44px;
+  scroll-margin-top: 135px;
+}
+.mahsn-sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.mahsn-sectionHeadLeft {
+  flex-grow: 1;
+}
+.mahsn-sectionTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+.mahsn-accentBar {
+  width: 28px;
+  height: 2px;
+  background-color: #800000;
+  margin-bottom: 14px;
+}
+.mahsn-counterTag {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #800000;
+  text-decoration: none;
+}
+.mahsn-text {
+  font-size: 14px;
+  line-height: 1.68;
+  color: #3b4756;
+  margin-bottom: 14px;
+}
+.mahsn-leadText {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #43505f;
+  margin-bottom: 16px;
+}
+/* Media Badge for Overview */
+.mahsn-mediaWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.08);
+}
+.mahsn-editorialImg {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.mahsn-editorialImg:hover {
+  transform: scale(1.02);
+}
+.mahsn-mediaBadge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #800000;
+  color: #ffffff;
+  padding: 8px 14px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+/* Significance Quote Banner */
+.mahsn-quoteBanner {
+  background-color: #f9f5ed;
+  border-left: 4px solid #800000;
+  padding: 22px 28px;
+  margin: 22px 0 24px;
+  border-radius: 0 2px 2px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.mahsn-quoteMark {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 38px;
+  color: #800000;
+  line-height: 1;
+  font-style: italic;
+  flex-shrink: 0;
+}
+.mahsn-quoteBannerText {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.5;
+  margin: 0;
+}
+/* 3 Significance Feature Cards */
+.mahsn-pillarCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 22px 18px;
+  border-radius: 2px;
+  text-align: left;
+  height: 100%;
+}
+.mahsn-circleBadge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800000;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+}
+.mahsn-pillarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mahsn-pillarText {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #556272;
+  margin: 0;
+}
+/* 4 Recruitment Channel Cards */
+.mahsn-subheading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 12px;
+}
+.mahsn-channelCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 18px 14px;
+  border-radius: 2px;
+  text-align: center;
+  height: 100%;
+}
+.mahsn-channelTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mahsn-channelText {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #556272;
+  margin: 0;
+}
+/* Results & Research Insights Stat Cards */
+.mahsn-statsRow {
+  margin-bottom: 18px;
+}
+.mahsn-statCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 22px 16px;
+  text-align: center;
+  border-radius: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+.mahsn-statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 36, 58, 0.06);
+}
+.mahsn-statNum {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(32px, 3.4vw, 40px);
+  color: #800000;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  display: block;
+}
+.mahsn-statLabel {
+  font-size: 12px;
+  line-height: 1.42;
+  color: #4e5a68;
+  margin: 0;
+}
+/* Highlighted Insight Panel */
+.mahsn-insightPanel {
+  background-color: #f9f5ed;
+  border-left: 4px solid #800000;
+  padding: 18px 22px;
+  margin-top: 18px;
+  border-radius: 0 2px 2px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.mahsn-insightDiamond {
+  color: #800000;
+  font-size: 14px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.mahsn-insightTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.mahsn-insightText {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #3b4756;
+  margin: 0;
+}
+/* Publications List */
+.mahsn-papersList {
+  margin-top: 6px;
+}
+.mahsn-paperItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eae2d4;
+}
+.mahsn-paperNum {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #800000;
+  flex-shrink: 0;
+  margin-top: 2px;
+  min-width: 24px;
+}
+.mahsn-paperContent {
+  flex-grow: 1;
+}
+.mahsn-paperTag {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+  margin-bottom: 4px;
+}
+.mahsn-paperTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.mahsn-paperDesc {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #556272;
+  margin-bottom: 6px;
+}
+.mahsn-paperLink {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #800000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.mahsn-paperLink:hover {
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+/* Dissemination Products */
+.mahsn-productCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  border-radius: 2px;
+  overflow: hidden;
+  height: 100%;
+}
+.mahsn-productMockupWrap1 {
+  background-color: #f2e7d7;
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+.mahsn-productMockupWrap2 {
+  background-color: #e2e8ea;
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+.mahsn-mockupPaper {
+  background-color: #ffffff;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-top: 3px solid #800000;
+  width: 100%;
+  max-width: 220px;
+  text-align: left;
+}
+.mahsn-mockupKicker {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #800000;
+  margin-bottom: 4px;
+}
+.mahsn-mockupHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+.mahsn-mockupSub {
+  font-size: 8px;
+  color: #768391;
+  margin: 0;
+}
+.mahsn-productBody {
+  padding: 16px 18px;
+}
+.mahsn-productTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 6px;
+}
+.mahsn-productLink {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #800000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.mahsn-productLink:hover {
+  text-decoration: underline;
+}
+/* Videos */
+.mahsn-videoCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+  position: relative;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+}
+.mahsn-videoCard:hover,
+.mahsn-videoCard:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(16, 36, 58, 0.14);
+  border-color: #800000;
+}
+.mahsn-videoThumbWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #10243a;
+}
+.mahsn-videoThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+.mahsn-videoCard:hover .mahsn-videoThumb,
+.mahsn-videoCard:focus-visible .mahsn-videoThumb {
+  transform: scale(1.05);
+}
+.mahsn-playOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(16, 36, 58, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease;
+}
+.mahsn-videoCard:hover .mahsn-playOverlay,
+.mahsn-videoCard:focus-visible .mahsn-playOverlay {
+  background-color: rgba(16, 36, 58, 0.48);
+}
+.mahsn-playCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #800000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.25s ease;
+}
+.mahsn-playCircle i {
+  margin-left: 2px;
+}
+.mahsn-videoCard:hover .mahsn-playCircle,
+.mahsn-videoCard:focus-visible .mahsn-playCircle {
+  transform: scale(1.14);
+  background-color: #800000;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(128, 0, 0, 0.45);
+}
+.mahsn-videoBody {
+  padding: 14px 16px;
+  flex: 1;
+}
+.mahsn-videoTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+.mahsn-videoLabel {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #800000;
+  margin: 0;
+}
+/* Video Lightbox Modal */
+.mahsn-videoModalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10500;
+  background-color: rgba(10, 20, 32, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: mahsn-modalFadeIn 0.2s ease-out;
+}
+.mahsn-videoModalDialog {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background-color: #10243a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  animation: mahsn-modalScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mahsn-videoModalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background-color: #0b1a2a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 12px;
+}
+.mahsn-videoModalHeaderInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+.mahsn-videoModalBadge {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f1ebe0;
+  background-color: #800000;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.mahsn-videoModalTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mahsn-videoModalCloseBtn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+.mahsn-videoModalCloseBtn:hover {
+  background-color: #800000;
+  border-color: #800000;
+  transform: rotate(90deg);
+}
+.mahsn-videoModalFrameWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
+}
+.mahsn-videoModalIframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.mahsn-videoModalFooter {
+  padding: 12px 20px;
+  background-color: #0e2034;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.mahsn-videoModalCaption {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12.5px;
+  color: #c5d0dc;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+.mahsn-videoModalYoutubeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #f1ebe0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.mahsn-videoModalYoutubeLink:hover {
+  background-color: #cc0000;
+  color: #ffffff;
+}
+@media (max-width: 576px){.mahsn-videoModalDialog {
+    max-width: 100%;
+  }
+.mahsn-videoModalHeader {
+    padding: 10px 14px;
+  }
+.mahsn-videoModalTitle {
+    font-size: 13px;
+  }
+.mahsn-videoModalFooter {
+    padding: 10px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }}
+/* Project Gallery Placeholder */
+.mahsn-galleryCard {
+  background: repeating-linear-gradient(
+    45deg,
+    #f8f4ec,
+    #f8f4ec 10px,
+    #f1ebe0 10px,
+    #f1ebe0 20px
+  );
+  border: 1px dashed #d9cebe;
+  border-radius: 2px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.mahsn-galleryText1 {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8c7f70;
+  margin-bottom: 4px;
+}
+.mahsn-galleryText2 {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b5a898;
+  margin: 0;
+}
+/* Partner Organizations */
+.mahsn-partnerCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 18px 20px;
+  border-radius: 2px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 78px;
+}
+.mahsn-partnerNameBold {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.25;
+}
+.mahsn-partnerSubtext {
+  font-size: 10.5px;
+  color: #556272;
+  margin-top: 3px;
+}
+.mahsn-partnerFootnote {
+  font-size: 11.5px;
+  font-style: italic;
+  color: #768391;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+/* Funding Section */
+.mahsn-fundingBox {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 20px 24px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mahsn-fundingBadge {
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 52px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+.mahsn-fundingText {
+  font-size: 13.5px;
+  color: #3b4756;
+  margin: 0;
+}
+.mahsn-fundingText strong {
+  color: #10243a;
+}
+/* Sidebar Styles */
+.mahsn-sidebarColumn {
+  position: relative;
+}
+.mahsn-sidebarCard {
+  background-color: #f8f4ec;
+  border: 1px solid #eae2d4;
+  padding: 20px 18px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+.mahsn-sidebarTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.mahsn-objectivesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mahsn-objectiveItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.mahsn-objectiveItem:last-child {
+  margin-bottom: 0;
+}
+.mahsn-objectiveNum {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #800000;
+  font-size: 10px;
+  font-weight: 700;
+  color: #800000;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.mahsn-objectiveText {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #3b4756;
+  margin: 0;
+}
+.mahsn-bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #800000;
+  margin-right: 8px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.mahsn-glanceList {
+  margin: 0;
+}
+.mahsn-glanceItem {
+  margin-bottom: 10px;
+}
+.mahsn-glanceItem:last-child {
+  margin-bottom: 0;
+}
+.mahsn-glanceDt {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+.mahsn-glanceDd {
+  font-size: 12px;
+  color: #4e5a68;
+  margin: 0 0 0 13px;
+  line-height: 1.45;
+}
+.mahsn-sidebarPubList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mahsn-sidebarPubItem {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #3b4756;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.mahsn-sidebarPubItem:last-child {
+  margin-bottom: 0;
+}
+.mahsn-forthcomingText {
+  font-size: 12px;
+  font-style: italic;
+  color: #768391;
+  margin: 0;
+  line-height: 1.45;
+}
+.mahsn-quickNavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mahsn-quickNavLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #ede5d7;
+  text-decoration: none;
+  color: #3b4756;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+.mahsn-quickNavLink:hover {
+  color: #800000;
+  padding-left: 4px;
+}
+.mahsn-quickNavList li:last-child .mahsn-quickNavLink {
+  border-bottom: none;
+}
+.mahsn-cardBurgundy {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+}
+.mahsn-textLight {
+  color: #f7e6e8;
+}
+.mahsn-btnWhiteOutline {
+  background-color: transparent;
+  border: 1.5px solid #ffffff;
+  color: #ffffff !important;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.mahsn-btnWhiteOutline:hover {
+  background-color: #ffffff;
+  color: #800000 !important;
+}

@@ -1,0 +1,864 @@
+/* Route-scoped styles for fostering-connections. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   FOSTERING CONNECTIONS BETWEEN BIOSCIENCE & THEOLOGY
+   Scoped to .fostering-connections-page — Route: /fostering-connections
+   ========================================================================== */
+/* ==========================================================================
+   FOSTERING CONNECTIONS BETWEEN BIOSCIENCE & THEOLOGY
+   Academic Editorial Standalone Page — Pixel-Perfect Screenshot Match
+   ========================================================================== */
+
+.fostering-connections-page, .fc-pageWrap {
+  background-color: #ffffff;
+  color: #2d3748;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: clip;
+  position: relative;
+}
+/* ==========================================================================
+   01 HERO SECTION
+   ========================================================================== */
+.fc-hero {
+  position: relative;
+  background-color: #f9f7f2;
+  border-bottom: 1px solid #eae3d6;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 64px 0 68px;
+}
+/* Minimal Abstract Circular Forms matching screenshot */
+.fc-heroBgCircles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.fc-heroCircleOuter {
+  position: absolute;
+  right: -8%;
+  top: -25%;
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(215, 198, 175, 0.45);
+  background: radial-gradient(
+    circle,
+    rgba(245, 238, 227, 0.5) 0%,
+    rgba(249, 247, 242, 0.15) 60%,
+    rgba(249, 247, 242, 0) 80%
+  );
+}
+.fc-heroCircleInner {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(205, 185, 160, 0.5);
+  background: radial-gradient(
+    circle,
+    rgba(241, 231, 218, 0.45) 0%,
+    rgba(249, 247, 242, 0) 70%
+  );
+}
+.fc-heroCircleCore {
+  position: absolute;
+  right: 18%;
+  top: 18%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px dashed rgba(195, 172, 145, 0.35);
+  background: radial-gradient(
+    circle,
+    rgba(238, 225, 208, 0.4) 0%,
+    rgba(249, 247, 242, 0) 75%
+  );
+}
+.fc-heroContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.fc-heroEyebrowWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.fc-heroEyebrowLine {
+  width: 24px;
+  height: 1.5px;
+  background-color: #8c6e4e;
+  display: inline-block;
+}
+.fc-heroEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8c6e4e;
+  margin: 0;
+}
+.fc-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(32px, 4.2vw, 52px);
+  line-height: 1.15;
+  color: #172331;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  max-width: 680px;
+}
+.fc-heroTitle em {
+  font-style: italic;
+  color: #800000;
+  font-weight: 400;
+}
+.fc-heroLead {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4a5766;
+  max-width: 580px;
+  margin-bottom: 28px;
+}
+.fc-heroActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.fc-btnPrimary {
+  background-color: #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #800000;
+}
+.fc-btnPrimary:hover {
+  background-color: #660000;
+  border-color: #660000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+.fc-btnOutline {
+  background-color: #ffffff;
+  color: #800000 !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #800000;
+}
+.fc-btnOutline:hover {
+  background-color: #fcf5f6;
+  color: #660000 !important;
+  border-color: #660000;
+  transform: translateY(-1px);
+}
+/* ==========================================================================
+   02 STICKY SUB-NAVIGATION
+   ========================================================================== */
+.fc-stickySubnav {
+  position: sticky;
+  top: 83px;
+  z-index: 1020;
+  background-color: #ffffff;
+  border-top: 1px solid #eae3d6;
+  border-bottom: 1px solid #eae3d6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: top 0.2s ease;
+}
+.fc-subnavContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.fc-subnavContainer::-webkit-scrollbar {
+  display: none;
+}
+.fc-subnavList {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fc-subnavLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 0 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5c6773;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  letter-spacing: 0.02em;
+}
+.fc-subnavLink:hover {
+  color: #800000;
+}
+.fc-subnavLinkActive {
+  color: #800000 !important;
+  font-weight: 700;
+  border-bottom-color: #800000;
+}
+/* ==========================================================================
+   03 MAIN CONTENT AREA & EDITORIAL TWO-COLUMN LAYOUT
+   ========================================================================== */
+.fc-mainLayoutSection {
+  padding: 56px 0 80px;
+  background-color: #ffffff;
+}
+.fc-layoutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 48px;
+  align-items: start;
+}
+.fc-mainColumn {
+  min-width: 0;
+}
+.fc-sidebarColumn {
+  min-width: 0;
+}
+/* Editorial Section Headers */
+.fc-sectionBlock {
+  margin-bottom: 56px;
+  scroll-margin-top: 150px;
+}
+.fc-sectionEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #800000;
+  margin-bottom: 6px;
+}
+.fc-sectionTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(23px, 2.3vw, 29px);
+  line-height: 1.25;
+  color: #10243a;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.fc-burgundyBar {
+  width: 32px;
+  height: 2px;
+  background-color: #800000;
+  margin-bottom: 18px;
+}
+.fc-sectionSubtext {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #55606d;
+  margin-bottom: 22px;
+}
+.fc-bodyParagraph {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 16px;
+}
+.fc-bodyParagraph:last-child {
+  margin-bottom: 0;
+}
+/* Overview Video Player */
+.fc-overviewVideoWrap {
+  margin-top: 28px;
+  background-color: #10243a;
+  border: 1px solid #eae3d6;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(16, 36, 58, 0.08);
+}
+.fc-videoFrameWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
+}
+.fc-videoIframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.fc-videoCaptionBar {
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #10243a 0%, #0d1b2a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+.fc-videoCaptionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 220px;
+  flex: 1;
+}
+.fc-videoTag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d4a373;
+}
+.fc-videoCaptionTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+}
+.fc-videoYoutubeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: rgba(128, 0, 0, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 7px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.fc-videoYoutubeLink:hover {
+  background-color: #800000;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 600px){.fc-videoCaptionBar {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+.fc-videoYoutubeLink {
+    width: 100%;
+    justify-content: center;
+  }}
+/* ==========================================================================
+   04 SECTION 02: PROJECT OBJECTIVES (2x2 GRID)
+   ========================================================================== */
+.fc-objectivesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.fc-objectiveCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-left: 3px solid #800000;
+  border-radius: 2px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.fc-objectiveNum {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 8px;
+}
+.fc-objectiveText {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #2d3748;
+  margin: 0;
+}
+/* ==========================================================================
+   05 SECTION 03: SEVEN SEMINAR TOPICS LIST
+   ========================================================================== */
+.fc-topicsList {
+  display: flex;
+  flex-direction: column;
+}
+.fc-topicRow {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ece7e0;
+}
+.fc-topicRow:last-child {
+  border-bottom: none;
+}
+.fc-topicNum {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #800000;
+  width: 28px;
+  flex-shrink: 0;
+}
+.fc-topicTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+}
+/* ==========================================================================
+   06 SECTION 04: PROJECT MATERIALS (2x3 GRID)
+   ========================================================================== */
+.fc-materialsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.fc-cardItem {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.fc-cardItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+.fc-cardTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.fc-cardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.38;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+  flex: 1;
+}
+.fc-cardTopNum {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a0aec0;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+.fc-cardMeta {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+.fc-cardLink {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #800000 !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+.fc-cardLink:hover {
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+/* Light Notice / Disclaimer Box */
+.fc-noticeBox {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #7a6e60;
+  margin-top: 14px;
+}
+/* White background card variant */
+.fc-cardWhite {
+  background-color: #ffffff;
+}
+/* ==========================================================================
+   07 SECTION 11: FEATURED BURGUNDY PODCAST PANEL
+   ========================================================================== */
+.fc-podcastPanel {
+  background-color: #800000;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 30px 34px;
+  position: relative;
+  overflow: hidden;
+}
+.fc-podcastPanelTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.fc-podcastPanelDesc {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #f1d4b6;
+  margin-bottom: 20px;
+}
+.fc-podcastBtn {
+  background-color: #ffffff;
+  color: #800000 !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+}
+.fc-podcastBtn:hover {
+  background-color: #fdf5f7;
+  color: #660000 !important;
+  transform: translateY(-1px);
+}
+/* ==========================================================================
+   08 SECTION 13: MEET THE PROJECT TEAM (2-COLUMN GRID)
+   ========================================================================== */
+.fc-teamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.fc-teamCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-top: 2px solid #800000;
+  border-radius: 2px;
+  padding: 16px 20px;
+}
+.fc-teamName {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 13.5px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #10243a;
+  margin-bottom: 4px;
+}
+.fc-teamAffiliation {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #6b7280;
+  margin: 0;
+}
+/* ==========================================================================
+   09 RIGHT SIDEBAR PANELS
+   ========================================================================== */
+.fc-sidebarStickyWrap {
+  position: sticky;
+  top: 145px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fc-sidebarCard {
+  background-color: #faf7f2;
+  border: 1px solid #eae3d6;
+  border-radius: 2px;
+  padding: 24px 22px;
+}
+.fc-sidebarCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.3;
+  color: #10243a;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.fc-sidebarBar {
+  width: 24px;
+  height: 2px;
+  background-color: #800000;
+  margin-bottom: 16px;
+}
+/* Project at a Glance Metadata */
+.fc-glanceList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fc-glanceItem {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ede7dc;
+}
+.fc-glanceItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.fc-glanceLabel {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6c7885;
+  margin-bottom: 2px;
+}
+.fc-glanceValue {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #10243a;
+  font-weight: 500;
+}
+/* Project Activities */
+.fc-activitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fc-activityItem {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #374151;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ede7dc;
+}
+.fc-activityItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/* Quick Links */
+.fc-quickLinksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fc-quickLinkItem {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ede7dc;
+}
+.fc-quickLinkItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.fc-quickLink {
+  font-size: 12.5px;
+  color: #800000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.fc-quickLink:hover {
+  text-decoration: underline;
+  color: #660000;
+  transform: translateX(2px);
+}
+/* Standout Burgundy Sidebar Card */
+.fc-sidebarCardBurgundy {
+  background-color: #800000;
+  color: #ffffff;
+  border: 1px solid #800000;
+  border-radius: 2px;
+  padding: 26px 22px;
+}
+.fc-sidebarCardBurgundy .fc-sidebarCardTitle {
+  color: #ffffff;
+}
+.fc-sidebarBarWhite {
+  width: 24px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+.fc-sidebarBurgundyText {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+.fc-sidebarOutlineBtn {
+  background-color: transparent;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease;
+}
+.fc-sidebarOutlineBtn:hover {
+  background-color: #ffffff;
+  color: #800000 !important;
+  border-color: #ffffff;
+}
+/* ==========================================================================
+   10 FINAL DARK GREEN FULL-WIDTH CTA SECTION
+   ========================================================================== */
+.fc-finalCtaSection {
+  background-color: #003b35;
+  background-image:
+    radial-gradient(ellipse at 75% 25%, rgba(13, 85, 78, 0.45) 0%, rgba(0, 59, 53, 0) 65%),
+    var(--iim-pattern);
+  background-size: auto, 120px 120px;
+  background-repeat: no-repeat, repeat;
+  background-position: center, center;
+  color: #ffffff;
+  padding: 68px 0 72px;
+  position: relative;
+  overflow: hidden;
+}
+.fc-finalCtaInner {
+  max-width: 860px;
+}
+.fc-finalCtaEyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #deb87b;
+  margin-bottom: 12px;
+}
+.fc-finalCtaTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+}
+.fc-finalCtaDesc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #d1dedc;
+  max-width: 720px;
+  margin-bottom: 26px;
+}
+.fc-finalCtaActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.fc-btnCtaPrimary {
+  background-color: #800000;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #800000;
+  transition: all 0.2s ease;
+}
+.fc-btnCtaPrimary:hover {
+  background-color: #660000;
+  border-color: #660000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+.fc-btnCtaOutline {
+  background-color: transparent;
+  color: #ffffff !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  transition: all 0.2s ease;
+}
+.fc-btnCtaOutline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}

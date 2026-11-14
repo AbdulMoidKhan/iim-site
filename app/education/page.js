@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 
@@ -9,35 +10,35 @@ export const metadata = {
 
 const pathways = [
   {
-    img: asset("/images/educate/path-students.jpg"),
+    img: asset("/images/educate/path-students.webp"),
     icon: "fa-graduation-cap",
     title: "Medical Students & Trainees",
     text: "Foundational learning that builds ethical awareness and culturally informed clinical judgment early in training.",
     href: "/courses",
   },
   {
-    img: asset("/images/educate/path-clinicians.jpg"),
+    img: asset("/images/educate/path-clinicians.webp"),
     icon: "fa-stethoscope",
     title: "Clinicians & Healthcare Teams",
     text: "Practical education that strengthens ethical reasoning and improves care for Muslim patients and families.",
     href: "/courses",
   },
   {
-    img: asset("/images/educate/path-institutions.jpg"),
+    img: asset("/images/educate/path-institutions.webp"),
     icon: "fa-building-columns",
     title: "Institutions & Hospitals",
     text: "Custom training and curriculum support for schools, hospitals, and healthcare organizations.",
     href: "/consultation",
   },
   {
-    img: asset("/images/educate/path-community.jpg"),
+    img: asset("/images/educate/path-community.webp"),
     icon: "fa-people-group",
     title: "Community Education",
     text: "Accessible learning that helps communities navigate healthcare with clarity, dignity, and confidence.",
     href: "/workshops",
   },
   {
-    img: asset("/images/educate/path-bioethics-learning.jpg"),
+    img: asset("/images/educate/path-bioethics-learning.webp"),
     icon: "fa-book-open",
     title: "Islamic Bioethics Learning",
     text: "Rigorous study of ethical questions at the intersection of Islam, biomedicine, and contemporary practice.",
@@ -47,25 +48,25 @@ const pathways = [
 
 const featured = [
   {
-    img: asset("/images/educate/course-bioethics-primer.jpg"),
+    img: asset("/images/educate/course-bioethics-primer.webp"),
     title: "Islamic Bioethics: A Primer for Muslim Physicians",
     text: "Core ethical principles, real-world cases, and practical guidance for contemporary healthcare.",
     href: "/courses",
   },
   {
-    img: asset("/images/educate/course-muslim-doctor.jpg"),
+    img: asset("/images/educate/course-muslim-doctor.webp"),
     title: "Becoming a Muslim Doctor",
     text: "Identity, purpose, and practical guidance for navigating medical training and professional life as a Muslim.",
     href: "/courses",
   },
   {
-    img: asset("/images/educate/course-patients.jpg"),
+    img: asset("/images/educate/course-patients.webp"),
     title: "Muslim Patients & Healthcare Needs",
     text: "Culturally informed, evidence-based approaches to common clinical, ethical, and communication issues.",
     href: "/courses",
   },
   {
-    img: asset("/images/educate/course-workshops.jpg"),
+    img: asset("/images/educate/course-workshops.webp"),
     title: "Custom Workshops & Faculty Development",
     text: "Tailored training for institutions, departments, and professional organizations.",
     href: "/consultation",
@@ -101,13 +102,13 @@ const formats = [
 ];
 
 const audiences = [
-  [asset("/images/educate/aud-students.jpg"), "Medical Students"],
-  [asset("/images/educate/aud-residents.jpg"), "Residents & Fellows"],
-  [asset("/images/educate/aud-physicians.jpg"), "Physicians"],
-  [asset("/images/educate/aud-nurses.jpg"), "Nurses & Allied Health"],
-  [asset("/images/educate/aud-chaplains.jpg"), "Chaplains & Spiritual Care Providers"],
-  [asset("/images/educate/aud-institutions.jpg"), "Institutions & Academic Centers"],
-  [asset("/images/educate/aud-leaders.jpg"), "Community Leaders"],
+  [asset("/images/educate/aud-students.webp"), "Medical Students"],
+  [asset("/images/educate/aud-residents.webp"), "Residents & Fellows"],
+  [asset("/images/educate/aud-physicians.webp"), "Physicians"],
+  [asset("/images/educate/aud-nurses.webp"), "Nurses & Allied Health"],
+  [asset("/images/educate/aud-chaplains.webp"), "Chaplains & Spiritual Care Providers"],
+  [asset("/images/educate/aud-institutions.webp"), "Institutions & Academic Centers"],
+  [asset("/images/educate/aud-leaders.webp"), "Community Leaders"],
 ];
 
 const gains = [
@@ -142,8 +143,8 @@ export default function EducationPage() {
     <div className="educate-page">
       <header className="hero-seamless hero-educate-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/educate/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/educate/hero.webp")}
             alt="Muslim healthcare educator speaking to learners in a classroom"
             className="hero-bg-img"
             loading="eager"
@@ -199,8 +200,8 @@ export default function EducationPage() {
               </Link>
             </div>
             <div className="edu-mission-media">
-              <img
-                src={asset("/images/educate/edu-mission.jpg")}
+              <img loading="lazy" decoding="async" 
+                src={asset("/images/educate/edu-mission.webp")}
                 alt="Diverse healthcare professionals collaborating in an educational discussion"
               />
             </div>
@@ -230,7 +231,7 @@ export default function EducationPage() {
             {pathways.map((item) => (
               <article className="edu-path-card" key={item.title}>
                 <div className="edu-path-media">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                   <span className="edu-path-icon">
                     <i className={`fa-solid ${item.icon}`} />
                   </span>
@@ -263,7 +264,7 @@ export default function EducationPage() {
             {featured.map((course) => (
               <article className="edu-featured-card" key={course.title}>
                 <div className="edu-featured-media">
-                  <img src={course.img} alt={course.title} />
+                  <img loading="lazy" decoding="async" src={course.img} alt={course.title} />
                 </div>
                 <div className="edu-featured-body">
                   <h3>{course.title}</h3>
@@ -319,7 +320,7 @@ export default function EducationPage() {
           <div className="edu-audience-grid">
             {audiences.map(([img, label]) => (
               <figure className="edu-audience-item" key={label}>
-                <img src={img} alt={label} />
+                <img loading="lazy" decoding="async" src={img} alt={label} />
                 <figcaption>{label}</figcaption>
               </figure>
             ))}
@@ -357,8 +358,8 @@ export default function EducationPage() {
       <section className="edu-testimonial container-fluid p-0">
         <div className="row g-0 edu-testimonial-row">
           <div className="col-lg-5 edu-testimonial-media">
-            <img
-              src={asset("/images/educate/testimonial-intern.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/educate/testimonial-intern.webp")}
               alt="Summer intern in a brown hijab and white blazer"
             />
           </div>
@@ -378,8 +379,8 @@ export default function EducationPage() {
       <section className="edu-cta container-fluid p-0">
         <div className="row g-0 edu-cta-row">
           <div className="col-lg-5 edu-cta-media">
-            <img
-              src={asset("/images/educate/cta-mosque.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/educate/cta-mosque.webp")}
               alt="Mosque and cityscape viewed through an ornate Islamic arch at sunset"
             />
           </div>

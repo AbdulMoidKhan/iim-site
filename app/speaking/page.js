@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import Script from "next/script";
@@ -47,32 +48,32 @@ const SPEAKERS = [
   {
     name: "Aasim I. Padela, MD, MSc, FACEP",
     lines: ["Advisor", "Initiative on Islam & Medicine"],
-    image: "/images/our-team/padela-portrait.jpg",
+    image: "/images/our-team/padela-portrait.webp",
   },
   {
     name: "Faisal Qazi, DO",
     lines: ["Advisor", "Initiative on Islam & Medicine"],
-    image: "/images/our-team/advisor-faisal-portrait.jpg",
+    image: "/images/our-team/advisor-faisal-portrait.webp",
   },
   {
     name: "Najam Fasiuddin, DO",
     lines: ["Advisor", "Initiative on Islam & Medicine"],
-    image: "/images/our-team/advisor-najam-portrait.png",
+    image: "/images/our-team/advisor-najam-portrait.webp",
   },
   {
     name: "Fatema Mirza",
     lines: ["Advisor", "Initiative on Islam & Medicine"],
-    image: "/images/our-team/fatema-portrait.jpg",
+    image: "/images/our-team/fatema-portrait.webp",
   },
   {
     name: "Imam Ayman Soliman",
     lines: ["Advisor", "Initiative on Islam & Medicine"],
-    image: "/images/our-team/advisor-ayman-portrait.jpg",
+    image: "/images/our-team/advisor-ayman-portrait.webp",
   },
   {
     name: "Dr. Nasir Malim, DO, MPH",
     lines: ["Advisor", "Initiative on Islam & Medicine"],
-    image: "/images/our-team/advisor-nasir-portrait.jpg",
+    image: "/images/our-team/advisor-nasir-portrait.webp",
   },
 ];
 
@@ -95,8 +96,8 @@ export default function SpeakingPage() {
     <div className="speaking-page">
       <header className="hero-seamless hero-speaking-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/speaking/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/speaking/hero.webp")}
             alt="Muslim physician in a burgundy hijab delivering a keynote at a wooden lectern"
             className="hero-bg-img"
             loading="eager"
@@ -176,8 +177,8 @@ export default function SpeakingPage() {
                 ))}
               </div>
               <figure className="spk-audience-photo">
-                <img
-                  src={asset("/images/speaking/audience.jpg")}
+                <img loading="lazy" decoding="async" 
+                  src={asset("/images/speaking/audience.webp")}
                   alt="Healthcare professionals and scholars seated at a conference"
                 />
                 <figcaption>
@@ -246,7 +247,7 @@ export default function SpeakingPage() {
           <div className="spk-speaker-grid">
             {SPEAKERS.map((person) => (
               <article key={person.name}>
-                <img src={asset(person.image)} alt={person.name} />
+                <img loading="lazy" decoding="async" src={asset(person.image)} alt={person.name} />
                 <h3>{person.name}</h3>
                 {person.lines.map((line) => (
                   <p key={line}>{line}</p>
@@ -261,8 +262,8 @@ export default function SpeakingPage() {
         <div className="spk-close-grid">
           <SpeakingQuotes quotes={QUOTES} />
           <div className="spk-arch">
-            <img
-              src={asset("/images/educate/cta-mosque.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/educate/cta-mosque.webp")}
               alt="Blue mosque domes framed by an ornate Islamic arch at sunset"
             />
           </div>
@@ -273,7 +274,7 @@ export default function SpeakingPage() {
             <Link href="/consultation" className="btn-seamless-maroon">
               SUBMIT A SPEAKER REQUEST <i className="fa-solid fa-arrow-right" />
             </Link>
-            <a className="spk-email" href="mailto:info@initiativeonislamandmedicine.org">
+            <a className="spk-email" href="mailto:contact@medicineandislam.org">
               OR EMAIL US
             </a>
           </div>

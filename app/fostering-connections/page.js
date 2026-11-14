@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import FosteringConnectionsNav from "./FosteringConnectionsNav";
 

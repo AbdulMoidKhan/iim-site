@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 
@@ -17,7 +18,7 @@ const values = [
 
 const pillars = [
   {
-    img: asset("/images/our-mission/pillar-research.jpg"),
+    img: asset("/images/our-mission/pillar-research.webp"),
     icon: "fa-chart-line",
     title: "Research & Impact",
     text: "We generate evidence that informs clinical practice, policy, and education on issues at the intersection of Islam and healthcare.",
@@ -25,7 +26,7 @@ const pillars = [
     cta: "EXPLORE RESEARCH",
   },
   {
-    img: asset("/images/our-mission/pillar-education.jpg"),
+    img: asset("/images/our-mission/pillar-education.webp"),
     icon: "fa-book-open",
     title: "Education & Training",
     text: "We develop courses, workshops, and professional development programs for healthcare professionals, students, and community members.",
@@ -33,7 +34,7 @@ const pillars = [
     cta: "EXPLORE EDUCATION",
   },
   {
-    img: asset("/images/our-mission/pillar-consultation.jpg"),
+    img: asset("/images/our-mission/pillar-consultation.webp"),
     icon: "fa-people-group",
     title: "Consultation & Advisory",
     text: "We provide expert guidance for institutions, healthcare organizations, and policymakers on Islam-related healthcare needs, policies, and practices.",
@@ -41,7 +42,7 @@ const pillars = [
     cta: "EXPLORE CONSULTATION",
   },
   {
-    img: asset("/images/our-mission/pillar-speaking.jpg"),
+    img: asset("/images/our-mission/pillar-speaking.webp"),
     icon: "fa-microphone",
     title: "Speaking & Dialogue",
     text: "We elevate trusted voices on Islam, medicine, and bioethics through speaking engagements, panels, and community conversations.",
@@ -52,31 +53,31 @@ const pillars = [
 
 const serve = [
   {
-    img: asset("/images/our-mission/serve-patients.jpg"),
+    img: asset("/images/our-mission/serve-patients.webp"),
     icon: "fa-hand-holding-heart",
     title: "Patients & Families",
     text: "Individuals and families seeking respectful, informed, and compassionate care.",
   },
   {
-    img: asset("/images/our-mission/serve-professionals.jpg"),
+    img: asset("/images/our-mission/serve-professionals.webp"),
     icon: "fa-user-doctor",
     title: "Healthcare Professionals",
     text: "Physicians, nurses, and allied health professionals seeking knowledge and practical guidance.",
   },
   {
-    img: asset("/images/our-mission/serve-students.jpg"),
+    img: asset("/images/our-mission/serve-students.webp"),
     icon: "fa-graduation-cap",
     title: "Students & Trainees",
     text: "Medical, nursing, and public health students building skills for culturally responsive care.",
   },
   {
-    img: asset("/images/our-mission/serve-institutions.jpg"),
+    img: asset("/images/our-mission/serve-institutions.webp"),
     icon: "fa-building-columns",
     title: "Institutions",
     text: "Hospitals, health systems, academic centers, and professional organizations.",
   },
   {
-    img: asset("/images/our-mission/serve-communities.jpg"),
+    img: asset("/images/our-mission/serve-communities.webp"),
     icon: "fa-people-roof",
     title: "Communities",
     text: "Faith-based and community organizations working for healthier, more equitable communities.",
@@ -95,8 +96,8 @@ export default function MissionPage() {
     <div className="mission-page">
       <header className="hero-seamless hero-mission-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/our-mission/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/our-mission/hero.webp")}
             alt="Healthcare professionals in discussion"
             className="hero-bg-img"
             loading="eager"
@@ -162,8 +163,8 @@ export default function MissionPage() {
       <section className="msn-vision container-fluid p-0">
         <div className="row g-0 msn-vision-row">
           <div className="col-lg-4 msn-vision-media">
-            <img
-              src={asset("/images/our-mission/vision-mosque.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/our-mission/vision-mosque.webp")}
               alt="Mosque viewed through an ornate Islamic archway"
             />
           </div>
@@ -226,7 +227,7 @@ export default function MissionPage() {
             {pillars.map((item) => (
               <article className="msn-pillar-card" key={item.title}>
                 <div className="msn-pillar-media">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                 </div>
                 <div className="msn-pillar-body">
                   <div className="msn-pillar-label">
@@ -258,7 +259,7 @@ export default function MissionPage() {
             {serve.map((item) => (
               <article className="msn-serve-card" key={item.title}>
                 <div className="msn-serve-media">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" decoding="async" src={item.img} alt={item.title} />
                 </div>
                 <div className="msn-serve-body">
                   <div className="msn-serve-label">
@@ -327,8 +328,8 @@ export default function MissionPage() {
             </div>
           </div>
           <div className="msn-cta-media">
-            <img
-              src={asset("/images/our-mission/cta-mosque.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/our-mission/cta-mosque.webp")}
               alt="Mosque architecture viewed through an Islamic archway"
             />
           </div>

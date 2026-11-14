@@ -1,0 +1,521 @@
+/* Route-scoped styles for medical-student-internship. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   MEDICAL STUDENT INTERNSHIP PAGE
+   ========================================================================== */
+
+/* Hero variant */
+.internship-page .intern-hero .intern-hero-gradient {
+  background: linear-gradient(
+    90deg,
+    #faf7f2 0%,
+    #faf7f2 42%,
+    rgba(250, 247, 242, 0.92) 52%,
+    rgba(250, 247, 242, 0.32) 68%,
+    rgba(250, 247, 242, 0) 80%
+  );
+}
+.internship-page .intern-hero-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  margin: 0;
+}
+.internship-page .intern-eyebrow-sep {
+  color: #aaa9a0;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.internship-page .intern-hero-quote-panel {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--ink);
+  padding: 28px 36px 32px;
+  max-width: 300px;
+  z-index: 3;
+}
+.internship-page .intern-hero-quote-text {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #fff;
+  margin: 0 0 14px;
+}
+.internship-page .intern-hero-quote-bar {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  border: none;
+  margin: 0;
+}
+/* Shared eyebrow row */
+.internship-page .intern-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.internship-page .intern-eyebrow-line {
+  width: 32px;
+  height: 2px;
+  background: var(--maroon);
+  flex-shrink: 0;
+  display: inline-block;
+}
+.internship-page .intern-eyebrow-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--maroon);
+}
+/* Shared section typography */
+.internship-page .intern-section-h2 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(24px, 2.6vw, 36px);
+  line-height: 1.22;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.internship-page .intern-section-body {
+  font-size: 14.5px;
+  line-height: 1.72;
+  color: #3b4756;
+  margin-bottom: 16px;
+}
+/* ── Program Overview ── */
+.internship-page .intern-overview {
+  padding: 80px 0;
+  background: #fdf9f4;
+}
+.internship-page .intern-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+.internship-page .intern-overview-copy {
+  padding-right: 8px;
+}
+.internship-page .intern-overview-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+/* ── Summer 2026 Interns ── */
+.internship-page .intern-current {
+  padding: 72px 0;
+  background: var(--cream);
+}
+.internship-page .intern-current-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  align-items: start;
+  gap: 56px;
+}
+.internship-page .intern-cards-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.internship-page .intern-profile-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.internship-page .intern-profile-photo {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  background: #e8e2d8;
+}
+.internship-page .intern-profile-body {
+  padding: 18px 20px 22px;
+}
+.internship-page .intern-profile-name {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  color: var(--ink);
+  margin: 0 0 2px;
+}
+.internship-page .intern-profile-bar {
+  width: 28px;
+  height: 2px;
+  background: var(--maroon);
+  margin: 7px 0 8px;
+}
+.internship-page .intern-profile-role {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.03em;
+  margin: 0 0 2px;
+}
+.internship-page .intern-profile-school {
+  font-size: 11.5px;
+  color: #888;
+  margin: 0;
+  line-height: 1.4;
+}
+/* ── Intern Reflections ── */
+.internship-page .intern-reflections {
+  padding: 72px 0;
+  background: #fff;
+}
+.internship-page .intern-reflections-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.internship-page .intern-reflections-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(22px, 2.2vw, 30px);
+  color: var(--ink);
+  margin: 0;
+}
+.internship-page .intern-testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.internship-page .intern-testimonial-card {
+  padding: 32px 32px 36px;
+  background: #fdf9f4;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+.internship-page .intern-quote-icon {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 68px;
+  line-height: 0.8;
+  color: var(--maroon);
+  display: block;
+  margin-bottom: 14px;
+  opacity: 0.9;
+  font-style: normal;
+}
+.internship-page .intern-testimonial-text {
+  font-size: 14px;
+  line-height: 1.72;
+  color: #3b4756;
+  margin-bottom: 24px;
+  flex: 1;
+}
+.internship-page .intern-testimonial-attr {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.internship-page .intern-testimonial-attr-bar {
+  width: 24px;
+  height: 2px;
+  background: var(--maroon);
+  flex-shrink: 0;
+  display: inline-block;
+}
+.internship-page .intern-testimonial-name {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  color: var(--maroon);
+  font-weight: 700;
+  margin: 0 0 2px;
+}
+.internship-page .intern-testimonial-role {
+  font-size: 11.5px;
+  color: #777;
+  margin: 0;
+}
+/* ── Past Interns ── */
+.internship-page .intern-past {
+  padding: 72px 0;
+  background: var(--cream);
+}
+.internship-page .intern-past-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: 56px;
+}
+.internship-page .intern-past-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.internship-page .intern-past-card {
+  text-align: center;
+}
+.internship-page .intern-past-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  margin-bottom: 14px;
+  background: #ddd;
+}
+.internship-page .intern-past-name {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 15px;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+.internship-page .intern-past-role {
+  font-size: 11.5px;
+  color: #888;
+  margin: 0;
+}
+/* ── Internship Outputs ── */
+.internship-page .intern-outputs {
+  padding: 72px 0;
+  background: #fff;
+}
+.internship-page .intern-outputs-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+.internship-page .intern-outputs-desc {
+  font-size: 13.5px;
+  color: #5a6672;
+  line-height: 1.6;
+  max-width: 540px;
+  margin: 0;
+}
+.internship-page .intern-view-all-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.internship-page .intern-view-all-link:hover {
+  color: var(--ink);
+}
+.internship-page .intern-pub-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.internship-page .intern-pub-card {
+  display: flex;
+  flex-direction: column;
+}
+.internship-page .intern-pub-img-wrap {
+  border: 1px solid var(--line);
+  overflow: hidden;
+  margin-bottom: 10px;
+  aspect-ratio: 3 / 4;
+  background: #f0ece5;
+}
+.internship-page .intern-pub-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.internship-page .intern-pub-card:hover .intern-pub-img {
+  transform: scale(1.03);
+}
+.internship-page .intern-pub-title {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 10px;
+  flex: 1;
+}
+.internship-page .intern-pub-btn {
+  display: block;
+  padding: 8px 10px;
+  background: var(--maroon);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+.internship-page .intern-pub-btn:hover {
+  background: var(--ink);
+  color: #fff;
+}
+/* ── Photos & Highlights ── */
+.internship-page .intern-gallery {
+  background: var(--ink);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.internship-page .intern-gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 220px;
+  background-image: var(--iim-pattern);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.internship-page .intern-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 48px;
+}
+.internship-page .intern-gallery-heading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(26px, 2.8vw, 40px);
+  color: #fff;
+  margin-bottom: 16px;
+}
+.internship-page .intern-gallery-desc {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13.5px;
+  line-height: 1.65;
+  margin: 0;
+}
+.internship-page .intern-gallery-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.internship-page .intern-gallery-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+/* ── Support CTA ── */
+.internship-page .intern-support-cta {
+  padding: 72px 0;
+  background: var(--cream);
+}
+.internship-page .intern-support-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.internship-page .intern-support-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr auto;
+  align-items: center;
+  gap: 48px;
+}
+.internship-page .intern-support-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.internship-page .intern-support-h2 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(22px, 2.4vw, 32px);
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+.internship-page .intern-support-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4a5663;
+  max-width: 480px;
+  margin: 0;
+}
+.internship-page .intern-support-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: var(--maroon);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.internship-page .intern-support-btn:hover {
+  background: var(--ink);
+  color: #fff;
+}
+@media (max-width: 991.98px){.internship-page .intern-overview-grid,
+  .internship-page .intern-current-grid,
+  .internship-page .intern-past-grid {
+    grid-template-columns: 1fr;
+  }
+.internship-page .intern-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+.internship-page .intern-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+.internship-page .intern-support-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+.internship-page .intern-pub-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+.internship-page .intern-hero-quote-panel {
+    display: none;
+  }
+.internship-page .intern-hero .intern-hero-gradient {
+    background: linear-gradient(
+      180deg,
+      #faf7f2 0%,
+      #faf7f2 50%,
+      rgba(250, 247, 242, 0.88) 70%,
+      rgba(250, 247, 242, 0.1) 100%
+    ) !important;
+  }}
+@media (max-width: 767.98px){.internship-page .intern-cards-row {
+    grid-template-columns: 1fr;
+  }
+.internship-page .intern-past-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+.internship-page .intern-pub-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+.internship-page .intern-gallery-photos {
+    grid-template-columns: 1fr 1fr;
+  }
+.internship-page .intern-outputs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }}
+@media (max-width: 575.98px){.internship-page .intern-past-cards {
+    grid-template-columns: 1fr;
+  }
+.internship-page .intern-gallery-photos {
+    grid-template-columns: 1fr;
+  }
+.internship-page .intern-pub-grid {
+    grid-template-columns: 1fr 1fr;
+  }}

@@ -29,7 +29,7 @@ const TESTIMONIALS = [
   {
     id: "t1",
     cat: "healthcare",
-    img: asset("/images/donation/voice-1.jpg"),
+    img: asset("/images/donation/voice-1.webp"),
     duration: "2:18",
     quote: "II&M gave me language and frameworks to care for Muslim patients with greater confidence and compassion.",
     name: "Dr. Rania Awaad",
@@ -38,7 +38,7 @@ const TESTIMONIALS = [
   {
     id: "t2",
     cat: "students",
-    img: asset("/images/donation/voice-2.jpg"),
+    img: asset("/images/donation/voice-2.webp"),
     duration: "1:54",
     quote: "The courses helped me connect my faith with clinical training in a way that feels rigorous and practical.",
     name: "Omar H.",
@@ -47,7 +47,7 @@ const TESTIMONIALS = [
   {
     id: "t3",
     cat: "healthcare",
-    img: asset("/images/donation/voice-3.jpg"),
+    img: asset("/images/donation/voice-3.webp"),
     duration: "3:02",
     quote: "Their research and teaching strengthen how institutions approach ethics, education, and community partnership.",
     name: "Dr. Aasim I. Padela",
@@ -56,7 +56,7 @@ const TESTIMONIALS = [
   {
     id: "t4",
     cat: "leaders",
-    img: asset("/images/donation/impact-bridges.jpg"),
+    img: asset("/images/donation/impact-bridges.webp"),
     duration: "2:05",
     quote: "Partnering with II&M helped our organization bring evidence-informed learning to our community.",
     name: "Community Partner",
@@ -65,7 +65,7 @@ const TESTIMONIALS = [
   {
     id: "t5",
     cat: "patients",
-    img: asset("/images/donation/impact-learners.jpg"),
+    img: asset("/images/donation/impact-learners.webp"),
     duration: "1:41",
     quote: "Knowing clinicians are learning faith-sensitive care makes families feel seen and respected.",
     name: "Family Advocate",
@@ -74,21 +74,21 @@ const TESTIMONIALS = [
 ];
 
 const IMPACT = [
-  [asset("/images/donation/impact-learners.jpg"), "fa-user-doctor", "Equip Learners and Clinicians", "Deliver courses and practical resources that strengthen ethical, faith-informed care."],
-  [asset("/images/donation/impact-institutions.jpg"), "fa-building-columns", "Strengthen Institutions", "Integrate curricula and training into schools, hospitals, and organizations."],
-  [asset("/images/donation/impact-expertise.jpg"), "fa-microphone", "Share Expertise Globally", "Bring research-informed teaching and speaking to communities worldwide."],
-  [asset("/images/donation/impact-resources.jpg"), "fa-laptop", "Develop Practical Resources", "Create guides, modules, and tools that move knowledge into everyday practice."],
-  [asset("/images/donation/impact-bridges.jpg"), "fa-handshake", "Build Bridges and Partnerships", "Collaborate with partners who expand education and community impact."],
-  [asset("/images/donation/impact-change.jpg"), "fa-seedling", "Create Lasting Change", "Sustain programs that improve understanding, equity, and compassionate care."],
+  [asset("/images/donation/impact-learners.webp"), "fa-user-doctor", "Equip Learners and Clinicians", "Deliver courses and practical resources that strengthen ethical, faith-informed care."],
+  [asset("/images/donation/impact-institutions.webp"), "fa-building-columns", "Strengthen Institutions", "Integrate curricula and training into schools, hospitals, and organizations."],
+  [asset("/images/donation/impact-expertise.webp"), "fa-microphone", "Share Expertise Globally", "Bring research-informed teaching and speaking to communities worldwide."],
+  [asset("/images/donation/impact-resources.webp"), "fa-laptop", "Develop Practical Resources", "Create guides, modules, and tools that move knowledge into everyday practice."],
+  [asset("/images/donation/impact-bridges.webp"), "fa-handshake", "Build Bridges and Partnerships", "Collaborate with partners who expand education and community impact."],
+  [asset("/images/donation/impact-change.webp"), "fa-seedling", "Create Lasting Change", "Sustain programs that improve understanding, equity, and compassionate care."],
 ];
 
 const PARTNERS = [
   [asset("/images/partners/logos/muslim-edex.webp"), "Muslim EdEx", "Professional learning platform"],
   [asset("/images/partners/logos/imana.webp"), "IMANA", "Medical education & professional development"],
   [asset("/images/partners/logos/albalagh.png"), "ALBALAGH INSTITUTE", "Islamic scholarship and education"],
-  [asset("/images/partners/logos/umma-health.png"), "UMMA HEALTH", "Community health and healthcare initiatives"],
-  [asset("/images/partners/logos/workspace-junction.png"), "Workspace Junction", "Community space and events"],
-  [asset("/images/partners/icons/360-growth-lab.png"), "360 Growth Lab", "Technology and digital innovation"],
+  [asset("/images/partners/logos/umma-health.webp"), "UMMA HEALTH", "Community health and healthcare initiatives"],
+  [asset("/images/partners/logos/workspace-junction.webp"), "Workspace Junction", "Community space and events"],
+  [asset("/images/partners/icons/360-growth-lab.webp"), "360 Growth Lab", "Technology and digital innovation"],
 ];
 
 export default function DonatePageClient() {
@@ -137,8 +137,8 @@ export default function DonatePageClient() {
     <div className="donate-page">
       <header className="hero-seamless hero-donate-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/donation/donate-hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/donation/donate-hero.webp")}
             alt="Healthcare professionals in consultation"
             className="hero-bg-img"
             loading="eager"
@@ -256,7 +256,7 @@ export default function DonatePageClient() {
                 {visible.map((t) => (
                   <article className="donate-voice-card" key={t.id}>
                     <button type="button" className="donate-voice-thumb" onClick={() => openImpactVideo(t.video || IMPACT_VIDEO_ID)} aria-label={`Play testimonial from ${t.name}`}>
-                      <img src={t.img} alt="" />
+                      <img loading="lazy" decoding="async" src={t.img} alt="" />
                       <span className="donate-voice-play"><i className="fa-solid fa-play" /></span>
                       <span className="donate-voice-time">{t.duration}</span>
                     </button>
@@ -314,7 +314,6 @@ export default function DonatePageClient() {
                   }}
                   src="https://www.zeffy.com/embed/donation-form/instilling-hikmah-in-healthcare"
                   allow="payment"
-                  allowTransparency="true"
                 />
               </div>
             </aside>
@@ -339,7 +338,7 @@ export default function DonatePageClient() {
           <div className="donate-impact-grid">
             {IMPACT.map(([img, icon, title, text]) => (
               <article className="donate-impact-card" key={title}>
-                <img src={img} alt={title} />
+                <img loading="lazy" decoding="async" src={img} alt={title} />
                 <span className="donate-impact-icon"><i className={`fa-solid ${icon}`} /></span>
                 <h3>{title}</h3>
                 <p>{text}</p>
@@ -365,7 +364,7 @@ export default function DonatePageClient() {
             </div>
           </div>
           <div className="col-12 col-lg-6 donate-cta-media">
-            <img src={asset("/images/donation/cta-mosque.jpg")} alt="Mosque with blue dome viewed through an Islamic archway at sunset" />
+            <img loading="lazy" decoding="async" src={asset("/images/donation/cta-mosque.webp")} alt="Mosque with blue dome viewed through an Islamic archway at sunset" />
           </div>
         </div>
       </section>
@@ -394,7 +393,7 @@ export default function DonatePageClient() {
                     aria-hidden={copy === 1 ? "true" : undefined}
                   >
                     <div className="donate-partner-logo">
-                      <img src={logo} alt={copy === 0 ? name : ""} />
+                      <img loading="lazy" decoding="async" src={logo} alt={copy === 0 ? name : ""} />
                     </div>
                     <h3>{name}</h3>
                     <p>{text}</p>

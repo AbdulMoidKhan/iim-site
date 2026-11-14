@@ -1,0 +1,507 @@
+/* Route-scoped styles for resources. Split out of globals.css for faster first load. */
+.resource-search {
+  padding: 28px 0
+}
+/* 10. OTHER WEBSITE PAGES */
+/* ==========================================================================
+   RESOURCES PAGE
+   Scoped to .resources-page - route: /resources
+   ========================================================================== */
+
+.resources-page {
+  --res-burgundy: #800000;
+  --res-green: #4a5158;
+  --res-navy: #172331;
+  --res-cream: #faf8f4;
+  --res-body: #39444d;
+  --res-line: #e8e3dc;
+  background: #fff;
+  color: var(--res-body);
+  overflow-x: clip;
+}
+.resources-page .hero-resources-seamless {
+  background: var(--res-cream);
+  min-height: 560px;
+  border-bottom: 0;
+}
+.resources-page .res-hero-eyebrow {
+  color: var(--res-burgundy);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.resources-page .res-hero-quote {
+  right: 28px;
+  bottom: 36px;
+  background: var(--res-green);
+  padding: 16px 18px 18px;
+  max-width: 168px;
+}
+.res-find {
+  background: #fff;
+  padding: 28px 0 8px;
+}
+.res-find-panel {
+  background: var(--res-cream);
+  border: 1px solid var(--res-line);
+  padding: 26px 28px 18px;
+}
+.res-search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0;
+}
+.res-search-row h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(26px, 2.4vw, 34px);
+  color: var(--res-navy);
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.res-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 560px;
+  background: #fff;
+  border: 1px solid #ddd4c8;
+  padding: 6px 6px 6px 14px;
+}
+.res-search i {
+  color: #8d8174;
+  font-size: 14px;
+}
+.res-search input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: var(--res-navy);
+  min-width: 0;
+  padding: 8px 0;
+}
+.res-search input::placeholder {
+  color: #9a9086;
+}
+.res-search button {
+  background: var(--res-burgundy);
+  color: #fff;
+  border: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 12px 18px;
+}
+.res-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #eadfD2;
+}
+.res-filter-label {
+  flex: 0 0 168px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: var(--res-navy);
+}
+.res-pills,
+.res-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.res-pills button,
+.res-types button,
+.res-clear,
+.res-card-btn,
+.res-text-link,
+.res-cta-fill,
+.res-cta-outline {
+  font-family: "DM Sans", sans-serif;
+}
+.res-pills button {
+  border: 1px solid #d9d0c6;
+  background: #fff;
+  color: var(--res-navy);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 13px;
+  line-height: 1;
+}
+.res-types button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--res-line);
+  color: var(--res-navy);
+  padding: 10px 14px;
+  font-size: 13.5px;
+}
+.res-types button i {
+  color: var(--res-burgundy);
+}
+.res-clear {
+  margin-top: 12px;
+  border: 0;
+  background: transparent;
+  color: var(--res-burgundy);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0;
+}
+.res-featured,
+.res-audience,
+.res-pubs {
+  padding: 54px 0 20px;
+}
+.res-eyebrow {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--res-burgundy);
+  margin: 0 0 8px;
+}
+.res-eyebrow-light {
+  color: rgba(255, 255, 255, 0.82);
+}
+.res-featured h2,
+.res-audience h2,
+.res-pubs h2 {
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.res-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.res-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--res-burgundy);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.res-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+.res-card,
+.res-audience-card,
+.res-pub-card {
+  background: #fff;
+  border: 1px solid var(--res-line);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+}
+.res-card-media,
+.res-audience-media,
+.res-pub-media {
+  background: #f3efe8;
+  overflow: hidden;
+}
+.res-card-media {
+  aspect-ratio: 3 / 3.4;
+}
+.res-card-media img,
+.res-audience-media img,
+.res-pub-media img,
+.res-cta-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.res-card-body,
+.res-audience-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 12px 14px;
+  flex: 1;
+}
+.res-card-body h3,
+.res-pub-card h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--res-navy);
+  margin: 0;
+  font-weight: 400;
+}
+.res-card-body p,
+.res-audience-body p,
+.res-pub-card p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--res-body);
+  margin: 0;
+}
+.res-card-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  border: 1px solid var(--res-burgundy);
+  color: var(--res-burgundy);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 8px 10px;
+}
+.res-audience {
+  padding-top: 36px;
+}
+.res-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+.res-audience-media {
+  aspect-ratio: 16 / 11;
+}
+.res-audience-body h3 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--res-navy);
+  margin: 0;
+  font-weight: 400;
+}
+.res-pubs {
+  padding-bottom: 64px;
+}
+.res-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+}
+.res-carousel:focus-visible {
+  outline: 2px solid var(--res-burgundy);
+  outline-offset: 4px;
+}
+.res-carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+  container-type: inline-size;
+}
+.res-carousel-track {
+  display: flex;
+  width: max-content;
+}
+.res-pub-card {
+  flex: 0 0 calc(100cqi / 5);
+  width: calc(100cqi / 5);
+  padding: 0 8px 8px;
+  border: 0;
+  background: transparent;
+}
+.res-pub-media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  margin-bottom: 12px;
+  border: 1px solid var(--res-line);
+}
+.res-pub-media span {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--res-navy);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 13px;
+  line-height: 1.25;
+  padding: 8px 10px;
+}
+.res-pub-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.res-pub-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--res-burgundy);
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.res-carousel-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #d7cdc2;
+  background: #fff;
+  color: var(--res-navy);
+  flex: 0 0 36px;
+}
+.res-carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.res-empty {
+  border: 1px solid var(--res-line);
+  background: var(--res-cream);
+  padding: 28px;
+  margin: 0;
+}
+.res-cta-media {
+  min-height: 420px;
+}
+.res-cta-media img {
+  min-height: 420px;
+}
+.res-cta-copy {
+  background: var(--res-green);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.res-cta-copy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--iim-pattern) no-repeat right 8% center / 280px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+.res-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  padding: 64px 56px;
+}
+.res-cta-inner h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 16px;
+}
+.res-cta-inner p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 24px;
+}
+.res-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.res-cta-fill,
+.res-cta-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 13px 16px;
+}
+.res-cta-fill {
+  background: var(--res-burgundy);
+  color: #fff;
+}
+.res-cta-outline {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  color: #fff;
+}
+@media (max-width: 1199px){.res-featured-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+.res-pub-card {
+    flex-basis: calc(100cqi / 3);
+    width: calc(100cqi / 3);
+  }}
+@media (max-width: 991px){.resources-page .res-hero-quote {
+    position: static;
+    margin: 8px 0 24px;
+  }
+.res-search-row,
+  .res-filter-row,
+  .res-section-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+.res-search {
+    max-width: none;
+  }
+.res-filter-label {
+    flex-basis: auto;
+  }
+.res-featured-grid,
+  .res-audience-grid {
+    grid-template-columns: 1fr;
+  }
+.res-pub-card {
+    flex: 0 0 100cqi !important;
+    width: 100cqi !important;
+    max-width: 100cqi !important;
+  }
+.res-pub-media {
+    aspect-ratio: 16 / 10;
+  }
+.res-cta-media,
+  .res-cta-media img {
+    min-height: 280px;
+  }
+.res-cta-inner {
+    padding: 40px 24px 48px;
+  }}
+@media (max-width: 767px){.res-featured-grid,
+  .res-audience-grid {
+    grid-template-columns: 1fr;
+  }
+.res-pub-card {
+    flex-basis: 100cqi;
+    width: 100cqi;
+  }
+.res-find-panel {
+    padding: 18px 14px 14px;
+  }
+.res-search {
+    flex-wrap: wrap;
+  }
+.res-search button {
+    width: 100%;
+  }}

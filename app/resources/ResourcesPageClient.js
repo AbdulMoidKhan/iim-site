@@ -27,7 +27,7 @@ const RESOURCES = [
     description: "A practical guide for patients, families, and healthcare professionals on navigating end-of-life care through an Islamic framework.",
     type: "guides",
     audiences: ["patients", "clinicians", "leaders"],
-    image: "/images/course-eol.jpg",
+    image: "/images/course-eol.webp",
     href: "/books",
     keywords: "end of life bioethics guide muslim americans",
   },
@@ -37,7 +37,7 @@ const RESOURCES = [
     description: "Step-by-step materials to conduct community workshops on end-of-life care, designed for mosques and community organizations.",
     type: "workshops",
     audiences: ["leaders", "patients", "educators"],
-    image: "/images/research/resource-workshop.jpg",
+    image: "/images/research/resource-workshop.webp",
     href: "/workshops",
     keywords: "mosque workshop replication end of life community",
   },
@@ -47,7 +47,7 @@ const RESOURCES = [
     description: "Evidence-based tools to support mosque communities in identifying health priorities and delivering culturally and religiously relevant education.",
     type: "research",
     audiences: ["leaders", "researchers", "clinicians"],
-    image: "/images/research/project-mheart.jpg",
+    image: "/images/research/project-mheart.webp",
     href: "/mosque-health-education",
     keywords: "mheart mosque health education research tools",
   },
@@ -57,7 +57,7 @@ const RESOURCES = [
     description: "A comprehensive toolkit to build research capacity and engage Muslim communities in patient-centered outcomes research.",
     type: "research",
     audiences: ["researchers", "educators", "leaders"],
-    image: "/images/research/project-empart.jpg",
+    image: "/images/research/project-empart.webp",
     href: "/empart-research",
     keywords: "pcor islamic schools outcomes research toolkit empart",
   },
@@ -67,7 +67,7 @@ const RESOURCES = [
     description: "Findings from a national study examining the religious and spiritual needs of Muslim patients in inpatient settings.",
     type: "research",
     audiences: ["clinicians", "researchers"],
-    image: "/images/research/project-mahsn.jpg",
+    image: "/images/research/project-mahsn.webp",
     href: "/research",
     keywords: "mahsn spiritual religious needs hospitals inpatient",
   },
@@ -77,7 +77,7 @@ const RESOURCES = [
     description: "An educational course exploring foundational bioethical frameworks for clinical practice.",
     type: "courses",
     audiences: ["clinicians", "educators"],
-    image: "/images/course-bioethics.jpg",
+    image: "/images/course-bioethics.webp",
     href: "/courses",
     keywords: "islamic bioethics primer physicians course",
   },
@@ -89,7 +89,7 @@ const PUBLICATIONS = [
     journal: "Journal of Muslim Mental Health",
     title: "Mental Health and Muslim Communities",
     description: "Exploring mental health needs, stigma, and opportunities for culturally responsive care.",
-    image: "/images/research/approach.jpg",
+    image: "/images/research/approach.webp",
     href: "/research",
   },
   {
@@ -97,7 +97,7 @@ const PUBLICATIONS = [
     journal: "BMC Public Health",
     title: "Muslim Physicians' Experiences in the Healthcare Workforce",
     description: "A national survey on workplace discrimination and inclusivity.",
-    image: "/images/research/project-equity.jpg",
+    image: "/images/research/project-equity.webp",
     href: "/research",
   },
   {
@@ -105,7 +105,7 @@ const PUBLICATIONS = [
     journal: "Journal of Palliative Medicine",
     title: "End-of-Life Care Preferences Among American Muslims",
     description: "Understanding values, needs, and practical implications for healthcare delivery.",
-    image: "/images/research/project-palliative.jpg",
+    image: "/images/research/project-palliative.webp",
     href: "/research",
   },
   {
@@ -113,7 +113,7 @@ const PUBLICATIONS = [
     journal: "JCO Oncology Practice",
     title: "Religiously Tailored Mammography Intervention",
     description: "Impact of faith-informed education on cancer screening among Muslim women.",
-    image: "/images/research/project-mammography.jpg",
+    image: "/images/research/project-mammography.webp",
     href: "/research",
   },
   {
@@ -121,7 +121,7 @@ const PUBLICATIONS = [
     journal: "Journal of Religion and Health",
     title: "Spiritual Care Needs in US Hospitals",
     description: "Findings from the MAHSN study on Muslim patients' religious and spiritual resource needs.",
-    image: "/images/research/resource-pubs.jpg",
+    image: "/images/research/resource-pubs.webp",
     href: "/research",
   },
 ];
@@ -132,28 +132,28 @@ const AUDIENCE_CARDS = [
     title: "For Patients & Families",
     description: "Guides, FAQs, and educational materials to help navigate healthcare decisions with confidence.",
     cta: "EXPLORE PATIENT RESOURCES",
-    image: "/images/resources/aud-patients.jpg",
+    image: "/images/resources/aud-patients.webp",
   },
   {
     id: "clinicians",
     title: "For Healthcare Professionals",
     description: "Clinical guidance, educational tools, and research to support culturally and religiously responsive care.",
     cta: "EXPLORE CLINICIAN RESOURCES",
-    image: "/images/resources/aud-clinicians.jpg",
+    image: "/images/resources/aud-clinicians.webp",
   },
   {
     id: "leaders",
     title: "For Community & Faith Leaders",
     description: "Workshop materials, toolkits, and resources to support health education in community settings.",
     cta: "EXPLORE COMMUNITY RESOURCES",
-    image: "/images/resources/aud-leaders.jpg",
+    image: "/images/resources/aud-leaders.webp",
   },
   {
     id: "researchers",
     title: "For Scholars & Researchers",
     description: "Publications, datasets, and research tools to advance knowledge in the field of Islam and medicine.",
     cta: "EXPLORE RESEARCH RESOURCES",
-    image: "/images/resources/aud-research.jpg",
+    image: "/images/resources/aud-research.webp",
   },
 ];
 
@@ -302,8 +302,8 @@ export default function ResourcesPageClient() {
     <div className="resources-page">
       <header className="hero-seamless hero-resources-seamless">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/resources/hero.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/resources/hero.webp")}
             alt="Muslim physician consulting with a patient and child in a bright clinic"
             className="hero-bg-img"
             loading="eager"
@@ -431,7 +431,7 @@ export default function ResourcesPageClient() {
               {results.map((item) => (
                 <article className="res-card" key={item.id}>
                   <div className="res-card-media">
-                    <img src={asset(item.image)} alt="" />
+                    <img loading="lazy" decoding="async" src={asset(item.image)} alt="" />
                   </div>
                   <div className="res-card-body">
                     <h3>{item.title}</h3>
@@ -455,7 +455,7 @@ export default function ResourcesPageClient() {
             {AUDIENCE_CARDS.map((item) => (
               <article className="res-audience-card" key={item.id}>
                 <div className="res-audience-media">
-                  <img src={asset(item.image)} alt="" />
+                  <img loading="lazy" decoding="async" src={asset(item.image)} alt="" />
                 </div>
                 <div className="res-audience-body">
                   <h3>{item.title}</h3>
@@ -518,7 +518,7 @@ export default function ResourcesPageClient() {
                     aria-hidden={index >= pubCount ? true : undefined}
                   >
                     <div className="res-pub-media">
-                      <img src={asset(item.image)} alt="" />
+                      <img loading="lazy" decoding="async" src={asset(item.image)} alt="" />
                       <span>{item.journal}</span>
                     </div>
                     <h3>{item.title}</h3>
@@ -545,8 +545,8 @@ export default function ResourcesPageClient() {
       <section className="res-cta container-fluid p-0">
         <div className="row g-0">
           <div className="col-lg-6 res-cta-media">
-            <img
-              src={asset("/images/resources/cta-workshop.jpg")}
+            <img loading="lazy" decoding="async" 
+              src={asset("/images/resources/cta-workshop.webp")}
               alt="Educator in a hijab leading a community workshop"
             />
           </div>

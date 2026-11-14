@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import CurriculumSidebar from "./CurriculumSidebar";
 
@@ -264,7 +265,7 @@ export default function BioscienceUnit3Page() {
                       <p className="bu3-cardDesc">
                         Instructor answer key for grading and structured seminar discussion.
                       </p>
-                      <Link href="/educate" className="bu3-cardBtnBurgundy">
+                      <Link href="/education" className="bu3-cardBtnBurgundy">
                         INSTRUCTOR RESOURCES ↗
                       </Link>
                     </div>
@@ -404,7 +405,7 @@ export default function BioscienceUnit3Page() {
                       <p className="bu3-cardDesc">
                         Structured debate rubric and comprehensive model answers.
                       </p>
-                      <Link href="/educate" className="bu3-cardBtnBurgundy">
+                      <Link href="/education" className="bu3-cardBtnBurgundy">
                         FIND KEY ↗
                       </Link>
                     </div>

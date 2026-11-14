@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 import LivingOrganDonationNav from "./LivingOrganDonationNav";
@@ -88,66 +89,66 @@ const ACADEMIC_PAPERS = [
     num: "01",
     title:
       "A Randomized Controlled Cross-Over Trial Evaluating the Effect of Religiously-Tailored Health Education",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "02",
     title:
       "The Ethics of Organ Donation After Circulatory Determination of Death and Xenotransplantation from an Islamic Perspective",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "03",
     title:
       "Factors Associated with Positive Attitudes Towards Organ Donation in Arab Americans",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "04",
     title:
       "Relationships between Islamic religiosity and attitude toward deceased organ donation among American Muslims: a pilot study",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "05",
     title: "American Muslim Physician Attitudes Toward Organ Donation",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "06",
     title:
       "A Mosque-Based Qualitative Study on American Muslim Women's Organ Donation Beliefs",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "07",
     title:
       "Informing American Muslims about living donation through tailored health education: A randomized controlled crossover trial evaluating increase in biomedical and religious knowledge",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "08",
     title:
       "The Development and Validation of the Islamic Knowledge of Living Organ Donation Knowledge Scale for Measuring Organ Donation Knowledge Among Muslim Communities",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "09",
     title:
       "The Impact of Religiously-Tailored and Ethically-Balanced Education on Intention for Living Organ Donation among Muslim Americans",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "10",
     title:
       "Muslims, Islam, and Organ Donation: Righting Social Narratives and Designing Ethically Balanced Educational Interventions",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "11",
     title:
       "Increasing Solid Organ Donation: A Role for Emergency Physicians",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
 ];
 
@@ -156,18 +157,18 @@ const OP_EDS = [
     num: "01",
     title:
       "Perspectives on Organ Donation and Transplantation: Practical steps to moving forward in light of the latest legal opinion — Islamic Horizons, October 2019",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "02",
     title:
       "Helping Those You Know: The possibilities of deceased directed donation — Islamic Horizons, December 2019",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "03",
     title: "Muslim American Views on Organ Donation — October 2020",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
 ];
 
@@ -175,17 +176,17 @@ const PPT_PRESENTATIONS = [
   {
     num: "01",
     title: "Biomedical Aspects of Living Donation",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "02",
     title: "Organ Procurement Process",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "03",
     title: "Islamic Perspectives on Living Organ Donation",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
 ];
 
@@ -194,24 +195,24 @@ const CONF_PRESENTATIONS = [
     num: "01",
     title:
       "Developing Religiously-Tailored Health Education to Inform American Muslims about Organ Donation — September 17, 2019",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "02",
     title:
       "American Muslim Attitudes Towards Common Fertility Treatment Options: A Mosque-Based Cross Sectional Study — October 18–20, 2019",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "03",
     title: "Working with Muslim Patients — Fall 2023",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     num: "04",
     title:
       "Bringing Theory to Community Education: Faith, Muslims, and Living Organ Donation — September 17, 2020",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
 ];
 
@@ -220,25 +221,25 @@ const DISSEMINATION_PRODUCTS = [
     idx: "II&M / RESOURCE 01",
     heading: "An Organ Donation Decisional Guide for Muslim Americans",
     title: "An Organ Donation Decisional Guide for Muslim Americans",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     idx: "II&M / RESOURCE 02",
     heading: "Sample Peer Educator Training Manual",
     title: "Sample Peer Educator Training Manual",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     idx: "II&M / RESOURCE 03",
     heading: "Replication Guide",
     title: "Replication Guide",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
   {
     idx: "II&M / RESOURCE 04",
     heading: "Sample Participant Course Booklet",
     title: "Sample Participant Course Booklet",
-    link: "https://www.islamandmedicine.org/",
+    link: "https://medicineandislam.org/",
   },
 ];
 
@@ -332,8 +333,8 @@ export default function LivingOrganDonationPage() {
       {/* 01 HERO SECTION */}
       <header className="lod-hero">
         <div className="lod-heroBgWrapper">
-          <img
-            src={asset("/images/living-organ-donation/organ-hero-brain.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/living-organ-donation/organ-hero-brain.webp")}
             alt="Anatomical model illustrating living organ donation and bioethics"
             className="lod-heroBgImg"
             loading="eager"
@@ -437,9 +438,9 @@ export default function LivingOrganDonationPage() {
 
                 <div className="col-md-5">
                   <div className="lod-overviewMediaWrap">
-                    <img
+                    <img loading="lazy" decoding="async" 
                       src={asset(
-                        "/images/living-organ-donation/organ-overview-doctor.jpg"
+                        "/images/living-organ-donation/organ-overview-doctor.webp"
                       )}
                       alt="Doctor holding phone and reviewing clinical materials"
                       className="lod-overviewImage"
@@ -511,7 +512,7 @@ export default function LivingOrganDonationPage() {
               </div>
 
               <a
-                href="https://www.islamandmedicine.org/"
+                href="https://medicineandislam.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="lod-btnOutline"
@@ -551,7 +552,7 @@ export default function LivingOrganDonationPage() {
               </div>
 
               <a
-                href="https://www.islamandmedicine.org/"
+                href="https://medicineandislam.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="lod-inlineTextLink"
@@ -836,7 +837,7 @@ export default function LivingOrganDonationPage() {
               </div>
 
               <a
-                href="https://www.islamandmedicine.org/"
+                href="https://medicineandislam.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="lod-btnOutline"
@@ -870,7 +871,7 @@ export default function LivingOrganDonationPage() {
               </p>
 
               <a
-                href="https://www.islamandmedicine.org/"
+                href="https://medicineandislam.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="lod-btnOutline"
@@ -996,8 +997,8 @@ export default function LivingOrganDonationPage() {
           <div className="row g-0 align-items-stretch">
             <div className="col-lg-5">
               <div className="lod-ctaMosqueWrap">
-                <img
-                  src={asset("/images/donation/cta-mosque.jpg")}
+                <img loading="lazy" decoding="async" 
+                  src={asset("/images/donation/cta-mosque.webp")}
                   alt="Historic mosque dome and minarets against golden sunset"
                   className="lod-ctaMosqueImg"
                   loading="lazy"

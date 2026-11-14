@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
 
@@ -69,7 +70,7 @@ const GOALS_ACTIVITIES = [
 const PARTNER_ORGANIZATIONS = [
   {
     name: "UMMA Community Clinic",
-    logoImg: "/images/partners/logos/umma-health.png",
+    logoImg: "/images/partners/logos/umma-health.webp",
     alt: "UMMA Community Clinic Logo",
     badge: "UMMA Community Clinic",
   },
@@ -92,61 +93,61 @@ const TEAM_MEMBERS = [
   {
     name: "Dr. Aasim I. Padela",
     credentials: "MD, MSc",
-    image: "/images/our-team/mheart-padela-hd.jpg",
+    image: "/images/our-team/mheart-padela-hd.webp",
   },
   {
     name: "Fatema Mirza",
     credentials: "MBA",
-    image: "/images/our-team/mheart-fatema-hd.jpg",
+    image: "/images/our-team/mheart-fatema-hd.webp",
   },
   {
     name: "Imam Ayman Soliman",
     credentials: "MDiv",
-    image: "/images/our-team/mheart-ayman-hd.jpg",
+    image: "/images/our-team/mheart-ayman-hd.webp",
   },
   {
     name: "Adel Sirek",
     credentials: "MPH",
-    image: "/images/our-team/mheart-adel-hd.jpg",
+    image: "/images/our-team/mheart-adel-hd.webp",
   },
 ];
 
 // 6. Gallery Items (9 High-Definition Event Photos from Archive)
 const GALLERY_ITEMS = [
   {
-    src: "/images/mheart-gallery/01_group_photo.png",
+    src: "/images/mheart-gallery/01_group_photo.webp",
     alt: "M-HEaRT Cohort Group Photo",
   },
   {
-    src: "/images/mheart-gallery/02_group_discussion.png",
+    src: "/images/mheart-gallery/02_group_discussion.webp",
     alt: "Table Discussion and Collaborative Deliberation",
   },
   {
-    src: "/images/mheart-gallery/03_classroom_discussion.png",
+    src: "/images/mheart-gallery/03_classroom_discussion.webp",
     alt: "Classroom Workshop Session",
   },
   {
-    src: "/images/mheart-gallery/04_screen_presentation.png",
+    src: "/images/mheart-gallery/04_screen_presentation.webp",
     alt: "AI for Workforce Development Presentation",
   },
   {
-    src: "/images/mheart-gallery/05_speaker_presentation.png",
+    src: "/images/mheart-gallery/05_speaker_presentation.webp",
     alt: "Workshop Overview Facilitator at Projector",
   },
   {
-    src: "/images/mheart-gallery/06_lecture_hall.png",
+    src: "/images/mheart-gallery/06_lecture_hall.webp",
     alt: "Research & Engagement Seminar Cohort",
   },
   {
-    src: "/images/mheart-gallery/07_audience_view.png",
+    src: "/images/mheart-gallery/07_audience_view.webp",
     alt: "Research Capacity Workshop Audience",
   },
   {
-    src: "/images/mheart-gallery/08_sticky_notes.png",
+    src: "/images/mheart-gallery/08_sticky_notes.webp",
     alt: "Ideas and Action Planning Brainstorming Board",
   },
   {
-    src: "/images/mheart-gallery/09_presenter_at_screen.png",
+    src: "/images/mheart-gallery/09_presenter_at_screen.webp",
     alt: "Faculty Presenter Addressing Participants",
   },
 ];
@@ -490,7 +491,7 @@ export default function MHeartPage() {
 
           <div className="mheart-funderLogosWrap">
             <div className="mheart-funderLogoCol">
-              <img
+              <img loading="eager" fetchPriority="high" decoding="async" 
                 src={asset("/images/partners/logos/pcori.svg")}
                 alt="PCORI - Patient-Centered Outcomes Research Institute"
                 className="mheart-funderLogo"
@@ -499,7 +500,7 @@ export default function MHeartPage() {
             </div>
             <div className="mheart-funderDivider" aria-hidden="true" />
             <div className="mheart-funderLogoCol">
-              <img
+              <img loading="lazy" decoding="async" 
                 src={asset("/images/partners/logos/american-cancer-society.svg")}
                 alt="American Cancer Society"
                 className="mheart-funderLogo"
@@ -526,7 +527,7 @@ export default function MHeartPage() {
                 <div key={idx} className="col-md-4">
                   <div className="mheart-partnerTile">
                     <div className="mheart-partnerLogoWrap">
-                      <img
+                      <img loading="lazy" decoding="async" 
                         src={asset(partner.logoImg)}
                         alt={partner.alt}
                         className="mheart-partnerLogo"
@@ -557,7 +558,7 @@ export default function MHeartPage() {
               <div key={idx} className="col-sm-6 col-lg-3">
                 <div className="mheart-teamTile">
                   <div className="mheart-teamPhotoWrap">
-                    <img
+                    <img loading="lazy" decoding="async" 
                       src={asset(member.image)}
                       alt={`${member.name}, ${member.credentials}`}
                       className="mheart-teamPhoto"
@@ -595,7 +596,7 @@ export default function MHeartPage() {
               <div key={idx} className="col-sm-6 col-md-4">
                 <div className="mheart-galleryTile">
                   <div className="mheart-galleryImgWrap">
-                    <img
+                    <img loading="lazy" decoding="async" 
                       src={asset(item.src)}
                       alt={item.alt}
                       className="mheart-galleryImg"

@@ -1,3 +1,4 @@
+import "./page.css";
 import { asset } from "../../lib/asset";
 import Link from "next/link";
 
@@ -26,19 +27,19 @@ const currentInterns = [
 
 const pastInterns = [
   {
-    img: asset("/images/our-team/nabeel.jpg"),
+    img: asset("/images/our-team/nabeel.webp"),
     name: "Muhammad Yusuf Khan",
     role: "Past Intern",
     objectPosition: "center 20%",
   },
   {
-    img: asset("/images/educate/testimonial-intern.jpg"),
+    img: asset("/images/educate/testimonial-intern.webp"),
     name: "Salma Saifuddin",
     role: "Past Intern",
     objectPosition: "center 48%",
   },
   {
-    img: asset("/images/our-team/laila.jpg"),
+    img: asset("/images/our-team/laila.webp"),
     name: "Benish Baqai",
     role: "Past Intern",
     objectPosition: "center 20%",
@@ -47,37 +48,37 @@ const pastInterns = [
 
 const publications = [
   {
-    img: asset("/images/work-islam-biomedicine.png"),
+    img: asset("/images/work-islam-biomedicine.webp"),
     title: "Islamic Dimensions of End-of-Life Healthcare",
     href: "/research",
   },
   {
-    img: asset("/images/work-maqasid.png"),
+    img: asset("/images/work-maqasid.webp"),
     title: "The Unbreakable Relationship: Bioethical Perspectives on Human Breast Milk",
     href: "/research",
   },
   {
-    img: asset("/images/work-organ-donation.png"),
+    img: asset("/images/work-organ-donation.webp"),
     title: "Homeopathy and Muslim Patients: Islamic Ethics – Legal Perspectives",
     href: "/research",
   },
   {
-    img: asset("/images/work-medicine-shariah.png"),
+    img: asset("/images/work-medicine-shariah.webp"),
     title: "Predictors of Perceived Discrimination in Medical Settings among Muslim Women in the USA",
     href: "/research",
   },
   {
-    img: asset("/images/work-covid.png"),
+    img: asset("/images/work-covid.webp"),
     title: "Islamic Bioethical Perspectives on Gender Identity for Intersex Patients",
     href: "/research",
   },
   {
-    img: asset("/images/book-bridging-cover.jpg"),
+    img: asset("/images/book-bridging-cover.webp"),
     title: "Faculty of Responsibility: Ethical Challenges for Muslim Students in Healthcare",
     href: "/research",
   },
   {
-    img: asset("/images/book-faith-health.jpg"),
+    img: asset("/images/book-faith-health.webp"),
     title: "Medicine, Morals and Female Genital Cutting",
     href: "/research",
   },
@@ -85,15 +86,15 @@ const publications = [
 
 const galleryPhotos = [
   {
-    img: asset("/images/bio-way-seminar.jpg"),
+    img: asset("/images/bio-way-seminar.webp"),
     alt: "Internship seminar presentation",
   },
   {
-    img: asset("/images/bio-student-group.jpg"),
+    img: asset("/images/bio-student-group.webp"),
     alt: "Intern group discussion",
   },
   {
-    img: asset("/images/bio-student-speak.jpg"),
+    img: asset("/images/bio-student-speak.webp"),
     alt: "Intern research presentation",
   },
 ];
@@ -104,8 +105,8 @@ export default function MedicalStudentInternshipPage() {
       {/* ── HERO ───────────────────────────────────────────────── */}
       <header className="hero-seamless intern-hero">
         <div className="hero-bg-wrapper">
-          <img
-            src={asset("/images/hero-doctor-team.jpg")}
+          <img loading="eager" fetchPriority="high" decoding="async" 
+            src={asset("/images/hero-doctor-team.webp")}
             alt="Medical students engaged in an educational mentoring discussion"
             className="hero-bg-img"
             loading="eager"
@@ -175,8 +176,8 @@ export default function MedicalStudentInternshipPage() {
               </p>
             </div>
             <div className="intern-overview-media">
-              <img
-                src={asset("/images/bio-student-speak.jpg")}
+              <img loading="lazy" decoding="async" 
+                src={asset("/images/bio-student-speak.webp")}
                 alt="Interns presenting research at an academic poster session"
                 className="intern-overview-photo"
                 loading="lazy"
@@ -200,7 +201,7 @@ export default function MedicalStudentInternshipPage() {
             <div className="intern-cards-row">
               {currentInterns.map((intern) => (
                 <article className="intern-profile-card" key={intern.name}>
-                  <img
+                  <img loading="lazy" decoding="async" 
                     src={intern.img}
                     alt={intern.name}
                     className={`intern-profile-photo ${intern.isPlaceholder ? "intern-profile-photo-placeholder" : ""}`}
@@ -281,7 +282,7 @@ export default function MedicalStudentInternshipPage() {
             <div className="intern-past-cards">
               {pastInterns.map((intern) => (
                 <article className="intern-past-card" key={intern.name}>
-                  <img
+                  <img loading="lazy" decoding="async" 
                     src={intern.img}
                     alt={intern.name}
                     className="intern-past-photo"
@@ -320,7 +321,7 @@ export default function MedicalStudentInternshipPage() {
             {publications.map((pub) => (
               <article className="intern-pub-card" key={pub.title}>
                 <div className="intern-pub-img-wrap">
-                  <img
+                  <img loading="lazy" decoding="async" 
                     src={pub.img}
                     alt={pub.title}
                     className="intern-pub-img"
@@ -350,7 +351,7 @@ export default function MedicalStudentInternshipPage() {
             </div>
             <div className="intern-gallery-photos">
               {galleryPhotos.map((photo) => (
-                <img
+                <img loading="lazy" decoding="async" 
                   key={photo.alt}
                   src={photo.img}
                   alt={photo.alt}
@@ -372,8 +373,8 @@ export default function MedicalStudentInternshipPage() {
           </div>
           <div className="intern-support-grid">
             <div className="intern-support-media">
-              <img
-                src={asset("/images/cta-archway.jpg")}
+              <img loading="lazy" decoding="async" 
+                src={asset("/images/cta-archway.webp")}
                 alt="Islamic architectural archway"
                 className="intern-support-img"
                 loading="lazy"

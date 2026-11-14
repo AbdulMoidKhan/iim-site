@@ -1,3 +1,4 @@
+import "./page.css";
 import Image from "next/image";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
@@ -89,7 +90,7 @@ const CURRICULUM_UNITS = [
     unit: "UNIT 01",
     title: "Epistemic Framework",
     desc: "Core concepts, sources of knowledge, and application exercises.",
-    image: asset("/images/exploring-bioscience/unit-01.jpg"),
+    image: asset("/images/exploring-bioscience/unit-01.webp"),
   },
 
 
@@ -98,37 +99,37 @@ const CURRICULUM_UNITS = [
     unit: "UNIT 02",
     title: "What Do We Know and How Do We Know It?",
     desc: "Reasoning exercises in Islam and science.",
-    image: asset("/images/exploring-bioscience/unit-02.jpg"),
+    image: asset("/images/exploring-bioscience/unit-02.webp"),
   },
   {
     unit: "UNIT 03",
     title: "What is the Origin of Mankind?",
     desc: "Evolution and God's special creation.",
-    image: asset("/images/exploring-bioscience/unit-03.jpg"),
+    image: asset("/images/exploring-bioscience/unit-03.webp"),
   },
   {
     unit: "UNIT 04",
     title: "What Does It Mean to Be a Human Being?",
     desc: "Neuroscience, artificial intelligence, and the soul.",
-    image: asset("/images/exploring-bioscience/unit-04.jpg"),
+    image: asset("/images/exploring-bioscience/unit-04.webp"),
   },
   {
     unit: "UNIT 05",
     title: "Human Enhancement and Transhumanism",
     desc: "Are we changing—and should we change—our being?",
-    image: asset("/images/exploring-bioscience/unit-05.jpg"),
+    image: asset("/images/exploring-bioscience/unit-05.webp"),
   },
   {
     unit: "UNIT 06",
     title: "Are We Programmed or Do We Have Free Will?",
     desc: "Fate and genetic determinism.",
-    image: asset("/images/exploring-bioscience/unit-06.jpg"),
+    image: asset("/images/exploring-bioscience/unit-06.webp"),
   },
   {
     unit: "UNIT 07",
     title: "Are Human Beings Unique in This Universe?",
     desc: "Extraterrestrial life and theological inquiry.",
-    image: asset("/images/exploring-bioscience/unit-07.jpg"),
+    image: asset("/images/exploring-bioscience/unit-07.webp"),
   },
 ];
 
@@ -177,7 +178,7 @@ export default function ExploringBiosciencePage() {
             <div className="eb-heroImageCol">
               <div className="eb-heroImageWrapper">
                 <Image
-                  src={asset("/images/exploring-bioscience/hero-lab.jpg")}
+                  src={asset("/images/exploring-bioscience/hero-lab.webp")}
                   alt="Laboratory glassware with clear liquid and scientific pipettes"
                   fill
                   priority
@@ -449,7 +450,7 @@ export default function ExploringBiosciencePage() {
               <p className="eb-audienceDesc">
                 Lesson plans, presentations, worksheets, and teaching resources for schools and learning communities.
               </p>
-              <Link href="/educate" className="eb-audienceBtn">
+              <Link href="/education" className="eb-audienceBtn">
                 Access Educator Curriculum ↗
               </Link>
             </div>
@@ -538,7 +539,7 @@ export default function ExploringBiosciencePage() {
             <div className="eb-envCard">
               <div className="eb-envImageWrapper">
                 <Image
-                  src={asset("/images/exploring-bioscience/env-classroom-hq.jpg")}
+                  src={asset("/images/exploring-bioscience/env-classroom-hq.webp")}
                   alt="Students in university library"
                   fill
                   className="eb-envImage"
@@ -557,7 +558,7 @@ export default function ExploringBiosciencePage() {
             <div className="eb-envCard">
               <div className="eb-envImageWrapper">
                 <Image
-                  src={asset("/images/exploring-bioscience/env-beyond-hq.jpg")}
+                  src={asset("/images/exploring-bioscience/env-beyond-hq.webp")}
                   alt="Study desk with textbooks and learning materials"
                   fill
                   className="eb-envImage"

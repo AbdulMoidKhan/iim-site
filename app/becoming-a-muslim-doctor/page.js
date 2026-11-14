@@ -1,3 +1,4 @@
+import "./page.css";
 import Image from "next/image";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
@@ -29,7 +30,7 @@ export const metadata = {
       "A reflective and formative program for medical students and healthcare professionals exploring identity, faith, ethics, and professional practice.",
     images: [
       {
-        url: asset("/images/becoming-a-muslim-doctor/hero-books-stethoscope.jpg"),
+        url: asset("/images/becoming-a-muslim-doctor/hero-books-stethoscope.webp"),
         width: 1200,
         height: 630,
         alt: "Becoming a Muslim Doctor Course Still Life",
@@ -174,7 +175,7 @@ export default function BecomingAMuslimDoctorPage() {
             <div className="bmd-heroMediaCol">
               <div className="bmd-heroImageFrame">
                 <Image
-                  src={asset("/images/becoming-a-muslim-doctor/hero-books-stethoscope.jpg")}
+                  src={asset("/images/becoming-a-muslim-doctor/hero-books-stethoscope.webp")}
                   alt="Scholarly Islamic books, Quran, and medical stethoscope composition"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 480px"
@@ -292,7 +293,7 @@ export default function BecomingAMuslimDoctorPage() {
               <div className="bmd-featureCard">
                 <div className="bmd-featureCardLogoWrap" aria-hidden="true">
                   <Image
-                    src={asset("/images/partners/muslim-edex.png")}
+                    src={asset("/images/partners/muslim-edex.webp")}
                     alt="Muslim EdEx Logo"
                     width={48}
                     height={36}
@@ -390,7 +391,7 @@ export default function BecomingAMuslimDoctorPage() {
             {/* Left Portrait */}
             <div className="bmd-instructorPhotoFrame">
               <Image
-                src={asset("/images/our-team/padela-portrait.jpg")}
+                src={asset("/images/our-team/padela-portrait.webp")}
                 alt="Dr. Aasim I. Padela, MD, MSc, FACEP"
                 fill
                 sizes="(max-width: 768px) 150px, 170px"
@@ -455,7 +456,7 @@ export default function BecomingAMuslimDoctorPage() {
 
             {/* Column 2: Video Testimonial Preview */}
             <TestimonialVideoPlayer
-              thumbSrc={asset("/images/becoming-a-muslim-doctor/student-video-thumb.jpg")}
+              thumbSrc={asset("/images/becoming-a-muslim-doctor/student-video-thumb.webp")}
               caption="Cohort Reflection: Integrating Faith in Medical School"
             />
 

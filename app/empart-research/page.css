@@ -1,0 +1,940 @@
+/* Route-scoped styles for empart-research. Split out of globals.css for faster first load. */
+/* ==========================================================================
+   29. EMPART STUDY PAGE
+   Scoped strictly under .empart-page — Route: /empart-study
+   ========================================================================== */
+
+.empart-page {
+  background-color: #ffffff;
+  color: #3e4b5a;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+/* --------------------------------------------------------------------------
+   A. HERO SECTION & MOSQUE ARCH
+   -------------------------------------------------------------------------- */
+.empart-page .empart-hero {
+  background-color: #faf7f2;
+  position: relative;
+  padding: 40px 0 0;
+  border-bottom: 1px solid #eadfd1;
+  overflow: hidden;
+}
+.empart-page .empart-heroBgCircles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.empart-page .empart-heroCircleOuter {
+  position: absolute;
+  right: 2%;
+  top: -120px;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  border: 1px solid rgba(205, 185, 160, 0.35);
+  background: radial-gradient(
+    circle,
+    rgba(235, 220, 200, 0.25) 0%,
+    rgba(250, 247, 242, 0) 70%
+  );
+}
+.empart-page .empart-heroCircleInner {
+  position: absolute;
+  right: 8%;
+  top: -45px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 174, 148, 0.38);
+}
+.empart-page .empart-heroContainer {
+  position: relative;
+  z-index: 2;
+}
+.empart-page .empart-heroTextCol {
+  padding-bottom: 52px;
+  align-self: center;
+}
+.empart-page .empart-breadcrumbWrap {
+  margin-bottom: 12px;
+}
+.empart-page .empart-breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #6c7886;
+}
+.empart-page .empart-breadcrumbItem a.empart-breadcrumbLink {
+  color: #6c7886;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.empart-page .empart-breadcrumbItem a.empart-breadcrumbLink:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+.empart-page .empart-breadcrumbSeparator {
+  margin: 0 8px;
+  color: #a89d90;
+  font-size: 11px;
+}
+.empart-page .empart-heroTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(28px, 3.2vw, 38px);
+  font-weight: 700;
+  color: #10243a;
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+.empart-page .empart-heroUnderline {
+  width: 52px;
+  height: 3px;
+  background-color: #800000;
+  border-radius: 2px;
+  margin-top: 14px;
+}
+.empart-page .empart-heroArchCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.empart-page .empart-heroArchWrap {
+  display: inline-block;
+  max-width: 265px;
+  width: 100%;
+  border-radius: 140px 140px 0 0;
+  overflow: hidden;
+  box-shadow: 0 -4px 26px rgba(16, 36, 58, 0.12);
+  border: 2px solid #e5d5bf;
+  border-bottom: none;
+  background-color: #f7f3ed;
+  margin-bottom: -1px;
+}
+.empart-page .empart-heroArchImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* --------------------------------------------------------------------------
+   B. INTRODUCTION SECTION & BURGUNDY CTA
+   -------------------------------------------------------------------------- */
+.empart-page .empart-introSection {
+  padding: 46px 0 32px;
+}
+.empart-page .empart-introInner {
+  max-width: 980px;
+}
+.empart-page .empart-sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.empart-page .empart-accentBar {
+  display: inline-block;
+  width: 3.5px;
+  height: 24px;
+  background-color: #800000;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.empart-page .empart-sectionHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+.empart-page .empart-paragraph {
+  font-size: 14.5px;
+  line-height: 1.72;
+  color: #3e4b5a;
+  margin-bottom: 15px;
+}
+.empart-page .empart-paragraph:last-of-type {
+  margin-bottom: 0;
+}
+.empart-page .empart-introCtaWrap {
+  margin-top: 22px;
+}
+.empart-page .empart-btnBurgundyFull {
+  background-color: #800000;
+  color: #ffffff !important;
+  border: 1px solid #800000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  line-height: 1.4;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+}
+.empart-page .empart-btnBurgundyFull:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+.empart-page .empart-noticeLinkWrap {
+  margin-top: 12px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: #6c7886;
+  overflow-wrap: anywhere;
+}
+.empart-page .empart-noticeLabel {
+  font-weight: 700;
+  color: #800000;
+}
+.empart-page .empart-noticeUrl {
+  color: #800000;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+.empart-page .empart-noticeUrl:hover {
+  color: #5a0000;
+}
+/* --------------------------------------------------------------------------
+   C. WHAT / HOW / WHY EDUCATIONAL CARDS
+   -------------------------------------------------------------------------- */
+.empart-page .empart-cardsSection {
+  padding: 12px 0 48px;
+}
+.empart-page .empart-eduCard {
+  background-color: #fcfaf7;
+  border: 1px solid #ebd9c2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
+.empart-page .empart-eduCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.1);
+  border-color: #d8c2aa;
+}
+.empart-page .empart-eduCardHeader {
+  background: linear-gradient(180deg, #860609 0%, #6d0000 100%);
+  color: #ffffff;
+  padding: 16px 20px 28px;
+  position: relative;
+  text-align: center;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  box-shadow: 0 2px 6px rgba(104, 0, 0, 0.08);
+}
+.empart-page .empart-questionIconWrap {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #800000;
+  border: 1.5px solid #800000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(16, 36, 58, 0.14);
+  z-index: 2;
+}
+.empart-page .empart-eduCardTitle {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+.empart-page .empart-eduCardBody {
+  padding: 32px 24px 28px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.empart-page .empart-eduCardText {
+  font-size: 13.8px;
+  line-height: 1.66;
+  color: #3e4b5a;
+  margin: 0;
+}
+/* --------------------------------------------------------------------------
+   D. SPLIT SECTIONS (Project Benefits & How To Get Involved)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-benefitsSection,
+.empart-page .empart-involvedSection {
+  padding: 34px 0 42px;
+}
+.empart-page .empart-splitImgWrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ebd9c2;
+  box-shadow: 0 8px 24px rgba(16, 36, 58, 0.08);
+  background-color: #f7f3ed;
+  aspect-ratio: 4 / 3;
+  max-width: 580px;
+  margin: 0 auto;
+  transition: transform 0.24s ease;
+}
+@media (min-width: 992px){.empart-page .empart-benefitsSection .empart-splitImgWrap {
+    margin-left: 0;
+  }
+.empart-page .empart-involvedSection .empart-splitImgWrap {
+    margin-right: 0;
+  }}
+.empart-page .empart-splitImgWrap:hover {
+  transform: translateY(-2px);
+}
+.empart-page .empart-splitImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 18%;
+}
+.empart-page .empart-btnBurgundy {
+  background-color: #800000;
+  color: #ffffff !important;
+  border: 1px solid #800000;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.2);
+}
+.empart-page .empart-btnBurgundy:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.28);
+  transform: translateY(-1px);
+}
+/* --------------------------------------------------------------------------
+   E. CORE TEAM (Overlapping White Name Label Pill inside Portrait Card)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-coreTeamSection {
+  padding: 44px 0 36px;
+  background-color: #fdfbf7;
+  border-top: 1px solid #f2ebe1;
+}
+.empart-page .empart-centeredHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #10243a;
+  margin: 0 0 8px;
+  letter-spacing: 0.015em;
+}
+.empart-page .empart-centeredDivider {
+  width: 44px;
+  height: 2.5px;
+  background-color: #800000;
+  margin: 0 auto 24px;
+  border-radius: 2px;
+}
+.empart-page .empart-coreTeamGridWrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.empart-page .empart-coreTeamCard {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e6d7c4;
+  background-color: #f5efe7;
+  aspect-ratio: 1 / 1.04;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.08);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.empart-page .empart-coreTeamCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(16, 36, 58, 0.14);
+}
+.empart-page .empart-coreTeamPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 14%;
+  display: block;
+}
+.empart-page .empart-coreTeamLabel {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(4px);
+  padding: 9px 10px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(16, 36, 58, 0.14);
+  border: 1px solid rgba(235, 217, 194, 0.7);
+}
+.empart-page .empart-memberName {
+  font-size: 13px;
+  font-weight: 700;
+  color: #10243a;
+  display: block;
+  line-height: 1.3;
+}
+/* --------------------------------------------------------------------------
+   F. MEET THE EMPART TEAM (Circular Portraits)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-circlesSection {
+  padding: 36px 0 44px;
+  background-color: #fdfbf7;
+  border-bottom: 1px solid #f2ebe1;
+}
+.empart-page .empart-circlesRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.empart-page .empart-circleItem {
+  flex-shrink: 0;
+}
+.empart-page .empart-circleImgWrap {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2.5px solid #ebd9c2;
+  box-shadow: 0 4px 12px rgba(16, 36, 58, 0.08);
+  background-color: #f7f3ed;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.empart-page .empart-circleImgWrap:hover {
+  transform: scale(1.08);
+  border-color: #800000;
+  box-shadow: 0 6px 16px rgba(128, 0, 0, 0.2);
+}
+.empart-page .empart-circleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.empart-page .empart-paginationDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.empart-page .empart-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d4c8b8;
+  transition: all 0.2s ease;
+}
+/* --------------------------------------------------------------------------
+   G. VIDEOS SECTION (2x2 Grid — Razor-Sharp YouTube Card Overlay)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-videosSection {
+  padding: 46px 0 44px;
+}
+.empart-page .empart-videosGridWrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.empart-page .empart-videoCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e6d7c4;
+  box-shadow: 0 6px 20px rgba(16, 36, 58, 0.08);
+  background-color: #11161c;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.empart-page .empart-videoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(16, 36, 58, 0.16);
+}
+.empart-page .empart-videoThumbWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #1a212b;
+}
+.empart-page .empart-videoThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.32s ease;
+}
+.empart-page .empart-videoThumbWrap.is-portraitStage {
+  background: linear-gradient(125deg, #2c333c 0%, #151a21 100%);
+}
+.empart-page .empart-videoThumbWrap.is-portraitStage .empart-videoThumb {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  -webkit-mask-image: linear-gradient(to right, #000000 58%, transparent 100%);
+  mask-image: linear-gradient(to right, #000000 58%, transparent 100%);
+  filter: contrast(1.02) brightness(0.95);
+}
+.empart-page .empart-videoSlideCaption {
+  position: absolute;
+  right: 14px;
+  top: 46%;
+  transform: translateY(-50%);
+  width: 35%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1;
+}
+.empart-page .empart-videoSlideEyebrow {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #f3c6b6;
+  text-transform: uppercase;
+}
+.empart-page .empart-videoSlideHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 12px;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.9);
+}
+.empart-page .empart-videoCard:hover .empart-videoThumb {
+  transform: scale(1.04);
+}
+.empart-page .empart-videoTopBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px 28px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.35) 60%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+.empart-page .empart-videoChannelAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #800000;
+  color: #ffffff;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+}
+.empart-page .empart-videoTitleText {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+}
+.empart-page .empart-videoPlayBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0.92;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+.empart-page .empart-videoCard:hover .empart-videoPlayBtn {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+.empart-page .empart-videoWatchBadge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(18, 18, 18, 0.85);
+  color: #ffffff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+.empart-page .empart-ytSmallIcon {
+  color: #ff2222;
+  font-size: 13px;
+}
+/* --------------------------------------------------------------------------
+   H. DOWNLOADABLE MATERIALS (Interactive Burgundy Card Slider)
+   -------------------------------------------------------------------------- */
+.empart-page .empart-downloadsSection {
+  padding: 40px 0 46px;
+}
+.empart-page .empart-downloadsSlider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+.empart-page .empart-downloadsViewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 8px 4px 14px;
+}
+.empart-page .empart-downloadsTrack {
+  display: flex;
+  gap: 22px;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.empart-page .empart-dlSlideItem {
+  flex: 0 0 calc((100% - 66px) / 4);
+  min-width: 0;
+}
+.empart-page .empart-dlArrowBtn {
+  position: absolute;
+  top: calc(50% - 14px);
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ebd9c2;
+  background-color: #ffffff;
+  color: #800000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 36, 58, 0.1);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+}
+.empart-page .empart-dlArrowBtn:hover,
+.empart-page .empart-dlArrowBtn:focus-visible {
+  background-color: #800000;
+  border-color: #800000;
+  color: #ffffff;
+  outline: none;
+}
+.empart-page .empart-dlArrowPrev {
+  left: 0;
+}
+.empart-page .empart-dlArrowNext {
+  right: 0;
+}
+.empart-page .empart-dotBtn {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+@media (max-width: 991.98px){.empart-page .empart-dlSlideItem {
+    flex: 0 0 calc((100% - 22px) / 2);
+  }}
+@media (max-width: 767.98px){.empart-page .empart-downloadsSlider {
+    padding: 0 40px;
+  }
+.empart-page .empart-dlSlideItem {
+    flex: 0 0 100%;
+  }
+.empart-page .empart-dlArrowBtn {
+    width: 32px;
+    height: 32px;
+  }}
+.empart-page .empart-downloadCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(128, 0, 0, 0.16);
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.empart-page .empart-downloadCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(128, 0, 0, 0.28);
+}
+.empart-page .empart-downloadCardInner {
+  background: linear-gradient(155deg, #8b0000 0%, #640000 100%);
+  padding: 20px 14px 18px;
+  min-height: 152px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+.empart-page .empart-downloadLogoPill {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  max-width: 142px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+.empart-page .empart-downloadLogo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.empart-page .empart-downloadOrg {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+.empart-page .empart-downloadSub {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.3;
+}
+/* --------------------------------------------------------------------------
+   I. PROJECT PARTNERS
+   -------------------------------------------------------------------------- */
+.empart-page .empart-partnersSection {
+  padding: 36px 0 56px;
+}
+.empart-page .empart-partnersRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.empart-page .empart-partnerItem {
+  background: #ffffff;
+  border: 1px solid #ebd9c2;
+  border-radius: 10px;
+  padding: 18px 34px;
+  box-shadow: 0 4px 14px rgba(16, 36, 58, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 240px;
+  min-height: 96px;
+}
+.empart-page .empart-partnerItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 36, 58, 0.08);
+}
+.empart-page .empart-partnerLogo {
+  max-height: 76px;
+  max-width: 230px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+/* --------------------------------------------------------------------------
+   J. FULL-BLEED GREEN CTA BANNER
+   -------------------------------------------------------------------------- */
+.empart-page .empart-finalCtaSection {
+  background: linear-gradient(135deg, #093c2c 0%, #042118 100%);
+  position: relative;
+  padding: 58px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+.empart-page .empart-finalCtaSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/islamic-pattern.svg");
+  background-size: 260px 260px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+.empart-page .empart-finalCtaContainer {
+  position: relative;
+  z-index: 1;
+}
+.empart-page .empart-finalCtaContent {
+  max-width: 720px;
+  text-align: left;
+}
+.empart-page .empart-finalCtaEyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b7decb;
+  margin-bottom: 12px;
+}
+.empart-page .empart-finalCtaHeading {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+.empart-page .empart-finalCtaDesc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #d6e8de;
+  margin: 0 0 26px;
+}
+.empart-page .empart-finalCtaActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.empart-page .empart-btnCtaSolid {
+  background-color: #800000;
+  color: #ffffff !important;
+  border: 1.5px solid #800000;
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+}
+.empart-page .empart-btnCtaSolid:hover {
+  background-color: #a00000;
+  border-color: #a00000;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+.empart-page .empart-btnCtaOutline {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.empart-page .empart-btnCtaOutline:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+@media (max-width: 767px){.empart-page .empart-heroTitle {
+    font-size: 24px;
+    line-height: 1.28;
+  }
+.empart-page .empart-introSection {
+    padding: 34px 0 24px;
+  }
+.empart-page .empart-sectionHeading {
+    font-size: 18.5px;
+  }
+.empart-page .empart-btnBurgundyFull {
+    font-size: 13px;
+    padding: 11px 16px;
+    text-align: center;
+  }
+.empart-page .empart-eduCardBody {
+    padding: 30px 22px 24px;
+  }
+.empart-page .empart-eduCardText {
+    font-size: 13.8px;
+    line-height: 1.66;
+  }
+.empart-page .empart-circlesRow {
+    gap: 12px;
+  }
+.empart-page .empart-circleImgWrap {
+    width: 60px;
+    height: 60px;
+  }
+.empart-page .empart-partnersRow {
+    gap: 16px;
+  }
+.empart-page .empart-partnerItem {
+    width: 100%;
+  }
+.empart-page .empart-downloadCardInner {
+    min-height: 124px;
+    padding: 16px 14px;
+  }
+.empart-page .empart-videoSlideHeading {
+    font-size: 11.5px;
+  }
+.empart-page .empart-finalCtaSection {
+    padding: 42px 0;
+  }
+.empart-page .empart-finalCtaContent {
+    text-align: center;
+    margin: 0 auto;
+  }
+.empart-page .empart-finalCtaActions {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+.empart-page .empart-btnCtaSolid,
+  .empart-page .empart-btnCtaOutline {
+    width: 100%;
+    justify-content: center;
+  }}

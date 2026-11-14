@@ -1,3 +1,4 @@
+import "./page.css";
 import Link from "next/link";
 import { asset } from "../../lib/asset";
 import EmpartDownloadsSlider from "./EmpartDownloadsSlider";
@@ -48,52 +49,52 @@ const CORE_TEAM = [
   {
     name: "Nebil Khur",
     title: "Project Lead",
-    image: "/images/empart-study/hd_team-nebil.jpg",
+    image: "/images/empart-study/hd_team-nebil.webp",
   },
   {
     name: "Anna Khan",
     title: "Research Coordinator",
-    image: "/images/empart-study/hd_team-anna.png",
+    image: "/images/empart-study/hd_team-anna.webp",
   },
   {
     name: "Fatema Mirza RDA, MPA, PMP",
     title: "Program Manager",
-    image: "/images/empart-study/hd_team-fatema.jpg",
+    image: "/images/empart-study/hd_team-fatema.webp",
   },
 ];
 
 // 3. Meet the EMPART Team (Circular Portraits)
 const EMPART_TEAM_CIRCLES = [
-  { id: 1, name: "EMPART Team Member 1", image: "/images/empart-study/circle_member_1.png" },
-  { id: 2, name: "EMPART Team Member 2", image: "/images/empart-study/circle_member_2.png" },
-  { id: 3, name: "EMPART Team Member 3", image: "/images/empart-study/circle_member_3.png" },
-  { id: 4, name: "EMPART Team Member 4", image: "/images/empart-study/circle_member_4.png" },
-  { id: 5, name: "EMPART Team Member 5", image: "/images/empart-study/circle_member_5.png" },
+  { id: 1, name: "EMPART Team Member 1", image: "/images/empart-study/circle_member_1.webp" },
+  { id: 2, name: "EMPART Team Member 2", image: "/images/empart-study/circle_member_2.webp" },
+  { id: 3, name: "EMPART Team Member 3", image: "/images/empart-study/circle_member_3.webp" },
+  { id: 4, name: "EMPART Team Member 4", image: "/images/empart-study/circle_member_4.webp" },
+  { id: 5, name: "EMPART Team Member 5", image: "/images/empart-study/circle_member_5.webp" },
 ];
 
 // 4. Videos (2x2 Grid — crisp HD still photography + native YouTube UI overlay)
 const VIDEOS = [
   {
     title: "Aasim Padela, MD, MSc — The Actors and Materials of EOL Care",
-    thumb: "/images/empart-study/video-actors-materials-eol.jpg",
+    thumb: "/images/empart-study/video-actors-materials-eol.webp",
     thumbPos: "center center",
     url: "https://www.youtube.com/watch?v=JAwBx3WjAuA",
   },
   {
     title: "Aasim Padela on the Relevance of the Dimensions of EOL Healthcare",
-    thumb: "/images/empart-study/video-dimensions-eol.jpg",
+    thumb: "/images/empart-study/video-dimensions-eol.webp",
     thumbPos: "center center",
     url: "https://www.youtube.com/watch?v=OM2K83uF4Es",
   },
   {
     title: "Aasim Padela, MD, MSc — Muslim Community Response & Healthcare",
-    thumb: "/images/empart-study/video-community-response.jpg",
+    thumb: "/images/empart-study/video-community-response.webp",
     thumbPos: "center center",
     url: "https://www.youtube.com/watch?v=5KJ3GMIGy4I",
   },
   {
     title: "Framing Palliative Care: Sharing Ethical Decisions & Practical Healthcare",
-    thumb: "/images/empart-study/video-framing-palliative-care.jpg",
+    thumb: "/images/empart-study/video-framing-palliative-care.webp",
     thumbPos: "center center",
     url: "https://www.youtube.com/watch?v=dF_jCwoyU04",
   },
@@ -209,8 +210,8 @@ export default function EmpartStudyPage() {
             {/* Right Islamic Mosque Arch Image */}
             <div className="col-lg-5 text-center text-lg-end empart-heroArchCol">
               <div className="empart-heroArchWrap">
-                <img
-                  src={asset("/images/empart-study/hero-arch.png")}
+                <img loading="eager" fetchPriority="high" decoding="async" 
+                  src={asset("/images/empart-study/hero-arch.webp")}
                   alt="Islamic Architectural Mosque Arch"
                   className="empart-heroArchImg"
                   loading="eager"
@@ -248,7 +249,7 @@ export default function EmpartStudyPage() {
               {/* Featured Burgundy Button */}
               <div className="empart-introCtaWrap">
                 <a
-                  href="https://www.pcori.org/research-results/2023/equipping-muslims-pcor-based-action-oriented-research-tools-empart"
+                  href="https://www.pcori.org/research-results/2020/equipping-muslims-pcor-based-action-oriented-research-tools-empart"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="empart-btnBurgundyFull"
@@ -262,12 +263,12 @@ export default function EmpartStudyPage() {
               <div className="empart-noticeLinkWrap">
                 <span className="empart-noticeLabel">Source: </span>
                 <a
-                  href="https://www.pcori.org/research-results/2023/equipping-muslims-pcor-based-action-oriented-research-tools-empart"
+                  href="https://www.pcori.org/research-results/2020/equipping-muslims-pcor-based-action-oriented-research-tools-empart"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="empart-noticeUrl"
                 >
-                  https://www.pcori.org/research-results/2023/equipping-muslims-pcor-based-action-oriented-research-tools-empart
+                  https://www.pcori.org/research-results/2020/equipping-muslims-pcor-based-action-oriented-research-tools-empart
                 </a>
               </div>
             </div>
@@ -312,8 +313,8 @@ export default function EmpartStudyPage() {
             {/* Left Image: Medical Consultation Scene */}
             <div className="col-lg-6">
               <div className="empart-splitImgWrap">
-                <img
-                  src={asset("/images/empart-study/benefits-consultation.png")}
+                <img loading="lazy" decoding="async" 
+                  src={asset("/images/empart-study/benefits-consultation.webp")}
                   alt="Clinical consultation scene with Muslim mother, young daughter, and physician"
                   className="empart-splitImg"
                   loading="lazy"
@@ -377,8 +378,8 @@ export default function EmpartStudyPage() {
             {/* Right Image: Collaborative Workshop Table */}
             <div className="col-lg-6">
               <div className="empart-splitImgWrap">
-                <img
-                  src={asset("/images/empart-study/get-involved-workshop.png")}
+                <img loading="lazy" decoding="async" 
+                  src={asset("/images/empart-study/get-involved-workshop.webp")}
                   alt="Overhead view of collaborative community workshop table with notes"
                   className="empart-splitImg"
                   loading="lazy"
@@ -404,7 +405,7 @@ export default function EmpartStudyPage() {
               {CORE_TEAM.map((member, idx) => (
                 <div key={idx} className="col-sm-6 col-md-4">
                   <div className="empart-coreTeamCard">
-                    <img
+                    <img loading="lazy" decoding="async" 
                       src={asset(member.image)}
                       alt={member.name}
                       className="empart-coreTeamPhoto"
@@ -434,7 +435,7 @@ export default function EmpartStudyPage() {
             {EMPART_TEAM_CIRCLES.map((c) => (
               <div key={c.id} className="empart-circleItem">
                 <div className="empart-circleImgWrap">
-                  <img
+                  <img loading="lazy" decoding="async" 
                     src={asset(c.image)}
                     alt={c.name}
                     className="empart-circleImg"
@@ -482,7 +483,7 @@ export default function EmpartStudyPage() {
                         v.isPortraitStage ? " is-portraitStage" : ""
                       }`}
                     >
-                      <img
+                      <img loading="lazy" decoding="async" 
                         src={asset(v.thumb)}
                         alt={v.title}
                         className="empart-videoThumb"
@@ -553,7 +554,7 @@ export default function EmpartStudyPage() {
 
           <div className="empart-partnersRow">
             <div className="empart-partnerItem">
-              <img
+              <img loading="lazy" decoding="async" 
                 src={asset("/images/empart-study/partner-worry-free.svg")}
                 alt="Worry Free Community"
                 className="empart-partnerLogo"
@@ -561,7 +562,7 @@ export default function EmpartStudyPage() {
               />
             </div>
             <div className="empart-partnerItem">
-              <img
+              <img loading="lazy" decoding="async" 
                 src={asset("/images/empart-study/partner-pcor-collective.svg")}
                 alt="Partners in PCOR / Community Health"
                 className="empart-partnerLogo"
