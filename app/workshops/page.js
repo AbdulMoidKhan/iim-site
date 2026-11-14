@@ -26,12 +26,12 @@ const TOPICS = [
 ];
 
 const PROJECTS = [
-  ["Investigating American Muslim Palliative & Hospice Care Needs (I AM PCN)", "In-depth exploration of palliative and hospice care needs of American Muslims.", "/images/research/project-palliative.jpg"],
-  ["Mosque-Based Health Education and Research Tools (M-HEaRT)", "Developing faith-aligned health education tools for mosques and communities.", "/images/research/project-mheart.jpg"],
-  ["Muslim American Healthcare & Spiritual Needs (MAHSN)", "Exploring the healthcare and spiritual needs of Muslim Americans.", "/images/research/project-mahsn.jpg"],
-  ["Fostering Connections Between Science and Theology for Medical Track Students", "Building bridges between scientific knowledge and Islamic theology.", "/images/research/project-empart.jpg"],
-  ["Religiously-Tailored Mammography Intervention for American Muslims", "Culturally and religiously tailored approaches to breast cancer screening.", "/images/research/project-mammography.jpg"],
-  ["American Muslim Cultural Challenges with U.S. Healthcare", "Cultural and religious challenges faced by American Muslims in healthcare settings.", "/images/research/project-equity.jpg"],
+  ["Investigating American Muslim Palliative & Hospice Care Needs (I AM PCN)", "In-depth exploration of palliative and hospice care needs of American Muslims.", "/images/research/project-palliative.jpg", "/palliative-care-needs"],
+  ["Mosque-Based Health Education and Research Tools (M-HEaRT)", "Developing faith-aligned health education tools for mosques and communities.", "/images/research/project-mheart.jpg", "/mosque-health-education"],
+  ["Muslim American Healthcare & Spiritual Needs (MAHSN)", "Exploring the healthcare and spiritual needs of Muslim Americans.", "/images/research/project-mahsn.jpg", "/mahsn-pro"],
+  ["Fostering Connections Between Science and Theology for Medical Track Students", "Building bridges between scientific knowledge and Islamic theology.", "/images/research/project-empart.jpg", "/fostering-connections"],
+  ["Religiously-Tailored Mammography Intervention for American Muslims", "Culturally and religiously tailored approaches to breast cancer screening.", "/images/research/project-mammography.jpg", "/mammography"],
+  ["American Muslim Cultural Challenges with U.S. Healthcare", "Cultural and religious challenges faced by American Muslims in healthcare settings.", "/images/research/project-equity.jpg", "/advancing-equity"],
 ];
 
 const LENGTHS = [
@@ -184,12 +184,12 @@ export default function WorkshopsPage() {
               </Link>
             </div>
             <div className="ws-project-row">
-              {PROJECTS.map(([title, text, image]) => (
+              {PROJECTS.map(([title, text, image, href]) => (
                 <article className="ws-project" key={title}>
                   <img src={asset(image)} alt="" />
                   <h3>{title}</h3>
                   <p>{text}</p>
-                  <Link href="/research">
+                  <Link href={href || "/research"}>
                     LEARN MORE <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </article>

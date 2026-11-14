@@ -19,6 +19,7 @@ const NAV = [
       ["About Us", "/about"],
       ["Mission & Vision", "/mission"],
       ["Our Team", "/team"],
+      ["Volunteer", "/volunteer"],
       ["Our Impact", "/impact"],
       ["Contact", "/contact"],
     ],
@@ -32,6 +33,10 @@ const NAV = [
       ["Living Organ Donation", "/living-organ-donation"],
       ["MAHSN Pro", "/mahsn-pro"],
       ["Mammography", "/mammography"],
+      ["EMPART Research", "/empart-research"],
+      ["Mosque Health Education (M-HEaRT)", "/mosque-health-education"],
+      ["Palliative Care Needs (I AM PCN)", "/palliative-care-needs"],
+      ["Community Health Research (E-MARCH)", "/community-health-research"],
     ],
   },
   {
@@ -49,6 +54,7 @@ const NAV = [
       ["Exploring Bioscience & Islam", "/exploring-bioscience"],
       ["Bioscience Unit 3", "/bioscience-unit-3"],
       ["Fostering Connections", "/fostering-connections"],
+      ["Medical Student Internship", "/medical-student-internship"],
     ],
   },
   {

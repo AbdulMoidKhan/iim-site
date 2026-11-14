@@ -1,5 +1,6 @@
 import { asset } from "../../lib/asset";
 import Link from "next/link";
+import Script from "next/script";
 import SpeakingQuotes from "./SpeakingQuotes";
 
 export const metadata = {
@@ -256,7 +257,7 @@ export default function SpeakingPage() {
         </div>
       </section>
 
-      <section className="spk-close container-fluid p-0" id="speaker-request">
+ <section className="spk-close container-fluid p-0" id="speaker-request">
         <div className="spk-close-grid">
           <SpeakingQuotes quotes={QUOTES} />
           <div className="spk-arch">
@@ -278,6 +279,36 @@ export default function SpeakingPage() {
           </div>
         </div>
       </section>
+
+      <iframe
+        src="https://links.360growthlab.com/widget/form/knkk3hzAow89ULUZjO7q"
+        style={{
+          display: "none",
+          width: "100%",
+          height: "100%",
+          border: "none",
+          borderRadius: "8px",
+        }}
+        id="sticky-sidebar-left-knkk3hzAow89ULUZjO7q"
+        data-layout="{'id':'STICKY_SIDEBAR','minimizedTitle':'Speaker Request','isLeftAligned':true,'isRightAligned':false,'allowMinimize':true,'buttonColor':'#800000','buttonType':'text','buttonSize':'medium','buttonIcon':'chat','cornerRadius':{'tl':8,'tr':8,'bl':8,'br':8},'fontSize':16}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="NPE Speaking Request"
+        data-height="1755"
+        data-layout-iframe-id="sticky-sidebar-left-knkk3hzAow89ULUZjO7q"
+        data-form-id="knkk3hzAow89ULUZjO7q"
+        data-cookie-consent="true"
+        data-cookie-consent-provider="auto"
+        title="NPE Speaking Request"
+      />
+      <Script
+        src="https://links.360growthlab.com/js/form_embed.js"
+        strategy="afterInteractive"
+      />
     </div>
   );
 }

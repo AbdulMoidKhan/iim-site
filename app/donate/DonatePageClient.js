@@ -5,9 +5,6 @@ import { asset } from "../../lib/asset";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
-/** Set when a verified Zeffy (or other) donation URL is available. */
-const DONATION_CHECKOUT_URL = null;
-
 /** II&M / Dr. Padela talk from Initiative workshop materials (YouTube). */
 const IMPACT_VIDEO_ID = "JAwBx3WjAuA";
 
@@ -76,14 +73,6 @@ const TESTIMONIALS = [
   },
 ];
 
-const AMOUNTS = [
-  [25, "Supports a learner scholarship seat"],
-  [50, "Supports workshop materials"],
-  [100, "Supports a community education session"],
-  [250, "Supports curriculum development"],
-  [500, "Supports institutional training"],
-];
-
 const IMPACT = [
   [asset("/images/donation/impact-learners.jpg"), "fa-user-doctor", "Equip Learners and Clinicians", "Deliver courses and practical resources that strengthen ethical, faith-informed care."],
   [asset("/images/donation/impact-institutions.jpg"), "fa-building-columns", "Strengthen Institutions", "Integrate curricula and training into schools, hospitals, and organizations."],
@@ -105,10 +94,6 @@ const PARTNERS = [
 export default function DonatePageClient() {
   const [filter, setFilter] = useState("all");
   const [page, setPage] = useState(0);
-  const [freq, setFreq] = useState("once");
-  const [amount, setAmount] = useState(25);
-  const [custom, setCustom] = useState("");
-  const [customOpen, setCustomOpen] = useState(false);
   const [activeVideoId, setActiveVideoId] = useState(null);
 
   const filtered = useMemo(
@@ -119,8 +104,6 @@ export default function DonatePageClient() {
   const pages = Math.max(1, Math.ceil(filtered.length / 3));
   const safePage = Math.min(page, pages - 1);
   const visible = filtered.slice(safePage * 3, safePage * 3 + 3);
-
-  const selectedAmount = customOpen ? Number(custom) || 0 : amount;
 
   useEffect(() => {
     if (!activeVideoId) return undefined;
@@ -139,18 +122,6 @@ export default function DonatePageClient() {
   function onFilter(key) {
     setFilter(key);
     setPage(0);
-  }
-
-  function handleDonate() {
-    if (!selectedAmount || selectedAmount <= 0) return;
-    if (DONATION_CHECKOUT_URL) {
-      const url = new URL(DONATION_CHECKOUT_URL);
-      url.searchParams.set("amount", String(selectedAmount));
-      url.searchParams.set("frequency", freq);
-      window.open(url.toString(), "_blank", "noopener,noreferrer");
-      return;
-    }
-    window.location.href = `/consultation?intent=donate&amount=${selectedAmount}&frequency=${freq}`;
   }
 
   function openImpactVideo(videoId = IMPACT_VIDEO_ID) {
@@ -315,67 +286,36 @@ export default function DonatePageClient() {
               </div>
             </div>
 
-            <aside className="donate-panel" id="donate-panel">
-              <p className="donate-eyebrow">SUPPORT II&amp;M</p>
-              <h2 className="donate-h2">Choose Your Impact</h2>
-              <p className="donate-panel-lead">
-                Your support helps us expand education, advance research, and build bridges between healthcare and Muslim communities.
-              </p>
-              <div className="donate-freq" role="group" aria-label="Donation frequency">
-                <button type="button" className={freq === "once" ? "is-active" : ""} onClick={() => setFreq("once")}>One-Time</button>
-                <button type="button" className={freq === "monthly" ? "is-active" : ""} onClick={() => setFreq("monthly")}>Monthly</button>
-              </div>
-              <div className="donate-amounts">
-                {AMOUNTS.map(([value, note]) => (
-                  <button
-                    key={value}
-                    type="button"
-                    className={`donate-amount${!customOpen && amount === value ? " is-selected" : ""}`}
-                    onClick={() => {
-                      setAmount(value);
-                      setCustomOpen(false);
-                    }}
-                  >
-                    <strong>${value}</strong>
-                    <span>{note}</span>
-                  </button>
-                ))}
-                <button
-                  type="button"
-                  className={`donate-amount${customOpen ? " is-selected" : ""}`}
-                  onClick={() => setCustomOpen(true)}
-                >
-                  <strong>Custom</strong>
-                  <span>Enter your own amount</span>
-                </button>
-              </div>
-              {customOpen ? (
-                <label className="donate-custom">
-                  <span>Custom amount (USD)</span>
-                  <input
-                    type="number"
-                    min="1"
-                    step="1"
-                    value={custom}
-                    onChange={(e) => setCustom(e.target.value)}
-                    placeholder="Enter amount"
-                  />
-                </label>
-              ) : null}
-              <button type="button" className="donate-submit" onClick={handleDonate}>
-                SUPPORT II&amp;M <i className="fa-solid fa-arrow-right" />
-              </button>
-              {!DONATION_CHECKOUT_URL ? (
-                <p className="donate-checkout-note">
-                  Online checkout (Zeffy) is not configured yet — you will be guided to contact II&amp;M to complete your gift.
-                </p>
-              ) : null}
-              <div className="donate-secure">
-                <i className="fa-solid fa-lock" />
-                <div>
-                  <strong>Secure &amp; Fee-Free Giving</strong>
-                  <p>We use Zeffy, a 100% free, secure giving platform, so more of your support goes directly to our mission.</p>
-                </div>
+            <aside
+              className="donate-panel"
+              id="donate-panel"
+              style={{ alignSelf: "stretch", display: "flex" }}
+            >
+              <div
+                style={{
+                  position: "relative",
+                  overflow: "hidden",
+                  minHeight: "450px",
+                  width: "100%",
+                  flex: 1,
+                }}
+              >
+                <iframe
+                  title="Donation form powered by Zeffy"
+                  style={{
+                    position: "absolute",
+                    border: 0,
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    right: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  src="https://www.zeffy.com/embed/donation-form/instilling-hikmah-in-healthcare"
+                  allow="payment"
+                  allowTransparency="true"
+                />
               </div>
             </aside>
           </div>

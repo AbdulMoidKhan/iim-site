@@ -32,6 +32,7 @@ export default function Footer() {
               <li><Link href="/team">Our Team</Link></li>
               <li><Link href="/impact">Our Impact</Link></li>
               <li><Link href="/research">Research</Link></li>
+              <li><Link href="/volunteer">Volunteer</Link></li>
               <li><Link href="/consultation">Consultation</Link></li>
               <li><Link href="/speaking">Speaking</Link></li>
               <li><Link href="/donate">Donate</Link></li>
@@ -42,6 +43,7 @@ export default function Footer() {
             <ul className="iim-footer-links">
               <li><Link href="/education">Education</Link></li>
               <li><Link href="/courses">Courses</Link></li>
+              <li><Link href="/medical-student-internship">Medical Student Internship</Link></li>
               <li><Link href="/workshops">Workshops</Link></li>
               <li><Link href="/podcast">Podcast</Link></li>
               <li><Link href="/books">Books</Link></li>

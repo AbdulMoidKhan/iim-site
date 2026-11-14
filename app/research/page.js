@@ -28,31 +28,55 @@ const projects = [
     img: asset("/images/research/project-mahsn.jpg"),
     title: "Muslim American Healthcare & Spiritual Needs (MAHSN)",
     text: "A national survey examining the healthcare experiences, spiritual needs, and cultural considerations of Muslim patients in the United States.",
+    href: "/mahsn-pro",
   },
   {
     img: asset("/images/research/project-mheart.jpg"),
     title: "Mosque-Based Health Education and Research Tools (M-HEaRT)",
     text: "Development and testing of replicable tools and workshops to assess and address health needs within mosque communities, working with imams and community leaders.",
+    href: "/mosque-health-education",
   },
   {
     img: asset("/images/research/project-palliative.jpg"),
     title: "Investigating American Muslim Palliative & Hospice Care Needs (I AM PCN)",
     text: "Exploring the needs of Muslim patients and families in end-of-life care, with practical resources and replication guides for healthcare teams.",
+    href: "/palliative-care-needs",
   },
   {
     img: asset("/images/research/project-equity.jpg"),
     title: "Advancing Equity for Muslim Physicians",
     text: "Examining experiences of discrimination, accommodation, and professional well-being among Muslim physicians and healthcare trainees to inform supportive workplace policies and interventions.",
+    href: "/advancing-equity",
   },
   {
     img: asset("/images/research/project-mammography.jpg"),
     title: "Religiously Tailored Mammography Intervention",
     text: "A community-designed educational intervention to increase breast cancer screening among Muslim women, with culturally and religiously tailored materials.",
+    href: "/mammography",
   },
   {
     img: asset("/images/research/project-empart.jpg"),
-    title: "EMPART & E-MARCH",
-    text: "Community-centered outcomes research and training programs to build research capacity, promote health equity, and engage Muslim communities in meaningful research partnerships.",
+    title: "EMPART Research: PCOR-Based Tools",
+    text: "Equipping Muslim communities with patient-centered outcomes research frameworks and tools to address health disparities and foster clinical partnerships.",
+    href: "/empart-research",
+  },
+  {
+    img: asset("/images/e-march/community-health-research.svg"),
+    title: "Engaging Muslim Americans for Research on Community Health [E-MARCH]",
+    text: "A multi-year project that advances patient-centered outcomes research (PCOR) with Muslim communities to address health priorities, reduce disparities, and inform culturally responsive care.",
+    href: "/community-health-research",
+  },
+  {
+    img: asset("/images/research/findings-mosque.jpg"),
+    title: "Living Organ Donation in Islam",
+    text: "Addressing Islamic bioethical considerations, religious perspectives, and community guidance surrounding living and deceased organ donation.",
+    href: "/living-organ-donation",
+  },
+  {
+    img: asset("/images/work-islam-biomedicine.png"),
+    title: "Muslim Physicians in U.S. Healthcare",
+    text: "A national study exploring how Islamic identity, religious values, and workplace experiences shape the professional practice of American Muslim physicians.",
+    href: "/muslim-physicians",
   },
 ];
 
@@ -227,13 +251,24 @@ export default function ResearchPage() {
           <div className="rs-projects-grid">
             {projects.map((item) => (
               <article className="rs-project-card" key={item.title}>
-                <div className="rs-project-media">
-                  <img src={item.img} alt="" />
-                </div>
+                <Link
+                  href={item.href}
+                  className="rs-project-media"
+                  style={{ display: "block" }}
+                >
+                  <img src={item.img} alt={item.title} />
+                </Link>
                 <div className="rs-project-body">
-                  <h3>{item.title}</h3>
+                  <h3>
+                    <Link
+                      href={item.href}
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      {item.title}
+                    </Link>
+                  </h3>
                   <p>{item.text}</p>
-                  <Link href="/impact" className="rs-text-link">
+                  <Link href={item.href} className="rs-text-link">
                     LEARN MORE <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>

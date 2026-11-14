@@ -48,7 +48,7 @@ const RESOURCES = [
     type: "research",
     audiences: ["leaders", "researchers", "clinicians"],
     image: "/images/research/project-mheart.jpg",
-    href: "/research",
+    href: "/mosque-health-education",
     keywords: "mheart mosque health education research tools",
   },
   {
@@ -58,7 +58,7 @@ const RESOURCES = [
     type: "research",
     audiences: ["researchers", "educators", "leaders"],
     image: "/images/research/project-empart.jpg",
-    href: "/research",
+    href: "/empart-research",
     keywords: "pcor islamic schools outcomes research toolkit empart",
   },
   {
