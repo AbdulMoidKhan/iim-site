@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function RedirectMheart() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function RedirectMheart() {
 
   return (
     <div className="container py-5 text-center">
-      <p>Redirecting to <a href="/mosque-health-education">Mosque Health Education (M-HEaRT)</a>...</p>
+      <p>Redirecting to <Link href="/mosque-health-education">Mosque Health Education (M-HEaRT)</Link>...</p>
     </div>
   );
 }

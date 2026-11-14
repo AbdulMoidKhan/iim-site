@@ -1,7 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Enable the push trigger once GitHub Pages is configured for this repository.
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:

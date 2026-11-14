@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function RedirectEmarch() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function RedirectEmarch() {
 
   return (
     <div className="container py-5 text-center">
-      <p>Redirecting to <a href="/community-health-research">Community Health Research (E-MARCH)</a>...</p>
+      <p>Redirecting to <Link href="/community-health-research">Community Health Research (E-MARCH)</Link>...</p>
     </div>
   );
 }

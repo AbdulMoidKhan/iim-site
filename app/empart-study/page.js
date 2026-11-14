@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function RedirectEmpart() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function RedirectEmpart() {
 
   return (
     <div className="container py-5 text-center">
-      <p>Redirecting to <a href="/empart-research">EMPART Research</a>...</p>
+      <p>Redirecting to <Link href="/empart-research">EMPART Research</Link>...</p>
     </div>
   );
 }

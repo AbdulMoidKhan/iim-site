@@ -245,9 +245,9 @@ export default function ResearchPage() {
         <div className="container">
           <div className="rs-projects-head">
             <p className="rs-eyebrow">FEATURED RESEARCH PROJECTS</p>
-            <a href="/workshops" className="rs-text-link">
+            <Link href="/workshops" className="rs-text-link">
             SHOW MORE <i className="fa-solid fa-arrow-right" />
-            </a>
+            </Link>
           </div>
           <div className="rs-projects-grid">
             {projects.map((item) => (
