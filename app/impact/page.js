@@ -149,7 +149,7 @@ export default function ImpactPage() {
             src={asset("/images/our-impact/hero.webp")}
             alt="Healthcare professionals collaborating around a laptop"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

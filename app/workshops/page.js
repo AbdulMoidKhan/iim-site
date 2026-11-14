@@ -80,7 +80,7 @@ export default function WorkshopsPage() {
             src={asset("/images/workshops/hero.webp")}
             alt="Muslim educator in a beige hijab leading a workshop, with a presentation screen and audience"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

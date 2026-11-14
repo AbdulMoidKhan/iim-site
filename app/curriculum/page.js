@@ -82,7 +82,7 @@ export default function CurriculumPage() {
             src={asset("/images/curriculum/cu-hero.webp")}
             alt="A clinician and a physician in a beige hijab reviewing a laptop together"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

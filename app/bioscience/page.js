@@ -14,7 +14,7 @@ export default function BiosciencePage() {
     <>
     <header className="hero-seamless hero-bio-seamless">
       <div className="hero-bg-wrapper">
-        <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/bio-hero-discussion.webp")} alt="Educators in academic discussion" className="hero-bg-img" loading="eager" />
+        <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/bio-hero-discussion.webp")} alt="Educators in academic discussion" className="hero-bg-img" />
         <div className="hero-gradient-overlay" />
         <div className="hero-watermark-overlay" />
       </div>

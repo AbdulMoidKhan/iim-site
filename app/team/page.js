@@ -56,7 +56,7 @@ export default function TeamPage() {
             src={asset("/images/our-team/hero.webp")}
             alt="Healthcare professionals collaborating"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

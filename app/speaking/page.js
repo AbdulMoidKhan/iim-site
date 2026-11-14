@@ -100,7 +100,7 @@ export default function SpeakingPage() {
             src={asset("/images/speaking/hero.webp")}
             alt="Muslim physician in a burgundy hijab delivering a keynote at a wooden lectern"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

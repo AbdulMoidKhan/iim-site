@@ -495,7 +495,7 @@ export default function MHeartPage() {
                 src={asset("/images/partners/logos/pcori.svg")}
                 alt="PCORI - Patient-Centered Outcomes Research Institute"
                 className="mheart-funderLogo"
-                loading="lazy"
+               
               />
             </div>
             <div className="mheart-funderDivider" aria-hidden="true" />
@@ -504,7 +504,7 @@ export default function MHeartPage() {
                 src={asset("/images/partners/logos/american-cancer-society.svg")}
                 alt="American Cancer Society"
                 className="mheart-funderLogo"
-                loading="lazy"
+               
               />
             </div>
           </div>
@@ -531,7 +531,7 @@ export default function MHeartPage() {
                         src={asset(partner.logoImg)}
                         alt={partner.alt}
                         className="mheart-partnerLogo"
-                        loading="lazy"
+                       
                       />
                     </div>
                     <div className="mheart-partnerBadge">{partner.badge}</div>
@@ -562,7 +562,7 @@ export default function MHeartPage() {
                       src={asset(member.image)}
                       alt={`${member.name}, ${member.credentials}`}
                       className="mheart-teamPhoto"
-                      loading="lazy"
+                     
                     />
                   </div>
                   <div className="mheart-teamContent">
@@ -600,7 +600,7 @@ export default function MHeartPage() {
                       src={asset(item.src)}
                       alt={item.alt}
                       className="mheart-galleryImg"
-                      loading="lazy"
+                     
                     />
                     <div className="mheart-galleryOverlay">
                       <span className="mheart-galleryOverlayIcon" aria-hidden="true">

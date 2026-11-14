@@ -141,7 +141,7 @@ export default function MuslimPhysiciansPage() {
             src={asset("/images/research/muslim-physicians-hero.webp")}
             alt="American Muslim female physician in white coat and light hijab"
             className="mp-hero-bg-img"
-            loading="eager"
+           
           />
           <div className="mp-hero-gradient-overlay" />
         </div>
@@ -220,7 +220,7 @@ export default function MuslimPhysiciansPage() {
                         src={asset("/images/research/muslim-physicians-overview.webp")}
                         alt="Physician wearing a white coat and holding a smartphone"
                         className="mp-editorial-img"
-                        loading="lazy"
+                       
                       />
                     </div>
                   </div>
@@ -303,7 +303,7 @@ export default function MuslimPhysiciansPage() {
                           src={asset("/images/research/muslim-physicians-workforce.webp")}
                           alt="Surgeons in scrubs operating in surgical theater"
                           className="mp-editorial-img"
-                          loading="lazy"
+                         
                         />
                       </div>
                     </div>
@@ -659,7 +659,7 @@ export default function MuslimPhysiciansPage() {
             src={asset("/images/our-impact/cta-mosque.webp")}
             alt="Mosque dome and minarets against twilight sky"
             className="mp-bottom-cta-img"
-            loading="lazy"
+           
           />
           <div className="mp-bottom-cta-overlay" />
         </div>

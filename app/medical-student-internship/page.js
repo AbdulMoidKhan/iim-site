@@ -109,7 +109,7 @@ export default function MedicalStudentInternshipPage() {
             src={asset("/images/hero-doctor-team.webp")}
             alt="Medical students engaged in an educational mentoring discussion"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay intern-hero-gradient" />
           <div className="hero-watermark-overlay" />
@@ -180,7 +180,7 @@ export default function MedicalStudentInternshipPage() {
                 src={asset("/images/bio-student-speak.webp")}
                 alt="Interns presenting research at an academic poster session"
                 className="intern-overview-photo"
-                loading="lazy"
+               
               />
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function MedicalStudentInternshipPage() {
                     src={intern.img}
                     alt={intern.name}
                     className={`intern-profile-photo ${intern.isPlaceholder ? "intern-profile-photo-placeholder" : ""}`}
-                    loading="lazy"
+                   
                   />
                   <div className="intern-profile-body">
                     <h3 className="intern-profile-name">{intern.name}</h3>
@@ -287,7 +287,7 @@ export default function MedicalStudentInternshipPage() {
                     alt={intern.name}
                     className="intern-past-photo"
                     style={intern.objectPosition ? { objectPosition: intern.objectPosition } : undefined}
-                    loading="lazy"
+                   
                   />
                   <p className="intern-past-name">{intern.name}</p>
                   <p className="intern-past-role">{intern.role}</p>
@@ -325,7 +325,7 @@ export default function MedicalStudentInternshipPage() {
                     src={pub.img}
                     alt={pub.title}
                     className="intern-pub-img"
-                    loading="lazy"
+                   
                   />
                 </div>
                 <p className="intern-pub-title">{pub.title}</p>
@@ -356,7 +356,7 @@ export default function MedicalStudentInternshipPage() {
                   src={photo.img}
                   alt={photo.alt}
                   className="intern-gallery-photo"
-                  loading="lazy"
+                 
                 />
               ))}
             </div>
@@ -377,7 +377,7 @@ export default function MedicalStudentInternshipPage() {
                 src={asset("/images/cta-archway.webp")}
                 alt="Islamic architectural archway"
                 className="intern-support-img"
-                loading="lazy"
+               
               />
             </div>
             <div className="intern-support-body">

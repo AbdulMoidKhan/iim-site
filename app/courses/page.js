@@ -166,7 +166,7 @@ export default function CoursesPage() {
             src={asset("/images/courses-hero.webp")}
             alt="Healthcare learners in discussion"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

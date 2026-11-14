@@ -101,7 +101,7 @@ export default function PodcastPage() {
             src={asset("/images/podcast-medic-mufti.webp")}
             alt="Two scholars in conversation, one in a suit and glasses and one wearing a white cap"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

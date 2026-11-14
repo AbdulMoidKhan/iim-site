@@ -214,7 +214,7 @@ export default function EmpartStudyPage() {
                   src={asset("/images/empart-study/hero-arch.webp")}
                   alt="Islamic Architectural Mosque Arch"
                   className="empart-heroArchImg"
-                  loading="eager"
+                 
                 />
               </div>
             </div>
@@ -317,7 +317,7 @@ export default function EmpartStudyPage() {
                   src={asset("/images/empart-study/benefits-consultation.webp")}
                   alt="Clinical consultation scene with Muslim mother, young daughter, and physician"
                   className="empart-splitImg"
-                  loading="lazy"
+                 
                 />
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function EmpartStudyPage() {
                   src={asset("/images/empart-study/get-involved-workshop.webp")}
                   alt="Overhead view of collaborative community workshop table with notes"
                   className="empart-splitImg"
-                  loading="lazy"
+                 
                 />
               </div>
             </div>
@@ -409,7 +409,7 @@ export default function EmpartStudyPage() {
                       src={asset(member.image)}
                       alt={member.name}
                       className="empart-coreTeamPhoto"
-                      loading="lazy"
+                     
                     />
                     <div className="empart-coreTeamLabel">
                       <span className="empart-memberName">{member.name}</span>
@@ -439,7 +439,7 @@ export default function EmpartStudyPage() {
                     src={asset(c.image)}
                     alt={c.name}
                     className="empart-circleImg"
-                    loading="lazy"
+                   
                   />
                 </div>
               </div>
@@ -488,7 +488,7 @@ export default function EmpartStudyPage() {
                         alt={v.title}
                         className="empart-videoThumb"
                         style={{ objectPosition: v.thumbPos || "center center" }}
-                        loading="lazy"
+                       
                       />
 
                       {v.isPortraitStage && (
@@ -558,7 +558,7 @@ export default function EmpartStudyPage() {
                 src={asset("/images/empart-study/partner-worry-free.svg")}
                 alt="Worry Free Community"
                 className="empart-partnerLogo"
-                loading="lazy"
+               
               />
             </div>
             <div className="empart-partnerItem">
@@ -566,7 +566,7 @@ export default function EmpartStudyPage() {
                 src={asset("/images/empart-study/partner-pcor-collective.svg")}
                 alt="Partners in PCOR / Community Health"
                 className="empart-partnerLogo"
-                loading="lazy"
+               
               />
             </div>
           </div>

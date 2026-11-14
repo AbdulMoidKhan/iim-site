@@ -141,7 +141,7 @@ export default function DonatePageClient() {
             src={asset("/images/donation/donate-hero.webp")}
             alt="Healthcare professionals in consultation"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

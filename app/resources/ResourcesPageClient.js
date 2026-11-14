@@ -306,7 +306,7 @@ export default function ResourcesPageClient() {
             src={asset("/images/resources/hero.webp")}
             alt="Muslim physician consulting with a patient and child in a bright clinic"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

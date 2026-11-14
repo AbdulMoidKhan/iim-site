@@ -72,7 +72,7 @@ export default function MahsnVideoSection() {
                   src={video.thumbnail}
                   alt={video.alt}
                   className="mahsn-videoThumb"
-                  loading="lazy"
+                 
                 />
                 <div className="mahsn-playOverlay">
                   <div className="mahsn-playCircle" aria-hidden="true">

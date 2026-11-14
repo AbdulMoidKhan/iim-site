@@ -100,7 +100,7 @@ export default function MissionPage() {
             src={asset("/images/our-mission/hero.webp")}
             alt="Healthcare professionals in discussion"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

@@ -337,7 +337,7 @@ export default function LivingOrganDonationPage() {
             src={asset("/images/living-organ-donation/organ-hero-brain.webp")}
             alt="Anatomical model illustrating living organ donation and bioethics"
             className="lod-heroBgImg"
-            loading="eager"
+           
           />
           <div className="lod-heroGradientOverlay" />
         </div>
@@ -444,7 +444,7 @@ export default function LivingOrganDonationPage() {
                       )}
                       alt="Doctor holding phone and reviewing clinical materials"
                       className="lod-overviewImage"
-                      loading="lazy"
+                     
                     />
                     <span className="lod-overviewCaptionBar">
                       COMMUNITY-ENGAGED HEALTH EDUCATION
@@ -1001,7 +1001,7 @@ export default function LivingOrganDonationPage() {
                   src={asset("/images/donation/cta-mosque.webp")}
                   alt="Historic mosque dome and minarets against golden sunset"
                   className="lod-ctaMosqueImg"
-                  loading="lazy"
+                 
                 />
               </div>
             </div>

@@ -147,7 +147,7 @@ export default function EducationPage() {
             src={asset("/images/educate/hero.webp")}
             alt="Muslim healthcare educator speaking to learners in a classroom"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

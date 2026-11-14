@@ -28,7 +28,7 @@ export default function BooksPage() {
     <div className="books-page">
       <header className="hero-seamless hero-books-seamless">
         <div className="hero-bg-wrapper">
-          <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/books-banner-wide.webp")} alt="Medicine and Shariah, Organ Donation in Islam, Maqasid al-Shariah and Biomedicine, and Bridging Bioscience and Islam" className="hero-bg-img" loading="eager" />
+          <img loading="eager" fetchPriority="high" decoding="async" src={asset("/images/books-banner-wide.webp")} alt="Medicine and Shariah, Organ Donation in Islam, Maqasid al-Shariah and Biomedicine, and Bridging Bioscience and Islam" className="hero-bg-img" />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />
         </div>

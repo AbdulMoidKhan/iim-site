@@ -199,7 +199,7 @@ export default function EmpartDownloadsSlider({ items }) {
                         src={asset("/images/logo.webp")}
                         alt=""
                         className="empart-downloadLogo"
-                        loading="eager"
+                       
                       />
                     </div>
                     <span className="empart-downloadOrg">{item.org}</span>

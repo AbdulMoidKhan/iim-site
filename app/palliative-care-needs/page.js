@@ -263,7 +263,7 @@ export default function IAmPcnPage() {
                             )}
                             alt="Islamic Perspectives on Palliative & End-of-Life Care"
                             className="iampcn-bookImg"
-                            loading="lazy"
+                           
                           />
                         </div>
                       </div>
@@ -277,7 +277,7 @@ export default function IAmPcnPage() {
                             )}
                             alt="Islamic Bioethics of End-of-Life Healthcare Decisions: A Guide for Patients, Families and Healthcare Professionals"
                             className="iampcn-bookImg"
-                            loading="lazy"
+                           
                           />
                         </div>
                       </div>
@@ -371,7 +371,7 @@ export default function IAmPcnPage() {
                     src={asset("/images/i-am-pcn/hd_dissemination-poster.webp")}
                     alt="Islamic Bioethics & End-of-Life Healthcare Decisions Workshop Poster"
                     className="iampcn-posterImg"
-                    loading="lazy"
+                   
                   />
                 </div>
               </div>
@@ -424,7 +424,7 @@ export default function IAmPcnPage() {
                       src={asset(member.image)}
                       alt={member.name}
                       className="iampcn-teamPhoto"
-                      loading="lazy"
+                     
                     />
                   </div>
                   <div className="iampcn-teamContent">
@@ -448,7 +448,7 @@ export default function IAmPcnPage() {
               src={asset("/images/i-am-pcn/cancer-research-uk.svg")}
               alt="Cancer Research UK"
               className="iampcn-funderLogo"
-              loading="lazy"
+             
             />
           </div>
         </div>

@@ -123,7 +123,7 @@ export default function ResearchPage() {
             src={asset("/images/research/hero.webp")}
             alt="Healthcare professionals collaborating on research and care"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-overlay" />

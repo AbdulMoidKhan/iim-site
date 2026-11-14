@@ -136,7 +136,7 @@ export default function MahsnPage() {
             src={asset("/images/mahsn-pro/mahsn-hero.webp")}
             alt="Medical professional in white coat holding smartphone"
             className="mahsn-heroBgImg"
-            loading="eager"
+           
           />
           <div className="mahsn-heroGradientOverlay" />
         </div>
@@ -234,7 +234,7 @@ export default function MahsnPage() {
                         src={asset("/images/mahsn-pro/mahsn-overview.webp")}
                         alt="Clinician in white coat holding smartphone"
                         className="mahsn-editorialImg"
-                        loading="lazy"
+                       
                       />
                       <span className="mahsn-mediaBadge">
                         FAITH-INFORMED · PATIENT-CENTERED
@@ -320,7 +320,7 @@ export default function MahsnPage() {
                         src={asset("/images/mahsn-pro/mahsn-brain.webp")}
                         alt="Anatomical human brain model in medical laboratory"
                         className="mahsn-editorialImg"
-                        loading="lazy"
+                       
                       />
                     </div>
                   </div>

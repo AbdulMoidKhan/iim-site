@@ -1010,7 +1010,7 @@ export default function AdvancingEquityPage() {
                           src={asset(item.img)}
                           alt={item.title}
                           className="ae-galleryImg"
-                          loading="lazy"
+                         
                         />
                       </div>
                       <div className="ae-galleryCaption">

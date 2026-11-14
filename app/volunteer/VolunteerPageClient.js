@@ -82,7 +82,7 @@ export default function VolunteerPageClient() {
             src={asset("/images/volunteer/volunteer-hero.webp")}
             alt="Muslim volunteers in burgundy II&M vests collaborating around a laptop"
             className="hero-bg-img"
-            loading="eager"
+           
           />
           <div className="hero-gradient-overlay" />
           <div className="hero-watermark-left" aria-hidden="true" />
@@ -172,7 +172,7 @@ export default function VolunteerPageClient() {
                     src={asset("/images/volunteer/volunteer-community-event.webp")}
                     alt="Smiling Muslim female volunteer in burgundy II&M vest handing an event tote bag to a visitor"
                     className="volunteer-apply-img"
-                    loading="lazy"
+                   
                   />
                 </div>
               </div>

@@ -275,7 +275,7 @@ export default function MammographyPage() {
             src={asset("/images/research/mammography-hero.webp")}
             alt="Female healthcare provider and patient hands resting in consultation"
             className="mm-heroBgImg"
-            loading="eager"
+           
           />
           <div className="mm-heroGradientOverlay" />
         </div>
@@ -373,7 +373,7 @@ export default function MammographyPage() {
                         )}
                         alt="Physician in white coat with stethoscope holding a smartphone"
                         className="mm-editorialImg"
-                        loading="lazy"
+                       
                       />
                       <span className="mm-mediaBadge">
                         COMMUNITY HEALTH RESEARCH
@@ -932,7 +932,7 @@ export default function MammographyPage() {
             src={asset("/images/our-impact/cta-mosque.webp")}
             alt="Mosque dome and minarets against twilight sky"
             className="mm-bottomCtaImg"
-            loading="lazy"
+           
           />
           <div className="mm-bottomCtaOverlay" />
         </div>
